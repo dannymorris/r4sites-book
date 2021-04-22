@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Create, Publish, and Analyze your Personal Website Using R and RStudio</title>
+  <meta name="description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including Git, Netlify, and Google Analytics." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Create, Publish, and Analyze your Personal Website Using R and RStudio" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including Git, Netlify, and Google Analytics." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Create, Publish, and Analyze your Personal Website Using R and RStudio" />
+  
+  <meta name="twitter:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including Git, Netlify, and Google Analytics." />
+  
+
+<meta name="author" content="Danny Morris" />
+
+
+<meta name="date" content="2021-04-22" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="complete-end-to-end-example.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Create, Publish, and Analyze your Personal Website Using R and RStudio</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html"><i class="fa fa-check"></i><b>2</b> Complete end-to-end example</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#install-software"><i class="fa fa-check"></i><b>2.1</b> Install software</a></li>
+<li class="chapter" data-level="2.2" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#create-accounts"><i class="fa fa-check"></i><b>2.2</b> Create accounts</a></li>
+<li class="chapter" data-level="2.3" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#create-new-blogdown"><i class="fa fa-check"></i><b>2.3</b> Create a blogdown website</a></li>
+<li class="chapter" data-level="2.4" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#push-the-website-to-github"><i class="fa fa-check"></i><b>2.4</b> Push the website to GitHub</a></li>
+<li class="chapter" data-level="2.5" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#deploy-the-website-on-netlify"><i class="fa fa-check"></i><b>2.5</b> Deploy the website on Netlify</a></li>
+<li class="chapter" data-level="2.6" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#set-up-google-analytics"><i class="fa fa-check"></i><b>2.6</b> Set up Google Analytics</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="designing-your-website.html"><a href="designing-your-website.html"><i class="fa fa-check"></i><b>3</b> Designing your website</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="designing-your-website.html"><a href="designing-your-website.html#selecting-a-hugo-theme"><i class="fa fa-check"></i><b>3.1</b> Selecting a Hugo theme</a></li>
+<li class="chapter" data-level="3.2" data-path="designing-your-website.html"><a href="designing-your-website.html#editing-your-theme"><i class="fa fa-check"></i><b>3.2</b> Editing your theme</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="creating-content.html"><a href="creating-content.html"><i class="fa fa-check"></i><b>4</b> Creating Content</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="creating-content.html"><a href="creating-content.html#adding-posts"><i class="fa fa-check"></i><b>4.1</b> Adding posts</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Create, Publish, and Analyze your Personal Website Using R and RStudio</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Create, Publish, and Analyze your Personal Website Using R and RStudio</h1>
+<p class="author"><em>Danny Morris</em></p>
+<p class="date"><em>2021-04-22</em></p>
+</div>
+<div id="introduction" class="section level1" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
+<p><img src="https://i.imgur.com/JVtg9E5.jpg" /></p>
+<p>As a data scientist with a creative spirit, I love writing and creating content. Several years ago, I published my first personal website, <a href="https://abndistro.com/">Abnormal Distributions</a>. Getting started was hard. It took me months to learn new technologies and to get comfortable operating this simple little blog. Since then, Abnormal Distributions has served over 50,000 page views and 20,000 users. I paste links to it on my resumes, social profiles, and networking introductions. I constantly get messages from aspiring data scientists that essentially read, “Hey, saw a post on your website about [insert topic]. Would love to learn more!” Recruiters on LinkedIn often point to my website as the reason for connecting with me regarding a job opportunity. Abnormal Distributions turned out to be a wonderful investment of time as it helped spark my creativity, deepen my subject matter expertise through writing, and connect me with new people and opportunities.</p>
+<p><strong>My goal with this book is to help you launch your own personal website, blog, or project portfolio as quickly and painlessly as possible.</strong> You will learn the same steps that I take to create, design, publish, and analyze websites using R and other open source tools including RStudio, Git, Hugo, Netlify, and Google Analytics. All of the tools presented in this book are free to download or available through free accounts. No prior experience in web development is needed to be successful with this book.</p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="complete-end-to-end-example.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["rsites.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

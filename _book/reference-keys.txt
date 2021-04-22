@@ -1,0 +1,16 @@
+introduction
+complete-end-to-end-example
+install-software
+create-accounts
+create-new-blogdown
+push-the-website-to-github
+deploy-the-website-on-netlify
+set-up-google-analytics
+designing-your-website
+selecting-a-hugo-theme
+recommended-themes
+creating-a-website-with-your-chosen-theme
+editing-your-theme
+creating-content
+adding-posts
+create-site-with-theme
