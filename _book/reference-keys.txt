@@ -14,3 +14,10 @@ editing-your-theme
 creating-content
 adding-posts
 create-site-with-theme
+select-hugo-theme
+example-r-markdown-post
+data
+tables-using-dt
+visualizations-using-ggplot2
+visualizations-using-plotly
+example-markdown-post

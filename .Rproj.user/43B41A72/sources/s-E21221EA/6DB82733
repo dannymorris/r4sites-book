@@ -1,26 +1,26 @@
 {
-    "id": "0F6795F9",
-    "path": "~/projects/rsites/index.Rmd",
-    "project_path": "index.Rmd",
+    "id": "6DB82733",
+    "path": "~/projects/rsites/01-end-to-end.Rmd",
+    "project_path": "01-end-to-end.Rmd",
     "type": "r_markdown",
-    "hash": "2212363352",
+    "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1618971300728.0,
+    "created": 1619138288458.0,
     "source_on_save": false,
-    "relative_order": 4,
+    "relative_order": 5,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "18,246",
-        "scrollLine": "0"
+        "cursorPosition": "30,50",
+        "scrollLine": "24"
     },
     "folds": "",
-    "lastKnownWriteTime": 1619103494,
+    "lastKnownWriteTime": 1619121337,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1619103494617,
+    "last_content_update": 1619121337,
     "read_only": false,
     "read_only_alternatives": []
 }

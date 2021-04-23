@@ -6,7 +6,7 @@ The key to creating an appealling, sustainable website design is to select a Hug
 
 Note that website design is highly personal and subjective. There are no rules or requirements. My goal with this chapter is to steer you towards some designs that I have found to be attractive, flexible, and sustainable, and to also empower you to discover new designs that are better suited to you and your goals.
 
-## Selecting a Hugo theme
+## Selecting a Hugo theme {#select-hugo-theme}
 
 The look and feel of your website is largely determined by your choice of [pre-built Hugo themes](https://themes.gohugo.io/). Dozens of themes created by expert developers are freely available for you to use in your own website projecet. Once you find a theme you would like to try, you can specify this theme when you [create a new blogdown website](#create-new-blogdown).
 
@@ -66,6 +66,8 @@ Let's start with a use case focusing on the [Anatole](https://themes.gohugo.io/a
 5. **Navigate to `static/favicons/` and replace `favicon.ico` with your own favicon**. The favicon is the tiny image that appears in the web browser tab for your website. To create a favicon from an image, visit https://favicon.io/favicon-converter/. Keep the file named `favicon.ico` in the same folder.
 
 6. **Change the font properties**. If you don't like the default font, you can easily change it. For example, to use the Google Font [Quicksand](https://fonts.google.com/specimen/Quicksand) insert [this line of code](https://github.com/dannymorris/anatole-site/blob/master/themes/anatole/layouts/partials/head.html#L114-L116) in the `themes/anatole/layouts/partials/head.html` file. Then, navigate to `themes/anatole/assets/css/style.css` and change the font property in the `body` element [(example)](https://github.com/dannymorris/anatole-site/blob/master/themes/anatole/assets/css/style.css#L44-L51). You can also change basic font properties (e.g. size, color), but you will have to know what CSS class to change. Examples include `p`([example](https://github.com/dannymorris/anatole-site/blob/a114905a32be5619a5ecd3ab48d81d8220b14ed3/themes/anatole/assets/css/style.css#L53-L57)), `.page-top .nav`([example](https://github.com/dannymorris/anatole-site/blob/master/themes/anatole/assets/css/style.css#L198-L205)), and `.page-top .nav a`([example](https://github.com/dannymorris/anatole-site/blob/a114905a32be5619a5ecd3ab48d81d8220b14ed3/themes/anatole/assets/css/style.css#L213-L215)).
+
+7. **(optional) Remove all content supporting a language translation**. By default, the Anatole theme supports an Arabic language translation. To remove all content supporting this translation, delete the file `config/_default/menus.ar.toml`, edit the file `config/_default/languages.toml` by removing all Arabic language parameters ([example](https://github.com/dannymorris/anatole-site/blob/master/config/_default/languages.toml)), then delete the folder `content/arabic/` and all of its contents.
 
 #### Closing thoughts on editing themes {-}
 
