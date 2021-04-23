@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 4 Creating Content | Create, Publish, and Analyze your Personal Website Using R and RStudio</title>
+  <title>Chapter 4 Creating Content | Create, Publish, and Analyze Personal Websites Using R and RStudio</title>
   <meta name="description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including Git, Netlify, and Google Analytics." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 4 Creating Content | Create, Publish, and Analyze your Personal Website Using R and RStudio" />
+  <meta property="og:title" content="Chapter 4 Creating Content | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 Creating Content | Create, Publish, and Analyze your Personal Website Using R and RStudio" />
+  <meta name="twitter:title" content="Chapter 4 Creating Content | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
   
   <meta name="twitter:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including Git, Netlify, and Google Analytics." />
   
@@ -67,7 +67,7 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Create, Publish, and Analyze your Personal Website Using R and RStudio</a></li>
+<li><a href="./">Create, Publish, and Analyze Personal Websites Using R and RStudio</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
@@ -102,7 +102,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Create, Publish, and Analyze your Personal Website Using R and RStudio</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Create, Publish, and Analyze Personal Websites Using R and RStudio</a>
           </h1>
         </div>
 
@@ -112,21 +112,21 @@
             <section class="normal" id="section-">
 <div id="creating-content" class="section level1" number="4">
 <h1><span class="header-section-number">Chapter 4</span> Creating Content</h1>
-<p>This chapter provides some general guidance on creating content, such as blog posts, using standard R Markdown as well as standard Markdown. By this point, you should have <a href="complete-end-to-end-example.html#create-new-blogdown">created a new blogdown site</a> with your <a href="designing-your-website.html#select-hugo-theme">preferred theme</a>.</p>
+<p>This chapter provides some general guidance on creating content, such as blog posts, using R Markdown as well as plain Markdown. By this point, you should have <a href="complete-end-to-end-example.html#create-new-blogdown">created a new blogdown site</a> with your <a href="designing-your-website.html#select-hugo-theme">preferred theme</a>.</p>
 <p>In this chapter, we will continue to build on the website that was created in the previous chapter, which uses the <a href="https://themes.gohugo.io/anatole/">Anatole</a> theme. To view the finished product, visit <a href="https://example-anatole.netlify.app/" class="uri">https://example-anatole.netlify.app/</a></p>
 <div id="adding-posts" class="section level2" number="4.1">
 <h2><span class="header-section-number">4.1</span> Adding posts</h2>
-<p>As the website developer, new content you create will typically be in the form of a post. Common types of posts are blog entries, tutorials, portfolio entries, project documentation, and so on. With blogdown, posts can either be <a href="https://bookdown.org/yihui/rmarkdown/html-document.html">R Markdown</a> documents or plain <a href="https://www.markdownguide.org/getting-started/">Markdown</a> documents. The only difference between the two is that R Markdown enables you to insert and execute R code and display the output in the post body in addition to plain Markdown syntax. Markdown, on the other hand, is static content that cannot execute code.</p>
+<p>As the website developer, new content you create will typically be in the form of a post. Common types of posts are blog entries, tutorials, portfolio entries, project documentation, and so on. With blogdown, posts can either be <a href="https://bookdown.org/yihui/rmarkdown/html-document.html">R Markdown</a> documents or plain <a href="https://www.markdownguide.org/getting-started/">Markdown</a> documents. The only difference between the two is that R Markdown enables you to insert and execute server-side code (e.g. R code) and display the output in the post body in addition to plain Markdown syntax. Markdown, on the other hand, is static content that cannot execute server-side code.</p>
 <p>The recommended way to add a blog post is with the RStudio Addin labeled “New post,” as shown in this <a href="https://i.imgur.com/S9dl4DZ.png">example</a>. This addin will display a simple GUI for configuring the metadata for your new post including the post title, author, date, tags, content type and more. This <a href="https://i.imgur.com/UEzRUnO.png">example post configuration</a> generates a R Markdown post destined for the <code>post</code> subdirectory. The archetype, filename, slug, and language are handled automatically and require no changes.</p>
 </div>
 <div id="example-r-markdown-post" class="section level2" number="4.2">
 <h2><span class="header-section-number">4.2</span> Example R Markdown post</h2>
-<p>Before you create a new post, go ahead and run <code>blogdown::serve_site()</code> in the R console. This will launch your website locally and will update automatically whenever edits are saved. This is key for rapid development and iteration.</p>
-<p>If you haven’t already, leverage this <a href="https://i.imgur.com/UEzRUnO.png">example post configuration</a> to create a new post from an R Markdown document. The default document contains limited metadata and no body content. What to include is ultimately a matter of personal preference, but <a href="https://github.com/dannymorris/anatole-site/blob/master/content/english/post/2021-04-22-writing-a-post-using-r-markdown/index.en.Rmd">this R Markdown post</a> provides a great starting point with some handy features including syntax highlighting, table of contents, and message/warning suppression. The published version of this post can be viewed here - <a href="https://example-anatole.netlify.app/post/2021-04-22-writing-a-post-using-r-markdown/" class="uri">https://example-anatole.netlify.app/post/2021-04-22-writing-a-post-using-r-markdown/</a></p>
+<p>Before you create a new post, go ahead and run <code>blogdown::serve_site()</code> in the R console with your RStudio Project opened. This will launch your website locally and will update automatically whenever edits are saved. This is key for rapid development and iteration.</p>
+<p>If you haven’t already, leverage this <a href="https://i.imgur.com/UEzRUnO.png">example post configuration</a> to create a new post R Markdown. The default document contains limited metadata and no body content. What to include is ultimately a matter of personal preference, but <a href="https://github.com/dannymorris/anatole-site/blob/master/content/english/post/2021-04-22-writing-a-post-using-r-markdown/index.en.Rmd">this R Markdown post</a> provides a great starting point with some handy features including syntax highlighting, table of contents, and message/warning suppression. The published version of this post can be viewed here - <a href="https://example-anatole.netlify.app/post/2021-04-22-writing-a-post-using-r-markdown/" class="uri">https://example-anatole.netlify.app/post/2021-04-22-writing-a-post-using-r-markdown/</a></p>
 </div>
 <div id="example-markdown-post" class="section level2" number="4.3">
 <h2><span class="header-section-number">4.3</span> Example Markdown post</h2>
-<p>Unlike R Markdown, plain Markdown documents render static content only (e.g. text, images, multimedia) and cannot execute code. If your post does not need to execute code and render its ouput, then author the post using plain Markdown. To configure a plain Markdown post, follow this <a href="https://i.imgur.com/UEzRUnO.png">example post configuration</a> but change the Format parameter to Markdown instead of R Markdown.</p>
+<p>Unlike R Markdown, plain Markdown documents render static content only (e.g. text, images, multimedia) and cannot execute server-side code. If your post does not need to execute code and render its ouput, then author the post using plain Markdown. To configure a plain Markdown post, follow this <a href="https://i.imgur.com/UEzRUnO.png">example post configuration</a> but change the Format parameter to Markdown instead of R Markdown.</p>
 <p>This <a href="https://raw.githubusercontent.com/dannymorris/anatole-site/master/content/english/post/2021-04-22-example-plain-markdown-post/index.en.md">example Markdown post</a> should get you started. The published version of this post can be viewed here - <a href="https://example-anatole.netlify.app/post/2021-04-22-example-plain-markdown-post/" class="uri">https://example-anatole.netlify.app/post/2021-04-22-example-plain-markdown-post/</a></p>
 
 </div>
