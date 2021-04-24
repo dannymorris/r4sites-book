@@ -49,6 +49,9 @@ Once your site is working locally, the next steps are to create a remote GitHub 
 2. Create a local Git repository and associate it with the GitHub repository created in the previous step. To do this, launch Git from the command line (e.g. Git Bash on Windows, Terminal on Mac/Linux) and running the following Git commands. 
 
 ```
+# Change the directory to your website's root folder
+cd path/to/your/website/files
+
 # initialize local Git repo
 git init
 
@@ -58,7 +61,7 @@ git add --all
 # commit your website files to the local Git repo
 git commit -m "first commit"
 
-# point the local repo to the remote GitHub repo
+# point the local Git repo to the remote GitHub repo
 # change your_username and your_repo to your GitHub username and repo name
 git remote add origin https://github.com/your_username/your_repo.git
 
