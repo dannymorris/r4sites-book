@@ -5,20 +5,20 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Create, Publish, and Analyze Personal Websites Using R and RStudio</title>
-  <meta name="description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including Git, Netlify, and Google Analytics." />
+  <meta name="description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Create, Publish, and Analyze Personal Websites Using R and RStudio" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including Git, Netlify, and Google Analytics." />
+  <meta property="og:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
   
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Create, Publish, and Analyze Personal Websites Using R and RStudio" />
   
-  <meta name="twitter:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including Git, Netlify, and Google Analytics." />
+  <meta name="twitter:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
   
 
 <meta name="author" content="Danny Morris" />
@@ -53,6 +53,69 @@
 
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -72,8 +135,9 @@
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#website-ideas"><i class="fa fa-check"></i><b>1.1</b> Website ideas</a></li>
-<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#faq"><i class="fa fa-check"></i><b>1.2</b> FAQ</a></li>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#about-this-book"><i class="fa fa-check"></i><b>1.1</b> About this book</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#ideas-for-your-website"><i class="fa fa-check"></i><b>1.2</b> Ideas for your website</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#faq"><i class="fa fa-check"></i><b>1.3</b> FAQ</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html"><i class="fa fa-check"></i><b>2</b> Complete end-to-end example</a>
 <ul>
@@ -84,7 +148,7 @@
 <li class="chapter" data-level="2.5" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#deploy-the-website-on-netlify"><i class="fa fa-check"></i><b>2.5</b> Deploy the website on Netlify</a></li>
 <li class="chapter" data-level="2.6" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#set-up-google-analytics"><i class="fa fa-check"></i><b>2.6</b> Set up Google Analytics</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="creating-your-website.html"><a href="creating-your-website.html"><i class="fa fa-check"></i><b>3</b> Creating your website</a></li>
+<li class="chapter" data-level="3" data-path="generating-your-website.html"><a href="generating-your-website.html"><i class="fa fa-check"></i><b>3</b> Generating your website</a></li>
 <li class="chapter" data-level="4" data-path="style.html"><a href="style.html"><i class="fa fa-check"></i><b>4</b> Styling your website</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="style.html"><a href="style.html#select-hugo-theme"><i class="fa fa-check"></i><b>4.1</b> Selecting a Hugo theme</a></li>
@@ -111,8 +175,8 @@
 </ul></li>
 <li class="chapter" data-level="8" data-path="extras.html"><a href="extras.html"><i class="fa fa-check"></i><b>8</b> Extras</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="extras.html"><a href="extras.html#search-engine-optimization"><i class="fa fa-check"></i><b>8.1</b> Search engine optimization</a></li>
-<li class="chapter" data-level="8.2" data-path="extras.html"><a href="extras.html#marketing-your-website"><i class="fa fa-check"></i><b>8.2</b> Marketing your website</a></li>
+<li class="chapter" data-level="8.1" data-path="extras.html"><a href="extras.html#marketing-your-website"><i class="fa fa-check"></i><b>8.1</b> Marketing your website</a></li>
+<li class="chapter" data-level="8.2" data-path="extras.html"><a href="extras.html#search-engine-optimization"><i class="fa fa-check"></i><b>8.2</b> Search engine optimization</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -135,28 +199,43 @@
             <section class="normal" id="section-">
 <div id="header">
 <h1 class="title">Create, Publish, and Analyze Personal Websites Using R and RStudio</h1>
-<h2 class="subtitle"><em>A digital handbook with step-by-step instructions for creating personal websites, blogs, and professional portfolios using R, RStudio, and other freely available technologies including Git, Hugo, Netlify, and Google Analytics</em></h2>
+<h2 class="subtitle"><em>A digital handbook with step-by-step instructions for creating personal websites, blogs, and professional portfolios using R, RStudio, and other freely available technologies including GitHub, Hugo, Netlify, and Google Analytics</em></h2>
 <p class="author"><em>Danny Morris</em></p>
 <p class="date"><em>2021-04-25</em></p>
 </div>
 <div id="introduction" class="section level1" number="1">
 <h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
 <p><img src="https://i.imgur.com/2WgBlJfl.png" /></p>
-<p>As a data scientist with a creative spirit, I love writing and creating content. Several years ago, I published my first personal website, <a href="https://abndistro.com/">Abnormal Distributions</a>. Getting started was hard. It took me months to learn new technologies and to get comfortable operating this simple little blog. Since then, Abnormal Distributions has served over 50,000 page views and 20,000 users. I paste links to it on my resumes, social profiles, and networking introductions. I constantly get messages from aspiring data scientists that essentially read, “Hey, saw a post on your website about [insert topic]. Would love to learn more!” Recruiters on LinkedIn often point to my website as the reason for connecting with me regarding a job opportunity. Abnormal Distributions turned out to be a wonderful investment of time as it helped spark my creativity, deepen my subject matter expertise through writing, and connect me with new people and opportunities.</p>
-<p><strong>My goal with this book is to help you launch your own personal website, blog, or project portfolio as quickly and painlessly as possible.</strong> You will learn the same steps that I take to create, design, publish, and analyze websites using R and other open source tools including RStudio, Git, Hugo, Netlify, and Google Analytics. All of the tools presented in this book are free to download or available through free accounts. No prior experience in web development is needed to be successful with this book.</p>
-<div id="website-ideas" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Website ideas</h2>
+<div id="about-this-book" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> About this book</h2>
+<p>As a data scientist with a creative spirit, I love writing and sharing content. Several years ago, I published my first personal website, <a href="https://abndistro.com/">Abnormal Distributions</a>. Getting started was hard. It took me months to learn new technologies and to get comfortable operating this simple little blog. Since then, Abnormal Distributions has served over 50,000 page views and 20,000 users. I paste links to it on my resumes, social profiles, and networking introductions. I constantly get messages from aspiring data scientists that essentially read, “Hey, saw a post on your website about [insert topic]. Would love to learn more!” Recruiters on LinkedIn often point to my website as the reason for connecting with me regarding a job opportunity. Abnormal Distributions turned out to be a wonderful investment of time as it helped spark my creativity, deepen my subject matter expertise through writing, and connect me with new people and opportunities.</p>
+<p><strong>My goal with this book is to help you launch your own personal website, blog, or project portfolio as quickly and painlessly as possible.</strong> You will learn the same steps that I take to create, design, publish, and analyze websites using R, RStudio, and other freely available tools including GitHub, Hugo, Netlify, and Google Analytics. All of the tools presented in this book are free to download or available through free accounts. No prior experience in web development is needed to be successful with this book.</p>
 </div>
-<div id="faq" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> FAQ</h2>
+<div id="ideas-for-your-website" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Ideas for your website</h2>
+<p>Here are some inspiring examples of personal websites, blogs, and portfolios that you can create, publish, and analyze using the approach described in this book.</p>
+<ul>
+<li><p><a href="https://abndistro.com">Abnormal Distributions</a> - My personal website and blog. Ridiculously simple and straightforward. Designed for sharing articles, tutorials, and project summaries. Based on the <a href="https://themes.gohugo.io/hugo-xmin/">Hugo Xmin theme</a>.</p></li>
+<li><p><a href="http://www.rladiesnyc.org/">R-Ladies NYC</a> - Organization website dedicated to promoting gender diversity in the R community. Clean, modern layout. Great design for promoting groups, teams, projects, and events.</p></li>
+<li><p><a href="https://www.jennadallen.com/">Jenna Allen</a> - Nice all-around personal website authored by Jenna Allen with a blog and a resume.</p></li>
+<li><p><a href="https://www.mm218.dev/">Mike Mahoney</a> - Academic bio authored by Mike Mahoney. Simple, clean design for promoting academic achievements.</p></li>
+<li><p><a href="http://varianceexplained.org/">Variance Explained</a> - Personal website and blog authored by David Robinson. Crisp, clean layout.</p></li>
+</ul>
+</div>
+<div id="faq" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> FAQ</h2>
 <p><strong>What is the financial cost to create, publish, and analyze websites described in this book?</strong></p>
-<p>Absolutely nothing, unless you elect to purchase a custom domain name which are typically $1 USD per month.</p>
+<p>Absolutely nothing, unless you elect to purchase custom domains name which are typically $1 USD per month.</p>
+<p><strong>Do I need a background in web development to use this book successfully?</strong></p>
+<p>Absolutely not. The website development approach described in this book relies on blogdown and Hugo to generate static websites, meaning the entire website is just a series of HTML, CSS, JavaScript, and static content such as images and logos. A web browser is the only thing required to render and use static websites. Blogdown makes it super easy to create and organize static files, while Hugo does the heavy lifting of converting your files into a website. Hugo also gives you access to a wide range of <a href="(https://themes.gohugo.io/)">beautiful, free, pre-built design themes</a> designed by expert Hugo developers. All in all, you just need to focus on writing great content and making simple design tweaks to reflect your personal style.</p>
 <p><strong>Do I need to know R to build websites described in this book?</strong></p>
-<p>Not at all. You could build the types of websites described in this book without knowing or writing a single line of R code (or any programming language). These types of websites just make it easy to author content featuring output (e.g. tables, graphs) from R code and other programming languages supported by R Markdown including Python and SQL. If you don’t know R, a website could be a great way to learn it and document your journey!</p>
+<p>Not at all. You could build the types of websites described in this book without knowing or writing a single line of R code. These types of websites just make it easy to author content featuring output (e.g. tables, graphs) from R code and other programming languages supported by R Markdown including Python and SQL. If you don’t know R, a website could be a great way to learn it and document your journey!</p>
 <p><strong>What is the role of RStudio in the process of building websites described in this book?</strong></p>
 <p>RStudio is a free desktop application where all of your website development takes place. RStudio provides a simple interface for managing your website projects and the supporting materials including content, images, and code. RStudio also contains a “Viewer” pane, which will display your webiste locally and update in real-time as you make changes to your website. This is incredibly handy for rapidly testing ideas and inspecting the results.</p>
 <p><strong>Can I author content using other programming languages?</strong></p>
-<p>Yes. Content written inside of R Markdown documents can include code and output from programming languages supported by R Markdown, including Python and SQL.</p>
+<p>Yes. Content can be written in either plain Markdown documents or R Markdown documents which include support for R, Python, and SQL.</p>
+<p><strong>Can I publish my website behind a custom domain name?</strong></p>
+<p>Yes. See the chapter on <a href="deploy.html#deploy">Deploying on Netlify</a>.</p>
 
 </div>
 </div>

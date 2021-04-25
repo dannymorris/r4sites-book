@@ -1,6 +1,6 @@
 --- 
 title: "Create, Publish, and Analyze Personal Websites Using R and RStudio"
-subtitle: "A digital handbook with step-by-step instructions for creating personal websites, blogs, and professional portfolios using R, RStudio, and other freely available technologies including Git, Hugo, Netlify, and Google Analytics"
+subtitle: "A digital handbook with step-by-step instructions for creating personal websites, blogs, and professional portfolios using R, RStudio, and other freely available technologies including GitHub, Hugo, Netlify, and Google Analytics"
 author: "Danny Morris"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -8,28 +8,46 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-description: "A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including Git, Netlify, and Google Analytics."
+description: "A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics."
 ---
 
 # Introduction
 
 ![](https://i.imgur.com/2WgBlJfl.png)
 
-As a data scientist with a creative spirit, I love writing and creating content. Several years ago, I published my first personal website, [Abnormal Distributions](https://abndistro.com/). Getting started was hard. It took me months to learn new technologies and to get comfortable operating this simple little blog. Since then, Abnormal Distributions has served over 50,000 page views and 20,000 users. I paste links to it on my resumes, social profiles, and networking introductions. I constantly get messages from aspiring data scientists that essentially read, "Hey, saw a post on your website about [insert topic]. Would love to learn more!" Recruiters on LinkedIn often point to my website as the reason for connecting with me regarding a job opportunity. Abnormal Distributions turned out to be a wonderful investment of time as it helped spark my creativity, deepen my subject matter expertise through writing, and connect me with new people and opportunities.
+## About this book
 
-**My goal with this book is to help you launch your own personal website, blog, or project portfolio as quickly and painlessly as possible.** You will learn the same steps that I take to create, design, publish, and analyze websites using R and other open source tools including RStudio, Git, Hugo, Netlify, and Google Analytics. All of the tools presented in this book are free to download or available through free accounts. No prior experience in web development is needed to be successful with this book.
+As a data scientist with a creative spirit, I love writing and sharing content. Several years ago, I published my first personal website, [Abnormal Distributions](https://abndistro.com/). Getting started was hard. It took me months to learn new technologies and to get comfortable operating this simple little blog. Since then, Abnormal Distributions has served over 50,000 page views and 20,000 users. I paste links to it on my resumes, social profiles, and networking introductions. I constantly get messages from aspiring data scientists that essentially read, "Hey, saw a post on your website about [insert topic]. Would love to learn more!" Recruiters on LinkedIn often point to my website as the reason for connecting with me regarding a job opportunity. Abnormal Distributions turned out to be a wonderful investment of time as it helped spark my creativity, deepen my subject matter expertise through writing, and connect me with new people and opportunities.
 
-## Website ideas
+**My goal with this book is to help you launch your own personal website, blog, or project portfolio as quickly and painlessly as possible.** You will learn the same steps that I take to create, design, publish, and analyze websites using R, RStudio, and other freely available tools including GitHub, Hugo, Netlify, and Google Analytics. All of the tools presented in this book are free to download or available through free accounts. No prior experience in web development is needed to be successful with this book.
+
+## Ideas for your website
+
+Here are some inspiring examples of personal websites, blogs, and portfolios that you can create, publish, and analyze using the approach described in this book.
+
+- [Abnormal Distributions](https://abndistro.com) - My personal website and blog. Ridiculously simple and straightforward. Designed for sharing articles, tutorials, and project summaries. Based on the [Hugo Xmin theme](https://themes.gohugo.io/hugo-xmin/).
+
+- [R-Ladies NYC](http://www.rladiesnyc.org/) - Organization website dedicated to promoting gender diversity in the R community. Clean, modern layout. Great design for promoting groups, teams, projects, and events.
+
+- [Jenna Allen](https://www.jennadallen.com/) - Nice all-around personal website authored by Jenna Allen with a blog and a resume.
+
+- [Mike Mahoney](https://www.mm218.dev/) - Academic bio authored by Mike Mahoney. Simple, clean design for promoting academic achievements.
+
+- [Variance Explained](http://varianceexplained.org/) - Personal website and blog authored by David Robinson. Crisp, clean layout.
 
 ## FAQ
 
 **What is the financial cost to create, publish, and analyze websites described in this book?**
 
-Absolutely nothing, unless you elect to purchase a custom domain name which are typically $1 USD per month. 
+Absolutely nothing, unless you elect to purchase custom domains name which are typically $1 USD per month. 
+
+**Do I need a background in web development to use this book successfully?**
+
+Absolutely not. The website development approach described in this book relies on blogdown and Hugo to generate static websites, meaning the entire website is just a series of HTML, CSS, JavaScript, and static content such as images and logos. A web browser is the only thing required to render and use static websites. Blogdown makes it super easy to create and organize static files, while Hugo does the heavy lifting of converting your files into a website. Hugo also gives you access to a wide range of [beautiful, free, pre-built design themes]((https://themes.gohugo.io/)) designed by expert Hugo developers. All in all, you just need to focus on writing great content and making simple design tweaks to reflect your personal style.
 
 **Do I need to know R to build websites described in this book?**
 
-Not at all. You could build the types of websites described in this book without knowing or writing a single line of R code (or any programming language). These types of websites just make it easy to author content featuring output (e.g. tables, graphs) from R code and other programming languages supported by R Markdown including Python and SQL. If you don't know R, a website could be a great way to learn it and document your journey!
+Not at all. You could build the types of websites described in this book without knowing or writing a single line of R code. These types of websites just make it easy to author content featuring output (e.g. tables, graphs) from R code and other programming languages supported by R Markdown including Python and SQL. If you don't know R, a website could be a great way to learn it and document your journey!
 
 **What is the role of RStudio in the process of building websites described in this book?**
 
@@ -37,4 +55,8 @@ RStudio is a free desktop application where all of your website development take
 
 **Can I author content using other programming languages?**
 
-Yes. Content written inside of R Markdown documents can include code and output from programming languages supported by R Markdown, including Python and SQL.
+Yes. Content can be written in either plain Markdown documents or R Markdown documents which include support for R, Python, and SQL.
+
+**Can I publish my website behind a custom domain name?**
+
+Yes. See the chapter on [Deploying on Netlify](#deploy).

@@ -28,9 +28,9 @@ Create free accounts with GitHub, Netlify, Google Analytics, and Formspree(optio
 - [Google Analytics](https://marketingplatform.google.com/about/analytics/)
 - (Optional) [Formspree](https://formspree.io/register)
 
-## Create a blogdown website {#create-new-blogdown}
+## Generate a blogdown website {#create-new-blogdown}
 
-[blogdown](https://bookdown.org/yihui/blogdown/) makes it super easy to create a website based on the Hugo framework. Follow these steps to create a website on your local machine.
+[blogdown](https://bookdown.org/yihui/blogdown/) makes it super easy to generate a website based on the Hugo framework. Follow these steps to create a website on your local machine.
 
 1. Launch RStudio and install the blogdown package by running `install.packages("blogdown")`.
 

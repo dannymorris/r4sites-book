@@ -7,7 +7,7 @@ rmd_files:
   html:
   - index.Rmd
   - end-to-end.Rmd
-  - creating-your-website.Rmd
+  - generating-your-website.Rmd
   - styling-your-website.Rmd
   - creating-content.Rmd
   - deploy-on-netlify.Rmd

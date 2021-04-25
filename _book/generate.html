@@ -4,21 +4,21 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 3 Creating your website | Create, Publish, and Analyze Personal Websites Using R and RStudio</title>
-  <meta name="description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including Git, Netlify, and Google Analytics." />
+  <title>Chapter 3 Generating your website | Create, Publish, and Analyze Personal Websites Using R and RStudio</title>
+  <meta name="description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 3 Creating your website | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
+  <meta property="og:title" content="Chapter 3 Generating your website | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including Git, Netlify, and Google Analytics." />
+  <meta property="og:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 3 Creating your website | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
+  <meta name="twitter:title" content="Chapter 3 Generating your website | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
   
-  <meta name="twitter:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including Git, Netlify, and Google Analytics." />
+  <meta name="twitter:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
   
 
 <meta name="author" content="Danny Morris" />
@@ -53,69 +53,6 @@
 
 
 
-<style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  background-color: #f8f8f8; }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ef2929; } /* Alert */
-code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
-code span.bn { color: #0000cf; } /* BaseN */
-code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
-code span.co { color: #8f5902; font-style: italic; } /* Comment */
-code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
-code span.dt { color: #204a87; } /* DataType */
-code span.dv { color: #0000cf; } /* DecVal */
-code span.er { color: #a40000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
-code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
-code span.ot { color: #8f5902; } /* Other */
-code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
-code span.ss { color: #4e9a06; } /* SpecialString */
-code span.st { color: #4e9a06; } /* String */
-code span.va { color: #000000; } /* Variable */
-code span.vs { color: #4e9a06; } /* VerbatimString */
-code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
-</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -136,23 +73,31 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#about-this-book"><i class="fa fa-check"></i><b>1.1</b> About this book</a></li>
-<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#ideas-for-you-website"><i class="fa fa-check"></i><b>1.2</b> Ideas for you website</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#ideas-for-your-website"><i class="fa fa-check"></i><b>1.2</b> Ideas for your website</a></li>
 <li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#faq"><i class="fa fa-check"></i><b>1.3</b> FAQ</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html"><i class="fa fa-check"></i><b>2</b> Complete end-to-end example</a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#install-software"><i class="fa fa-check"></i><b>2.1</b> Install software</a></li>
 <li class="chapter" data-level="2.2" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#create-accounts"><i class="fa fa-check"></i><b>2.2</b> Create accounts</a></li>
-<li class="chapter" data-level="2.3" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#create-new-blogdown"><i class="fa fa-check"></i><b>2.3</b> Create a blogdown website</a></li>
+<li class="chapter" data-level="2.3" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#create-new-blogdown"><i class="fa fa-check"></i><b>2.3</b> Generate a blogdown website</a></li>
 <li class="chapter" data-level="2.4" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#push-the-website-to-github"><i class="fa fa-check"></i><b>2.4</b> Push the website to GitHub</a></li>
 <li class="chapter" data-level="2.5" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#deploy-the-website-on-netlify"><i class="fa fa-check"></i><b>2.5</b> Deploy the website on Netlify</a></li>
 <li class="chapter" data-level="2.6" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#set-up-google-analytics"><i class="fa fa-check"></i><b>2.6</b> Set up Google Analytics</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="creating-your-website.html"><a href="creating-your-website.html"><i class="fa fa-check"></i><b>3</b> Creating your website</a></li>
+<li class="chapter" data-level="3" data-path="generate.html"><a href="generate.html"><i class="fa fa-check"></i><b>3</b> Generating your website</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="generate.html"><a href="generate.html#how-it-works"><i class="fa fa-check"></i><b>3.1</b> How it works</a></li>
+<li class="chapter" data-level="3.2" data-path="generate.html"><a href="generate.html#generate-site"><i class="fa fa-check"></i><b>3.2</b> Generate your site in three steps</a></li>
+<li class="chapter" data-level="3.3" data-path="generate.html"><a href="generate.html#serve-site"><i class="fa fa-check"></i><b>3.3</b> Serving the website locally</a></li>
+</ul></li>
 <li class="chapter" data-level="4" data-path="style.html"><a href="style.html"><i class="fa fa-check"></i><b>4</b> Styling your website</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="style.html"><a href="style.html#select-hugo-theme"><i class="fa fa-check"></i><b>4.1</b> Selecting a Hugo theme</a></li>
-<li class="chapter" data-level="4.2" data-path="style.html"><a href="style.html#editing-your-theme"><i class="fa fa-check"></i><b>4.2</b> Editing your theme</a></li>
+<li class="chapter" data-level="4.1" data-path="style.html"><a href="style.html#how-it-works-1"><i class="fa fa-check"></i><b>4.1</b> How it works</a></li>
+<li class="chapter" data-level="4.2" data-path="style.html"><a href="style.html#word-of-caution"><i class="fa fa-check"></i><b>4.2</b> Word of caution</a></li>
+<li class="chapter" data-level="4.3" data-path="style.html"><a href="style.html#select-hugo-theme"><i class="fa fa-check"></i><b>4.3</b> Selecting a Hugo theme</a></li>
+<li class="chapter" data-level="4.4" data-path="style.html"><a href="style.html#create-site-with-theme"><i class="fa fa-check"></i><b>4.4</b> Generating websites from themes</a></li>
+<li class="chapter" data-level="4.5" data-path="style.html"><a href="style.html#editing-your-theme"><i class="fa fa-check"></i><b>4.5</b> Editing your theme</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="content.html"><a href="content.html"><i class="fa fa-check"></i><b>5</b> Creating content</a>
 <ul>
@@ -162,21 +107,21 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="6" data-path="deploy.html"><a href="deploy.html"><i class="fa fa-check"></i><b>6</b> Deploying on Netlify</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="deploy.html"><a href="deploy.html#how-it-works"><i class="fa fa-check"></i><b>6.1</b> How it works</a></li>
+<li class="chapter" data-level="6.1" data-path="deploy.html"><a href="deploy.html#how-it-works-2"><i class="fa fa-check"></i><b>6.1</b> How it works</a></li>
 <li class="chapter" data-level="6.2" data-path="deploy.html"><a href="deploy.html#upload-website-files-to-github"><i class="fa fa-check"></i><b>6.2</b> Upload website files to GitHub</a></li>
 <li class="chapter" data-level="6.3" data-path="deploy.html"><a href="deploy.html#configure-netlify-for-deployment"><i class="fa fa-check"></i><b>6.3</b> Configure Netlify for deployment</a></li>
 <li class="chapter" data-level="6.4" data-path="deploy.html"><a href="deploy.html#using-a-custom-domain-name"><i class="fa fa-check"></i><b>6.4</b> Using a custom domain name</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="analyzing-traffic-with-google-analytics.html"><a href="analyzing-traffic-with-google-analytics.html"><i class="fa fa-check"></i><b>7</b> Analyzing traffic with Google Analytics</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="analyzing-traffic-with-google-analytics.html"><a href="analyzing-traffic-with-google-analytics.html#how-it-works-1"><i class="fa fa-check"></i><b>7.1</b> How it works</a></li>
+<li class="chapter" data-level="7.1" data-path="analyzing-traffic-with-google-analytics.html"><a href="analyzing-traffic-with-google-analytics.html#how-it-works-3"><i class="fa fa-check"></i><b>7.1</b> How it works</a></li>
 <li class="chapter" data-level="7.2" data-path="analyzing-traffic-with-google-analytics.html"><a href="analyzing-traffic-with-google-analytics.html#setting-up-google-analytics"><i class="fa fa-check"></i><b>7.2</b> Setting up Google Analytics</a></li>
 <li class="chapter" data-level="7.3" data-path="analyzing-traffic-with-google-analytics.html"><a href="analyzing-traffic-with-google-analytics.html#analyzing-traffic-using-googleanalyticsr"><i class="fa fa-check"></i><b>7.3</b> Analyzing traffic using googleAnalyticsR</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="extras.html"><a href="extras.html"><i class="fa fa-check"></i><b>8</b> Extras</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="extras.html"><a href="extras.html#search-engine-optimization"><i class="fa fa-check"></i><b>8.1</b> Search engine optimization</a></li>
-<li class="chapter" data-level="8.2" data-path="extras.html"><a href="extras.html#marketing-your-website"><i class="fa fa-check"></i><b>8.2</b> Marketing your website</a></li>
+<li class="chapter" data-level="8.1" data-path="extras.html"><a href="extras.html#marketing-your-website"><i class="fa fa-check"></i><b>8.1</b> Marketing your website</a></li>
+<li class="chapter" data-level="8.2" data-path="extras.html"><a href="extras.html#search-engine-optimization"><i class="fa fa-check"></i><b>8.2</b> Search engine optimization</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -197,10 +142,35 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="creating-your-website" class="section level1" number="3">
-<h1><span class="header-section-number">Chapter 3</span> Creating your website</h1>
-<p>Test</p>
+<div id="generate" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Generating your website</h1>
+<p>This chapter teaches you how to generate an initial website, the first and most influential step in your journey to owning your very own website. If you haven’t already, start by completing the following prerequisites:</p>
+<ul>
+<li><a href="https://cran.rstudio.com/">Install R</a></li>
+<li><a href="https://www.rstudio.com/products/rstudio/download/#download">Install RStudio</a></li>
+<li><a href="https://gohugo.io/getting-started/installing/#quick-install">Install Hugo</a></li>
+</ul>
+<p>My recommendation is to download the latest versions, which at the time of this writing are R 4.0, RStudio 1.4, and Hugo 0.82.</p>
+<div id="how-it-works" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> How it works</h2>
+<p>The R package <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> in tandem with RStudio make it incredibly simple to generate your initial website. Under the hood, blogdown uses Hugo to generate static websites. Hugo websites are fast and developer-friendly, and Hugo developers have contributed a wide range of <a href="(https://themes.gohugo.io/)">beautiful, free, pre-built design themes</a> for you to use in your website project.</p>
+</div>
+<div id="generate-site" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Generate your site in three steps</h2>
+<p>Follow these steps to generate a Hugo website using R and RStudio:</p>
+<ol style="list-style-type: decimal">
+<li><p>Launch RStudio and install the blogdown package by running <code>install.packages("blogdown")</code> in the R console.</p></li>
+<li><p>Create a new RStudio Project by going to File &gt; New Project &gt; New Directory &gt; Website using blogdown. <a href="https://i.imgur.com/eDg7V2k.png">Example</a></p></li>
+<li><p>Configure the website accordingly, then click Create Project. <a href="https://i.imgur.com/Io2Bzw7.png">Example</a></p></li>
+</ol>
+<p>If done successfully, your new RStudio Project will load with the basic website files in the main directory, similar to this <a href="https://i.imgur.com/wSXBn9C.png">example</a>.</p>
+</div>
+<div id="serve-site" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Serving the website locally</h2>
+<p>The blogdown package includes a handy function called <code>serve_site()</code>. Running this function in the R console with your website’s RStudio Project loaded will render a local copy of your entire website in the RStudio “Viewer” pane, as shown in this <a href="https://i.imgur.com/oxZgeqM.png">example</a>.</p>
+<p>The best part of this feature is that as you make and save changes to your website files, the local rendering will update in real-time and reflect your changes. This feature of blogdown, known as LiveReload, enables rapid trial and error on your local machine without ever having to leave the RStudio environment.</p>
 
+</div>
 </div>
             </section>
 
