@@ -1,6 +1,6 @@
 --- 
 title: "Create, Publish, and Analyze Personal Websites Using R and RStudio"
-subtitle: "A handbook with recipes for using R, RStudio, and other freely available technologies including Git, Hugo, Netlify, and Google Analytics to create and publish professional websites for blogs, portfolios, and personal branding"
+subtitle: "A digital handbook with step-by-step instructions for creating personal websites, blogs, and professional portfolios using R, RStudio, and other freely available technologies including Git, Hugo, Netlify, and Google Analytics"
 author: "Danny Morris"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -13,7 +13,7 @@ description: "A step-by-step guide for creating, publishing, and analyzing your 
 
 # Introduction
 
-![](https://i.imgur.com/JVtg9E5.jpg)
+![](https://i.imgur.com/2WgBlJfl.png)
 
 As a data scientist with a creative spirit, I love writing and creating content. Several years ago, I published my first personal website, [Abnormal Distributions](https://abndistro.com/). Getting started was hard. It took me months to learn new technologies and to get comfortable operating this simple little blog. Since then, Abnormal Distributions has served over 50,000 page views and 20,000 users. I paste links to it on my resumes, social profiles, and networking introductions. I constantly get messages from aspiring data scientists that essentially read, "Hey, saw a post on your website about [insert topic]. Would love to learn more!" Recruiters on LinkedIn often point to my website as the reason for connecting with me regarding a job opportunity. Abnormal Distributions turned out to be a wonderful investment of time as it helped spark my creativity, deepen my subject matter expertise through writing, and connect me with new people and opportunities.
 

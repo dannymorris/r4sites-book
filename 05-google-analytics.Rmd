@@ -6,7 +6,7 @@ editor_options:
 
 ```{r, include = F}
 knitr::opts_chunk$set(
-  echo = T, message = F, warning = F
+  echo = T, message = F, warning = F, eval=F
 )
 ```
 

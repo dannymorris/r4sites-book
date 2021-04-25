@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+.book.font-family-1 {
+  font-family: "Noto Sans TC", sans-serif;
+}
+.book .book-summary ul.summary li a, .book .book-summary ul.summary li span {
+  font-family: "Noto Sans TC", sans-serif;
+}
 p.caption {
   color: #777;
   margin-top: 10px;
+}
+p.author {
+  font-size:20px;
+}
+p.date {
+  font-size:20px;
 }
 p code {
   white-space: inherit;
@@ -13,7 +26,8 @@ pre code {
   white-space: inherit;
 }
 h2.subtitle {
-  font-size: 18px !important;
+  font-size: 20px !important;
+  font-weight: 400;
 }
 em {
   font-style: normal !important
