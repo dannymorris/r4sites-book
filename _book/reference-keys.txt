@@ -6,6 +6,7 @@ create-new-blogdown
 push-the-website-to-github
 deploy-the-website-on-netlify
 set-up-google-analytics
+creating-your-website
 style
 select-hugo-theme
 recommended-themes
@@ -33,3 +34,8 @@ daily-count-of-website-users
 users-by-device-type
 page-views-by-page
 users-by-location
+extras
+search-engine-optimization
+marketing-your-website
+website-ideas
+faq

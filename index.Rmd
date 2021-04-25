@@ -18,3 +18,23 @@ description: "A step-by-step guide for creating, publishing, and analyzing your 
 As a data scientist with a creative spirit, I love writing and creating content. Several years ago, I published my first personal website, [Abnormal Distributions](https://abndistro.com/). Getting started was hard. It took me months to learn new technologies and to get comfortable operating this simple little blog. Since then, Abnormal Distributions has served over 50,000 page views and 20,000 users. I paste links to it on my resumes, social profiles, and networking introductions. I constantly get messages from aspiring data scientists that essentially read, "Hey, saw a post on your website about [insert topic]. Would love to learn more!" Recruiters on LinkedIn often point to my website as the reason for connecting with me regarding a job opportunity. Abnormal Distributions turned out to be a wonderful investment of time as it helped spark my creativity, deepen my subject matter expertise through writing, and connect me with new people and opportunities.
 
 **My goal with this book is to help you launch your own personal website, blog, or project portfolio as quickly and painlessly as possible.** You will learn the same steps that I take to create, design, publish, and analyze websites using R and other open source tools including RStudio, Git, Hugo, Netlify, and Google Analytics. All of the tools presented in this book are free to download or available through free accounts. No prior experience in web development is needed to be successful with this book.
+
+## Website ideas
+
+## FAQ
+
+**What is the financial cost to create, publish, and analyze websites described in this book?**
+
+Absolutely nothing, unless you elect to purchase a custom domain name which are typically $1 USD per month. 
+
+**Do I need to know R to build websites described in this book?**
+
+Not at all. You could build the types of websites described in this book without knowing or writing a single line of R code (or any programming language). These types of websites just make it easy to author content featuring output (e.g. tables, graphs) from R code and other programming languages supported by R Markdown including Python and SQL. If you don't know R, a website could be a great way to learn it and document your journey!
+
+**What is the role of RStudio in the process of building websites described in this book?**
+
+RStudio is a free desktop application where all of your website development takes place. RStudio provides a simple interface for managing your website projects and the supporting materials including content, images, and code. RStudio also contains a "Viewer" pane, which will display your webiste locally and update in real-time as you make changes to your website. This is incredibly handy for rapidly testing ideas and inspecting the results.
+
+**Can I author content using other programming languages?**
+
+Yes. Content written inside of R Markdown documents can include code and output from programming languages supported by R Markdown, including Python and SQL.
