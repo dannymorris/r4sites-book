@@ -50,7 +50,7 @@ To generate a blogdown website from a chosen theme, follow these steps:
 
 3. To create a website with your chosen theme, copy the user/theme-name in the GitHub URL. For example, if the source code is located at https://github.com/devcows/hugo-universal-theme, you'll want to copy `devcows/hugo-universal-theme`.
 
-4. Follow the steps to [generate a website](#generate-site) described in the previous chapter. This time, use the information from step 3 to edit the `Hugo theme:` parameter. For example, replace `yihui/hugo-lithium` with `devcows/hugo-universal-theme` to use your chosen theme.
+4. Follow the steps to [generate a website](#generate) described in the previous chapter. This time, use the information from step 3 to edit the `Hugo theme:` parameter. For example, replace `yihui/hugo-lithium` with `devcows/hugo-universal-theme` to use your chosen theme.
 
 ## Editing your theme
 

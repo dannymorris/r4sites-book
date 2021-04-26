@@ -1,14 +1,19 @@
 # Complete end-to-end example
 
-This chapter is for those of you who would like to dive right into an example. If you work through the steps in this chapter, you will have end up with a complete, functioning website that you can tweak to taste.
+This chapter walks you through all of the high-level steps to create, publish, and analyze your very own personal website as quickly as possible, saving the subtle details for later chapters. If you work through the steps in this chapter, you will end up with a complete, fully functional website that you can improve upon gradually.
 
-The steps include:
+Continue reading to learn more, or [watch the video](https://youtu.be/nr72YO1vOjQ) instead.
 
-1. Install software and create accounts
-2. Create a basic website using the blogdown R package
+## How it works
+
+The steps to create, publish, and analyze your very own personal website include:
+
+1. Install free software and create free accounts
+2. Generate a basic website using the blogdown R package
 3. Push the website files to GitHub
 4. Deploy the website on Netlify
-5. Set up Google Analytics to analyze traffic
+5. Set up Google Analytics to capture traffic to your site
+6. Use the `googleAnalyticsR` R package to analyze traffic
 
 ## Install software
 
@@ -17,7 +22,6 @@ Start off by installing these free, open source tools if you haven’t already. 
 - [R](https://cran.rstudio.com/)
 - [RStudio](https://www.rstudio.com/products/rstudio/download/#download)
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [Hugo](https://gohugo.io/getting-started/installing/#quick-install)
 
 ## Create accounts {#create-accounts}
 
@@ -30,15 +34,15 @@ Create free accounts with GitHub, Netlify, Google Analytics, and Formspree(optio
 
 ## Generate a blogdown website {#create-new-blogdown}
 
-[blogdown](https://bookdown.org/yihui/blogdown/) makes it super easy to generate a website based on the Hugo framework. Follow these steps to create a website on your local machine.
+[blogdown](https://bookdown.org/yihui/blogdown/) makes it super easy to generate a website based on the [Hugo](https://gohugo.io/) framework. Follow these steps to create a website on your local machine.
 
 1. Launch RStudio and install the blogdown package by running `install.packages("blogdown")`.
 
-2. Create a new RStudio Project by going to File > New Project > New Directory > Website using blogdown
+2. Create a new RStudio Project by going to File > New Project > New Directory > Website using blogdown. [Example](https://i.imgur.com/eDg7V2k.png).
 
-3. Configure the website accordingly, then click Create Project. [Example](https://i.imgur.com/Io2Bzw7.png)
+3. Using the New Project Wizard, generate a website using the [Hugo Anatole theme](https://themes.gohugo.io/anatole/) by defining `Hugo theme: lxndrblz/anatole` in the configuration. Click Create Project to generate the website. [Example](https://i.imgur.com/lkD1ZlU.png).
 
-4. Confirm that everything is working properly by running `blogdown::serve_site()`. A preview of your website should appear in the Viewer pane in RStudio.
+4. Confirm that everything is working properly by running `blogdown::serve_site()` in the R console. A local, live, and fully functional preview of your website will appear in the Viewer pane in RStudio. [Example](https://i.imgur.com/oxZgeqM.png).
 
 ## Push the website to GitHub
 
@@ -98,3 +102,72 @@ The final step is to set up Google Analytics to analyze traffic to your website.
 6. Locate and copy the Tracking Code by returning the Google Analytics landing page and navigating to the Admin console. Select the Account and Property that were created in the previous steps. Under Property, click on Tracking Info > Tracking Code. Copy the Tracking ID, which should appear in the form of UA-XXXXXXXXX-1. [Example](https://i.imgur.com/qcyaVBD.png)
 
 7. Return to your RStudio Project where you are developing your website. Open the file `config.yaml` in the main directory and locate the `googleAnalytics:` parameter. Paste your Google Analytics Tracking ID here, e.g. `googleAnalytics: 'UA-XXXXXXXXX-1'`. [Example](https://i.imgur.com/xgN24ah.png)
+
+8. To complete the integration, push your updates to your GitHub repository using the following Git syntax.
+
+```
+git add --all
+git commit -m "added google analytics tracking code"
+git push origin master
+```
+
+Netlify will detect that your GitHub repository has been updated, and it will deploy a new version of your website containing Google Analytics integration.
+
+## Analyze Google Analytics data
+
+[googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) is an R package for querying Google Analytics data. This topic is discussed in more detail in the chapter [Analyzing traffic with Google Analytics](#google-analytics).
+
+The R code below does the following:
+
+- Load R packages for collecting and analyzing Google Analytics data
+- Authenticate Google Analytics account
+- List accounts and properties within your Google Analytics account, such as the ones associated with your newly created website
+- Return a query of users by geographic location 
+- Plot a map of users by geographic location
+
+**Note:** The demo website created in the previous sections is not used in the following analysis because it has received no website traffic thus far. My personal website, Abnormal Distributions, is used instead.
+
+```{r, message=F, warning=F}
+# R packages
+library(googleAnalyticsR)
+library(dplyr)
+library(leaflet)
+
+# Authenticate your Google Analytics account
+ga_auth(email = "usc00@hotmail.com")
+
+# List your Google Analytics accounts
+ga_accounts <- ga_account_list()
+
+# Obtain the "view Id" associated with your website account
+view_id <- ga_accounts %>%
+  filter(accountName == "abndistro", webPropertyName == "Abnormal Distributions") %>%
+  pull(viewId)
+
+# Query geographic location of website users
+users_location <- google_analytics(
+  viewId = view_id,
+  date_range = c("2019-01-01", "2020-12-31"),
+  metrics = "users",
+  dimensions = c("latitude", "longitude"),
+  anti_sample = T
+) %>%
+  as_tibble() %>%
+  mutate_at(vars(latitude, longitude), list(as.numeric))
+
+# Plot map of website users by location
+users_location %>%
+  leaflet() %>% 
+  addTiles() %>%
+  addCircleMarkers(
+    lng = ~longitude,
+    lat = ~latitude,
+    radius = ~log(users),
+    stroke = FALSE, 
+    fillOpacity = 0.5
+  )
+```
+
+## Closing thoughts
+
+This chapter covers the basics steps to create, publish, and analyze your very own website. The demo website published in this chapter uses the [Hugo Anatole theme](https://themes.gohugo.io/anatole/ as the basis for the overall design and appearance. Keep in mind their are dozens of designs to choose from when designing your own website.

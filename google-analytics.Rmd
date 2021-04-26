@@ -10,7 +10,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# Analyzing traffic with Google Analytics
+# Analyzing traffic with Google Analytics {#google-analytics}
 
 This chapter shows you how to embed Google Analytics on your website to capture traffic from users. Additionally, this chapter will provide some guidance on how to analyze traffic using the R package [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/).
 
@@ -59,7 +59,7 @@ install.packages("googleAnalyticsR", dependencies = TRUE)
 ```{r}
 library(googleAnalyticsR)
 
-ga_auth()
+ga_auth(email="usc00@hotmail.com")
 ```
 
 ### Load packages for data analytics

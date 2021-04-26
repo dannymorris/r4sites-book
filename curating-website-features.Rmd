@@ -1,16 +1,36 @@
 # Curating the look, feel, and features {#curate-features}
 
+This chapter teaches you how to edit the look and feel of your website and how to personalize certain features including logos, page navigation, contact forms, and social media links.
+
+## How it works
+
+Recall that the types of static websites described in this book are simply a collection of text files including Markdown, HTML, CSS, and Javascript file types that Hugo compiles into a website. Therefore, changes to the look, feel, and features of your website are done simply by editing the relevant files and folders that make up your website.
+
+#### Editing the look and feel with CSS {-}
+
+If you are not familiar with CSS (Cascading Style Sheets), take a look at [this CSS stylesheet](https://github.com/dannymorris/r4sites-demo-anatole/blob/master/themes/anatole/assets/css/style.css). While HTML defines the general layout of a webpage, CSS is used to control the appearance of an HTML webpage and its elements including font styles, colors, buttons and links, positioning and dimensions of images, and so on. If you intend to alter the look and feel of your website, you will likely be spending most of your time editing your website's primary CSS files.
+
+To learn more about CSS, visit [w3schools](https://www.w3schools.com/css/) for tutorials and read about using the [Inspect tool](#inspect-tool) in your browser.
+
+#### Editing features related to content and navigation {-}
+
+Personal websites and blogs typically have the following navigation pages and content features: Home, Blog, Projects, About Me, and Contact. The [Anatole demo website](https://r4sites-anatole.netlify.app/) has a similar structure with some minor differences.
+
+The presence or absence of content and navigation pages is dependent upon the existance of folders and files located in the `content` folder in the main website directory. For example, the [Anatole demo website](https://r4sites-anatole.netlify.app/) contains navigation links to pages titled Home, Posts, About, and Contact. These features have supporting files in the `content` folder in the main website directory, as shown in the [website's content folder](https://github.com/dannymorris/r4sites-demo/tree/master/content/english).
+
+To **remove content and features**, you can do one of the following: delete the relevant folder in the `content` directory (e.g. delete the `posts` folder), or (recommended) edit the `config.yaml` file to explicity define the content and features you want on your site, as shown in [this example]().
+
 ## Tips for working efficiently
 
-#### Using the browser's Inspect tool {-}
+#### Using the browser's Inspect tool {-#inspect-tool}
 
-The "Inspect" tool in your browser is an essential tool for experimenting with temporary changes to CSS and HTML directly in the browser. Access this tool in the browser by right-clicking on the page element you want to edit (e.g. image, text, link) and click on "Inspect". [Example](https://i.imgur.com/0h0H4VW.png)
+The "Inspect" tool in your browser is an essential tool for experimenting with changes to CSS and HTML directly in the browser. Using the Inspect tool results in temporary changes, and when the browser is refreshed the original properties are restored. Access this tool in the browser by right-clicking on any page element you want to edit (e.g. images, text, links, buttons) and click on "Inspect", as shown in this [example](https://i.imgur.com/0h0H4VW.png)
 
-Practice using the Inspect tool using these examples:
+Practice using the Inspect tool with these examples:
 
-- Visit 
+1. Visit [Google](https://www.google.com/) and edit the "Google Search" button by changing the background color and font color. [Watch the video demonstration on YouTube](https://youtu.be/6tR1u7UxmgU). After changing the background color and font color of the search button, feel free to experiment with changing other properties as well.
 
-![](https://youtu.be/mYeK1l6jxE4)
+2. Vist [this question on Stack Overflow](https://stackoverflow.com/questions/45851032/r-for-data-science-book-wickham-cannot-reproduce-example) and practice editing image dimensions, colors of links and bold text, and code snippets. [Watch the video demonstration on YouTube](https://youtu.be/pJd0dWU70gk)
 
 #### Serve the site locally {-}
 

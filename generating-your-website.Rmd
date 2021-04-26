@@ -4,13 +4,16 @@ This chapter teaches you how to generate an initial website, the first and most 
 
 - [Install R](https://cran.rstudio.com/)
 - [Install RStudio](https://www.rstudio.com/products/rstudio/download/#download)
-- [Install Hugo](https://gohugo.io/getting-started/installing/#quick-install)
 
-My recommendation is to download the latest versions, which at the time of this writing are R 4.0, RStudio 1.4, and Hugo 0.82.
+My recommendation is to download the latest versions, which at the time of this writing are R 4.0 and RStudio 1.4.
 
 ## How it works
 
-The R package [blogdown](https://bookdown.org/yihui/blogdown/) in tandem with RStudio make it incredibly simple to generate your initial website. Under the hood, blogdown uses Hugo to generate static websites. Hugo websites are fast and developer-friendly, and Hugo developers have contributed a wide range of [beautiful, free, pre-built design themes]((https://themes.gohugo.io/)) for you to use in your website project. 
+The R package [blogdown](https://bookdown.org/yihui/blogdown/) in tandem with RStudio make it incredibly simple to generate your initial website. Under the hood, blogdown uses [Hugo](https://gohugo.io/) to generate static websites. Hugo websites are fast and developer-friendly, and Hugo developers have contributed a wide range of [beautiful, free, pre-built design themes]((https://themes.gohugo.io/)) for you to use in your website project. 
+
+## Use case
+
+This chapter, and all subsequent chapters, will build upon the default [Hugo Tranquilpeak theme](https://themes.gohugo.io/hugo-tranquilpeak-theme/). The finished product can be seen here - https://r4sites-transquilpeak.netlify.app/
 
 ## Generate your site in three steps {#generate-site}
 
@@ -20,9 +23,7 @@ Follow these steps to generate a Hugo website using R and RStudio:
 
 2. Create a new RStudio Project by going to File > New Project > New Directory > Website using blogdown. [Example](https://i.imgur.com/eDg7V2k.png)
 
-3. Configure the website accordingly, then click Create Project. [Example](https://i.imgur.com/Io2Bzw7.png)
-
-If done successfully, your new RStudio Project will load with the basic website files in the main directory, similar to this [example](https://i.imgur.com/wSXBn9C.png).
+3. Configure the website to use the Tranquilpeak theme, as show in this [example configuration](https://i.imgur.com/O8qGCm1.png). Make sure to set the `Hugo theme:` parameter to `kakawait/hugo-tranquilpeak-theme`. The topic of theme selection is discussed in the next chapter. Finally, click Create Project to generate the initial website.
 
 ## Serving the website locally {#serve-site}
 
