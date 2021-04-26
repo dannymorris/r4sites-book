@@ -1,4 +1,4 @@
-# Creating content {#content}
+# Authoring content {#content}
 
 This chapter provides some general guidance on creating content, such as blog posts, using R Markdown as well as plain Markdown. By this point, you should have [created a new blogdown site](#create-new-blogdown) with your [preferred theme](#select-hugo-theme).
 

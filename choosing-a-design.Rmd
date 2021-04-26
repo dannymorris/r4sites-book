@@ -1,4 +1,4 @@
-# Choosing the layout and style {#style}
+# Choosing a Hugo theme {#style}
 
 This chapter provides some guidance on choosing a website layout and style that reflects your personal style and achieves your goals.
 
