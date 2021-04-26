@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 5 Curating the look, feel, and features | Create, Publish, and Analyze Personal Websites Using R and RStudio</title>
+  <meta name="description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 5 Curating the look, feel, and features | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 5 Curating the look, feel, and features | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
+  
+  <meta name="twitter:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
+  
+
+<meta name="author" content="Danny Morris" />
+
+
+<meta name="date" content="2021-04-26" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="style.html"/>
+<link rel="next" href="content.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Create, Publish, and Analyze Personal Websites Using R and RStudio</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#about-this-book"><i class="fa fa-check"></i><b>1.1</b> About this book</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#inspiring-examples"><i class="fa fa-check"></i><b>1.2</b> Inspiring examples</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#websites-as-marketing-tools"><i class="fa fa-check"></i><b>1.3</b> Websites as marketing tools</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#faq"><i class="fa fa-check"></i><b>1.4</b> FAQ</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html"><i class="fa fa-check"></i><b>2</b> Complete end-to-end example</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#install-software"><i class="fa fa-check"></i><b>2.1</b> Install software</a></li>
+<li class="chapter" data-level="2.2" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#create-accounts"><i class="fa fa-check"></i><b>2.2</b> Create accounts</a></li>
+<li class="chapter" data-level="2.3" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#create-new-blogdown"><i class="fa fa-check"></i><b>2.3</b> Generate a blogdown website</a></li>
+<li class="chapter" data-level="2.4" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#push-the-website-to-github"><i class="fa fa-check"></i><b>2.4</b> Push the website to GitHub</a></li>
+<li class="chapter" data-level="2.5" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#deploy-the-website-on-netlify"><i class="fa fa-check"></i><b>2.5</b> Deploy the website on Netlify</a></li>
+<li class="chapter" data-level="2.6" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#set-up-google-analytics"><i class="fa fa-check"></i><b>2.6</b> Set up Google Analytics</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="generate.html"><a href="generate.html"><i class="fa fa-check"></i><b>3</b> Generating a basic website</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="generate.html"><a href="generate.html#how-it-works"><i class="fa fa-check"></i><b>3.1</b> How it works</a></li>
+<li class="chapter" data-level="3.2" data-path="generate.html"><a href="generate.html#generate-site"><i class="fa fa-check"></i><b>3.2</b> Generate your site in three steps</a></li>
+<li class="chapter" data-level="3.3" data-path="generate.html"><a href="generate.html#serve-site"><i class="fa fa-check"></i><b>3.3</b> Serving the website locally</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="style.html"><a href="style.html"><i class="fa fa-check"></i><b>4</b> Choosing the layout and style</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="style.html"><a href="style.html#how-it-works-1"><i class="fa fa-check"></i><b>4.1</b> How it works</a></li>
+<li class="chapter" data-level="4.2" data-path="style.html"><a href="style.html#word-of-caution"><i class="fa fa-check"></i><b>4.2</b> Word of caution</a></li>
+<li class="chapter" data-level="4.3" data-path="style.html"><a href="style.html#select-hugo-theme"><i class="fa fa-check"></i><b>4.3</b> Selecting a Hugo theme</a></li>
+<li class="chapter" data-level="4.4" data-path="style.html"><a href="style.html#create-site-with-theme"><i class="fa fa-check"></i><b>4.4</b> Generating websites from themes</a></li>
+<li class="chapter" data-level="4.5" data-path="style.html"><a href="style.html#editing-your-theme"><i class="fa fa-check"></i><b>4.5</b> Editing your theme</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="curate-features.html"><a href="curate-features.html"><i class="fa fa-check"></i><b>5</b> Curating the look, feel, and features</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="curate-features.html"><a href="curate-features.html#tips-for-working-efficiently"><i class="fa fa-check"></i><b>5.1</b> Tips for working efficiently</a></li>
+<li class="chapter" data-level="5.2" data-path="curate-features.html"><a href="curate-features.html#use-case"><i class="fa fa-check"></i><b>5.2</b> Use case</a></li>
+<li class="chapter" data-level="5.3" data-path="curate-features.html"><a href="curate-features.html#title-and-description"><i class="fa fa-check"></i><b>5.3</b> Title and description</a></li>
+<li class="chapter" data-level="5.4" data-path="curate-features.html"><a href="curate-features.html#logos-and-profile-images"><i class="fa fa-check"></i><b>5.4</b> Logos and profile images</a></li>
+<li class="chapter" data-level="5.5" data-path="curate-features.html"><a href="curate-features.html#favicons"><i class="fa fa-check"></i><b>5.5</b> Favicons</a></li>
+<li class="chapter" data-level="5.6" data-path="curate-features.html"><a href="curate-features.html#fonts"><i class="fa fa-check"></i><b>5.6</b> Fonts</a></li>
+<li class="chapter" data-level="5.7" data-path="curate-features.html"><a href="curate-features.html#colors"><i class="fa fa-check"></i><b>5.7</b> Colors</a></li>
+<li class="chapter" data-level="5.8" data-path="curate-features.html"><a href="curate-features.html#managing-pages-and-sections"><i class="fa fa-check"></i><b>5.8</b> Managing pages and sections</a></li>
+<li class="chapter" data-level="5.9" data-path="curate-features.html"><a href="curate-features.html#contact-forms"><i class="fa fa-check"></i><b>5.9</b> Contact forms</a></li>
+<li class="chapter" data-level="5.10" data-path="curate-features.html"><a href="curate-features.html#foreign-languages"><i class="fa fa-check"></i><b>5.10</b> Foreign languages</a></li>
+<li class="chapter" data-level="5.11" data-path="curate-features.html"><a href="curate-features.html#social-media-links"><i class="fa fa-check"></i><b>5.11</b> Social media links</a></li>
+<li class="chapter" data-level="5.12" data-path="curate-features.html"><a href="curate-features.html#closing-thoughts-on-themes"><i class="fa fa-check"></i><b>5.12</b> Closing thoughts on themes</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="content.html"><a href="content.html"><i class="fa fa-check"></i><b>6</b> Creating content</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="content.html"><a href="content.html#creating-posts"><i class="fa fa-check"></i><b>6.1</b> Creating posts</a></li>
+<li class="chapter" data-level="6.2" data-path="content.html"><a href="content.html#example-r-markdown-post"><i class="fa fa-check"></i><b>6.2</b> Example R Markdown post</a></li>
+<li class="chapter" data-level="6.3" data-path="content.html"><a href="content.html#example-markdown-post"><i class="fa fa-check"></i><b>6.3</b> Example Markdown post</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="deploy.html"><a href="deploy.html"><i class="fa fa-check"></i><b>7</b> Deploying on Netlify</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="deploy.html"><a href="deploy.html#how-it-works-2"><i class="fa fa-check"></i><b>7.1</b> How it works</a></li>
+<li class="chapter" data-level="7.2" data-path="deploy.html"><a href="deploy.html#upload-website-files-to-github"><i class="fa fa-check"></i><b>7.2</b> Upload website files to GitHub</a></li>
+<li class="chapter" data-level="7.3" data-path="deploy.html"><a href="deploy.html#configure-netlify-for-deployment"><i class="fa fa-check"></i><b>7.3</b> Configure Netlify for deployment</a></li>
+<li class="chapter" data-level="7.4" data-path="deploy.html"><a href="deploy.html#using-a-custom-domain-name"><i class="fa fa-check"></i><b>7.4</b> Using a custom domain name</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="analyzing-traffic-with-google-analytics.html"><a href="analyzing-traffic-with-google-analytics.html"><i class="fa fa-check"></i><b>8</b> Analyzing traffic with Google Analytics</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="analyzing-traffic-with-google-analytics.html"><a href="analyzing-traffic-with-google-analytics.html#how-it-works-3"><i class="fa fa-check"></i><b>8.1</b> How it works</a></li>
+<li class="chapter" data-level="8.2" data-path="analyzing-traffic-with-google-analytics.html"><a href="analyzing-traffic-with-google-analytics.html#setting-up-google-analytics"><i class="fa fa-check"></i><b>8.2</b> Setting up Google Analytics</a></li>
+<li class="chapter" data-level="8.3" data-path="analyzing-traffic-with-google-analytics.html"><a href="analyzing-traffic-with-google-analytics.html#analyzing-traffic-using-googleanalyticsr"><i class="fa fa-check"></i><b>8.3</b> Analyzing traffic using googleAnalyticsR</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="extras.html"><a href="extras.html"><i class="fa fa-check"></i><b>9</b> Extras</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="extras.html"><a href="extras.html#marketing-your-website"><i class="fa fa-check"></i><b>9.1</b> Marketing your website</a></li>
+<li class="chapter" data-level="9.2" data-path="extras.html"><a href="extras.html#search-engine-optimization"><i class="fa fa-check"></i><b>9.2</b> Search engine optimization</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Create, Publish, and Analyze Personal Websites Using R and RStudio</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="curate-features" class="section level1" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Curating the look, feel, and features</h1>
+<div id="tips-for-working-efficiently" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Tips for working efficiently</h2>
+<div id="using-the-browsers-inspect-tool" class="section level4 unnumbered">
+<h4>Using the browser’s Inspect tool</h4>
+<p>The “Inspect” tool in your browser is an essential tool for experimenting with temporary changes to CSS and HTML directly in the browser. Access this tool in the browser by right-clicking on the page element you want to edit (e.g. image, text, link) and click on “Inspect.” <a href="https://i.imgur.com/0h0H4VW.png">Example</a></p>
+<p>Practice using the Inspect tool using these examples:</p>
+<ul>
+<li>Visit</li>
+</ul>
+<p><img src="https://youtu.be/mYeK1l6jxE4" /></p>
+</div>
+<div id="serve-the-site-locally" class="section level4 unnumbered">
+<h4>Serve the site locally</h4>
+<p>Once you have generated a website using the Anatole theme, run <code>blogdown::serve_site()</code> in the R console from within your RStudio Project to render a live, local copy of the website. To learn about serving the site locally, read <a href="generate.html#serve-site">this section</a>.</p>
+</div>
+</div>
+<div id="use-case" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Use case</h2>
+<p>To keep things simple, we will focus on a use case that revolves around tweaking the <a href="https://themes.gohugo.io/anatole/">Anatole</a> theme. To begin, follow the instructions outlined in <a href="style.html#create-site-with-theme">Generating websites from themes</a>. Then, follow along with the steps below. The theme’s demo website can be found here - <a href="https://themes.gohugo.io/theme/anatole/" class="uri">https://themes.gohugo.io/theme/anatole/</a>. The finished product resulting from the following steps can be found here - <a href="https://r4sites-anatole.netlify.app/" class="uri">https://r4sites-anatole.netlify.app/</a>.</p>
+</div>
+<div id="title-and-description" class="section level2" number="5.3">
+<h2><span class="header-section-number">5.3</span> Title and description</h2>
+<p>The title of the Anatole demo website is “My Blog.” To change this to something more personal, navigate to <code>config/_default/languages.toml</code> and edit the <code>title</code> parameter. <a href="https://github.com/dannymorris/r4sites-demo-anatole/blob/master/config/_default/languages.toml#L2">Example</a>.</p>
+</div>
+<div id="logos-and-profile-images" class="section level2" number="5.4">
+<h2><span class="header-section-number">5.4</span> Logos and profile images</h2>
+<p>The profile image is the main image on the homepage with a circular border. To edit this, navigate to <code>static/images/</code> and replace <code>profile.jpg</code> with your own image (<a href="https://github.com/dannymorris/r4sites-demo-anatole/tree/master/static/images">example</a>). Keep the file named <code>profile.jpg</code> so the theme will recognize your image.</p>
+<p>If your image appears too wide/narrow or too tall/short, navigate to <code>themes/anatole/assets/css/style.css</code> and edit the CSS properties. For this theme, you will need to edit the CSS properties <a href="https://github.com/dannymorris/anatole-site/blob/a114905a32be5619a5ecd3ab48d81d8220b14ed3/themes/anatole/assets/css/style.css#L901-L904">here</a> for narrow screen devices and <a href="https://github.com/dannymorris/anatole-site/blob/master/themes/anatole/assets/css/style.css#L291-L295">here</a> for wide
+screen devices.</p>
+</div>
+<div id="favicons" class="section level2" number="5.5">
+<h2><span class="header-section-number">5.5</span> Favicons</h2>
+<p>Navigate to <code>static/favicons/</code> and replace <code>favicon.ico</code> with your own favicon. The favicon is the tiny image that appears in the web browser tab for your website. To create a favicon from an image, visit <a href="https://favicon.io/favicon-converter/" class="uri">https://favicon.io/favicon-converter/</a>. Keep the file named <code>favicon.ico</code> in the same folder.</p>
+</div>
+<div id="fonts" class="section level2" number="5.6">
+<h2><span class="header-section-number">5.6</span> Fonts</h2>
+<p>If you don’t like the default font, you can easily change it. For example, to use the Google Font <a href="https://fonts.google.com/specimen/Quicksand">Quicksand</a> insert <a href="https://github.com/dannymorris/anatole-site/blob/master/themes/anatole/layouts/partials/head.html#L114-L116">this line of code</a> in the <code>themes/anatole/layouts/partials/head.html</code> file. Then, navigate to <code>themes/anatole/assets/css/style.css</code> and change the font property in the <code>body</code> element <a href="https://github.com/dannymorris/anatole-site/blob/master/themes/anatole/assets/css/style.css#L44-L51">(example)</a>. You can also change basic font properties (e.g. size, color), but you will have to know what CSS class to change. Examples include <code>p</code>(<a href="https://github.com/dannymorris/anatole-site/blob/a114905a32be5619a5ecd3ab48d81d8220b14ed3/themes/anatole/assets/css/style.css#L53-L57">example</a>), <code>.page-top .nav</code>(<a href="https://github.com/dannymorris/anatole-site/blob/master/themes/anatole/assets/css/style.css#L198-L205">example</a>), and <code>.page-top .nav a</code>(<a href="https://github.com/dannymorris/anatole-site/blob/a114905a32be5619a5ecd3ab48d81d8220b14ed3/themes/anatole/assets/css/style.css#L213-L215">example</a>).</p>
+</div>
+<div id="colors" class="section level2" number="5.7">
+<h2><span class="header-section-number">5.7</span> Colors</h2>
+</div>
+<div id="managing-pages-and-sections" class="section level2" number="5.8">
+<h2><span class="header-section-number">5.8</span> Managing pages and sections</h2>
+</div>
+<div id="contact-forms" class="section level2" number="5.9">
+<h2><span class="header-section-number">5.9</span> Contact forms</h2>
+</div>
+<div id="foreign-languages" class="section level2" number="5.10">
+<h2><span class="header-section-number">5.10</span> Foreign languages</h2>
+<ol start="7" style="list-style-type: decimal">
+<li><strong>(optional) Remove all content supporting a language translation</strong>. By default, the Anatole theme supports an Arabic language translation. To remove all content supporting this translation, delete the file <code>config/_default/menus.ar.toml</code>, edit the file <code>config/_default/languages.toml</code> by removing all Arabic language parameters (<a href="https://github.com/dannymorris/anatole-site/blob/master/config/_default/languages.toml">example</a>), then delete the folder <code>content/arabic/</code> and all of its contents.</li>
+</ol>
+</div>
+<div id="social-media-links" class="section level2" number="5.11">
+<h2><span class="header-section-number">5.11</span> Social media links</h2>
+<p>Navigate to config/_default/params.toml and edit the links to your social medial accounts beginning on line 40. Example</p>
+</div>
+<div id="closing-thoughts-on-themes" class="section level2" number="5.12">
+<h2><span class="header-section-number">5.12</span> Closing thoughts on themes</h2>
+<p>Relying on themes is the quickest way to launch a professional website. Editing the look and feel of your website can be a lot of fun, but you must be careful not to go overboard. Here are some tips to keep in the back of your mind while you’re editing your theme:</p>
+<ul>
+<li><p>Before you make any edits, go ahead and run <code>blogdown::serve_site()</code> in the R console within the RStudio Project. This will launch your website locally and will update automatically whenever edits are detected.</p></li>
+<li><p>Whenever you make a change, check the result on wide and narrow screens. You can do this with the browser on your desktop by maximizing the browser width (wide screen) and decreasing the width to mimic a mobile device (narrow screen).</p></li>
+<li><p>Try not to edit the theme’s default <em>layout.</em> Instead, focus on colors, font, images, and content to reflect you personal style.</p></li>
+<li><p>After you make a change, carefully scrutinize the result and look for any unexpected consequences.</p></li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="style.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="content.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

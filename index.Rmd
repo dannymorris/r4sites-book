@@ -21,9 +21,9 @@ As a data scientist with a creative spirit, I love writing and sharing content. 
 
 **My goal with this book is to help you launch your own personal website, blog, or project portfolio as quickly and painlessly as possible.** You will learn the same steps that I take to create, design, publish, and analyze websites using R, RStudio, and other freely available tools including GitHub, Hugo, Netlify, and Google Analytics. All of the tools presented in this book are free to download or available through free accounts. No prior experience in web development is needed to be successful with this book.
 
-## Ideas for your website
+## Inspiring examples
 
-Here are some inspiring examples of personal websites, blogs, and portfolios that you can create, publish, and analyze using the approach described in this book.
+Below are some examples of personal websites, blogs, and portfolios that may inspire you as you begin to think about the direction of your own website.
 
 - [Abnormal Distributions](https://abndistro.com) - My personal website and blog. Ridiculously simple and straightforward. Designed for sharing articles, tutorials, and project summaries. Based on the [Hugo Xmin theme](https://themes.gohugo.io/hugo-xmin/).
 
@@ -34,6 +34,20 @@ Here are some inspiring examples of personal websites, blogs, and portfolios tha
 - [Mike Mahoney](https://www.mm218.dev/) - Academic bio authored by Mike Mahoney. Simple, clean design for promoting academic achievements.
 
 - [Variance Explained](http://varianceexplained.org/) - Personal website and blog authored by David Robinson. Crisp, clean layout.
+
+## Websites as marketing tools
+
+Having your own website featuring your unique voice and content is a great way to market yourself and your work to a variety of audiences. Below is a list of ways to use websites as marketing tools.
+
+- Post links to your website on your LinkedIn profile including your headline, summary, and Featured section.
+
+- Author LinkedIn posts and provide relevant links to your website.
+
+- Post links to your website on your resume in highly visible areas such as your contact information or list of personal projects.
+
+- If there is a job you really want or a company you would love to work for, create a personalized website with hyperfocused content and share it with the recruiter, hiring manager, current employees, and anyone else who might be impressed.
+
+- If your website features a blog, optimize it for SEO (search engine optimization) and receive an increase in organic traffic from search engines.
 
 ## FAQ
 

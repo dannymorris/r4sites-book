@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 3 Generating a basic website | Create, Publish, and Analyze Personal Websites Using R and RStudio</title>
+  <title>Chapter 5 Curating the website features | Create, Publish, and Analyze Personal Websites Using R and RStudio</title>
   <meta name="description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 3 Generating a basic website | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
+  <meta property="og:title" content="Chapter 5 Curating the website features | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 3 Generating a basic website | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
+  <meta name="twitter:title" content="Chapter 5 Curating the website features | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
   
   <meta name="twitter:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="complete-end-to-end-example.html"/>
-<link rel="next" href="style.html"/>
+<link rel="prev" href="style.html"/>
+<link rel="next" href="content.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -164,7 +164,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.5" data-path="style.html"><a href="style.html#editing-your-theme"><i class="fa fa-check"></i><b>4.5</b> Editing your theme</a></li>
 <li class="chapter" data-level="4.6" data-path="style.html"><a href="style.html#closing-thoughts-on-themes"><i class="fa fa-check"></i><b>4.6</b> Closing thoughts on themes</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="curate-features.html"><a href="curate-features.html"><i class="fa fa-check"></i><b>5</b> Curating the website features</a></li>
+<li class="chapter" data-level="5" data-path="curating-the-website-features.html"><a href="curating-the-website-features.html"><i class="fa fa-check"></i><b>5</b> Curating the website features</a></li>
 <li class="chapter" data-level="6" data-path="content.html"><a href="content.html"><i class="fa fa-check"></i><b>6</b> Creating content</a>
 <ul>
 <li class="chapter" data-level="6.1" data-path="content.html"><a href="content.html#creating-posts"><i class="fa fa-check"></i><b>6.1</b> Creating posts</a></li>
@@ -208,33 +208,38 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="generate" class="section level1" number="3">
-<h1><span class="header-section-number">Chapter 3</span> Generating a basic website</h1>
-<p>This chapter teaches you how to generate an initial website, the first and most influential step in your journey to owning your very own website. If you haven’t already, start by completing the following prerequisites:</p>
-<ul>
-<li><a href="https://cran.rstudio.com/">Install R</a></li>
-<li><a href="https://www.rstudio.com/products/rstudio/download/#download">Install RStudio</a></li>
-<li><a href="https://gohugo.io/getting-started/installing/#quick-install">Install Hugo</a></li>
-</ul>
-<p>My recommendation is to download the latest versions, which at the time of this writing are R 4.0, RStudio 1.4, and Hugo 0.82.</p>
-<div id="how-it-works" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> How it works</h2>
-<p>The R package <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> in tandem with RStudio make it incredibly simple to generate your initial website. Under the hood, blogdown uses Hugo to generate static websites. Hugo websites are fast and developer-friendly, and Hugo developers have contributed a wide range of <a href="(https://themes.gohugo.io/)">beautiful, free, pre-built design themes</a> for you to use in your website project.</p>
+<div id="curating-the-website-features" class="section level1" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Curating the website features</h1>
+<div id="edit-the-title" class="section level3" number="5.0.1">
+<h3><span class="header-section-number">5.0.1</span> Edit the title</h3>
+<p>The title of the Anatole demo website is “My Blog.” To change this to something more personal, navigate to <code>config/_default/languages.toml</code> and edit the <code>title</code> parameter. <a href="https://github.com/dannymorris/r4sites-demo-anatole/blob/master/config/_default/languages.toml#L2">Example</a>.</p>
 </div>
-<div id="generate-site" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> Generate your site in three steps</h2>
-<p>Follow these steps to generate a Hugo website using R and RStudio:</p>
-<ol style="list-style-type: decimal">
-<li><p>Launch RStudio and install the blogdown package by running <code>install.packages("blogdown")</code> in the R console.</p></li>
-<li><p>Create a new RStudio Project by going to File &gt; New Project &gt; New Directory &gt; Website using blogdown. <a href="https://i.imgur.com/eDg7V2k.png">Example</a></p></li>
-<li><p>Configure the website accordingly, then click Create Project. <a href="https://i.imgur.com/Io2Bzw7.png">Example</a></p></li>
+<div id="edit-the-description" class="section level3" number="5.0.2">
+<h3><span class="header-section-number">5.0.2</span> Edit the description</h3>
+<p>The description of the Anatole demo website, appearing beneath the website title, is “Call me Jane.” To change this, navigate to <code>config/_default/params.toml</code> and edit the <code>description</code> parameter. <a href="https://github.com/dannymorris/r4sites-demo-anatole/blob/master/config/_default/params.toml#L5">Example</a>.</p>
+</div>
+<div id="edit-the-profile-image" class="section level3" number="5.0.3">
+<h3><span class="header-section-number">5.0.3</span> Edit the profile image</h3>
+<p>The profile image is the main image on the homepage with a circular border. To edit this, navigate to <code>static/images/</code> and replace <code>profile.jpg</code> with your own image (<a href="https://github.com/dannymorris/r4sites-demo-anatole/tree/master/static/images">example</a>). Keep the file named <code>profile.jpg</code> so the theme will recognize your image.</p>
+<p>If your image appears too wide/narrow or too tall/short, navigate to <code>themes/anatole/assets/css/style.css</code> and edit the CSS properties. For this theme, you will need to edit the CSS properties <a href="https://github.com/dannymorris/anatole-site/blob/a114905a32be5619a5ecd3ab48d81d8220b14ed3/themes/anatole/assets/css/style.css#L901-L904">here</a> for narrow screen devices and <a href="https://github.com/dannymorris/anatole-site/blob/master/themes/anatole/assets/css/style.css#L291-L295">here</a> for wide
+screen devices.</p>
+</div>
+<div id="edit-the-favicon" class="section level3" number="5.0.4">
+<h3><span class="header-section-number">5.0.4</span> Edit the favicon</h3>
+<p>Navigate to <code>static/favicons/</code> and replace <code>favicon.ico</code> with your own favicon. The favicon is the tiny image that appears in the web browser tab for your website. To create a favicon from an image, visit <a href="https://favicon.io/favicon-converter/" class="uri">https://favicon.io/favicon-converter/</a>. Keep the file named <code>favicon.ico</code> in the same folder.</p>
+</div>
+<div id="edit-the-font" class="section level3" number="5.0.5">
+<h3><span class="header-section-number">5.0.5</span> Edit the font</h3>
+<p>If you don’t like the default font, you can easily change it. For example, to use the Google Font <a href="https://fonts.google.com/specimen/Quicksand">Quicksand</a> insert <a href="https://github.com/dannymorris/anatole-site/blob/master/themes/anatole/layouts/partials/head.html#L114-L116">this line of code</a> in the <code>themes/anatole/layouts/partials/head.html</code> file. Then, navigate to <code>themes/anatole/assets/css/style.css</code> and change the font property in the <code>body</code> element <a href="https://github.com/dannymorris/anatole-site/blob/master/themes/anatole/assets/css/style.css#L44-L51">(example)</a>. You can also change basic font properties (e.g. size, color), but you will have to know what CSS class to change. Examples include <code>p</code>(<a href="https://github.com/dannymorris/anatole-site/blob/a114905a32be5619a5ecd3ab48d81d8220b14ed3/themes/anatole/assets/css/style.css#L53-L57">example</a>), <code>.page-top .nav</code>(<a href="https://github.com/dannymorris/anatole-site/blob/master/themes/anatole/assets/css/style.css#L198-L205">example</a>), and <code>.page-top .nav a</code>(<a href="https://github.com/dannymorris/anatole-site/blob/a114905a32be5619a5ecd3ab48d81d8220b14ed3/themes/anatole/assets/css/style.css#L213-L215">example</a>).</p>
+</div>
+<div id="edit-colors" class="section level3" number="5.0.6">
+<h3><span class="header-section-number">5.0.6</span> Edit colors</h3>
+</div>
+<div id="remove-language-translation" class="section level3" number="5.0.7">
+<h3><span class="header-section-number">5.0.7</span> Remove language translation</h3>
+<ol start="7" style="list-style-type: decimal">
+<li><strong>(optional) Remove all content supporting a language translation</strong>. By default, the Anatole theme supports an Arabic language translation. To remove all content supporting this translation, delete the file <code>config/_default/menus.ar.toml</code>, edit the file <code>config/_default/languages.toml</code> by removing all Arabic language parameters (<a href="https://github.com/dannymorris/anatole-site/blob/master/config/_default/languages.toml">example</a>), then delete the folder <code>content/arabic/</code> and all of its contents.</li>
 </ol>
-<p>If done successfully, your new RStudio Project will load with the basic website files in the main directory, similar to this <a href="https://i.imgur.com/wSXBn9C.png">example</a>.</p>
-</div>
-<div id="serve-site" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> Serving the website locally</h2>
-<p>The blogdown package includes a handy function called <code>serve_site()</code>. Running this function in the R console with your website’s RStudio Project loaded will render a local copy of your entire website in the RStudio “Viewer” pane, as shown in this <a href="https://i.imgur.com/oxZgeqM.png">example</a>.</p>
-<p>The best part of this feature is that as you make and save changes to your website files, the local rendering will update in real-time and reflect your changes. This feature of blogdown, known as LiveReload, enables rapid trial and error on your local machine without ever having to leave the RStudio environment.</p>
 
 </div>
 </div>
@@ -243,8 +248,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="complete-end-to-end-example.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="style.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="style.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="content.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -1,0 +1,57 @@
+# Choosing the layout and style {#style}
+
+This chapter provides some guidance on choosing a website layout and style that reflects your personal style and achieves your goals.
+
+## How it works
+
+Hugo, the static website generator used by blogdown, is supported by an active developer community that has contributed dozens of [beautiful, free, pre-built design themes]((https://themes.gohugo.io/)) for you to use in your website project. Hugo themes are professionally designed and convenient, but you will need to make at least a few simple tweaks to the default theme to give your website your own personal touch. Spend some time browsing the Hugo themes to see what is out there. To use a theme, locate the theme's GitHub URL. Then, simply edit the `Hugo theme:` parameter when [configuring a new blogdown website](https://i.imgur.com/Io2Bzw7.png). These steps are described in details in the following sections.
+
+## Word of caution
+
+Choosing the layout and style is a significant decision. It is an opportunity to be creative and artistic, but it can be a major pitfall if you're not careful. 
+
+The key to creating an attractive, high-performing, and sustainable website is to select a Hugo theme that contains 90% or more of the look, feel, and functionality you desire for your website. The remaining 10% of your website design can come from basic design tweaks such as colors, fonts, images, and adding/removing basic features. Unless you are (or want to be) a front end Hugo web developer, attempting too many changes to your favorite Hugo theme increases your risk of making poor decision decisions and negatively affecting your website's overall look and performance.
+
+## Selecting a Hugo theme {#select-hugo-theme}
+
+The look and feel of your website is largely determined by which [Hugo theme]((https://themes.gohugo.io/)) you choose. Hugo themes are created by experts in Hugo and front end web design. Spend some times browsing the list of themes and checkout the demo sites ([example](https://themes.gohugo.io/hugo-universal-theme/)). If you see a theme you like, try it out by [creating a new site using your chosen theme](#create-site-with-theme). Otherwise, continue reading for recommendations regarding themes.
+
+### Recommended themes
+
+Depending on your goals, you may be more or less restricted to certain Hugo themes. For example, if you intend to create content using R Markdown documents that feature code highlighting, tables, and interactive visualizations, then you may find that certain themes do a poor job of rendering these types of output. On the other hand, if you intend to create basic content using plain Markdown documents, you may not experience any content rendering issues with any of the themes you consider. Either way, you'll likely go through a few rounds of trial and error before you settle on a theme that meets most or all of your needs.
+
+**Tip:** When browsing Hugo themes, pay attention to the date on which the theme was most recently updated. [Example](https://i.imgur.com/fp7WH6s.png). It's best to avoid themes that have not been updated in the last few months or so.
+
+Here are some themes that I recommend based on performance, content rendering, and personal style preference. Note that this is not an exhaustive list of all themes that I would recommend.
+
+#### Recommended themes for content written in R Markdown {-}
+
+- [Cupper](https://themes.gohugo.io/cupper-hugo-theme/) - Simple, clean, readable, minimalist. Great for portfolios and writing.
+- [Tranquilpeak](https://themes.gohugo.io/hugo-tranquilpeak-theme/) - Modern, clean layout. Easy to customize and very readable. Great for personal websites, blogs, and portfolios.
+- [Anatole](https://themes.gohugo.io/anatole/) - Similar to Tranquilpeak with a more sophisticated About page.
+- [Eureka](https://themes.gohugo.io/hugo-eureka/) - Clean, professional layout. Easy to customize. Great for portfolios and professional landing pages.
+
+#### Recommended themes for content written in standard markdown {-}
+
+- [Hargo](https://themes.gohugo.io/hargo-hugo-ecommerce-theme/) and [Vex](https://themes.gohugo.io/vex-hugo/) - Modern e-commerce themes for advertising and selling products
+- [Doks](https://themes.gohugo.io/doks/) - Modern documentation theme
+- [Bigspring](https://themes.gohugo.io/bigspring-hugo-startup-theme/) - Modern design for small businesses offering a particular service
+- [Pico](https://themes.gohugo.io/hugo-theme-pico/) - Modern design for promoting yourself and your work
+- [Hugo Product Launch](https://themes.gohugo.io/hugo-product-launch/) - Simple layout for promoting an upcoming product
+- [Hugo Scroll](https://themes.gohugo.io/hugo-scroll/) - Simple, highly visual layout for promoting your services or expertise
+
+## Generating websites from themes {#create-site-with-theme}
+
+To generate a blogdown website from a chosen theme, follow these steps:
+
+1. Browse the list of [Hugo themes](https://themes.gohugo.io/). Click on a theme you like, then click "Demo" to explore a complete example.
+
+2. Once you find something you really like, click "Download" on the theme homepage to be taken to the source code in GitHub. [Example](https://i.imgur.com/ld35gNP.png).
+
+3. To create a website with your chosen theme, copy the user/theme-name in the GitHub URL. For example, if the source code is located at https://github.com/devcows/hugo-universal-theme, you'll want to copy `devcows/hugo-universal-theme`.
+
+4. Follow the steps to [generate a website](#generate-site) described in the previous chapter. This time, use the information from step 3 to edit the `Hugo theme:` parameter. For example, replace `yihui/hugo-lithium` with `devcows/hugo-universal-theme` to use your chosen theme.
+
+## Editing your theme
+
+This topic is discussed in detail in the next chapter, [Curating the website features](#curate-features). In all likelihood, you will want to edit some aspects of your preferred Hugo theme to alter the look, feel, and functionality of your website. It's important to note that theme developers do not follow the exact same approach as all other developers when designing a theme. Therefore, there is no universal approach to editing themes. There are, however, some common approaches to editing basic characteristics such as colors, font styles, logos, sections, contact forms, and so on. Those will be described in the next chapter.

@@ -1,4 +1,4 @@
-# Generating your website {#generate}
+# Generating a basic website {#generate}
 
 This chapter teaches you how to generate an initial website, the first and most influential step in your journey to owning your very own website. If you haven't already, start by completing the following prerequisites:
 
