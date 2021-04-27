@@ -4,7 +4,6 @@ bookdown::gitbook:
   toc_depth: 2
   config:
     toc:
-      collapse: section
       before: |
         <li><a href="./">Create, Publish, and Analyze Personal Websites Using R and RStudio</a></li>
       after: |

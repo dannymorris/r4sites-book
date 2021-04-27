@@ -1,6 +1,6 @@
 --- 
 title: "Create, Publish, and Analyze Personal Websites Using R and RStudio"
-subtitle: "A digital handbook with step-by-step instructions for creating personal websites, blogs, and professional portfolios using R, RStudio, and other freely available technologies including GitHub, Hugo, Netlify, and Google Analytics"
+subtitle: "A digital handbook with step-by-step instructions for creating personal websites, blogs, and project portfolios using R, RStudio, and other freely available technologies including GitHub, Hugo, Netlify, and Google Analytics"
 author: "Danny Morris"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -21,19 +21,27 @@ As a data scientist with a creative spirit, I love writing and sharing content. 
 
 **My goal with this book is to help you launch your own personal website, blog, or project portfolio as quickly and painlessly as possible.** You will learn the same steps that I take to create, design, publish, and analyze websites using R, RStudio, and other freely available tools including GitHub, Hugo, Netlify, and Google Analytics. All of the tools presented in this book are free to download or available through free accounts. No prior experience in web development is needed to be successful with this book.
 
+## Target audience
+
+The target audience for this book includes current or aspiring R users, Data Analysts, and Data Scientists who are interested in establising or enriching their online presence with a personal website, blog, or project portfolio.
+
+## Hugo, blogdown, and static websites
+
+This book teaches you how to build static websites using [Hugo](https://gohugo.io/) and [blogdown](https://bookdown.org/yihui/blogdown/). Hugo is a modern, user-friendly website generator that turns front-end content (Markdown, HTML, CSS, Javascript) into fast, flexible, and attractive websites. Blogdown is an R package that leverages Hugo to generate websites from the aforementioned front-end content *and* R Markdown documents. The integration of Hugo and R Markdown, which supports R, Python, and SQL languages, means website developers can author content that features code along with its output including tables and interactive data visualizations. 
+
 ## Inspiring examples
 
-Below are some examples of personal websites, blogs, and portfolios that may inspire you as you begin to think about the direction of your own website.
+Below are some examples of personal websites, blogs, and portfolios that have been built using Hugo and blogdown. Also, be sure check out the [Awesome Blogdown](https://awesome-blogdown.com/) website for many more examples.
 
-- [Abnormal Distributions](https://abndistro.com) - My personal website and blog. Ridiculously simple and straightforward. Designed for sharing articles, tutorials, and project summaries. Based on the [Hugo Xmin theme](https://themes.gohugo.io/hugo-xmin/).
+- [Abnormal Distributions](https://abndistro.com) - My personal website and blog. Outrageously simple and straightforward. Designed for sharing tutorials and ideas. Based on the [Hugo Xmin theme](https://themes.gohugo.io/hugo-xmin/).
 
-- [R-Ladies NYC](http://www.rladiesnyc.org/) - Organization website dedicated to promoting gender diversity in the R community. Clean, modern layout. Great design for promoting groups, teams, projects, and events.
+- [R-Ladies NYC](http://www.rladiesnyc.org/) - Organization website dedicated to promoting gender diversity in the R community. Clean, modern layout. Great design for promoting groups, teams, projects, and events. Adapted form the [Hugo Academic](https://themes.gohugo.io/academic/) theme.
 
-- [Jenna Allen](https://www.jennadallen.com/) - Nice all-around personal website authored by Jenna Allen with a blog and a resume.
+- [Evan Odell](https://evanodell.com/blog/) - Personal website authored by Evan Odell featuring a blog, project portfolio, and biography. Crisp, clean, readable layout. Adapted from the [Beautiful Hugo](https://themes.gohugo.io/beautifulhugo/) theme.
 
-- [Mike Mahoney](https://www.mm218.dev/) - Academic bio authored by Mike Mahoney. Simple, clean design for promoting academic achievements.
+- [Maëlle Salmon](https://masalmon.eu/) - Personal website authored by Maëlle Salmon featuring a blog, list of talks, publications, and biography. Adapted from the [Blackburn](https://themes.gohugo.io/blackburn/) theme.
 
-- [Variance Explained](http://varianceexplained.org/) - Personal website and blog authored by David Robinson. Crisp, clean layout.
+- [Julia Silge](https://juliasilge.com/) - Personal website authored by Julia Silge. Simple and professional. Adapted from the [Hugo Academic](https://themes.gohugo.io/theme/academic/) theme.
 
 ## Websites as marketing tools
 
@@ -51,25 +59,25 @@ Having your own website featuring your unique voice and content is a great way t
 
 ## FAQ
 
-**What is the financial cost to create, publish, and analyze websites described in this book?**
+**What is the financial cost to create, publish, and analyze the types of websites described in this book?**
 
 Absolutely nothing, unless you elect to purchase custom domains name which are typically $1 USD per month. 
 
-**Do I need a background in web development to use this book successfully?**
+**Do I need a background in web development to create my own website?**
 
 Absolutely not. The website development approach described in this book relies on blogdown and Hugo to generate static websites, meaning the entire website is just a series of HTML, CSS, JavaScript, and static content such as images and logos. A web browser is the only thing required to render and use static websites. Blogdown makes it super easy to create and organize static files, while Hugo does the heavy lifting of converting your files into a website. Hugo also gives you access to a wide range of [beautiful, free, pre-built design themes]((https://themes.gohugo.io/)) designed by expert Hugo developers. All in all, you just need to focus on writing great content and making simple design tweaks to reflect your personal style.
 
-**Do I need to know R to build websites described in this book?**
+**Do I need to know R to build the types of websites described in this book?**
 
 Not at all. You could build the types of websites described in this book without knowing or writing a single line of R code. These types of websites just make it easy to author content featuring output (e.g. tables, graphs) from R code and other programming languages supported by R Markdown including Python and SQL. If you don't know R, a website could be a great way to learn it and document your journey!
 
-**What is the role of RStudio in the process of building websites described in this book?**
+**What is the role of RStudio in the process of building the types of websites described in this book?**
 
 RStudio is a free desktop application where all of your website development takes place. RStudio provides a simple interface for managing your website projects and the supporting materials including content, images, and code. RStudio also contains a "Viewer" pane, which will display your webiste locally and update in real-time as you make changes to your website. This is incredibly handy for rapidly testing ideas and inspecting the results.
 
-**Can I author content using other programming languages?**
+**Can I author content, such as blog posts, using programming languages other than R?**
 
-Yes. Content can be written in either plain Markdown documents or R Markdown documents which include support for R, Python, and SQL.
+Yes. Content can be created with either plain Markdown documents or R Markdown documents which include support for R, Python, and SQL.
 
 **Can I publish my website behind a custom domain name?**
 

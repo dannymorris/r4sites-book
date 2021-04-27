@@ -1,6 +1,8 @@
 introduction
 about-this-book
-inspiring-examples
+target-audience
+hugo-blogdown-and-static-websites
+inspiring-website-examples
 websites-as-marketing-tools
 faq
 complete-end-to-end-example
@@ -15,8 +17,7 @@ analyze-google-analytics-data
 closing-thoughts
 style
 how-it-works-1
-word-of-caution
-select-hugo-theme
+the-9010-rule-for-themes
 recommended-themes
 create-site-with-theme
 editing-your-theme
@@ -64,4 +65,4 @@ users-by-location
 extras
 marketing-your-website
 search-engine-optimization
-the-9010-rule-for-themes
+inspiring-examples
