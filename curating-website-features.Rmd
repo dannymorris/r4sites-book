@@ -51,7 +51,7 @@ The profile image is the main image on the homepage with a circular border. To e
 If your image appears too wide/narrow or too tall/short, navigate to `themes/anatole/assets/css/style.css` and edit the CSS properties. For this theme, you will need to edit the CSS properties [here](https://github.com/dannymorris/anatole-site/blob/a114905a32be5619a5ecd3ab48d81d8220b14ed3/themes/anatole/assets/css/style.css#L901-L904) for narrow screen devices and [here](https://github.com/dannymorris/anatole-site/blob/master/themes/anatole/assets/css/style.css#L291-L295) for wide
 screen devices.
 
-## Favicons
+## Favicons {#favicon}
 
 Navigate to `static/favicons/` and replace `favicon.ico` with your own favicon. The favicon is the tiny image that appears in the web browser tab for your website. To create a favicon from an image, visit https://favicon.io/favicon-converter/. Keep the file named `favicon.ico` in the same folder.
 

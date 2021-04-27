@@ -1,23 +1,22 @@
 # Complete end-to-end example
 
-This chapter walks you through all of the high-level steps to create, publish, and analyze your very own personal website as quickly as possible, saving the subtle details for later chapters. If you work through the steps in this chapter, you will end up with a complete, fully functional website that you can improve upon gradually.
-
-Continue reading to learn more, or [watch the video](https://youtu.be/nr72YO1vOjQ) instead.
+The purpose of this chapter is to inspire you with an example and to expose you to the entire process of creating, publishing, and analyzing your very own website. If you complete the steps described below, you will end up with [this final product](https://r4sites-anatole.netlify.app/). If you like the look and feel of this final product, then all you need to do afterwards is personalize it (e.g. add your own profile image) and author content. These topics are described in the following chapters.
 
 ## How it works
 
 The steps to create, publish, and analyze your very own personal website include:
 
 1. Install free software and create free accounts
-2. Generate a basic website using the blogdown R package
-3. Push the website files to GitHub
-4. Deploy the website on Netlify
-5. Set up Google Analytics to capture traffic to your site
-6. Use the `googleAnalyticsR` R package to analyze traffic
+2. Generate the website using RStudio and the blogdown R package
+3. Make some basic edits to placeholder text
+4. Integrate Google Analytics to collect user traffic
+5. Integrate Formspree to power the contact form
+6. Push the website files to GitHub
+7. Deploy the live website on Netlify
 
 ## Install software
 
-Start off by installing these free, open source tools if you haven’t already. My recommendation is to download the latest versions, which at the time of this writing are R 4.0, RStudio 1.4, Git 2.31.1, and Hugo 0.82.
+Start off by installing these free, open source tools if you haven’t already. My recommendation is to download the latest versions, which at the time of this writing are R 4.0, RStudio 1.4, Git 2.31.1.
 
 - [R](https://cran.rstudio.com/)
 - [RStudio](https://www.rstudio.com/products/rstudio/download/#download)
@@ -25,16 +24,16 @@ Start off by installing these free, open source tools if you haven’t already. 
 
 ## Create accounts {#create-accounts}
 
-Create free accounts with GitHub, Netlify, Google Analytics, and Formspree(optional). Start with GitHub first, then use your GitHub registration to sign up for a Netlify account. To sign up for Google Analytics, click the link below and locate “Start for free” on the landing page. Formspree is optional yet recommended if you want to embed contact forms on your website.
+Create free accounts with GitHub, Netlify, Google Analytics, and Formspree. Start with GitHub first, then use your GitHub registration to sign up for a Netlify account. To sign up for Google Analytics, click the link below and locate “Start for free” on the landing page.
 
 - [GitHub](https://github.com/)
 - [Netlify](https://app.netlify.com/)
 - [Google Analytics](https://marketingplatform.google.com/about/analytics/)
-- (Optional) [Formspree](https://formspree.io/register)
+- [Formspree](https://formspree.io/register)
 
-## Generate a blogdown website {#create-new-blogdown}
+## Generate the website {#create-new-blogdown}
 
-[blogdown](https://bookdown.org/yihui/blogdown/) makes it super easy to generate a website based on the [Hugo](https://gohugo.io/) framework. Follow these steps to create a website on your local machine.
+[blogdown](https://bookdown.org/yihui/blogdown/) makes it super easy to generate a website that uses [Hugo](https://gohugo.io/). Follow the steps below to create a website on your local machine.
 
 1. Launch RStudio and install the blogdown package by running `install.packages("blogdown")`.
 
@@ -43,6 +42,46 @@ Create free accounts with GitHub, Netlify, Google Analytics, and Formspree(optio
 3. Using the New Project Wizard, generate a website using the [Hugo Anatole theme](https://themes.gohugo.io/anatole/) by defining `Hugo theme: lxndrblz/anatole` in the configuration. Click Create Project to generate the website. [Example](https://i.imgur.com/lkD1ZlU.png).
 
 4. Confirm that everything is working properly by running `blogdown::serve_site()` in the R console. A local, live, and fully functional preview of your website will appear in the Viewer pane in RStudio. [Example](https://i.imgur.com/oxZgeqM.png).
+
+## Make some edits
+
+You will notice that the default Anatole theme contains placeholder text such as "My Blog" and "Call me Jane" on the homepage below the profile image. Follow the steps below to edit these placeholders.
+
+1. Change "My Blog" on the homepage by navigating to `config/_default/languages.toml` and changing the `title` parameter. [Example](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/languages.toml#L2).
+
+2. Change "Call me Jane" on the homepage by navigating to `config/_default/params.toml` and editing the `title` parameter. While you're here, feel free to change other parameters including `description`, `profilePicture`, and social media links. [Example](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml#L3-L6).
+
+## Integrate Google Analytics
+
+Integrate Google Analytics into your website to collect and analyze user traffic. If you haven't already, be sure to [create a free Google Analytics account](#create-accounts), then follow the steps below.
+
+1. Sign in to Google Analytics and navigate to Admin > Create Account. [Example](https://i.imgur.com/QRTa07k.png)
+
+2. Under Account setup, provide an appropriate name (e.g. my-example-site) and configure the Account Data Sharing Settings to your liking. Click "Next".
+
+3. Under Property setup, provide an appropriate name (e.g. example-site-property). 
+
+4. Under Property setup, click on "Show advanced options" to create a Universal Analytics property. For the Website URL, provide the URL provided by Netlify when you first deployed your website. Click "Next". [Example](https://i.imgur.com/aYeAANl.png)
+
+5. Under About you business, configure the settings to your liking. Click "Next" and accept the terms of service.
+
+6. Locate and copy the Tracking Code by returning the Google Analytics landing page and navigating to the Admin console. Select the Account and Property that were created in the previous steps. Under Property, click on Tracking Info > Tracking Code. Copy the Tracking ID, which should appear in the form of UA-XXXXXXXXX-1. [Example](https://i.imgur.com/qcyaVBD.png)
+
+7. Return to your RStudio Project where you are developing your website. Open the file `config/_default/params.toml` in the main directory and add a `googleAnalytics` parameter with your tracking code, as shown in this [example](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml#L16-L17).
+
+## Integrate Formspree
+
+The [contact form](https://r4sites-anatole.netlify.app/contact/) on this demo website is powered by Formspree. Contact forms are a handy feature for collecting user feedback along with user emails. Formspree organizes and stores the responses to your contact form for you on their website. Follow the steps below to create a form "endpoint" and link it to the contact form on the demo website.
+
+- Sign in to [Formspree](https://formspree.io/login).
+
+- Click "New Project" to create a new project for your website. [Example](https://i.imgur.com/jZnrcVL.png).
+
+- Click "New Form" to create a new contact form. [Example](https://i.imgur.com/OYqo3Js.png)
+
+- Copy the form's "endpoint". [Example](https://i.imgur.com/2S2HVO6.png)
+
+- Update the `config/_default/params.toml` file in the main webiste folder to update the `contactFormAction` parameter with your form endpoint, as shown in this [example](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml#L18-L19).
 
 ## Push the website to GitHub
 
@@ -85,89 +124,8 @@ Now that your website files are stored in your GitHub repository, use Netlify to
 
 4. After a few seconds, your webiste will be deployed on Netlify. To view your website, return to the Site Overview section and locate the domain name randomly generated by Netlify. [Example](https://i.imgur.com/8TV9NQ1.png). Netlify domains tend to look something like this - https://jovial-roentgen-f2a53c.netlify.app/. To change this, go to Site settings > Change site name.
 
-## Set up Google Analytics
-
-The final step is to set up Google Analytics to analyze traffic to your website. If you haven't already, be sure to [create a free account](#create-accounts). Follow these steps to link Google Analytics to your website.
-
-1. Sign in to Google Analytics and navigate to Admin > Create Account. [Example](https://i.imgur.com/QRTa07k.png)
-
-2. Under Account setup, provide an appropriate name (e.g. my-example-site) and configure the Account Data Sharing Settings to your liking. Click "Next".
-
-3. Under Property setup, provide an appropriate name (e.g. example-site-property). 
-
-4. Under Property setup, click on "Show advanced options" to create a Universal Analytics property. For the Website URL, provide the URL provided by Netlify when you first deployed your website. Click "Next". [Example](https://i.imgur.com/aYeAANl.png)
-
-5. Under About you business, configure the settings to your liking. Click "Next" and accept the terms of service.
-
-6. Locate and copy the Tracking Code by returning the Google Analytics landing page and navigating to the Admin console. Select the Account and Property that were created in the previous steps. Under Property, click on Tracking Info > Tracking Code. Copy the Tracking ID, which should appear in the form of UA-XXXXXXXXX-1. [Example](https://i.imgur.com/qcyaVBD.png)
-
-7. Return to your RStudio Project where you are developing your website. Open the file `config.yaml` in the main directory and locate the `googleAnalytics:` parameter. Paste your Google Analytics Tracking ID here, e.g. `googleAnalytics: 'UA-XXXXXXXXX-1'`. [Example](https://i.imgur.com/xgN24ah.png)
-
-8. To complete the integration, push your updates to your GitHub repository using the following Git syntax.
-
-```
-git add --all
-git commit -m "added google analytics tracking code"
-git push origin master
-```
-
-Netlify will detect that your GitHub repository has been updated, and it will deploy a new version of your website containing Google Analytics integration.
-
-## Analyze Google Analytics data
-
-[googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) is an R package for querying Google Analytics data. This topic is discussed in more detail in the chapter [Analyzing traffic with Google Analytics](#google-analytics).
-
-The R code below does the following:
-
-- Load R packages for collecting and analyzing Google Analytics data
-- Authenticate Google Analytics account
-- List accounts and properties within your Google Analytics account, such as the ones associated with your newly created website
-- Return a query of users by geographic location 
-- Plot a map of users by geographic location
-
-**Note:** The demo website created in the previous sections is not used in the following analysis because it has received no website traffic thus far. My personal website, Abnormal Distributions, is used instead.
-
-```{r, message=F, warning=F, eval=F}
-# R packages
-library(googleAnalyticsR)
-library(dplyr)
-library(leaflet)
-
-# Authenticate your Google Analytics account
-ga_auth(email = "usc00@hotmail.com")
-
-# List your Google Analytics accounts
-ga_accounts <- ga_account_list()
-
-# Obtain the "view Id" associated with your website account
-view_id <- ga_accounts %>%
-  filter(accountName == "abndistro", webPropertyName == "Abnormal Distributions") %>%
-  pull(viewId)
-
-# Query geographic location of website users
-users_location <- google_analytics(
-  viewId = view_id,
-  date_range = c("2019-01-01", "2020-12-31"),
-  metrics = "users",
-  dimensions = c("latitude", "longitude"),
-  anti_sample = T
-) %>%
-  as_tibble() %>%
-  mutate_at(vars(latitude, longitude), list(as.numeric))
-
-# Plot map of website users by location
-users_location %>%
-  leaflet() %>% 
-  addTiles() %>%
-  addCircleMarkers(
-    lng = ~longitude,
-    lat = ~latitude,
-    radius = ~log(users),
-    stroke = FALSE, 
-    fillOpacity = 0.5
-  )
-```
-
 ## Closing thoughts
 
-This chapter covers the basics steps to create, publish, and analyze your very own website. The demo website published in this chapter uses the [Hugo Anatole theme](https://themes.gohugo.io/anatole/ as the basis for the overall design and appearance. Keep in mind their are dozens of designs to choose from when designing your own website.
+The steps to create and publish a website presented in this chapter are discussed in greater detail in the following chapters. Start with the next chapter, [Choosing a Hugo theme](#choose-theme), to learn about choosing a website layout and style that aligns with your vision and goals for your website.
+
+If you like the look and feel of the website created in this chapter, keep using it! You would only need to make a few more edits including the [favicon](#favicon) and any placeholder text. Optional edits include custom images, logos, font styles, color palettes, pages, and language translations. These edits are described in the chapter [Curating the look, feel, and features](#curate-features). If you are interested in jumping straight into writing content (e.g. blog posts), learn how that works in the chapter [Authoring content](#content).

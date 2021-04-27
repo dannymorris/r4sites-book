@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 5 Curating the look, feel, and features | Create, Publish, and Analyze Personal Websites Using R and RStudio</title>
+  <title>Chapter 3 Choosing a Hugo theme | Create, Publish, and Analyze Personal Websites Using R and RStudio</title>
   <meta name="description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 5 Curating the look, feel, and features | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
+  <meta property="og:title" content="Chapter 3 Choosing a Hugo theme | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 5 Curating the look, feel, and features | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
+  <meta name="twitter:title" content="Chapter 3 Choosing a Hugo theme | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
   
   <meta name="twitter:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="generate.html"/>
-<link rel="next" href="content.html"/>
+<link rel="prev" href="complete-end-to-end-example.html"/>
+<link rel="next" href="generate.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -93,12 +93,12 @@
 <li class="chapter" data-level="2.9" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#deploy-the-website-on-netlify"><i class="fa fa-check"></i><b>2.9</b> Deploy the website on Netlify</a></li>
 <li class="chapter" data-level="2.10" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#closing-thoughts"><i class="fa fa-check"></i><b>2.10</b> Closing thoughts</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="style.html"><a href="style.html"><i class="fa fa-check"></i><b>3</b> Choosing a Hugo theme</a>
+<li class="chapter" data-level="3" data-path="choose-theme.html"><a href="choose-theme.html"><i class="fa fa-check"></i><b>3</b> Choosing a Hugo theme</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="style.html"><a href="style.html#how-it-works-1"><i class="fa fa-check"></i><b>3.1</b> How it works</a></li>
-<li class="chapter" data-level="3.2" data-path="style.html"><a href="style.html#the-9010-rule-for-themes"><i class="fa fa-check"></i><b>3.2</b> The 90/10 rule for themes</a></li>
-<li class="chapter" data-level="3.3" data-path="style.html"><a href="style.html#create-site-with-theme"><i class="fa fa-check"></i><b>3.3</b> Generating websites from themes</a></li>
-<li class="chapter" data-level="3.4" data-path="style.html"><a href="style.html#editing-your-theme"><i class="fa fa-check"></i><b>3.4</b> Editing your theme</a></li>
+<li class="chapter" data-level="3.1" data-path="choose-theme.html"><a href="choose-theme.html#how-it-works-1"><i class="fa fa-check"></i><b>3.1</b> How it works</a></li>
+<li class="chapter" data-level="3.2" data-path="choose-theme.html"><a href="choose-theme.html#the-9010-rule-for-themes"><i class="fa fa-check"></i><b>3.2</b> The 90/10 rule for themes</a></li>
+<li class="chapter" data-level="3.3" data-path="choose-theme.html"><a href="choose-theme.html#create-site-with-theme"><i class="fa fa-check"></i><b>3.3</b> Generating websites from themes</a></li>
+<li class="chapter" data-level="3.4" data-path="choose-theme.html"><a href="choose-theme.html#editing-your-theme"><i class="fa fa-check"></i><b>3.4</b> Editing your theme</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="generate.html"><a href="generate.html"><i class="fa fa-check"></i><b>4</b> Generating a blogdown website</a>
 <ul>
@@ -165,90 +165,57 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="curate-features" class="section level1" number="5">
-<h1><span class="header-section-number">Chapter 5</span> Curating the look, feel, and features</h1>
-<p>This chapter teaches you how to edit the look and feel of your website and how to personalize certain features including logos, page navigation, contact forms, and social media links.</p>
-<div id="how-it-works-3" class="section level2" number="5.1">
-<h2><span class="header-section-number">5.1</span> How it works</h2>
-<p>Recall that the types of static websites described in this book are simply a collection of text files including Markdown, HTML, CSS, and Javascript file types that Hugo compiles into a website. Therefore, changes to the look, feel, and features of your website are done simply by editing the relevant files and folders that make up your website.</p>
-<div id="editing-the-look-and-feel-with-css" class="section level4 unnumbered">
-<h4>Editing the look and feel with CSS</h4>
-<p>If you are not familiar with CSS (Cascading Style Sheets), take a look at <a href="https://github.com/dannymorris/r4sites-demo-anatole/blob/master/themes/anatole/assets/css/style.css">this CSS stylesheet</a>. While HTML defines the general layout of a webpage, CSS is used to control the appearance of an HTML webpage and its elements including font styles, colors, buttons and links, positioning and dimensions of images, and so on. If you intend to alter the look and feel of your website, you will likely be spending most of your time editing your website’s primary CSS files.</p>
-<p>To learn more about CSS, visit <a href="https://www.w3schools.com/css/">w3schools</a> for tutorials and read about using the <a href="curate-features.html#inspect-tool">Inspect tool</a> in your browser.</p>
+<div id="choose-theme" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Choosing a Hugo theme</h1>
+<p>This chapter provides some guidance on exploring website layouts and styles that inspire you, reflect your unique style, and achieve your website goals. Evaluating layouts and styles in a significant step in your website planning phase. A good theme that inspires you can have an enormous effect of unlocking your creativity and empowering you to author great content.</p>
+<div id="how-it-works-1" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> How it works</h2>
+<p><a href="https://gohugo.io/">Hugo</a>, the static website generator upon which the websites in this book are based, is supported by an active developer community that has contributed dozens of <a href="https://themes.gohugo.io/">beautiful, free, pre-built design themes</a> for you to use in your own website project. Hugo themes are professionally designed, convenient, and fully functional out of the box. Hugo themes eliminate the need to design your own website layout and style from scratch, making professional websites accessible to quite literally anyone. Spend some time browsing the <a href="(https://themes.gohugo.io/)">Hugo themes</a> to see what is out there for you to use in your own website project. The steps required to generate a website with your preferred theme are discussed in the next chapter.</p>
 </div>
-<div id="editing-features-related-to-content-and-navigation" class="section level4 unnumbered">
-<h4>Editing features related to content and navigation</h4>
-<p>Personal websites and blogs typically have the following navigation pages and content features: Home, Blog, Projects, About Me, and Contact. The <a href="https://r4sites-anatole.netlify.app/">Anatole demo website</a> has a similar structure with some minor differences.</p>
-<p>The presence or absence of content and navigation pages is dependent upon the existance of folders and files located in the <code>content</code> folder in the main website directory. For example, the <a href="https://r4sites-anatole.netlify.app/">Anatole demo website</a> contains navigation links to pages titled Home, Posts, About, and Contact. These features have supporting files in the <code>content</code> folder in the main website directory, as shown in the <a href="https://github.com/dannymorris/r4sites-demo/tree/master/content/english">website’s content folder</a>.</p>
-<p>To <strong>remove content and features</strong>, you can do one of the following: delete the relevant folder in the <code>content</code> directory (e.g. delete the <code>posts</code> folder), or (recommended) edit the <code>config.yaml</code> file to explicity define the content and features you want on your site, as shown in <a href="">this example</a>.</p>
-</div>
-</div>
-<div id="tips-for-working-efficiently" class="section level2" number="5.2">
-<h2><span class="header-section-number">5.2</span> Tips for working efficiently</h2>
-<div id="inspect-tool" class="section level4 unnumbered">
-<h4>Using the browser’s Inspect tool</h4>
-<p>The “Inspect” tool in your browser is an essential tool for experimenting with changes to CSS and HTML directly in the browser. Using the Inspect tool results in temporary changes, and when the browser is refreshed the original properties are restored. Access this tool in the browser by right-clicking on any page element you want to edit (e.g. images, text, links, buttons) and click on “Inspect,” as shown in this <a href="https://i.imgur.com/0h0H4VW.png">example</a></p>
-<p>Practice using the Inspect tool with these examples:</p>
-<ol style="list-style-type: decimal">
-<li><p>Visit <a href="https://www.google.com/">Google</a> and edit the “Google Search” button by changing the background color and font color. <a href="https://youtu.be/6tR1u7UxmgU">Watch the video demonstration on YouTube</a>. After changing the background color and font color of the search button, feel free to experiment with changing other properties as well.</p></li>
-<li><p>Vist <a href="https://stackoverflow.com/questions/45851032/r-for-data-science-book-wickham-cannot-reproduce-example">this question on Stack Overflow</a> and practice editing image dimensions, colors of links and bold text, and code snippets. <a href="https://youtu.be/pJd0dWU70gk">Watch the video demonstration on YouTube</a></p></li>
-</ol>
-</div>
-<div id="serve-the-site-locally" class="section level4 unnumbered">
-<h4>Serve the site locally</h4>
-<p>Once you have generated a website using the Anatole theme, run <code>blogdown::serve_site()</code> in the R console from within your RStudio Project to render a live, local copy of the website. To learn about serving the site locally, read <a href="generate.html#serve-site">this section</a>.</p>
-</div>
-</div>
-<div id="use-case-1" class="section level2" number="5.3">
-<h2><span class="header-section-number">5.3</span> Use case</h2>
-<p>To keep things simple, we will focus on a use case that revolves around tweaking the <a href="https://themes.gohugo.io/anatole/">Anatole</a> theme. To begin, follow the instructions outlined in <a href="style.html#create-site-with-theme">Generating websites from themes</a>. Then, follow along with the steps below. The theme’s demo website can be found here - <a href="https://themes.gohugo.io/theme/anatole/" class="uri">https://themes.gohugo.io/theme/anatole/</a>. The finished product resulting from the following steps can be found here - <a href="https://r4sites-anatole.netlify.app/" class="uri">https://r4sites-anatole.netlify.app/</a>.</p>
-</div>
-<div id="title-and-description" class="section level2" number="5.4">
-<h2><span class="header-section-number">5.4</span> Title and description</h2>
-<p>The title of the Anatole demo website is “My Blog.” To change this to something more personal, navigate to <code>config/_default/languages.toml</code> and edit the <code>title</code> parameter. <a href="https://github.com/dannymorris/r4sites-demo-anatole/blob/master/config/_default/languages.toml#L2">Example</a>.</p>
-</div>
-<div id="logos-and-profile-images" class="section level2" number="5.5">
-<h2><span class="header-section-number">5.5</span> Logos and profile images</h2>
-<p>The profile image is the main image on the homepage with a circular border. To edit this, navigate to <code>static/images/</code> and replace <code>profile.jpg</code> with your own image (<a href="https://github.com/dannymorris/r4sites-demo-anatole/tree/master/static/images">example</a>). Keep the file named <code>profile.jpg</code> so the theme will recognize your image.</p>
-<p>If your image appears too wide/narrow or too tall/short, navigate to <code>themes/anatole/assets/css/style.css</code> and edit the CSS properties. For this theme, you will need to edit the CSS properties <a href="https://github.com/dannymorris/anatole-site/blob/a114905a32be5619a5ecd3ab48d81d8220b14ed3/themes/anatole/assets/css/style.css#L901-L904">here</a> for narrow screen devices and <a href="https://github.com/dannymorris/anatole-site/blob/master/themes/anatole/assets/css/style.css#L291-L295">here</a> for wide
-screen devices.</p>
-</div>
-<div id="favicon" class="section level2" number="5.6">
-<h2><span class="header-section-number">5.6</span> Favicons</h2>
-<p>Navigate to <code>static/favicons/</code> and replace <code>favicon.ico</code> with your own favicon. The favicon is the tiny image that appears in the web browser tab for your website. To create a favicon from an image, visit <a href="https://favicon.io/favicon-converter/" class="uri">https://favicon.io/favicon-converter/</a>. Keep the file named <code>favicon.ico</code> in the same folder.</p>
-</div>
-<div id="fonts" class="section level2" number="5.7">
-<h2><span class="header-section-number">5.7</span> Fonts</h2>
-<p>If you don’t like the default font, you can easily change it. For example, to use the Google Font <a href="https://fonts.google.com/specimen/Quicksand">Quicksand</a> insert <a href="https://github.com/dannymorris/anatole-site/blob/master/themes/anatole/layouts/partials/head.html#L114-L116">this line of code</a> in the <code>themes/anatole/layouts/partials/head.html</code> file. Then, navigate to <code>themes/anatole/assets/css/style.css</code> and change the font property in the <code>body</code> element <a href="https://github.com/dannymorris/anatole-site/blob/master/themes/anatole/assets/css/style.css#L44-L51">(example)</a>. You can also change basic font properties (e.g. size, color), but you will have to know what CSS class to change. Examples include <code>p</code>(<a href="https://github.com/dannymorris/anatole-site/blob/a114905a32be5619a5ecd3ab48d81d8220b14ed3/themes/anatole/assets/css/style.css#L53-L57">example</a>), <code>.page-top .nav</code>(<a href="https://github.com/dannymorris/anatole-site/blob/master/themes/anatole/assets/css/style.css#L198-L205">example</a>), and <code>.page-top .nav a</code>(<a href="https://github.com/dannymorris/anatole-site/blob/a114905a32be5619a5ecd3ab48d81d8220b14ed3/themes/anatole/assets/css/style.css#L213-L215">example</a>).</p>
-</div>
-<div id="colors" class="section level2" number="5.8">
-<h2><span class="header-section-number">5.8</span> Colors</h2>
-</div>
-<div id="managing-pages-and-sections" class="section level2" number="5.9">
-<h2><span class="header-section-number">5.9</span> Managing pages and sections</h2>
-</div>
-<div id="contact-forms" class="section level2" number="5.10">
-<h2><span class="header-section-number">5.10</span> Contact forms</h2>
-</div>
-<div id="foreign-languages" class="section level2" number="5.11">
-<h2><span class="header-section-number">5.11</span> Foreign languages</h2>
-<ol start="7" style="list-style-type: decimal">
-<li><strong>(optional) Remove all content supporting a language translation</strong>. By default, the Anatole theme supports an Arabic language translation. To remove all content supporting this translation, delete the file <code>config/_default/menus.ar.toml</code>, edit the file <code>config/_default/languages.toml</code> by removing all Arabic language parameters (<a href="https://github.com/dannymorris/anatole-site/blob/master/config/_default/languages.toml">example</a>), then delete the folder <code>content/arabic/</code> and all of its contents.</li>
-</ol>
-</div>
-<div id="social-media-links" class="section level2" number="5.12">
-<h2><span class="header-section-number">5.12</span> Social media links</h2>
-<p>Navigate to config/_default/params.toml and edit the links to your social medial accounts beginning on line 40. Example</p>
-</div>
-<div id="closing-thoughts-on-themes" class="section level2" number="5.13">
-<h2><span class="header-section-number">5.13</span> Closing thoughts on themes</h2>
-<p>Relying on themes is the quickest way to launch a professional website. Editing the look and feel of your website can be a lot of fun, but you must be careful not to go overboard. Here are some tips to keep in the back of your mind while you’re editing your theme:</p>
+<div id="the-9010-rule-for-themes" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> The 90/10 rule for themes</h2>
+<p>The key to creating an attractive, high-performing, and sustainable website is to select a Hugo theme that contains 90% or more of the look, feel, and functionality you desire for your website. The remaining 10% of your website design can come from basic design tweaks such as colors, fonts, images, and adding/removing basic features. Unless you are (or want to be) a front end Hugo web developer, attempting too many changes to your favorite Hugo theme increases your risk of making poor decision decisions and negatively affecting your website’s overall look and performance.</p>
+<div id="recommended-themes" class="section level3" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Recommended themes</h3>
+<p>Depending on your goals, you may be more or less restricted to certain Hugo themes. For example, if you intend to create content using R Markdown documents that feature code highlighting, tables, and interactive visualizations, then you may find that certain themes do a poor job of rendering these types of output. On the other hand, if you intend to create basic content using plain Markdown documents, you may not experience any content rendering issues with any of the themes you consider. Either way, you’ll likely go through a few rounds of trial and error before you settle on a theme that meets most or all of your needs.</p>
+<p><strong>Tip:</strong> When browsing Hugo themes, pay attention to the date on which the theme was most recently updated. <a href="https://i.imgur.com/fp7WH6s.png">Example</a>. It’s best to avoid themes that have not been updated in the last few months or so.</p>
+<p>Here are some themes that I recommend based on performance, content rendering, and personal style preference. Note that this is not an exhaustive list of all themes that I would recommend.</p>
+<div id="recommended-themes-for-content-created-with-markdown" class="section level4 unnumbered">
+<h4>Recommended themes for content created with Markdown</h4>
 <ul>
-<li><p>Before you make any edits, go ahead and run <code>blogdown::serve_site()</code> in the R console within the RStudio Project. This will launch your website locally and will update automatically whenever edits are detected.</p></li>
-<li><p>Whenever you make a change, check the result on wide and narrow screens. You can do this with the browser on your desktop by maximizing the browser width (wide screen) and decreasing the width to mimic a mobile device (narrow screen).</p></li>
-<li><p>Try not to edit the theme’s default <em>layout.</em> Instead, focus on colors, font, images, and content to reflect you personal style.</p></li>
-<li><p>After you make a change, carefully scrutinize the result and look for any unexpected consequences.</p></li>
+<li><p><a href="https://themes.gohugo.io/hugo-tranquilpeak-theme/">Tranquilpeak</a> - Modern, clean layout. Easy to customize and very readable. Great for personal websites, blogs, and portfolios.</p></li>
+<li><p><a href="https://themes.gohugo.io/anatole/">Anatole</a> - Similar to Tranquilpeak with a more sophisticated About page.</p></li>
+<li><p><a href="https://themes.gohugo.io/hugo-eureka/">Eureka</a> - Clean, professional layout. Easy to customize. Great for portfolios and professional landing pages.</p></li>
+<li><p><a href="https://themes.gohugo.io/blackburn/">Blackburn</a> - Clean layout. Easy to read and navigate. Great for personal websites, blogs, and portfolios.</p></li>
+<li><p><a href="https://themes.gohugo.io/beautifulhugo/">Beautiful Hugo</a> - Crips, clean design. Great for personal websites, blogs, and portfolios.</p></li>
 </ul>
+</div>
+<div id="recommended-themes-for-other-use-cases" class="section level4 unnumbered">
+<h4>Recommended themes for other use cases</h4>
+<ul>
+<li><p><a href="https://themes.gohugo.io/hargo-hugo-ecommerce-theme/">Hargo</a> and <a href="https://themes.gohugo.io/vex-hugo/">Vex</a> - Modern e-commerce themes for advertising and selling products</p></li>
+<li><p><a href="https://themes.gohugo.io/doks/">Doks</a> - Modern documentation theme</p></li>
+<li><p><a href="https://themes.gohugo.io/bigspring-hugo-startup-theme/">Bigspring</a> - Modern design for small businesses offering a particular service</p></li>
+<li><p><a href="https://themes.gohugo.io/hugo-theme-pico/">Pico</a> - Modern design for promoting yourself and your work</p></li>
+<li><p><a href="https://themes.gohugo.io/hugo-product-launch/">Hugo Product Launch</a> - Simple layout for promoting an upcoming product</p></li>
+<li><p><a href="https://themes.gohugo.io/hugo-scroll/">Hugo Scroll</a> - Simple, highly visual layout for promoting your services or expertise</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="create-site-with-theme" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Generating websites from themes</h2>
+<p>To generate a blogdown website from a chosen theme, follow these steps:</p>
+<ol style="list-style-type: decimal">
+<li><p>Browse the list of <a href="https://themes.gohugo.io/">Hugo themes</a>. Click on a theme you like, then click “Demo” to explore a complete example.</p></li>
+<li><p>Once you find something you really like, click “Download” on the theme homepage to be taken to the source code in GitHub. <a href="https://i.imgur.com/ld35gNP.png">Example</a>.</p></li>
+<li><p>To create a website with your chosen theme, copy the user/theme-name in the GitHub URL. For example, if the source code is located at <a href="https://github.com/devcows/hugo-universal-theme" class="uri">https://github.com/devcows/hugo-universal-theme</a>, you’ll want to copy <code>devcows/hugo-universal-theme</code>.</p></li>
+<li><p>Follow the steps to <a href="generate.html#generate">generate a website</a> described in the next chapter.</p></li>
+</ol>
+</div>
+<div id="editing-your-theme" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Editing your theme</h2>
+<p>This topic is discussed in detail in the next chapter, <a href="curate-features.html#curate-features">Curating the website features</a>. In all likelihood, you will want to edit some aspects of your preferred Hugo theme to alter the look, feel, and functionality of your website. It’s important to note that theme developers do not follow the exact same approach as all other developers when designing a theme. Therefore, there is no universal approach to editing themes. There are, however, some common approaches to editing basic characteristics such as colors, font styles, logos, sections, contact forms, and so on. Those will be described in the next chapter.</p>
 
 </div>
 </div>
@@ -257,8 +224,8 @@ screen devices.</p>
           </div>
         </div>
       </div>
-<a href="generate.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="content.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="complete-end-to-end-example.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="generate.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

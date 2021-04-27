@@ -1,4 +1,4 @@
-# Choosing a Hugo theme {#style}
+# Choosing a Hugo theme {#choose-theme}
 
 This chapter provides some guidance on exploring website layouts and styles that inspire you, reflect your unique style, and achieve your website goals. Evaluating layouts and styles in a significant step in your website planning phase. A good theme that inspires you can have an enormous effect of unlocking your creativity and empowering you to author great content.
 

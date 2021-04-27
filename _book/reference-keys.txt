@@ -66,3 +66,17 @@ extras
 marketing-your-website
 search-engine-optimization
 inspiring-examples
+promoting-yourself-and-your-website
+tools-used-in-this-book
+tools-you-will-use
+contact-forms-1
+about-hugo-and-static-websites
+about-hugo-blogdown-and-static-websites
+tools
+set-up-formspree
+integrate-google-analytics
+integrate-formspree
+edit-default-text
+make-some-edits
+favicon
+choose-theme
