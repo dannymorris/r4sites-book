@@ -17,19 +17,22 @@ description: "A step-by-step guide for creating, publishing, and analyzing your 
 
 ## About this book
 
-As a data scientist with a creative spirit, I love writing and sharing content. Several years ago, I published my first personal website, [Abnormal Distributions](https://abndistro.com/). Getting started was hard. It took me months to learn new technologies and to get comfortable operating this simple little blog. Since then, Abnormal Distributions has served over 50,000 page views and 20,000 users. I paste links to it on my resumes, social profiles, and networking introductions. I constantly get messages from aspiring data scientists that essentially read, "Hey, saw a post on your website about [insert topic]. Would love to learn more!" Recruiters on LinkedIn often point to my website as the reason for connecting with me regarding a job opportunity. Abnormal Distributions turned out to be a wonderful investment of time as it helped spark my creativity, deepen my subject matter expertise through writing, and connect me with new people and opportunities.
+In 2018, I had virtually no online presence other than about 100 random LinkedIn connections. I knew this was a problem given my budding interest in Data Science, the increasing demand for project portfolios, and the perceived need to "stand out" in the digital crowd.
 
-**My goal with this book is to help you launch your own personal website, blog, or project portfolio as quickly and painlessly as possible.** You will learn the same steps that I take to create, design, publish, and analyze websites using R, RStudio, and other freely available tools including GitHub, Hugo, Netlify, and Google Analytics. All of the tools presented in this book are free to download or available through free accounts. No prior experience in web development is needed to be successful with this book.
+
+So, I learned how to publish my first personal website, [Abnormal Distributions](https://abndistro.com/). Yes, I know, it looks outdated and definitely not as cool as [this personal website](https://benc.dev/). However, Abnormal Distributions launched my online presence to uncharted territory. Since going live, it has served over 50,000 page views and 20,000 users from [all over the world](#users-by-location). To date, [this post](https://abndistro.com/post/2019/07/07/detecting-image-differences-using-python-and-opencv/) is by far the most popular. I began posting content on LinkedIn with links to my website, and in the span of a year I received 1,700 LinkedIn connection requests from Data Scientists and professionals in data fields. I began receiving job opportunities from recruiters who would reference Abnormal Distributions as the reason for wanting to connect. Abnormal Distributions turned out to be a wonderful investment of time and energy and an amazing learning experience. It helped spark my creativity, deepen my subject matter expertise through writing, and give me the confidence to engage with the digital crowd.
+
+**My goal with this book is to help you launch your own personal website, blog, or project portfolio.** You will learn the exact methdology that I use to create, design, publish, and analyze websites using R, RStudio, and other freely available tools including GitHub, Hugo, Netlify, and Google Analytics. All of the tools presented in this book are free to download or available through free accounts. No prior experience in web development, R, or any of the aforementioned technologies is needed to be successful with this book.
 
 ## Target audience
 
-The target audience for this book includes current or aspiring thought leaders, R users, Data Engineers, Data Analysts, and Data Scientists who are interested in establishing or enriching their online presence with a personal website, blog, or project portfolio.
+The target audience for this book includes current or aspiring R users, Data Engineers, Data Analysts, and Data Scientists who are interested in establishing or enriching their online presence with a personal website, blog, or project portfolio.
 
 You do not have to be an experienced website developer to use the methodology described in this book. To learn more about whether or not this book is right for you, check out the [FAQ](#faq) section. 
 
 ## Tools you will use {#tools}
 
-The tools used in this book for building websites are listed below. Note that all of the tools listed are free to use.
+The methodology described in this book uses the tools listed below. Note that all of the tools listed are free to use.
 
 - [R](https://cran.rstudio.com/) and the [blogdown](https://bookdown.org/yihui/blogdown/) package - Used for generating websites and authoring content.
 - [RStudio](https://www.rstudio.com/products/rstudio/#rstudio-desktop) - Used for managing your website project and creating a remarkable website development experience.
@@ -96,3 +99,7 @@ RStudio is a free desktop application where all of your website development take
 **Can I publish my website behind a custom domain name?**
 
 Yes. See the chapter on [Deploying on Netlify](#deploy).
+
+## About the Author
+
+Hi! Thanks for checking out my book. I am an industry Data Scientist with a creative side. 

@@ -144,7 +144,7 @@ page_views %>%
   DT::datatable()
 ```
 
-### Users by location
+### Users by location {#users-by-location}
 
 ```{r}
 users_location <- google_analytics(

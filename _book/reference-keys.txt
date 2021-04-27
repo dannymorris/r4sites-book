@@ -66,3 +66,4 @@ page-views-by-page
 users-by-location
 extras
 contact-forms-1
+about-the-author
