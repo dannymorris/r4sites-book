@@ -1,10 +1,26 @@
+
+/*--- Fonts ---*/
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
 .book.font-family-1 {
   font-family: "Noto Sans TC", sans-serif;
 }
 .book .book-summary ul.summary li a, .book .book-summary ul.summary li span {
   font-family: "Noto Sans TC", sans-serif;
 }
+
+.book .book-header, .book .book-summary {
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+/*--- Book title and description ---*/
+
+h2.subtitle {
+  font-size: 20px !important;
+  font-weight: 400;
+}
+
 p.caption {
   color: #777;
   margin-top: 10px;
@@ -15,6 +31,8 @@ p.author {
 p.date {
   font-size:20px;
 }
+
+/*--- Code ---*/
 p code {
   white-space: inherit;
 }
@@ -25,10 +43,168 @@ pre {
 pre code {
   white-space: inherit;
 }
-h2.subtitle {
-  font-size: 20px !important;
-  font-weight: 400;
+
+/* The next two rules make the horizontal line go straight across in top navbar */
+
+.summary > li:first-child {
+    height: 50px;
+    padding-top: 10px;
+    border-bottom: 1px solid rgba(0,0,0,.07);
 }
-em {
-  font-style: italic !important
+
+.book .book-summary ul.summary li.divider {
+    height: 0px;
 }
+
+/*____Code Chunks____*/
+
+.sourceCode pre {
+  margin: 0 !important; /* makes space above and below symmetrical*/
+}
+
+.sourceCode {
+  margin-bottom: 0.85em; /* adds same amount of margin as a <p> would */
+}
+
+/*--- LOGO ---*/
+
+.toc-logo {
+  width: 200px !important;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
+.toc-logo img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.summary > li:first-child {
+  height: auto !important; 
+}
+
+/*-----Links-------*/
+
+.book .book-body .page-wrapper .page-inner section.normal a {
+  color: #0288a5;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal a:hover {
+  color: #01708e; /* darker color when hovering */
+  text-decoration: none;
+}
+
+/* Sidebar formating --------------------------------------------*/
+/* from r-pkgs.org*/
+
+div.rstudio-tip, div.tip, div.gotcha, div.design, div.hat{
+  border: 4px #aed6d963;
+  border-style: dashed solid;
+  padding: 1em;
+  margin: 1em 0;
+  padding-left: 100px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  min-height: 120px;
+  color: #2ea8b3;
+  background-color: #fcfcfc;
+}
+
+div.promote {
+  text-align: center !important;
+  line-height: 100px;
+  padding-left: 0px;
+  background-image: url("../images/divs/lightbulb.png");
+}
+
+div.rstudio-tip {
+  background-image: url("../images/divs/rstudio.png");
+}
+
+div.tip {
+  background-image: url("../images/divs/lightbulb.png");
+  text-align: center !important;
+  line-height: 100px;
+  padding-left: 0px;
+}
+
+div.gotcha {
+  background-image: url("../images/divs/gotcha_2.png");
+}
+
+div.design {
+  background-image: url("../images/divs/design.png");
+}
+
+div.hat {
+  background-image: url("../images/divs/hat.png");
+}
+
+div.puzzle, div.fyi, div.demo, div.note {
+  padding: 1em;
+  margin: 1em 0;
+  padding-left: 100px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  min-height: 120px;
+  color: #1f5386;
+  background-color: #bed3ec;
+  border: solid 5px #dfedff;
+}
+
+div.puzzle {
+  background-image: url("../images/illos/Your-turn.png");
+}
+
+div.fyi {
+  background-image: url("../images/illos/fyi.png");
+}
+
+div.demo {
+  background-image: url("../images/illos/Live-code.png");
+}
+
+div.note {
+  background-image: url("../images/illos/lightbulb2.png");
+}
+
+/* Copy to clipboard --------------------------------------------*/
+
+.copy {
+  width: inherit;
+  background-color: #e2e2e2 ;
+  border: none;
+  border-radius: 2px;
+  float: right;
+  font-size: 60%;
+  padding: 4px 4px 4px 4px;
+}
+
+/*------------ TOC --------------*/
+
+.book .book-summary {
+  background: white;
+  border-right: none;
+}
+
+.book .book-summary ul.summary li a:hover, .book .book-summary ul.summary li.active>a {
+    color: #0288a5;
+}
+
+.book .book-summary ul.summary li a, 
+.book .book-summary ul.summary li span {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.book .book-summary ul.summary li.active>a { /*active TOC links*/
+  color: #0288a5; !important;
+  border-left: solid 4px;
+  border-color: #0288a5;
+  padding-left: 11px !important;
+} 

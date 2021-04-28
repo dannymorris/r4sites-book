@@ -11,7 +11,7 @@
   <meta property="og:title" content="Create, Publish, and Analyze Personal Websites Using R and RStudio" />
   <meta property="og:type" content="book" />
   
-  
+  <meta property="og:image" content="images/logo/book-cover-300.png" />
   <meta property="og:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
   
 
@@ -19,7 +19,7 @@
   <meta name="twitter:title" content="Create, Publish, and Analyze Personal Websites Using R and RStudio" />
   
   <meta name="twitter:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
-  
+  <meta name="twitter:image" content="images/logo/book-cover-300.png" />
 
 <meta name="author" content="Danny Morris" />
 
@@ -30,7 +30,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
-  
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
 <link rel="next" href="complete-end-to-end-example.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
@@ -67,7 +67,7 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Create, Publish, and Analyze Personal Websites Using R and RStudio</a></li>
+<li class="toc-logo"><a href="./"><img src="https://i.imgur.com/jT1jqCm.png"></a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
@@ -77,7 +77,7 @@
 <li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#tools"><i class="fa fa-check"></i><b>1.3</b> Tools you will use</a></li>
 <li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#about-hugo-and-static-websites"><i class="fa fa-check"></i><b>1.4</b> About Hugo and static websites</a></li>
 <li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#inspiring-examples"><i class="fa fa-check"></i><b>1.5</b> Inspiring examples</a></li>
-<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#promoting-yourself-and-your-website"><i class="fa fa-check"></i><b>1.6</b> Promoting yourself and your website</a></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#engaging-an-audience"><i class="fa fa-check"></i><b>1.6</b> Engaging an audience</a></li>
 <li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#faq"><i class="fa fa-check"></i><b>1.7</b> FAQ</a></li>
 <li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i><b>1.8</b> About the Author</a></li>
 </ul></li>
@@ -175,11 +175,15 @@
 <div id="introduction" class="section level1" number="1">
 <h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
 <p><img src="https://i.imgur.com/2WgBlJfl.png" /></p>
+<div class="tip">
+<p>Purchase this book here - <a href="https://r4sites.com/products/r4sites-book/" class="uri">https://r4sites.com/products/r4sites-book/</a></p>
+</div>
 <div id="about-this-book" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> About this book</h2>
 <p>In 2018, I had virtually no online presence other than about 100 random LinkedIn connections. I knew this was a problem given my budding interest in Data Science, the increasing demand for project portfolios, and the perceived need to “stand out” in the digital crowd.</p>
-<p>So, I learned how to publish my first personal website, <a href="https://abndistro.com/">Abnormal Distributions</a>. Yes, I know, it looks outdated and definitely not as cool as <a href="https://benc.dev/">this personal website</a>. However, Abnormal Distributions launched my online presence to uncharted territory. Since going live, it has served over 50,000 page views and 20,000 users from <a href="google-analytics.html#users-by-location">all over the world</a>. To date, <a href="https://abndistro.com/post/2019/07/07/detecting-image-differences-using-python-and-opencv/">this post</a> is by far the most popular. I began posting content on LinkedIn with links to my website, and in the span of a year I received 1,700 LinkedIn connection requests from Data Scientists and professionals in data fields. I began receiving job opportunities from recruiters who would reference Abnormal Distributions as the reason for wanting to connect. Abnormal Distributions turned out to be a wonderful investment of time and energy and an amazing learning experience. It helped spark my creativity, deepen my subject matter expertise through writing, and give me the confidence to engage with the digital crowd.</p>
+<p>So, I learned how to publish my first personal website, <a href="https://abndistro.com/">Abnormal Distributions</a>. Yes, I know, it looks outdated and definitely not as cool as <a href="https://benc.dev/">this personal website</a>. However, Abnormal Distributions served as the launchpad for growing my online presence. Since going live, it has served over 50,000 page views and 20,000 users from <a href="google-analytics.html#users-by-location">all over the world</a>. To date, <a href="https://abndistro.com/post/2019/07/07/detecting-image-differences-using-python-and-opencv/">this post</a> is by far the most popular. I began posting content on LinkedIn with links to my website, and in the span of a year I received 1,700 LinkedIn connection requests from Data Scientists and professionals in related fields. I began receiving job opportunities from recruiters who would reference Abnormal Distributions as the reason for wanting to connect. Abnormal Distributions turned out to be a wonderful investment of time and energy and an amazing learning experience. It helped spark my creativity, deepen my subject matter expertise through writing, and give me the confidence to engage with the digital crowd.</p>
 <p><strong>My goal with this book is to help you launch your own personal website, blog, or project portfolio.</strong> You will learn the exact methdology that I use to create, design, publish, and analyze websites using R, RStudio, and other freely available tools including GitHub, Hugo, Netlify, and Google Analytics. All of the tools presented in this book are free to download or available through free accounts. No prior experience in web development, R, or any of the aforementioned technologies is needed to be successful with this book.</p>
+<p>Purchase this book here - <a href="https://r4sites.com/products/r4sites-book/" class="uri">https://r4sites.com/products/r4sites-book/</a>.</p>
 </div>
 <div id="target-audience" class="section level2" number="1.2">
 <h2><span class="header-section-number">1.2</span> Target audience</h2>
@@ -214,9 +218,9 @@
 <li><p><a href="https://juliasilge.com/">Julia Silge</a> - Personal website authored by Julia Silge. Simple and professional. Adapted from the <a href="https://themes.gohugo.io/theme/academic/">Hugo Academic</a> theme.</p></li>
 </ul>
 </div>
-<div id="promoting-yourself-and-your-website" class="section level2" number="1.6">
-<h2><span class="header-section-number">1.6</span> Promoting yourself and your website</h2>
-<p>Having your own website featuring your unique voice and content is a great way to market yourself and your work to a variety of audiences. Below is a list of ways to use websites to promote who you are and what you do.</p>
+<div id="engaging-an-audience" class="section level2" number="1.6">
+<h2><span class="header-section-number">1.6</span> Engaging an audience</h2>
+<p>Having your own website is a great way to market yourself and engage a variety of audiences. Below is a list of ways to use websites to promote who you are and what you do.</p>
 <ul>
 <li><p>Post links to your website on your LinkedIn profile including your headline, summary, and Featured section.</p></li>
 <li><p>Post content on LinkedIn and Twitter with relevant links to your website.</p></li>
@@ -242,7 +246,8 @@
 </div>
 <div id="about-the-author" class="section level2" number="1.8">
 <h2><span class="header-section-number">1.8</span> About the Author</h2>
-<p>Hi! Thanks for checking out my book. I am an industry Data Scientist with a creative side.</p>
+<p>Hi! My name is Danny Morris, and thanks for checking out my book. I am an industry Data Scientist with a passion for writing, creating visual content, and building predictive models. I have published over a dozen websites for various purposes using the methodology described in this book.
+More than anything, I love helping people launch or elevate their professional journey. Feel free to shoot me an <a href="dmorris10667@gmail.com">email</a> and connect with me on <a href="https://www.linkedin.com/in/drmorris87/">LinkedIn</a></p>
 
 </div>
 </div>

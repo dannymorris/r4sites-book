@@ -9,20 +9,28 @@ bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 description: "A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics."
+cover-image: images/logo/book-cover-300.png
+favicon: images/favicon.ico
 ---
 
 # Introduction
 
 ![](https://i.imgur.com/2WgBlJfl.png)
 
+:::tip
+Purchase this book here - https://r4sites.com/products/r4sites-book/
+:::
+
 ## About this book
 
 In 2018, I had virtually no online presence other than about 100 random LinkedIn connections. I knew this was a problem given my budding interest in Data Science, the increasing demand for project portfolios, and the perceived need to "stand out" in the digital crowd.
 
 
-So, I learned how to publish my first personal website, [Abnormal Distributions](https://abndistro.com/). Yes, I know, it looks outdated and definitely not as cool as [this personal website](https://benc.dev/). However, Abnormal Distributions launched my online presence to uncharted territory. Since going live, it has served over 50,000 page views and 20,000 users from [all over the world](#users-by-location). To date, [this post](https://abndistro.com/post/2019/07/07/detecting-image-differences-using-python-and-opencv/) is by far the most popular. I began posting content on LinkedIn with links to my website, and in the span of a year I received 1,700 LinkedIn connection requests from Data Scientists and professionals in data fields. I began receiving job opportunities from recruiters who would reference Abnormal Distributions as the reason for wanting to connect. Abnormal Distributions turned out to be a wonderful investment of time and energy and an amazing learning experience. It helped spark my creativity, deepen my subject matter expertise through writing, and give me the confidence to engage with the digital crowd.
+So, I learned how to publish my first personal website, [Abnormal Distributions](https://abndistro.com/). Yes, I know, it looks outdated and definitely not as cool as [this personal website](https://benc.dev/). However, Abnormal Distributions served as the launchpad for growing my online presence. Since going live, it has served over 50,000 page views and 20,000 users from [all over the world](#users-by-location). To date, [this post](https://abndistro.com/post/2019/07/07/detecting-image-differences-using-python-and-opencv/) is by far the most popular. I began posting content on LinkedIn with links to my website, and in the span of a year I received 1,700 LinkedIn connection requests from Data Scientists and professionals in related fields. I began receiving job opportunities from recruiters who would reference Abnormal Distributions as the reason for wanting to connect. Abnormal Distributions turned out to be a wonderful investment of time and energy and an amazing learning experience. It helped spark my creativity, deepen my subject matter expertise through writing, and give me the confidence to engage with the digital crowd.
 
 **My goal with this book is to help you launch your own personal website, blog, or project portfolio.** You will learn the exact methdology that I use to create, design, publish, and analyze websites using R, RStudio, and other freely available tools including GitHub, Hugo, Netlify, and Google Analytics. All of the tools presented in this book are free to download or available through free accounts. No prior experience in web development, R, or any of the aforementioned technologies is needed to be successful with this book.
+
+Purchase this book here - https://r4sites.com/products/r4sites-book/.
 
 ## Target audience
 
@@ -60,9 +68,9 @@ Below are some examples of personal websites, blogs, and portfolios that have be
 
 - [Julia Silge](https://juliasilge.com/) - Personal website authored by Julia Silge. Simple and professional. Adapted from the [Hugo Academic](https://themes.gohugo.io/theme/academic/) theme.
 
-## Promoting yourself and your website
+## Engaging an audience
 
-Having your own website featuring your unique voice and content is a great way to market yourself and your work to a variety of audiences. Below is a list of ways to use websites to promote who you are and what you do.
+Having your own website is a great way to market yourself and engage a variety of audiences. Below is a list of ways to use websites to promote who you are and what you do.
 
 - Post links to your website on your LinkedIn profile including your headline, summary, and Featured section.
 
@@ -102,4 +110,5 @@ Yes. See the chapter on [Deploying on Netlify](#deploy).
 
 ## About the Author
 
-Hi! Thanks for checking out my book. I am an industry Data Scientist with a creative side. 
+Hi! My name is Danny Morris, and thanks for checking out my book. I am an industry Data Scientist with a passion for writing, creating visual content, and building predictive models. I have published over a dozen websites for various purposes using the methodology described in this book. 
+More than anything, I love helping people launch or elevate their professional journey. Feel free to shoot me an [email](dmorris10667@gmail.com) and connect with me on [LinkedIn](https://www.linkedin.com/in/drmorris87/)

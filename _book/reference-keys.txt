@@ -4,8 +4,9 @@ target-audience
 tools
 about-hugo-and-static-websites
 inspiring-examples
-promoting-yourself-and-your-website
+engaging-an-audience
 faq
+about-the-author
 complete-end-to-end-example
 how-it-works
 install-software
@@ -66,4 +67,3 @@ page-views-by-page
 users-by-location
 extras
 contact-forms-1
-about-the-author
