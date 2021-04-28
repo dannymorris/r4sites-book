@@ -2,6 +2,8 @@ bookdown::gitbook:
   highlight: tango
   css: style.css
   toc_depth: 2
+  includes:
+    before_body: assets/hero-image.html
   config:
     sharing:
       github: no
