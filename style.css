@@ -208,3 +208,48 @@ div.note {
   border-color: #0288a5;
   padding-left: 11px !important;
 } 
+
+/* Button style ----------------------*/
+
+.btn-div {
+  margin-top:50px
+}
+
+.btn {
+  font-size: 18px;
+  font-family: "Noto Sans TC", sans-serif !important;
+  text-transform: capitalize;
+  padding: 13px 40px;
+  border-radius: 35px;
+  font-weight: 500;
+  border: 1px solid;
+  position: relative;
+  z-index: 1;
+  transition: .2s ease;
+  margin-bottom: 5px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    box-shadow: 0 8px 10px rgba(33,33,33,.2) !important;
+  }
+}
+
+.btn-sm{
+  padding: 10px 30px;
+}
+
+.btn-primary {
+  background: #0288a5 !important;
+  color: white !important;
+  border-color: #0288a5 !important;
+
+  &:active,
+  &:hover,
+  &.focus,
+  &.active {
+    background: #01708e; !important;
+    border-color: #01708e; !important;
+  }
+}
