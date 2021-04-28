@@ -17,7 +17,7 @@ favicon: images/favicon.ico
 
 ![](https://i.imgur.com/2WgBlJfl.png)
 <div class="btn-div">
-  <a href="https://r4sites.com/products/r4sites-book/" class="btn btn-primary mr-3">Purchase this book</a>
+  <a href="https://r4sites.com/products/r4sites-book/" class="btn-promo btn-promo-primary mr-3">Purchase this book</a>
 </div>
 
 ## About this book

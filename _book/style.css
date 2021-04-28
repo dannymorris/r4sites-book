@@ -215,7 +215,7 @@ div.note {
   margin-top:50px
 }
 
-.btn {
+.btn-promo {
   font-size: 18px;
   font-family: "Noto Sans TC", sans-serif !important;
   text-transform: capitalize;
@@ -240,7 +240,7 @@ div.note {
   padding: 10px 30px;
 }
 
-.btn-primary {
+.btn-promo-primary {
   background: #0288a5 !important;
   color: white !important;
   border-color: #0288a5 !important;
