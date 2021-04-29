@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 6 Authoring content | Create, Publish, and Analyze Personal Websites Using R and RStudio</title>
+  <title>Chapter 7 Authoring content | Create, Publish, and Analyze Personal Websites Using R and RStudio</title>
   <meta name="description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 6 Authoring content | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
+  <meta property="og:title" content="Chapter 7 Authoring content | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="images/logo/book-cover-300.png" />
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 6 Authoring content | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
+  <meta name="twitter:title" content="Chapter 7 Authoring content | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
   
   <meta name="twitter:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
   <meta name="twitter:image" content="images/logo/book-cover-300.png" />
@@ -31,7 +31,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="curate-features.html"/>
+<link rel="prev" href="pages-features.html"/>
 <link rel="next" href="deploy.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
@@ -53,69 +53,6 @@
 
 
 
-<style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  background-color: #f8f8f8; }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ef2929; } /* Alert */
-code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
-code span.bn { color: #0000cf; } /* BaseN */
-code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
-code span.co { color: #8f5902; font-style: italic; } /* Comment */
-code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
-code span.dt { color: #204a87; } /* DataType */
-code span.dv { color: #0000cf; } /* DecVal */
-code span.er { color: #a40000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
-code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
-code span.ot { color: #8f5902; } /* Other */
-code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
-code span.ss { color: #4e9a06; } /* SpecialString */
-code span.st { color: #4e9a06; } /* String */
-code span.va { color: #000000; } /* Variable */
-code span.vs { color: #4e9a06; } /* VerbatimString */
-code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
-</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -155,60 +92,68 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.7" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#integrate-formspree"><i class="fa fa-check"></i><b>2.7</b> Integrate Formspree</a></li>
 <li class="chapter" data-level="2.8" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#push-the-website-to-github"><i class="fa fa-check"></i><b>2.8</b> Push the website to GitHub</a></li>
 <li class="chapter" data-level="2.9" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#deploy-the-website-on-netlify"><i class="fa fa-check"></i><b>2.9</b> Deploy the website on Netlify</a></li>
-<li class="chapter" data-level="2.10" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#closing-thoughts"><i class="fa fa-check"></i><b>2.10</b> Closing thoughts</a></li>
+<li class="chapter" data-level="2.10" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#analyze-google-analytics-data"><i class="fa fa-check"></i><b>2.10</b> Analyze Google Analytics data</a></li>
+<li class="chapter" data-level="2.11" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#closing-thoughts"><i class="fa fa-check"></i><b>2.11</b> Closing thoughts</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="choose-theme.html"><a href="choose-theme.html"><i class="fa fa-check"></i><b>3</b> Choosing a Hugo theme</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="choose-theme.html"><a href="choose-theme.html#how-it-works-1"><i class="fa fa-check"></i><b>3.1</b> How it works</a></li>
 <li class="chapter" data-level="3.2" data-path="choose-theme.html"><a href="choose-theme.html#the-9010-rule-for-themes"><i class="fa fa-check"></i><b>3.2</b> The 90/10 rule for themes</a></li>
 <li class="chapter" data-level="3.3" data-path="choose-theme.html"><a href="choose-theme.html#create-site-with-theme"><i class="fa fa-check"></i><b>3.3</b> Generating websites from themes</a></li>
-<li class="chapter" data-level="3.4" data-path="choose-theme.html"><a href="choose-theme.html#editing-your-theme"><i class="fa fa-check"></i><b>3.4</b> Editing your theme</a></li>
+<li class="chapter" data-level="3.4" data-path="choose-theme.html"><a href="choose-theme.html#next-steps"><i class="fa fa-check"></i><b>3.4</b> Next steps</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="generate.html"><a href="generate.html"><i class="fa fa-check"></i><b>4</b> Generating a blogdown website</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="generate.html"><a href="generate.html#how-it-works-2"><i class="fa fa-check"></i><b>4.1</b> How it works</a></li>
 <li class="chapter" data-level="4.2" data-path="generate.html"><a href="generate.html#use-case"><i class="fa fa-check"></i><b>4.2</b> Use case</a></li>
 <li class="chapter" data-level="4.3" data-path="generate.html"><a href="generate.html#generate-site"><i class="fa fa-check"></i><b>4.3</b> Generate your site in three steps</a></li>
-<li class="chapter" data-level="4.4" data-path="generate.html"><a href="generate.html#serve-site"><i class="fa fa-check"></i><b>4.4</b> Serving the website locally</a></li>
+<li class="chapter" data-level="4.4" data-path="generate.html"><a href="generate.html#serve-site"><i class="fa fa-check"></i><b>4.4</b> Serve the website locally</a></li>
+<li class="chapter" data-level="4.5" data-path="generate.html"><a href="generate.html#next-steps-1"><i class="fa fa-check"></i><b>4.5</b> Next steps</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="curate-features.html"><a href="curate-features.html"><i class="fa fa-check"></i><b>5</b> Curating the look, feel, and features</a>
+<li class="chapter" data-level="5" data-path="fine-tune.html"><a href="fine-tune.html"><i class="fa fa-check"></i><b>5</b> Fine tuning the look and feel</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="curate-features.html"><a href="curate-features.html#how-it-works-3"><i class="fa fa-check"></i><b>5.1</b> How it works</a></li>
-<li class="chapter" data-level="5.2" data-path="curate-features.html"><a href="curate-features.html#tips-for-working-efficiently"><i class="fa fa-check"></i><b>5.2</b> Tips for working efficiently</a></li>
-<li class="chapter" data-level="5.3" data-path="curate-features.html"><a href="curate-features.html#use-case-1"><i class="fa fa-check"></i><b>5.3</b> Use case</a></li>
-<li class="chapter" data-level="5.4" data-path="curate-features.html"><a href="curate-features.html#title-and-description"><i class="fa fa-check"></i><b>5.4</b> Title and description</a></li>
-<li class="chapter" data-level="5.5" data-path="curate-features.html"><a href="curate-features.html#logos-and-profile-images"><i class="fa fa-check"></i><b>5.5</b> Logos and profile images</a></li>
-<li class="chapter" data-level="5.6" data-path="curate-features.html"><a href="curate-features.html#favicon"><i class="fa fa-check"></i><b>5.6</b> Favicons</a></li>
-<li class="chapter" data-level="5.7" data-path="curate-features.html"><a href="curate-features.html#fonts"><i class="fa fa-check"></i><b>5.7</b> Fonts</a></li>
-<li class="chapter" data-level="5.8" data-path="curate-features.html"><a href="curate-features.html#colors"><i class="fa fa-check"></i><b>5.8</b> Colors</a></li>
-<li class="chapter" data-level="5.9" data-path="curate-features.html"><a href="curate-features.html#managing-pages-and-sections"><i class="fa fa-check"></i><b>5.9</b> Managing pages and sections</a></li>
-<li class="chapter" data-level="5.10" data-path="curate-features.html"><a href="curate-features.html#contact-forms"><i class="fa fa-check"></i><b>5.10</b> Contact forms</a></li>
-<li class="chapter" data-level="5.11" data-path="curate-features.html"><a href="curate-features.html#foreign-languages"><i class="fa fa-check"></i><b>5.11</b> Foreign languages</a></li>
-<li class="chapter" data-level="5.12" data-path="curate-features.html"><a href="curate-features.html#social-media-links"><i class="fa fa-check"></i><b>5.12</b> Social media links</a></li>
-<li class="chapter" data-level="5.13" data-path="curate-features.html"><a href="curate-features.html#closing-thoughts-on-themes"><i class="fa fa-check"></i><b>5.13</b> Closing thoughts on themes</a></li>
+<li class="chapter" data-level="5.1" data-path="fine-tune.html"><a href="fine-tune.html#how-it-works-3"><i class="fa fa-check"></i><b>5.1</b> How it works</a></li>
+<li class="chapter" data-level="5.2" data-path="fine-tune.html"><a href="fine-tune.html#about-css"><i class="fa fa-check"></i><b>5.2</b> About CSS</a></li>
+<li class="chapter" data-level="5.3" data-path="fine-tune.html"><a href="fine-tune.html#inspect-tool"><i class="fa fa-check"></i><b>5.3</b> About the Inspect tool</a></li>
+<li class="chapter" data-level="5.4" data-path="fine-tune.html"><a href="fine-tune.html#use-case-1"><i class="fa fa-check"></i><b>5.4</b> Use case</a></li>
+<li class="chapter" data-level="5.5" data-path="fine-tune.html"><a href="fine-tune.html#before-you-begin"><i class="fa fa-check"></i><b>5.5</b> Before you begin</a></li>
+<li class="chapter" data-level="5.6" data-path="fine-tune.html"><a href="fine-tune.html#title-description-and-author"><i class="fa fa-check"></i><b>5.6</b> Title, description, and author</a></li>
+<li class="chapter" data-level="5.7" data-path="fine-tune.html"><a href="fine-tune.html#profile-image"><i class="fa fa-check"></i><b>5.7</b> Profile image</a></li>
+<li class="chapter" data-level="5.8" data-path="fine-tune.html"><a href="fine-tune.html#favicon"><i class="fa fa-check"></i><b>5.8</b> Favicon</a></li>
+<li class="chapter" data-level="5.9" data-path="fine-tune.html"><a href="fine-tune.html#font-style"><i class="fa fa-check"></i><b>5.9</b> Font style</a></li>
+<li class="chapter" data-level="5.10" data-path="fine-tune.html"><a href="fine-tune.html#font-sizes"><i class="fa fa-check"></i><b>5.10</b> Font sizes</a></li>
+<li class="chapter" data-level="5.11" data-path="fine-tune.html"><a href="fine-tune.html#colors"><i class="fa fa-check"></i><b>5.11</b> Colors</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="content.html"><a href="content.html"><i class="fa fa-check"></i><b>6</b> Authoring content</a>
+<li class="chapter" data-level="6" data-path="pages-features.html"><a href="pages-features.html"><i class="fa fa-check"></i><b>6</b> Managing pages and features</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="content.html"><a href="content.html#creating-posts"><i class="fa fa-check"></i><b>6.1</b> Creating posts</a></li>
-<li class="chapter" data-level="6.2" data-path="content.html"><a href="content.html#example-r-markdown-post"><i class="fa fa-check"></i><b>6.2</b> Example R Markdown post</a></li>
-<li class="chapter" data-level="6.3" data-path="content.html"><a href="content.html#example-markdown-post"><i class="fa fa-check"></i><b>6.3</b> Example Markdown post</a></li>
+<li class="chapter" data-level="6.1" data-path="pages-features.html"><a href="pages-features.html#removing-and-renaming-pages"><i class="fa fa-check"></i><b>6.1</b> Removing and renaming pages</a></li>
+<li class="chapter" data-level="6.2" data-path="pages-features.html"><a href="pages-features.html#language-translations"><i class="fa fa-check"></i><b>6.2</b> Language translations</a></li>
+<li class="chapter" data-level="6.3" data-path="pages-features.html"><a href="pages-features.html#configuring-contact-forms"><i class="fa fa-check"></i><b>6.3</b> Configuring contact forms</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="deploy.html"><a href="deploy.html"><i class="fa fa-check"></i><b>7</b> Deploying on Netlify</a>
+<li class="chapter" data-level="7" data-path="content.html"><a href="content.html"><i class="fa fa-check"></i><b>7</b> Authoring content</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="deploy.html"><a href="deploy.html#how-it-works-4"><i class="fa fa-check"></i><b>7.1</b> How it works</a></li>
-<li class="chapter" data-level="7.2" data-path="deploy.html"><a href="deploy.html#upload-website-files-to-github"><i class="fa fa-check"></i><b>7.2</b> Upload website files to GitHub</a></li>
-<li class="chapter" data-level="7.3" data-path="deploy.html"><a href="deploy.html#configure-netlify-for-deployment"><i class="fa fa-check"></i><b>7.3</b> Configure Netlify for deployment</a></li>
-<li class="chapter" data-level="7.4" data-path="deploy.html"><a href="deploy.html#using-a-custom-domain-name"><i class="fa fa-check"></i><b>7.4</b> Using a custom domain name</a></li>
+<li class="chapter" data-level="7.1" data-path="content.html"><a href="content.html#update-default-content"><i class="fa fa-check"></i><b>7.1</b> Update default content</a></li>
+<li class="chapter" data-level="7.2" data-path="content.html"><a href="content.html#create-new-posts"><i class="fa fa-check"></i><b>7.2</b> Create new posts</a></li>
+<li class="chapter" data-level="7.3" data-path="content.html"><a href="content.html#example-r-markdown-post"><i class="fa fa-check"></i><b>7.3</b> Example R Markdown post</a></li>
+<li class="chapter" data-level="7.4" data-path="content.html"><a href="content.html#example-markdown-post"><i class="fa fa-check"></i><b>7.4</b> Example Markdown post</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="google-analytics.html"><a href="google-analytics.html"><i class="fa fa-check"></i><b>8</b> Analyzing traffic with Google Analytics</a>
+<li class="chapter" data-level="8" data-path="deploy.html"><a href="deploy.html"><i class="fa fa-check"></i><b>8</b> Deploying on Netlify</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="google-analytics.html"><a href="google-analytics.html#how-it-works-5"><i class="fa fa-check"></i><b>8.1</b> How it works</a></li>
-<li class="chapter" data-level="8.2" data-path="google-analytics.html"><a href="google-analytics.html#setting-up-google-analytics"><i class="fa fa-check"></i><b>8.2</b> Setting up Google Analytics</a></li>
-<li class="chapter" data-level="8.3" data-path="google-analytics.html"><a href="google-analytics.html#analyzing-traffic-using-googleanalyticsr"><i class="fa fa-check"></i><b>8.3</b> Analyzing traffic using googleAnalyticsR</a></li>
+<li class="chapter" data-level="8.1" data-path="deploy.html"><a href="deploy.html#how-it-works-4"><i class="fa fa-check"></i><b>8.1</b> How it works</a></li>
+<li class="chapter" data-level="8.2" data-path="deploy.html"><a href="deploy.html#upload-website-files-to-github"><i class="fa fa-check"></i><b>8.2</b> Upload website files to GitHub</a></li>
+<li class="chapter" data-level="8.3" data-path="deploy.html"><a href="deploy.html#configure-netlify-for-deployment"><i class="fa fa-check"></i><b>8.3</b> Configure Netlify for deployment</a></li>
+<li class="chapter" data-level="8.4" data-path="deploy.html"><a href="deploy.html#purchasing-a-custom-domain-name"><i class="fa fa-check"></i><b>8.4</b> Purchasing a custom domain name</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="extras.html"><a href="extras.html"><i class="fa fa-check"></i><b>9</b> Extras</a>
+<li class="chapter" data-level="9" data-path="google-analytics.html"><a href="google-analytics.html"><i class="fa fa-check"></i><b>9</b> Analyzing traffic with Google Analytics</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="extras.html"><a href="extras.html#contact-forms-1"><i class="fa fa-check"></i><b>9.1</b> Contact forms</a></li>
+<li class="chapter" data-level="9.1" data-path="google-analytics.html"><a href="google-analytics.html#how-it-works-5"><i class="fa fa-check"></i><b>9.1</b> How it works</a></li>
+<li class="chapter" data-level="9.2" data-path="google-analytics.html"><a href="google-analytics.html#setting-up-google-analytics"><i class="fa fa-check"></i><b>9.2</b> Setting up Google Analytics</a></li>
+<li class="chapter" data-level="9.3" data-path="google-analytics.html"><a href="google-analytics.html#analyzing-traffic-using-googleanalyticsr"><i class="fa fa-check"></i><b>9.3</b> Analyzing traffic using googleAnalyticsR</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="extras.html"><a href="extras.html"><i class="fa fa-check"></i><b>10</b> Extras</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="extras.html"><a href="extras.html#stop-build-serve-site"><i class="fa fa-check"></i><b>10.1</b> Stop, build, serve site</a></li>
+<li class="chapter" data-level="10.2" data-path="extras.html"><a href="extras.html#html-color-picker"><i class="fa fa-check"></i><b>10.2</b> HTML color picker</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -233,22 +178,29 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="https://i.imgur.com/gRJLHS0.png">
 </div>
-<div id="content" class="section level1" number="6">
-<h1><span class="header-section-number">Chapter 6</span> Authoring content</h1>
-<p>This chapter provides some general guidance on creating content, such as blog posts, using R Markdown as well as plain Markdown. By this point, you should have <a href="complete-end-to-end-example.html#create-new-blogdown">created a new blogdown site</a> with your <a href="#select-hugo-theme">preferred theme</a>.</p>
-<p>In this chapter, we will continue to build on the website that was created in the previous chapter, which uses the <a href="https://themes.gohugo.io/anatole/">Anatole</a> theme. To view the finished product, visit <a href="https://example-anatole.netlify.app/" class="uri">https://example-anatole.netlify.app/</a></p>
-<div id="creating-posts" class="section level2" number="6.1">
-<h2><span class="header-section-number">6.1</span> Creating posts</h2>
+<div id="content" class="section level1" number="7">
+<h1><span class="header-section-number">Chapter 7</span> Authoring content</h1>
+<p>This chapter provides some general guidance on creating content, such as blog posts, using R Markdown as well as plain Markdown.</p>
+<div id="update-default-content" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> Update default content</h2>
+<p>The Hugo Anatole theme comes with default posts and default text on the About page. To delete or edit the default content, follow the steps below.</p>
+<ul>
+<li><p>To edit the About page, navigate to <code>content/english/about.md</code>. Replace the metadata (i.e. the parameters in between the <code>---</code> markers) then replace the body of the Markdown document.</p></li>
+<li><p>To delete all default posts, navigate to the <code>content/english/post</code> folder and delete all files and folders <strong>except <code>_index.md</code></strong>.</p></li>
+</ul>
+</div>
+<div id="create-new-posts" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> Create new posts</h2>
 <p>As the website developer, new content you create will typically be in the form of a post. Common types of posts are blog entries, tutorials, portfolio entries, project documentation, and so on. With blogdown, posts can either be <a href="https://bookdown.org/yihui/rmarkdown/html-document.html">R Markdown</a> documents or plain <a href="https://www.markdownguide.org/getting-started/">Markdown</a> documents. The only difference between the two is that R Markdown enables you to insert and execute server-side code (e.g. R code) and display the output in the post body in addition to plain Markdown syntax. Markdown, on the other hand, is static content that cannot execute server-side code.</p>
 <p>The recommended way to add a blog post is with the RStudio Addin labeled “New post,” as shown in this <a href="https://i.imgur.com/S9dl4DZ.png">example</a>. This addin will display a simple GUI for configuring the metadata for your new post including the post title, author, date, tags, content type and more. This <a href="https://i.imgur.com/UEzRUnO.png">example post configuration</a> generates a R Markdown post destined for the <code>post</code> subdirectory. The archetype, filename, slug, and language are handled automatically and require no changes.</p>
 </div>
-<div id="example-r-markdown-post" class="section level2" number="6.2">
-<h2><span class="header-section-number">6.2</span> Example R Markdown post</h2>
+<div id="example-r-markdown-post" class="section level2" number="7.3">
+<h2><span class="header-section-number">7.3</span> Example R Markdown post</h2>
 <p>Before you create a new post, go ahead and run <code>blogdown::serve_site()</code> in the R console with your RStudio Project opened. This will launch your website locally and will update automatically whenever edits are saved. This is key for rapid development and iteration.</p>
 <p>If you haven’t already, leverage this <a href="https://i.imgur.com/UEzRUnO.png">example post configuration</a> to create a new post R Markdown. The default document contains limited metadata and no body content. What to include is ultimately a matter of personal preference, but <a href="https://github.com/dannymorris/anatole-site/blob/master/content/english/post/2021-04-22-writing-a-post-using-r-markdown/index.en.Rmd">this R Markdown post</a> provides a great starting point with some handy features including syntax highlighting, table of contents, and message/warning suppression. The published version of this post can be viewed here - <a href="https://example-anatole.netlify.app/post/2021-04-22-writing-a-post-using-r-markdown/" class="uri">https://example-anatole.netlify.app/post/2021-04-22-writing-a-post-using-r-markdown/</a></p>
 </div>
-<div id="example-markdown-post" class="section level2" number="6.3">
-<h2><span class="header-section-number">6.3</span> Example Markdown post</h2>
+<div id="example-markdown-post" class="section level2" number="7.4">
+<h2><span class="header-section-number">7.4</span> Example Markdown post</h2>
 <p>Unlike R Markdown, plain Markdown documents render static content only (e.g. text, images, multimedia) and cannot execute server-side code. If your post does not need to execute code and render its ouput, then author the post using plain Markdown. To configure a plain Markdown post, follow this <a href="https://i.imgur.com/UEzRUnO.png">example post configuration</a> but change the Format parameter to Markdown instead of R Markdown.</p>
 <p>This <a href="https://raw.githubusercontent.com/dannymorris/anatole-site/master/content/english/post/2021-04-22-example-plain-markdown-post/index.en.md">example Markdown post</a> should get you started. The published version of this post can be viewed here - <a href="https://example-anatole.netlify.app/post/2021-04-22-example-plain-markdown-post/" class="uri">https://example-anatole.netlify.app/post/2021-04-22-example-plain-markdown-post/</a></p>
 
@@ -259,7 +211,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="curate-features.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="pages-features.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="deploy.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>

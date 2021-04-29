@@ -1,10 +1,16 @@
 # Authoring content {#content}
 
-This chapter provides some general guidance on creating content, such as blog posts, using R Markdown as well as plain Markdown. By this point, you should have [created a new blogdown site](#create-new-blogdown) with your [preferred theme](#select-hugo-theme).
+This chapter provides some general guidance on creating content, such as blog posts, using R Markdown as well as plain Markdown. 
 
-In this chapter, we will continue to build on the website that was created in the previous chapter, which uses the [Anatole](https://themes.gohugo.io/anatole/) theme. To view the finished product, visit https://example-anatole.netlify.app/
+## Update default content
 
-## Creating posts
+The Hugo Anatole theme comes with default posts and default text on the About page. To delete or edit the default content, follow the steps below.
+
+- To edit the About page, navigate to `content/english/about.md`. Replace the metadata (i.e. the parameters in between the `---` markers) then replace the body of the Markdown document.
+
+- To delete all default posts, navigate to the `content/english/post` folder and delete all files and folders **except `_index.md`**.
+
+## Create new posts
 
 As the website developer, new content you create will typically be in the form of a post. Common types of posts are blog entries, tutorials, portfolio entries, project documentation, and so on. With blogdown, posts can either be [R Markdown](https://bookdown.org/yihui/rmarkdown/html-document.html) documents or plain [Markdown](https://www.markdownguide.org/getting-started/) documents. The only difference between the two is that R Markdown enables you to insert and execute server-side code (e.g. R code) and display the output in the post body in addition to plain Markdown syntax. Markdown, on the other hand, is static content that cannot execute server-side code.
 

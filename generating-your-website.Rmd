@@ -13,7 +13,7 @@ The R package [blogdown](https://bookdown.org/yihui/blogdown/) in tandem with RS
 
 ## Use case
 
-This chapter, and all subsequent chapters, will build upon the default [Hugo Tranquilpeak theme](https://themes.gohugo.io/hugo-tranquilpeak-theme/). The finished product can be seen here - https://r4sites-transquilpeak.netlify.app/
+This chapter, and all subsequent chapters, will build upon the default [Hugo Anatole theme](https://themes.gohugo.io/hugo-tranquilpeak-theme/). The finished product can be seen here - https://r4sites-anatole-demo.netlify.app/
 
 ## Generate your site in three steps {#generate-site}
 
@@ -21,12 +21,18 @@ Follow these steps to generate a Hugo website using R and RStudio:
 
 1. Launch RStudio and install the blogdown package by running `install.packages("blogdown")` in the R console.
 
-2. Create a new RStudio Project by going to File > New Project > New Directory > Website using blogdown. [Example](https://i.imgur.com/eDg7V2k.png)
+2. Create a new RStudio Project by going to **File > New Project > New Directory > Website using blogdown.** [Example](https://i.imgur.com/eDg7V2k.png).
 
-3. Configure the website to use the Tranquilpeak theme, as show in this [example configuration](https://i.imgur.com/O8qGCm1.png). Make sure to set the `Hugo theme:` parameter to `kakawait/hugo-tranquilpeak-theme`. The topic of theme selection is discussed in the next chapter. Finally, click Create Project to generate the initial website.
+3. Configure the website to use the Anatole theme, as show in this [example configuration](https://i.imgur.com/0DxkDHe.png). Make sure to set the `Hugo theme:` parameter to `lxndrblz/anatole`. Click Create Project to generate the website.
 
-## Serving the website locally {#serve-site}
+## Serve the website locally {#serve-site}
 
 The blogdown package includes a handy function called `serve_site()`. Running this function in the R console with your website's RStudio Project loaded will render a local copy of your entire website in the RStudio "Viewer" pane, as shown in this [example](https://i.imgur.com/oxZgeqM.png).
 
 The best part of this feature is that as you make and save changes to your website files, the local rendering will update in real-time and reflect your changes. This feature of blogdown, known as LiveReload, enables rapid trial and error on your local machine without ever having to leave the RStudio environment.
+
+## Next steps
+
+Continue on to the chapter [Curating the look, feel, and features](#curate-features) to learn how to customize the default theme to capture your personal style.
+
+

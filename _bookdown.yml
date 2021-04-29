@@ -9,7 +9,8 @@ rmd_files:
   - end-to-end.Rmd
   - choosing-a-design.Rmd
   - generating-your-website.Rmd
-  - curating-website-features.Rmd
+  - look-and-feel.Rmd
+  - pages-and-features.Rmd
   - creating-content.Rmd
   - deploy-on-netlify.Rmd
   - google-analytics.Rmd

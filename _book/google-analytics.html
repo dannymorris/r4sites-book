@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 8 Analyzing traffic with Google Analytics | Create, Publish, and Analyze Personal Websites Using R and RStudio</title>
+  <title>Chapter 9 Analyzing traffic with Google Analytics | Create, Publish, and Analyze Personal Websites Using R and RStudio</title>
   <meta name="description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 8 Analyzing traffic with Google Analytics | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
+  <meta property="og:title" content="Chapter 9 Analyzing traffic with Google Analytics | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="images/logo/book-cover-300.png" />
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 8 Analyzing traffic with Google Analytics | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
+  <meta name="twitter:title" content="Chapter 9 Analyzing traffic with Google Analytics | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
   
   <meta name="twitter:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
   <meta name="twitter:image" content="images/logo/book-cover-300.png" />
@@ -155,60 +155,67 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.7" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#integrate-formspree"><i class="fa fa-check"></i><b>2.7</b> Integrate Formspree</a></li>
 <li class="chapter" data-level="2.8" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#push-the-website-to-github"><i class="fa fa-check"></i><b>2.8</b> Push the website to GitHub</a></li>
 <li class="chapter" data-level="2.9" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#deploy-the-website-on-netlify"><i class="fa fa-check"></i><b>2.9</b> Deploy the website on Netlify</a></li>
-<li class="chapter" data-level="2.10" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#closing-thoughts"><i class="fa fa-check"></i><b>2.10</b> Closing thoughts</a></li>
+<li class="chapter" data-level="2.10" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#analyze-google-analytics-data"><i class="fa fa-check"></i><b>2.10</b> Analyze Google Analytics data</a></li>
+<li class="chapter" data-level="2.11" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#closing-thoughts"><i class="fa fa-check"></i><b>2.11</b> Closing thoughts</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="choose-theme.html"><a href="choose-theme.html"><i class="fa fa-check"></i><b>3</b> Choosing a Hugo theme</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="choose-theme.html"><a href="choose-theme.html#how-it-works-1"><i class="fa fa-check"></i><b>3.1</b> How it works</a></li>
 <li class="chapter" data-level="3.2" data-path="choose-theme.html"><a href="choose-theme.html#the-9010-rule-for-themes"><i class="fa fa-check"></i><b>3.2</b> The 90/10 rule for themes</a></li>
 <li class="chapter" data-level="3.3" data-path="choose-theme.html"><a href="choose-theme.html#create-site-with-theme"><i class="fa fa-check"></i><b>3.3</b> Generating websites from themes</a></li>
-<li class="chapter" data-level="3.4" data-path="choose-theme.html"><a href="choose-theme.html#editing-your-theme"><i class="fa fa-check"></i><b>3.4</b> Editing your theme</a></li>
+<li class="chapter" data-level="3.4" data-path="choose-theme.html"><a href="choose-theme.html#next-steps"><i class="fa fa-check"></i><b>3.4</b> Next steps</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="generate.html"><a href="generate.html"><i class="fa fa-check"></i><b>4</b> Generating a blogdown website</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="generate.html"><a href="generate.html#how-it-works-2"><i class="fa fa-check"></i><b>4.1</b> How it works</a></li>
 <li class="chapter" data-level="4.2" data-path="generate.html"><a href="generate.html#use-case"><i class="fa fa-check"></i><b>4.2</b> Use case</a></li>
 <li class="chapter" data-level="4.3" data-path="generate.html"><a href="generate.html#generate-site"><i class="fa fa-check"></i><b>4.3</b> Generate your site in three steps</a></li>
-<li class="chapter" data-level="4.4" data-path="generate.html"><a href="generate.html#serve-site"><i class="fa fa-check"></i><b>4.4</b> Serving the website locally</a></li>
+<li class="chapter" data-level="4.4" data-path="generate.html"><a href="generate.html#serve-site"><i class="fa fa-check"></i><b>4.4</b> Serve the website locally</a></li>
+<li class="chapter" data-level="4.5" data-path="generate.html"><a href="generate.html#next-steps-1"><i class="fa fa-check"></i><b>4.5</b> Next steps</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="curate-features.html"><a href="curate-features.html"><i class="fa fa-check"></i><b>5</b> Curating the look, feel, and features</a>
+<li class="chapter" data-level="5" data-path="fine-tune.html"><a href="fine-tune.html"><i class="fa fa-check"></i><b>5</b> Fine tuning the look and feel</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="curate-features.html"><a href="curate-features.html#how-it-works-3"><i class="fa fa-check"></i><b>5.1</b> How it works</a></li>
-<li class="chapter" data-level="5.2" data-path="curate-features.html"><a href="curate-features.html#tips-for-working-efficiently"><i class="fa fa-check"></i><b>5.2</b> Tips for working efficiently</a></li>
-<li class="chapter" data-level="5.3" data-path="curate-features.html"><a href="curate-features.html#use-case-1"><i class="fa fa-check"></i><b>5.3</b> Use case</a></li>
-<li class="chapter" data-level="5.4" data-path="curate-features.html"><a href="curate-features.html#title-and-description"><i class="fa fa-check"></i><b>5.4</b> Title and description</a></li>
-<li class="chapter" data-level="5.5" data-path="curate-features.html"><a href="curate-features.html#logos-and-profile-images"><i class="fa fa-check"></i><b>5.5</b> Logos and profile images</a></li>
-<li class="chapter" data-level="5.6" data-path="curate-features.html"><a href="curate-features.html#favicon"><i class="fa fa-check"></i><b>5.6</b> Favicons</a></li>
-<li class="chapter" data-level="5.7" data-path="curate-features.html"><a href="curate-features.html#fonts"><i class="fa fa-check"></i><b>5.7</b> Fonts</a></li>
-<li class="chapter" data-level="5.8" data-path="curate-features.html"><a href="curate-features.html#colors"><i class="fa fa-check"></i><b>5.8</b> Colors</a></li>
-<li class="chapter" data-level="5.9" data-path="curate-features.html"><a href="curate-features.html#managing-pages-and-sections"><i class="fa fa-check"></i><b>5.9</b> Managing pages and sections</a></li>
-<li class="chapter" data-level="5.10" data-path="curate-features.html"><a href="curate-features.html#contact-forms"><i class="fa fa-check"></i><b>5.10</b> Contact forms</a></li>
-<li class="chapter" data-level="5.11" data-path="curate-features.html"><a href="curate-features.html#foreign-languages"><i class="fa fa-check"></i><b>5.11</b> Foreign languages</a></li>
-<li class="chapter" data-level="5.12" data-path="curate-features.html"><a href="curate-features.html#social-media-links"><i class="fa fa-check"></i><b>5.12</b> Social media links</a></li>
-<li class="chapter" data-level="5.13" data-path="curate-features.html"><a href="curate-features.html#closing-thoughts-on-themes"><i class="fa fa-check"></i><b>5.13</b> Closing thoughts on themes</a></li>
+<li class="chapter" data-level="5.1" data-path="fine-tune.html"><a href="fine-tune.html#how-it-works-3"><i class="fa fa-check"></i><b>5.1</b> How it works</a></li>
+<li class="chapter" data-level="5.2" data-path="fine-tune.html"><a href="fine-tune.html#about-css"><i class="fa fa-check"></i><b>5.2</b> About CSS</a></li>
+<li class="chapter" data-level="5.3" data-path="fine-tune.html"><a href="fine-tune.html#inspect-tool"><i class="fa fa-check"></i><b>5.3</b> About the Inspect tool</a></li>
+<li class="chapter" data-level="5.4" data-path="fine-tune.html"><a href="fine-tune.html#use-case-1"><i class="fa fa-check"></i><b>5.4</b> Use case</a></li>
+<li class="chapter" data-level="5.5" data-path="fine-tune.html"><a href="fine-tune.html#before-you-begin"><i class="fa fa-check"></i><b>5.5</b> Before you begin</a></li>
+<li class="chapter" data-level="5.6" data-path="fine-tune.html"><a href="fine-tune.html#title-description-and-author"><i class="fa fa-check"></i><b>5.6</b> Title, description, and author</a></li>
+<li class="chapter" data-level="5.7" data-path="fine-tune.html"><a href="fine-tune.html#profile-image"><i class="fa fa-check"></i><b>5.7</b> Profile image</a></li>
+<li class="chapter" data-level="5.8" data-path="fine-tune.html"><a href="fine-tune.html#favicon"><i class="fa fa-check"></i><b>5.8</b> Favicon</a></li>
+<li class="chapter" data-level="5.9" data-path="fine-tune.html"><a href="fine-tune.html#font-style"><i class="fa fa-check"></i><b>5.9</b> Font style</a></li>
+<li class="chapter" data-level="5.10" data-path="fine-tune.html"><a href="fine-tune.html#font-sizes"><i class="fa fa-check"></i><b>5.10</b> Font sizes</a></li>
+<li class="chapter" data-level="5.11" data-path="fine-tune.html"><a href="fine-tune.html#colors"><i class="fa fa-check"></i><b>5.11</b> Colors</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="content.html"><a href="content.html"><i class="fa fa-check"></i><b>6</b> Authoring content</a>
+<li class="chapter" data-level="6" data-path="pages-features.html"><a href="pages-features.html"><i class="fa fa-check"></i><b>6</b> Managing pages and features</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="content.html"><a href="content.html#creating-posts"><i class="fa fa-check"></i><b>6.1</b> Creating posts</a></li>
-<li class="chapter" data-level="6.2" data-path="content.html"><a href="content.html#example-r-markdown-post"><i class="fa fa-check"></i><b>6.2</b> Example R Markdown post</a></li>
-<li class="chapter" data-level="6.3" data-path="content.html"><a href="content.html#example-markdown-post"><i class="fa fa-check"></i><b>6.3</b> Example Markdown post</a></li>
+<li class="chapter" data-level="6.1" data-path="pages-features.html"><a href="pages-features.html#language-translations"><i class="fa fa-check"></i><b>6.1</b> Language translations</a></li>
+<li class="chapter" data-level="6.2" data-path="pages-features.html"><a href="pages-features.html#removing-sections-from-the-navigation"><i class="fa fa-check"></i><b>6.2</b> Removing sections from the navigation</a></li>
+<li class="chapter" data-level="6.3" data-path="pages-features.html"><a href="pages-features.html#configuring-contact-forms"><i class="fa fa-check"></i><b>6.3</b> Configuring contact forms</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="deploy.html"><a href="deploy.html"><i class="fa fa-check"></i><b>7</b> Deploying on Netlify</a>
+<li class="chapter" data-level="7" data-path="content.html"><a href="content.html"><i class="fa fa-check"></i><b>7</b> Authoring content</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="deploy.html"><a href="deploy.html#how-it-works-4"><i class="fa fa-check"></i><b>7.1</b> How it works</a></li>
-<li class="chapter" data-level="7.2" data-path="deploy.html"><a href="deploy.html#upload-website-files-to-github"><i class="fa fa-check"></i><b>7.2</b> Upload website files to GitHub</a></li>
-<li class="chapter" data-level="7.3" data-path="deploy.html"><a href="deploy.html#configure-netlify-for-deployment"><i class="fa fa-check"></i><b>7.3</b> Configure Netlify for deployment</a></li>
-<li class="chapter" data-level="7.4" data-path="deploy.html"><a href="deploy.html#using-a-custom-domain-name"><i class="fa fa-check"></i><b>7.4</b> Using a custom domain name</a></li>
+<li class="chapter" data-level="7.1" data-path="content.html"><a href="content.html#creating-posts"><i class="fa fa-check"></i><b>7.1</b> Creating posts</a></li>
+<li class="chapter" data-level="7.2" data-path="content.html"><a href="content.html#example-r-markdown-post"><i class="fa fa-check"></i><b>7.2</b> Example R Markdown post</a></li>
+<li class="chapter" data-level="7.3" data-path="content.html"><a href="content.html#example-markdown-post"><i class="fa fa-check"></i><b>7.3</b> Example Markdown post</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="google-analytics.html"><a href="google-analytics.html"><i class="fa fa-check"></i><b>8</b> Analyzing traffic with Google Analytics</a>
+<li class="chapter" data-level="8" data-path="deploy.html"><a href="deploy.html"><i class="fa fa-check"></i><b>8</b> Deploying on Netlify</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="google-analytics.html"><a href="google-analytics.html#how-it-works-5"><i class="fa fa-check"></i><b>8.1</b> How it works</a></li>
-<li class="chapter" data-level="8.2" data-path="google-analytics.html"><a href="google-analytics.html#setting-up-google-analytics"><i class="fa fa-check"></i><b>8.2</b> Setting up Google Analytics</a></li>
-<li class="chapter" data-level="8.3" data-path="google-analytics.html"><a href="google-analytics.html#analyzing-traffic-using-googleanalyticsr"><i class="fa fa-check"></i><b>8.3</b> Analyzing traffic using googleAnalyticsR</a></li>
+<li class="chapter" data-level="8.1" data-path="deploy.html"><a href="deploy.html#how-it-works-4"><i class="fa fa-check"></i><b>8.1</b> How it works</a></li>
+<li class="chapter" data-level="8.2" data-path="deploy.html"><a href="deploy.html#upload-website-files-to-github"><i class="fa fa-check"></i><b>8.2</b> Upload website files to GitHub</a></li>
+<li class="chapter" data-level="8.3" data-path="deploy.html"><a href="deploy.html#configure-netlify-for-deployment"><i class="fa fa-check"></i><b>8.3</b> Configure Netlify for deployment</a></li>
+<li class="chapter" data-level="8.4" data-path="deploy.html"><a href="deploy.html#purchasing-a-custom-domain-name"><i class="fa fa-check"></i><b>8.4</b> Purchasing a custom domain name</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="extras.html"><a href="extras.html"><i class="fa fa-check"></i><b>9</b> Extras</a>
+<li class="chapter" data-level="9" data-path="google-analytics.html"><a href="google-analytics.html"><i class="fa fa-check"></i><b>9</b> Analyzing traffic with Google Analytics</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="extras.html"><a href="extras.html#contact-forms-1"><i class="fa fa-check"></i><b>9.1</b> Contact forms</a></li>
+<li class="chapter" data-level="9.1" data-path="google-analytics.html"><a href="google-analytics.html#how-it-works-5"><i class="fa fa-check"></i><b>9.1</b> How it works</a></li>
+<li class="chapter" data-level="9.2" data-path="google-analytics.html"><a href="google-analytics.html#setting-up-google-analytics"><i class="fa fa-check"></i><b>9.2</b> Setting up Google Analytics</a></li>
+<li class="chapter" data-level="9.3" data-path="google-analytics.html"><a href="google-analytics.html#analyzing-traffic-using-googleanalyticsr"><i class="fa fa-check"></i><b>9.3</b> Analyzing traffic using googleAnalyticsR</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="extras.html"><a href="extras.html"><i class="fa fa-check"></i><b>10</b> Extras</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="extras.html"><a href="extras.html#stop-build-serve-site"><i class="fa fa-check"></i><b>10.1</b> Stop, build, serve site</a></li>
+<li class="chapter" data-level="10.2" data-path="extras.html"><a href="extras.html#html-color-picker"><i class="fa fa-check"></i><b>10.2</b> HTML color picker</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -233,8 +240,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="https://i.imgur.com/gRJLHS0.png">
 </div>
-<div id="google-analytics" class="section level1" number="8">
-<h1><span class="header-section-number">Chapter 8</span> Analyzing traffic with Google Analytics</h1>
+<div id="google-analytics" class="section level1" number="9">
+<h1><span class="header-section-number">Chapter 9</span> Analyzing traffic with Google Analytics</h1>
 <p>This chapter shows you how to embed Google Analytics on your website to capture traffic from users. Additionally, this chapter will provide some guidance on how to analyze traffic using the R package <a href="https://code.markedmondson.me/googleAnalyticsR/">googleAnalyticsR</a>.</p>
 <p>If you haven’t already, complete the following prerequisites:</p>
 <ul>
@@ -242,12 +249,12 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="deploy.html#deploy">Deploy your site on Netlify</a></li>
 <li><a href="complete-end-to-end-example.html#create-accounts">Sign up for Google Analytics</a></li>
 </ul>
-<div id="how-it-works-5" class="section level2" number="8.1">
-<h2><span class="header-section-number">8.1</span> How it works</h2>
+<div id="how-it-works-5" class="section level2" number="9.1">
+<h2><span class="header-section-number">9.1</span> How it works</h2>
 <p>Once you sign up for Google Analytics, the main objectives are to create an Account and a Property for your website domain name, then obtain a Tracking ID. This tracking code will go in the <code>config.yaml</code> file on your website, which in turn will instruct Google Analytics to collect the data on user traffic to your website.</p>
 </div>
-<div id="setting-up-google-analytics" class="section level2" number="8.2">
-<h2><span class="header-section-number">8.2</span> Setting up Google Analytics</h2>
+<div id="setting-up-google-analytics" class="section level2" number="9.2">
+<h2><span class="header-section-number">9.2</span> Setting up Google Analytics</h2>
 <p>Follow these steps to integrate Google Analytics into your website:</p>
 <ol style="list-style-type: decimal">
 <li><p>Sign in to Google Analytics and navigate to Admin &gt; Create Account. <a href="https://i.imgur.com/QRTa07k.png">Example</a></p></li>
@@ -260,111 +267,112 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Push your changes to your GitHub repository to complete the Google Analytics integration.</p></li>
 </ol>
 </div>
-<div id="analyzing-traffic-using-googleanalyticsr" class="section level2" number="8.3">
-<h2><span class="header-section-number">8.3</span> Analyzing traffic using googleAnalyticsR</h2>
+<div id="analyzing-traffic-using-googleanalyticsr" class="section level2" number="9.3">
+<h2><span class="header-section-number">9.3</span> Analyzing traffic using googleAnalyticsR</h2>
 <p><a href="https://code.markedmondson.me/googleAnalyticsR/">googleAnalyicsR</a> is an R package for analyzing Google Analytics data stemming from traffic to your website.</p>
-<div id="install-the-package" class="section level3" number="8.3.1">
-<h3><span class="header-section-number">8.3.1</span> Install the package</h3>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="google-analytics.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;googleAnalyticsR&quot;</span>, <span class="at">dependencies =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<div id="install-the-package" class="section level3" number="9.3.1">
+<h3><span class="header-section-number">9.3.1</span> Install the package</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="google-analytics.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;googleAnalyticsR&quot;</span>, <span class="at">dependencies =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 </div>
-<div id="authenticate-your-google-analytics-account" class="section level3" number="8.3.2">
-<h3><span class="header-section-number">8.3.2</span> Authenticate your Google Analytics account</h3>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="google-analytics.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(googleAnalyticsR)</span>
-<span id="cb4-2"><a href="google-analytics.html#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="google-analytics.html#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ga_auth</span>(<span class="at">email=</span><span class="st">&quot;usc00@hotmail.com&quot;</span>)</span></code></pre></div>
-</div>
-<div id="load-packages-for-data-analytics" class="section level3" number="8.3.3">
-<h3><span class="header-section-number">8.3.3</span> Load packages for data analytics</h3>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="google-analytics.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb5-2"><a href="google-analytics.html#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
-<span id="cb5-3"><a href="google-analytics.html#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DT)</span>
-<span id="cb5-4"><a href="google-analytics.html#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span></code></pre></div>
-</div>
-<div id="list-your-google-analytics-accounts-and-properties" class="section level3" number="8.3.4">
-<h3><span class="header-section-number">8.3.4</span> List your Google Analytics accounts and properties</h3>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="google-analytics.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="do">## get your accounts</span></span>
-<span id="cb6-2"><a href="google-analytics.html#cb6-2" aria-hidden="true" tabindex="-1"></a>ga_accounts <span class="ot">&lt;-</span> <span class="fu">ga_account_list</span>()</span>
+<div id="authenticate-your-google-analytics-account" class="section level3" number="9.3.2">
+<h3><span class="header-section-number">9.3.2</span> Authenticate your Google Analytics account</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="google-analytics.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(googleAnalyticsR)</span>
+<span id="cb6-2"><a href="google-analytics.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(googleAuthR)</span>
 <span id="cb6-3"><a href="google-analytics.html#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="google-analytics.html#cb6-4" aria-hidden="true" tabindex="-1"></a>ga_accounts</span></code></pre></div>
+<span id="cb6-4"><a href="google-analytics.html#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ga_auth</span>(<span class="at">json_file =</span> <span class="st">&quot;googleanalyticsr-auth-key.json&quot;</span>)</span></code></pre></div>
 </div>
-<div id="obtain-viewid-associated-with-your-website" class="section level3" number="8.3.5">
-<h3><span class="header-section-number">8.3.5</span> Obtain viewId associated with your website</h3>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="google-analytics.html#cb7-1" aria-hidden="true" tabindex="-1"></a>view_id <span class="ot">&lt;-</span> ga_accounts <span class="sc">%&gt;%</span></span>
-<span id="cb7-2"><a href="google-analytics.html#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(accountName <span class="sc">==</span> <span class="st">&quot;abndistro&quot;</span>, webPropertyName <span class="sc">==</span> <span class="st">&quot;Abnormal Distributions&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb7-3"><a href="google-analytics.html#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(viewId)</span></code></pre></div>
+<div id="load-packages-for-data-analytics" class="section level3" number="9.3.3">
+<h3><span class="header-section-number">9.3.3</span> Load packages for data analytics</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="google-analytics.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb7-2"><a href="google-analytics.html#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb7-3"><a href="google-analytics.html#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DT)</span>
+<span id="cb7-4"><a href="google-analytics.html#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span></code></pre></div>
 </div>
-<div id="daily-count-of-website-users" class="section level3" number="8.3.6">
-<h3><span class="header-section-number">8.3.6</span> Daily count of website users</h3>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="google-analytics.html#cb8-1" aria-hidden="true" tabindex="-1"></a>daily_users <span class="ot">&lt;-</span> <span class="fu">google_analytics</span>(</span>
-<span id="cb8-2"><a href="google-analytics.html#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">viewId =</span> view_id,</span>
-<span id="cb8-3"><a href="google-analytics.html#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">date_range =</span> <span class="fu">c</span>(<span class="st">&quot;2019-01-01&quot;</span>, <span class="st">&quot;2020-12-31&quot;</span>),</span>
-<span id="cb8-4"><a href="google-analytics.html#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">metrics =</span> <span class="st">&quot;users&quot;</span>,</span>
-<span id="cb8-5"><a href="google-analytics.html#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">dimensions =</span> <span class="st">&quot;date&quot;</span></span>
-<span id="cb8-6"><a href="google-analytics.html#cb8-6" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
-<span id="cb8-7"><a href="google-analytics.html#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>()</span>
-<span id="cb8-8"><a href="google-analytics.html#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-9"><a href="google-analytics.html#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(</span>
-<span id="cb8-10"><a href="google-analytics.html#cb8-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> daily_users,</span>
-<span id="cb8-11"><a href="google-analytics.html#cb8-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="sc">~</span>date,</span>
-<span id="cb8-12"><a href="google-analytics.html#cb8-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="sc">~</span>users,</span>
-<span id="cb8-13"><a href="google-analytics.html#cb8-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">mode =</span> <span class="st">&quot;lines&quot;</span></span>
-<span id="cb8-14"><a href="google-analytics.html#cb8-14" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
-<span id="cb8-15"><a href="google-analytics.html#cb8-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(<span class="at">title =</span> <span class="st">&quot;Daily count of users who engaged with Abnormal Distributions&quot;</span>)</span></code></pre></div>
+<div id="list-your-google-analytics-accounts-and-properties" class="section level3" number="9.3.4">
+<h3><span class="header-section-number">9.3.4</span> List your Google Analytics accounts and properties</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="google-analytics.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="do">## get your accounts</span></span>
+<span id="cb8-2"><a href="google-analytics.html#cb8-2" aria-hidden="true" tabindex="-1"></a>ga_accounts <span class="ot">&lt;-</span> <span class="fu">ga_account_list</span>()</span>
+<span id="cb8-3"><a href="google-analytics.html#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="google-analytics.html#cb8-4" aria-hidden="true" tabindex="-1"></a>ga_accounts</span></code></pre></div>
 </div>
-<div id="users-by-device-type" class="section level3" number="8.3.7">
-<h3><span class="header-section-number">8.3.7</span> Users by device type</h3>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="google-analytics.html#cb9-1" aria-hidden="true" tabindex="-1"></a>users_by_device_type <span class="ot">&lt;-</span> <span class="fu">google_analytics</span>(</span>
-<span id="cb9-2"><a href="google-analytics.html#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">viewId =</span> view_id,</span>
-<span id="cb9-3"><a href="google-analytics.html#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">date_range =</span> <span class="fu">c</span>(<span class="st">&quot;2019-01-01&quot;</span>, <span class="st">&quot;2020-12-31&quot;</span>),</span>
-<span id="cb9-4"><a href="google-analytics.html#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">metrics =</span> <span class="st">&quot;users&quot;</span>,</span>
-<span id="cb9-5"><a href="google-analytics.html#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">dimensions =</span> <span class="st">&quot;deviceCategory&quot;</span></span>
-<span id="cb9-6"><a href="google-analytics.html#cb9-6" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
-<span id="cb9-7"><a href="google-analytics.html#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>()</span>
-<span id="cb9-8"><a href="google-analytics.html#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-9"><a href="google-analytics.html#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(</span>
-<span id="cb9-10"><a href="google-analytics.html#cb9-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> users_by_device_type,</span>
-<span id="cb9-11"><a href="google-analytics.html#cb9-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="sc">~</span>deviceCategory,</span>
-<span id="cb9-12"><a href="google-analytics.html#cb9-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="sc">~</span>users,</span>
-<span id="cb9-13"><a href="google-analytics.html#cb9-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">&quot;bar&quot;</span></span>
-<span id="cb9-14"><a href="google-analytics.html#cb9-14" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
-<span id="cb9-15"><a href="google-analytics.html#cb9-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(<span class="at">title =</span> <span class="st">&quot;Users by device type&quot;</span>)</span></code></pre></div>
+<div id="obtain-viewid-associated-with-your-website" class="section level3" number="9.3.5">
+<h3><span class="header-section-number">9.3.5</span> Obtain viewId associated with your website</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="google-analytics.html#cb9-1" aria-hidden="true" tabindex="-1"></a>view_id <span class="ot">&lt;-</span> ga_accounts <span class="sc">%&gt;%</span></span>
+<span id="cb9-2"><a href="google-analytics.html#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(accountName <span class="sc">==</span> <span class="st">&quot;abndistro&quot;</span>, webPropertyName <span class="sc">==</span> <span class="st">&quot;Abnormal Distributions&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb9-3"><a href="google-analytics.html#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(viewId)</span></code></pre></div>
 </div>
-<div id="page-views-by-page" class="section level3" number="8.3.8">
-<h3><span class="header-section-number">8.3.8</span> Page views by page</h3>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="google-analytics.html#cb10-1" aria-hidden="true" tabindex="-1"></a>page_views <span class="ot">&lt;-</span> <span class="fu">google_analytics</span>(</span>
+<div id="daily-count-of-website-users" class="section level3" number="9.3.6">
+<h3><span class="header-section-number">9.3.6</span> Daily count of website users</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="google-analytics.html#cb10-1" aria-hidden="true" tabindex="-1"></a>daily_users <span class="ot">&lt;-</span> <span class="fu">google_analytics</span>(</span>
 <span id="cb10-2"><a href="google-analytics.html#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">viewId =</span> view_id,</span>
-<span id="cb10-3"><a href="google-analytics.html#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">date_range =</span> <span class="fu">c</span>(<span class="st">&quot;2019-01-01&quot;</span>, <span class="st">&quot;2020-12-31&quot;</span>),</span>
-<span id="cb10-4"><a href="google-analytics.html#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">metrics =</span> <span class="st">&quot;pageviews&quot;</span>,</span>
-<span id="cb10-5"><a href="google-analytics.html#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">dimensions =</span> <span class="st">&quot;pageTitle&quot;</span></span>
+<span id="cb10-3"><a href="google-analytics.html#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">date_range =</span> <span class="fu">c</span>(<span class="st">&quot;2019-07-01&quot;</span>, <span class="st">&quot;2019-12-31&quot;</span>),</span>
+<span id="cb10-4"><a href="google-analytics.html#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">metrics =</span> <span class="st">&quot;users&quot;</span>,</span>
+<span id="cb10-5"><a href="google-analytics.html#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">dimensions =</span> <span class="st">&quot;date&quot;</span></span>
 <span id="cb10-6"><a href="google-analytics.html#cb10-6" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
 <span id="cb10-7"><a href="google-analytics.html#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>()</span>
 <span id="cb10-8"><a href="google-analytics.html#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-9"><a href="google-analytics.html#cb10-9" aria-hidden="true" tabindex="-1"></a>page_views <span class="sc">%&gt;%</span></span>
-<span id="cb10-10"><a href="google-analytics.html#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(pageviews)) <span class="sc">%&gt;%</span></span>
-<span id="cb10-11"><a href="google-analytics.html#cb10-11" aria-hidden="true" tabindex="-1"></a>  DT<span class="sc">::</span><span class="fu">datatable</span>()</span></code></pre></div>
+<span id="cb10-9"><a href="google-analytics.html#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(</span>
+<span id="cb10-10"><a href="google-analytics.html#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> daily_users,</span>
+<span id="cb10-11"><a href="google-analytics.html#cb10-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="sc">~</span>date,</span>
+<span id="cb10-12"><a href="google-analytics.html#cb10-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="sc">~</span>users,</span>
+<span id="cb10-13"><a href="google-analytics.html#cb10-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">mode =</span> <span class="st">&quot;lines&quot;</span></span>
+<span id="cb10-14"><a href="google-analytics.html#cb10-14" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb10-15"><a href="google-analytics.html#cb10-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(<span class="at">title =</span> <span class="st">&quot;Daily count of website between June 2019 and December 2019&quot;</span>)</span></code></pre></div>
 </div>
-<div id="users-by-location" class="section level3" number="8.3.9">
-<h3><span class="header-section-number">8.3.9</span> Users by location</h3>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="google-analytics.html#cb11-1" aria-hidden="true" tabindex="-1"></a>users_location <span class="ot">&lt;-</span> <span class="fu">google_analytics</span>(</span>
+<div id="users-by-device-type" class="section level3" number="9.3.7">
+<h3><span class="header-section-number">9.3.7</span> Users by device type</h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="google-analytics.html#cb11-1" aria-hidden="true" tabindex="-1"></a>users_by_device_type <span class="ot">&lt;-</span> <span class="fu">google_analytics</span>(</span>
 <span id="cb11-2"><a href="google-analytics.html#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">viewId =</span> view_id,</span>
-<span id="cb11-3"><a href="google-analytics.html#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">date_range =</span> <span class="fu">c</span>(<span class="st">&quot;2019-01-01&quot;</span>, <span class="st">&quot;2020-12-31&quot;</span>),</span>
+<span id="cb11-3"><a href="google-analytics.html#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">date_range =</span> <span class="fu">c</span>(<span class="st">&quot;2019-01-01&quot;</span>, <span class="st">&quot;2019-12-31&quot;</span>),</span>
 <span id="cb11-4"><a href="google-analytics.html#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">metrics =</span> <span class="st">&quot;users&quot;</span>,</span>
-<span id="cb11-5"><a href="google-analytics.html#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">dimensions =</span> <span class="fu">c</span>(<span class="st">&quot;latitude&quot;</span>, <span class="st">&quot;longitude&quot;</span>),</span>
-<span id="cb11-6"><a href="google-analytics.html#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">anti_sample =</span> T</span>
-<span id="cb11-7"><a href="google-analytics.html#cb11-7" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
-<span id="cb11-8"><a href="google-analytics.html#cb11-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb11-9"><a href="google-analytics.html#cb11-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate_at</span>(<span class="fu">vars</span>(latitude, longitude), <span class="fu">list</span>(as.numeric))</span>
-<span id="cb11-10"><a href="google-analytics.html#cb11-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-11"><a href="google-analytics.html#cb11-11" aria-hidden="true" tabindex="-1"></a>users_location <span class="sc">%&gt;%</span></span>
-<span id="cb11-12"><a href="google-analytics.html#cb11-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">leaflet</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb11-13"><a href="google-analytics.html#cb11-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb11-14"><a href="google-analytics.html#cb11-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addCircleMarkers</span>(</span>
-<span id="cb11-15"><a href="google-analytics.html#cb11-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">lng =</span> <span class="sc">~</span>longitude,</span>
-<span id="cb11-16"><a href="google-analytics.html#cb11-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">lat =</span> <span class="sc">~</span>latitude,</span>
-<span id="cb11-17"><a href="google-analytics.html#cb11-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">radius =</span> <span class="sc">~</span><span class="fu">log</span>(users),</span>
-<span id="cb11-18"><a href="google-analytics.html#cb11-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">stroke =</span> <span class="cn">FALSE</span>, </span>
-<span id="cb11-19"><a href="google-analytics.html#cb11-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">fillOpacity =</span> <span class="fl">0.5</span></span>
-<span id="cb11-20"><a href="google-analytics.html#cb11-20" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div>
+<span id="cb11-5"><a href="google-analytics.html#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">dimensions =</span> <span class="st">&quot;deviceCategory&quot;</span></span>
+<span id="cb11-6"><a href="google-analytics.html#cb11-6" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb11-7"><a href="google-analytics.html#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>()</span>
+<span id="cb11-8"><a href="google-analytics.html#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="google-analytics.html#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(</span>
+<span id="cb11-10"><a href="google-analytics.html#cb11-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> users_by_device_type,</span>
+<span id="cb11-11"><a href="google-analytics.html#cb11-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="sc">~</span>deviceCategory,</span>
+<span id="cb11-12"><a href="google-analytics.html#cb11-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="sc">~</span>users,</span>
+<span id="cb11-13"><a href="google-analytics.html#cb11-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">&quot;bar&quot;</span></span>
+<span id="cb11-14"><a href="google-analytics.html#cb11-14" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb11-15"><a href="google-analytics.html#cb11-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(<span class="at">title =</span> <span class="st">&quot;Users by device type&quot;</span>)</span></code></pre></div>
+</div>
+<div id="page-views-by-page" class="section level3" number="9.3.8">
+<h3><span class="header-section-number">9.3.8</span> Page views by page</h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="google-analytics.html#cb12-1" aria-hidden="true" tabindex="-1"></a>page_views <span class="ot">&lt;-</span> <span class="fu">google_analytics</span>(</span>
+<span id="cb12-2"><a href="google-analytics.html#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">viewId =</span> view_id,</span>
+<span id="cb12-3"><a href="google-analytics.html#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">date_range =</span> <span class="fu">c</span>(<span class="st">&quot;2019-01-01&quot;</span>, <span class="st">&quot;2020-12-31&quot;</span>),</span>
+<span id="cb12-4"><a href="google-analytics.html#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">metrics =</span> <span class="st">&quot;pageviews&quot;</span>,</span>
+<span id="cb12-5"><a href="google-analytics.html#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">dimensions =</span> <span class="st">&quot;pageTitle&quot;</span></span>
+<span id="cb12-6"><a href="google-analytics.html#cb12-6" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb12-7"><a href="google-analytics.html#cb12-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>()</span>
+<span id="cb12-8"><a href="google-analytics.html#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-9"><a href="google-analytics.html#cb12-9" aria-hidden="true" tabindex="-1"></a>page_views <span class="sc">%&gt;%</span></span>
+<span id="cb12-10"><a href="google-analytics.html#cb12-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(pageviews)) <span class="sc">%&gt;%</span></span>
+<span id="cb12-11"><a href="google-analytics.html#cb12-11" aria-hidden="true" tabindex="-1"></a>  DT<span class="sc">::</span><span class="fu">datatable</span>()</span></code></pre></div>
+</div>
+<div id="users-by-location" class="section level3" number="9.3.9">
+<h3><span class="header-section-number">9.3.9</span> Users by location</h3>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="google-analytics.html#cb13-1" aria-hidden="true" tabindex="-1"></a>users_location <span class="ot">&lt;-</span> <span class="fu">google_analytics</span>(</span>
+<span id="cb13-2"><a href="google-analytics.html#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">viewId =</span> view_id,</span>
+<span id="cb13-3"><a href="google-analytics.html#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">date_range =</span> <span class="fu">c</span>(<span class="st">&quot;2019-01-01&quot;</span>, <span class="st">&quot;2020-12-31&quot;</span>),</span>
+<span id="cb13-4"><a href="google-analytics.html#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">metrics =</span> <span class="st">&quot;users&quot;</span>,</span>
+<span id="cb13-5"><a href="google-analytics.html#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">dimensions =</span> <span class="fu">c</span>(<span class="st">&quot;latitude&quot;</span>, <span class="st">&quot;longitude&quot;</span>),</span>
+<span id="cb13-6"><a href="google-analytics.html#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">anti_sample =</span> T</span>
+<span id="cb13-7"><a href="google-analytics.html#cb13-7" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-8"><a href="google-analytics.html#cb13-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb13-9"><a href="google-analytics.html#cb13-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate_at</span>(<span class="fu">vars</span>(latitude, longitude), <span class="fu">list</span>(as.numeric))</span>
+<span id="cb13-10"><a href="google-analytics.html#cb13-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-11"><a href="google-analytics.html#cb13-11" aria-hidden="true" tabindex="-1"></a>users_location <span class="sc">%&gt;%</span></span>
+<span id="cb13-12"><a href="google-analytics.html#cb13-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">leaflet</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb13-13"><a href="google-analytics.html#cb13-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb13-14"><a href="google-analytics.html#cb13-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addCircleMarkers</span>(</span>
+<span id="cb13-15"><a href="google-analytics.html#cb13-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">lng =</span> <span class="sc">~</span>longitude,</span>
+<span id="cb13-16"><a href="google-analytics.html#cb13-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">lat =</span> <span class="sc">~</span>latitude,</span>
+<span id="cb13-17"><a href="google-analytics.html#cb13-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">radius =</span> <span class="sc">~</span><span class="fu">log</span>(users),</span>
+<span id="cb13-18"><a href="google-analytics.html#cb13-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">stroke =</span> <span class="cn">FALSE</span>, </span>
+<span id="cb13-19"><a href="google-analytics.html#cb13-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">fillOpacity =</span> <span class="fl">0.5</span></span>
+<span id="cb13-20"><a href="google-analytics.html#cb13-20" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div>
 
 </div>
 </div>

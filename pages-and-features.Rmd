@@ -1,0 +1,15 @@
+# Managing pages and features {#pages-features}
+
+## Removing and renaming pages
+
+## Language translations
+
+By default, the Anatole theme supports English and Arabic language translation. To remove all content supporting a translation, 
+
+1. Delete the file `config/_default/menus.TRANSLATION.toml`.
+
+2. Edit the file `config/_default/languages.toml` by removing all references to the appropriate language parameters ([example](https://github.com/dannymorris/anatole-site/blob/master/config/_default/languages.toml)).
+
+3. Delete the folder `content/TRANSLATION/` and all of its contents.
+
+## Configuring contact forms

@@ -56,6 +56,8 @@ To generate a blogdown website from a chosen theme, follow these steps:
 
 4. Follow the steps to [generate a website](#generate) described in the next chapter.
 
-## Editing your theme
+## Next steps
 
-This topic is discussed in detail in the next chapter, [Curating the website features](#curate-features). In all likelihood, you will want to edit some aspects of your preferred Hugo theme to alter the look, feel, and functionality of your website. It's important to note that theme developers do not follow the exact same approach as all other developers when designing a theme. Therefore, there is no universal approach to editing themes. There are, however, some common approaches to editing basic characteristics such as colors, font styles, logos, sections, contact forms, and so on. Those will be described in the next chapter.
+This chapter teaches you the basic steps to create, publish, and analyze your very own website. The following chapters explain this material in greater detail, helping you to understand some of the deeper technical aspects as well as the techniques for customizing your website. Continue on to the chapter [Generating a blogdown website](#generate) to get started.
+
+

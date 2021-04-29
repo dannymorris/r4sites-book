@@ -58,8 +58,9 @@ install.packages("googleAnalyticsR", dependencies = TRUE)
 
 ```{r}
 library(googleAnalyticsR)
+library(googleAuthR)
 
-ga_auth(email="usc00@hotmail.com")
+ga_auth(json_file = "googleanalyticsr-auth-key.json")
 ```
 
 ### Load packages for data analytics
@@ -93,7 +94,7 @@ view_id <- ga_accounts %>%
 ```{r}
 daily_users <- google_analytics(
   viewId = view_id,
-  date_range = c("2019-01-01", "2020-12-31"),
+  date_range = c("2019-07-01", "2019-12-31"),
   metrics = "users",
   dimensions = "date"
 ) %>%
@@ -105,7 +106,7 @@ plot_ly(
   y = ~users,
   mode = "lines"
 ) %>%
-  layout(title = "Daily count of users who engaged with Abnormal Distributions")
+  layout(title = "Daily count of website between June 2019 and December 2019")
 ```
 
 ### Users by device type
@@ -113,7 +114,7 @@ plot_ly(
 ```{r}
 users_by_device_type <- google_analytics(
   viewId = view_id,
-  date_range = c("2019-01-01", "2020-12-31"),
+  date_range = c("2019-01-01", "2019-12-31"),
   metrics = "users",
   dimensions = "deviceCategory"
 ) %>%
@@ -168,8 +169,4 @@ users_location %>%
     fillOpacity = 0.5
   )
 ```
-
-
-
-
 
