@@ -37,6 +37,7 @@ about-css
 inspect-tool
 use-case-1
 before-you-begin
+update-the-base-url
 title-description-and-author
 profile-image
 favicon
@@ -44,13 +45,14 @@ font-style
 font-sizes
 colors
 pages-features
+removing-and-renaming-pages
 language-translations
-removing-sections-from-the-navigation
 configuring-contact-forms
 content
-creating-posts
-example-r-markdown-post
-example-markdown-post
+update-the-about-page
+delete-default-posts
+create-new-posts-using-r-markdown
+tips-for-writing-posts
 deploy
 how-it-works-4
 upload-website-files-to-github
@@ -72,8 +74,5 @@ users-by-location
 extras
 stop-build-serve-site
 html-color-picker
-removing-and-renaming-sections
-removing-and-renaming-pages
-update-default-content
-create-new-content
-create-new-posts
+adding-tags-and-categories
+example-posts

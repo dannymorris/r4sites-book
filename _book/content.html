@@ -24,7 +24,7 @@
 <meta name="author" content="Danny Morris" />
 
 
-<meta name="date" content="2021-04-28" />
+<meta name="date" content="2021-04-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -117,12 +117,13 @@
 <li class="chapter" data-level="5.3" data-path="fine-tune.html"><a href="fine-tune.html#inspect-tool"><i class="fa fa-check"></i><b>5.3</b> About the Inspect tool</a></li>
 <li class="chapter" data-level="5.4" data-path="fine-tune.html"><a href="fine-tune.html#use-case-1"><i class="fa fa-check"></i><b>5.4</b> Use case</a></li>
 <li class="chapter" data-level="5.5" data-path="fine-tune.html"><a href="fine-tune.html#before-you-begin"><i class="fa fa-check"></i><b>5.5</b> Before you begin</a></li>
-<li class="chapter" data-level="5.6" data-path="fine-tune.html"><a href="fine-tune.html#title-description-and-author"><i class="fa fa-check"></i><b>5.6</b> Title, description, and author</a></li>
-<li class="chapter" data-level="5.7" data-path="fine-tune.html"><a href="fine-tune.html#profile-image"><i class="fa fa-check"></i><b>5.7</b> Profile image</a></li>
-<li class="chapter" data-level="5.8" data-path="fine-tune.html"><a href="fine-tune.html#favicon"><i class="fa fa-check"></i><b>5.8</b> Favicon</a></li>
-<li class="chapter" data-level="5.9" data-path="fine-tune.html"><a href="fine-tune.html#font-style"><i class="fa fa-check"></i><b>5.9</b> Font style</a></li>
-<li class="chapter" data-level="5.10" data-path="fine-tune.html"><a href="fine-tune.html#font-sizes"><i class="fa fa-check"></i><b>5.10</b> Font sizes</a></li>
-<li class="chapter" data-level="5.11" data-path="fine-tune.html"><a href="fine-tune.html#colors"><i class="fa fa-check"></i><b>5.11</b> Colors</a></li>
+<li class="chapter" data-level="5.6" data-path="fine-tune.html"><a href="fine-tune.html#update-the-base-url"><i class="fa fa-check"></i><b>5.6</b> Update the base URL</a></li>
+<li class="chapter" data-level="5.7" data-path="fine-tune.html"><a href="fine-tune.html#title-description-and-author"><i class="fa fa-check"></i><b>5.7</b> Title, description, and author</a></li>
+<li class="chapter" data-level="5.8" data-path="fine-tune.html"><a href="fine-tune.html#profile-image"><i class="fa fa-check"></i><b>5.8</b> Profile image</a></li>
+<li class="chapter" data-level="5.9" data-path="fine-tune.html"><a href="fine-tune.html#favicon"><i class="fa fa-check"></i><b>5.9</b> Favicon</a></li>
+<li class="chapter" data-level="5.10" data-path="fine-tune.html"><a href="fine-tune.html#font-style"><i class="fa fa-check"></i><b>5.10</b> Font style</a></li>
+<li class="chapter" data-level="5.11" data-path="fine-tune.html"><a href="fine-tune.html#font-sizes"><i class="fa fa-check"></i><b>5.11</b> Font sizes</a></li>
+<li class="chapter" data-level="5.12" data-path="fine-tune.html"><a href="fine-tune.html#colors"><i class="fa fa-check"></i><b>5.12</b> Colors</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="pages-features.html"><a href="pages-features.html"><i class="fa fa-check"></i><b>6</b> Managing pages and features</a>
 <ul>
@@ -132,10 +133,10 @@
 </ul></li>
 <li class="chapter" data-level="7" data-path="content.html"><a href="content.html"><i class="fa fa-check"></i><b>7</b> Authoring content</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="content.html"><a href="content.html#update-default-content"><i class="fa fa-check"></i><b>7.1</b> Update default content</a></li>
-<li class="chapter" data-level="7.2" data-path="content.html"><a href="content.html#create-new-posts"><i class="fa fa-check"></i><b>7.2</b> Create new posts</a></li>
-<li class="chapter" data-level="7.3" data-path="content.html"><a href="content.html#example-r-markdown-post"><i class="fa fa-check"></i><b>7.3</b> Example R Markdown post</a></li>
-<li class="chapter" data-level="7.4" data-path="content.html"><a href="content.html#example-markdown-post"><i class="fa fa-check"></i><b>7.4</b> Example Markdown post</a></li>
+<li class="chapter" data-level="7.1" data-path="content.html"><a href="content.html#update-the-about-page"><i class="fa fa-check"></i><b>7.1</b> Update the About page</a></li>
+<li class="chapter" data-level="7.2" data-path="content.html"><a href="content.html#delete-default-posts"><i class="fa fa-check"></i><b>7.2</b> Delete default posts</a></li>
+<li class="chapter" data-level="7.3" data-path="content.html"><a href="content.html#create-new-posts-using-r-markdown"><i class="fa fa-check"></i><b>7.3</b> Create new posts using R Markdown</a></li>
+<li class="chapter" data-level="7.4" data-path="content.html"><a href="content.html#tips-for-writing-posts"><i class="fa fa-check"></i><b>7.4</b> Tips for writing posts</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="deploy.html"><a href="deploy.html"><i class="fa fa-check"></i><b>8</b> Deploying on Netlify</a>
 <ul>
@@ -181,29 +182,45 @@
 <div id="content" class="section level1" number="7">
 <h1><span class="header-section-number">Chapter 7</span> Authoring content</h1>
 <p>This chapter provides some general guidance on creating content, such as blog posts, using R Markdown as well as plain Markdown.</p>
-<div id="update-default-content" class="section level2" number="7.1">
-<h2><span class="header-section-number">7.1</span> Update default content</h2>
-<p>The Hugo Anatole theme comes with default posts and default text on the About page. To delete or edit the default content, follow the steps below.</p>
-<ul>
-<li><p>To edit the About page, navigate to <code>content/english/about.md</code>. Replace the metadata (i.e. the parameters in between the <code>---</code> markers) then replace the body of the Markdown document.</p></li>
-<li><p>To delete all default posts, navigate to the <code>content/english/post</code> folder and delete all files and folders <strong>except <code>_index.md</code></strong>.</p></li>
-</ul>
+<div id="update-the-about-page" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> Update the About page</h2>
+<p>The Hugo Anatole theme comes with a default <a href="https://r4sites-anatole-custom.netlify.app/about/">About page</a>. To edit the About page, navigate to <code>content/english/about.md</code>. Replace the metadata (i.e. the parameters in between the <code>---</code> markers) then replace the body of the document using plain Markdown. <a href="https://raw.githubusercontent.com/dannymorris/r4sites-anatole-custom/master/content/english/about.md">&lt;/&gt; Code</a>.</p>
 </div>
-<div id="create-new-posts" class="section level2" number="7.2">
-<h2><span class="header-section-number">7.2</span> Create new posts</h2>
-<p>As the website developer, new content you create will typically be in the form of a post. Common types of posts are blog entries, tutorials, portfolio entries, project documentation, and so on. With blogdown, posts can either be <a href="https://bookdown.org/yihui/rmarkdown/html-document.html">R Markdown</a> documents or plain <a href="https://www.markdownguide.org/getting-started/">Markdown</a> documents. The only difference between the two is that R Markdown enables you to insert and execute server-side code (e.g. R code) and display the output in the post body in addition to plain Markdown syntax. Markdown, on the other hand, is static content that cannot execute server-side code.</p>
-<p>The recommended way to add a blog post is with the RStudio Addin labeled “New post,” as shown in this <a href="https://i.imgur.com/S9dl4DZ.png">example</a>. This addin will display a simple GUI for configuring the metadata for your new post including the post title, author, date, tags, content type and more. This <a href="https://i.imgur.com/UEzRUnO.png">example post configuration</a> generates a R Markdown post destined for the <code>post</code> subdirectory. The archetype, filename, slug, and language are handled automatically and require no changes.</p>
+<div id="delete-default-posts" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> Delete default posts</h2>
+<p>The Hugo Anatole theme comes with several default posts. To delete all default posts, navigate to the <code>content/english/post</code> folder and delete all files and folders <strong>except <code>_index.md</code></strong>.</p>
 </div>
-<div id="example-r-markdown-post" class="section level2" number="7.3">
-<h2><span class="header-section-number">7.3</span> Example R Markdown post</h2>
-<p>Before you create a new post, go ahead and run <code>blogdown::serve_site()</code> in the R console with your RStudio Project opened. This will launch your website locally and will update automatically whenever edits are saved. This is key for rapid development and iteration.</p>
-<p>If you haven’t already, leverage this <a href="https://i.imgur.com/UEzRUnO.png">example post configuration</a> to create a new post R Markdown. The default document contains limited metadata and no body content. What to include is ultimately a matter of personal preference, but <a href="https://github.com/dannymorris/anatole-site/blob/master/content/english/post/2021-04-22-writing-a-post-using-r-markdown/index.en.Rmd">this R Markdown post</a> provides a great starting point with some handy features including syntax highlighting, table of contents, and message/warning suppression. The published version of this post can be viewed here - <a href="https://example-anatole.netlify.app/post/2021-04-22-writing-a-post-using-r-markdown/" class="uri">https://example-anatole.netlify.app/post/2021-04-22-writing-a-post-using-r-markdown/</a></p>
+<div id="create-new-posts-using-r-markdown" class="section level2" number="7.3">
+<h2><span class="header-section-number">7.3</span> Create new posts using R Markdown</h2>
+<p>The <a href="https://r4sites-anatole-custom.netlify.app/post/">Posts page</a> is the place to show off your work. This is where you can include your blog posts, tutorials, research articles, project descriptions, or other creative content.</p>
+<p>New posts can be authored using either <a href="https://bookdown.org/yihui/rmarkdown/html-document.html">R Markdown</a> documents or <a href="https://www.markdownguide.org/getting-started/">plain Markdown</a>. However, <strong>my recommendation is to always opt for R Markdown.</strong> R Markdown is very similar to plain Markdown with the exception that it allows you to insert and execute code written in R, Python, or SQL. Therefore, R Markdown is substantially more flexible than plain Markdown for writing technical content featuring code, tables, and data visualizations. To learn more about R Markdown, I recommend reading <a href="https://bookdown.org/yihui/rmarkdown/">R Markdown: The Definitive Guide</a>.</p>
+<div id="creating-a-new-r-markdown-post-using-rstudio" class="section level4 unnumbered">
+<h4>Creating a new R Markdown post using RStudio</h4>
+<p>Follow the steps below to create a new post using the “New post” RStudio Addin.</p>
+<ol style="list-style-type: decimal">
+<li><p>Select the RStudio Addin labeled “New post.” <a href="https://i.imgur.com/S9dl4DZ.png">📷 Image</a>.</p></li>
+<li><p>Configure the new post by specifying the post Title, Author, Date, Subdirectory, Categories, Tags, and Format (<a href="https://i.imgur.com/UEzRUnO.png">📷 Image</a>). Be sure to place the new post in the <code>post</code> Subdirectory and set the Format to <code>R Markdown (.Rmd)</code>.</p></li>
+</ol>
 </div>
-<div id="example-markdown-post" class="section level2" number="7.4">
-<h2><span class="header-section-number">7.4</span> Example Markdown post</h2>
-<p>Unlike R Markdown, plain Markdown documents render static content only (e.g. text, images, multimedia) and cannot execute server-side code. If your post does not need to execute code and render its ouput, then author the post using plain Markdown. To configure a plain Markdown post, follow this <a href="https://i.imgur.com/UEzRUnO.png">example post configuration</a> but change the Format parameter to Markdown instead of R Markdown.</p>
-<p>This <a href="https://raw.githubusercontent.com/dannymorris/anatole-site/master/content/english/post/2021-04-22-example-plain-markdown-post/index.en.md">example Markdown post</a> should get you started. The published version of this post can be viewed here - <a href="https://example-anatole.netlify.app/post/2021-04-22-example-plain-markdown-post/" class="uri">https://example-anatole.netlify.app/post/2021-04-22-example-plain-markdown-post/</a></p>
+</div>
+<div id="tips-for-writing-posts" class="section level2" number="7.4">
+<h2><span class="header-section-number">7.4</span> Tips for writing posts</h2>
+<div id="example-posts" class="section level4" number="7.4.0.1">
+<h4><span class="header-section-number">7.4.0.1</span> Example posts</h4>
+</div>
+<div id="add-a-table-of-contents" class="section level4 unnumbered">
+<h4>Add a table of contents</h4>
+<p>Adding a <a href="https://r4sites-anatole-custom.netlify.app/post/2021-04-22-sample-rmd-covid/">table of contents</a> to your R Markdown post is highly recommended to enable a better user experience. To add a table of contents, edit the <code>output:</code> parameter in the R Markdown metadata as shown below. <a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-rmd-covid/index.en.Rmd#L6-L9">&lt;/&gt; Code</a></p>
+<p>Note this will also add code highlighting using the tango option.</p>
+<pre><code>output:
+  blogdown::html_page:
+    highlight: tango
+    toc: true</code></pre>
+</div>
+<div id="adding-tags-and-categories" class="section level4" number="7.4.0.2">
+<h4><span class="header-section-number">7.4.0.2</span> Adding tags and categories</h4>
 
+</div>
 </div>
 </div>
             </section>

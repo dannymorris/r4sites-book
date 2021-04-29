@@ -30,15 +30,23 @@ After you [generate a website](#generate) and before you begin making edits to y
 
 In the R console, run `blogdown::serve_site()` to render a live, local copy of the website in the "Viewer" pane. As you make edits, your local copy will update in real-time. This will help you rapidly test changes to your website without having to leave the RStudio environment. To learn about serving the site locally, read [this section](#serve-site).
 
-#### Open files {-}
+#### Open key files in RStudio {-}
 
 Open the files listed below in RStudio to better prepare yourself for making edits.
 
+- `config.yaml`
 - `config/_default/languages.toml` 
 - `config/_default/params.toml` 
 - `themes/anatole/assets/css/style.css`
 
 Continue reading the following sections to make edits to your website's features.
+
+## Update the base URL
+
+Navigate to `config.yaml` in the main directory and change the `baseURL` parameter from `https://example.com` to `"/"`. The default `example.com` domain name is just a placeholder, but switching to `"/"` will instruct instruct Netlify to deploy your website behind your Netlify domain name. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config.yaml#L1)
+
+This is a critical step to ensure your website and its dependencies are built and deployed properly.
+
 
 ## Title, description, and author
 

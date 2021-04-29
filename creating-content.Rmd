@@ -2,28 +2,45 @@
 
 This chapter provides some general guidance on creating content, such as blog posts, using R Markdown as well as plain Markdown. 
 
-## Update default content
+## Update the About page
 
-The Hugo Anatole theme comes with default posts and default text on the About page. To delete or edit the default content, follow the steps below.
+The Hugo Anatole theme comes with a default [About page](https://r4sites-anatole-custom.netlify.app/about/). To edit the About page, navigate to `content/english/about.md`. Replace the metadata (i.e. the parameters in between the `---` markers) then replace the body of the document using plain Markdown. [</> Code](https://raw.githubusercontent.com/dannymorris/r4sites-anatole-custom/master/content/english/about.md).
 
-- To edit the About page, navigate to `content/english/about.md`. Replace the metadata (i.e. the parameters in between the `---` markers) then replace the body of the Markdown document.
+## Delete default posts
 
-- To delete all default posts, navigate to the `content/english/post` folder and delete all files and folders **except `_index.md`**.
+The Hugo Anatole theme comes with several default posts. To delete all default posts, navigate to the `content/english/post` folder and delete all files and folders **except `_index.md`**.
 
-## Create new posts
+## Create new posts using R Markdown
 
-As the website developer, new content you create will typically be in the form of a post. Common types of posts are blog entries, tutorials, portfolio entries, project documentation, and so on. With blogdown, posts can either be [R Markdown](https://bookdown.org/yihui/rmarkdown/html-document.html) documents or plain [Markdown](https://www.markdownguide.org/getting-started/) documents. The only difference between the two is that R Markdown enables you to insert and execute server-side code (e.g. R code) and display the output in the post body in addition to plain Markdown syntax. Markdown, on the other hand, is static content that cannot execute server-side code.
+The [Posts page](https://r4sites-anatole-custom.netlify.app/post/) is the place to show off your work. This is where you can include your blog posts, tutorials, research articles, project descriptions, or other creative content.
 
-The recommended way to add a blog post is with the RStudio Addin labeled "New post", as shown in this [example](https://i.imgur.com/S9dl4DZ.png). This addin will display a simple GUI for configuring the metadata for your new post including the post title, author, date, tags, content type and more. This [example post configuration](https://i.imgur.com/UEzRUnO.png) generates a R Markdown post destined for the `post` subdirectory. The archetype, filename, slug, and language are handled automatically and require no changes.
+New posts can be authored using either [R Markdown](https://bookdown.org/yihui/rmarkdown/html-document.html) documents or [plain Markdown](https://www.markdownguide.org/getting-started/). However, **my recommendation is to always opt for R Markdown.** R Markdown is very similar to plain Markdown with the exception that it allows you to insert and execute code written in R, Python, or SQL. Therefore, R Markdown is substantially more flexible than plain Markdown for writing technical content featuring code, tables, and data visualizations. To learn more about R Markdown, I recommend reading [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/).
 
-## Example R Markdown post
+#### Creating a new R Markdown post using RStudio {-}
 
-Before you create a new post, go ahead and run `blogdown::serve_site()` in the R console with your RStudio Project opened. This will launch your website locally and will update automatically whenever edits are saved. This is key for rapid development and iteration.
+Follow the steps below to create a new post using the "New post" RStudio Addin.
 
-If you haven't already, leverage this [example post configuration](https://i.imgur.com/UEzRUnO.png) to create a new post R Markdown. The default document contains limited metadata and no body content. What to include is ultimately a matter of personal preference, but [this R Markdown post](https://github.com/dannymorris/anatole-site/blob/master/content/english/post/2021-04-22-writing-a-post-using-r-markdown/index.en.Rmd) provides a great starting point with some handy features including syntax highlighting, table of contents, and message/warning suppression. The published version of this post can be viewed here - https://example-anatole.netlify.app/post/2021-04-22-writing-a-post-using-r-markdown/
+1. Select the RStudio Addin labeled "New post". [📷 Image](https://i.imgur.com/S9dl4DZ.png). 
 
-## Example Markdown post
+2. Configure the new post by specifying the post Title, Author, Date, Subdirectory, Categories, Tags, and Format ([📷 Image](https://i.imgur.com/UEzRUnO.png)). Be sure to place the new post in the `post` Subdirectory and set the Format to `R Markdown (.Rmd)`.
 
-Unlike R Markdown, plain Markdown documents render static content only (e.g. text, images, multimedia) and cannot execute server-side code. If your post does not need to execute code and render its ouput, then author the post using plain Markdown. To configure a plain Markdown post, follow this [example post configuration](https://i.imgur.com/UEzRUnO.png) but change the Format parameter to Markdown instead of R Markdown.
+## Tips for writing posts
 
-This [example Markdown post](https://raw.githubusercontent.com/dannymorris/anatole-site/master/content/english/post/2021-04-22-example-plain-markdown-post/index.en.md) should get you started. The published version of this post can be viewed here - https://example-anatole.netlify.app/post/2021-04-22-example-plain-markdown-post/
+#### Example posts
+
+#### Add a table of contents {-}
+
+Adding a [table of contents](https://r4sites-anatole-custom.netlify.app/post/2021-04-22-sample-rmd-covid/) to your R Markdown post is highly recommended to enable a better user experience. To add a table of contents, edit the `output:` parameter in the R Markdown metadata as shown below. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-rmd-covid/index.en.Rmd#L6-L9)
+
+Note this will also add code highlighting using the tango option.
+
+```
+output:
+  blogdown::html_page:
+    highlight: tango
+    toc: true
+```
+
+#### Adding tags and categories
+
+
