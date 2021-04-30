@@ -1,6 +1,12 @@
 # Managing pages and features {#pages-features}
 
-## Removing and renaming pages
+## Update the About page
+
+The Hugo Anatole theme comes with a default [About page](https://r4sites-anatole-custom.netlify.app/about/). To edit the About page, navigate to `content/english/about.md`. Replace the metadata (i.e. the parameters in between the `---` markers) then replace the body of the document using plain Markdown. [</> Code](https://raw.githubusercontent.com/dannymorris/r4sites-anatole-custom/master/content/english/about.md).
+
+## Delete default posts
+
+The Hugo Anatole theme comes with several default posts. To delete all default posts, navigate to the `content/english/post` folder and delete all files and folders **except `_index.md`**.
 
 ## Language translations
 

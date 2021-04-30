@@ -144,7 +144,7 @@ The R code below does the following:
 
 **Note:** The demo website created in the previous sections is not used in the following analysis because it has received no website traffic thus far. My personal website, Abnormal Distributions, is used instead.
 
-```{r, message=F, warning=F, eval=F, echo=F}
+```{r, message=F, warning=F, eval=T, echo=F}
 # R packages
 library(googleAnalyticsR)
 library(googleAuthR)
@@ -232,7 +232,7 @@ map_plot <- users_location %>%
 
 #### Map of Abnormal Distribtuions users by location {-}
 
-```{r, eval = F}
+```{r, eval = T}
 map_plot
 ```
 

@@ -2,14 +2,6 @@
 
 This chapter provides some general guidance on creating content, such as blog posts, using R Markdown as well as plain Markdown. 
 
-## Update the About page
-
-The Hugo Anatole theme comes with a default [About page](https://r4sites-anatole-custom.netlify.app/about/). To edit the About page, navigate to `content/english/about.md`. Replace the metadata (i.e. the parameters in between the `---` markers) then replace the body of the document using plain Markdown. [</> Code](https://raw.githubusercontent.com/dannymorris/r4sites-anatole-custom/master/content/english/about.md).
-
-## Delete default posts
-
-The Hugo Anatole theme comes with several default posts. To delete all default posts, navigate to the `content/english/post` folder and delete all files and folders **except `_index.md`**.
-
 ## Create new posts using R Markdown
 
 The [Posts page](https://r4sites-anatole-custom.netlify.app/post/) is the place to show off your work. This is where you can include your blog posts, tutorials, research articles, project descriptions, or other creative content.

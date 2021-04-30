@@ -34,7 +34,7 @@
 <link rel="prev" href="content.html"/>
 <link rel="next" href="google-analytics.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.5.1/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -51,6 +51,25 @@
 
 
 
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
+<script src="libs/plotly-binding-4.9.3/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.57.1/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.57.1/plotly-latest.min.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.17/datatables.js"></script>
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
 
 
 <style type="text/css">
@@ -190,16 +209,15 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="6" data-path="pages-features.html"><a href="pages-features.html"><i class="fa fa-check"></i><b>6</b> Managing pages and features</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="pages-features.html"><a href="pages-features.html#removing-and-renaming-pages"><i class="fa fa-check"></i><b>6.1</b> Removing and renaming pages</a></li>
-<li class="chapter" data-level="6.2" data-path="pages-features.html"><a href="pages-features.html#language-translations"><i class="fa fa-check"></i><b>6.2</b> Language translations</a></li>
-<li class="chapter" data-level="6.3" data-path="pages-features.html"><a href="pages-features.html#configuring-contact-forms"><i class="fa fa-check"></i><b>6.3</b> Configuring contact forms</a></li>
+<li class="chapter" data-level="6.1" data-path="pages-features.html"><a href="pages-features.html#update-the-about-page"><i class="fa fa-check"></i><b>6.1</b> Update the About page</a></li>
+<li class="chapter" data-level="6.2" data-path="pages-features.html"><a href="pages-features.html#delete-default-posts"><i class="fa fa-check"></i><b>6.2</b> Delete default posts</a></li>
+<li class="chapter" data-level="6.3" data-path="pages-features.html"><a href="pages-features.html#language-translations"><i class="fa fa-check"></i><b>6.3</b> Language translations</a></li>
+<li class="chapter" data-level="6.4" data-path="pages-features.html"><a href="pages-features.html#configuring-contact-forms"><i class="fa fa-check"></i><b>6.4</b> Configuring contact forms</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="content.html"><a href="content.html"><i class="fa fa-check"></i><b>7</b> Authoring content</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="content.html"><a href="content.html#update-the-about-page"><i class="fa fa-check"></i><b>7.1</b> Update the About page</a></li>
-<li class="chapter" data-level="7.2" data-path="content.html"><a href="content.html#delete-default-posts"><i class="fa fa-check"></i><b>7.2</b> Delete default posts</a></li>
-<li class="chapter" data-level="7.3" data-path="content.html"><a href="content.html#create-new-posts-using-r-markdown"><i class="fa fa-check"></i><b>7.3</b> Create new posts using R Markdown</a></li>
-<li class="chapter" data-level="7.4" data-path="content.html"><a href="content.html#tips-for-writing-posts"><i class="fa fa-check"></i><b>7.4</b> Tips for writing posts</a></li>
+<li class="chapter" data-level="7.1" data-path="content.html"><a href="content.html#create-new-posts-using-r-markdown"><i class="fa fa-check"></i><b>7.1</b> Create new posts using R Markdown</a></li>
+<li class="chapter" data-level="7.2" data-path="content.html"><a href="content.html#tips-for-writing-posts"><i class="fa fa-check"></i><b>7.2</b> Tips for writing posts</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="deploy.html"><a href="deploy.html"><i class="fa fa-check"></i><b>8</b> Deploying on Netlify</a>
 <ul>
@@ -211,7 +229,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9" data-path="google-analytics.html"><a href="google-analytics.html"><i class="fa fa-check"></i><b>9</b> Analyzing traffic with Google Analytics</a>
 <ul>
 <li class="chapter" data-level="9.1" data-path="google-analytics.html"><a href="google-analytics.html#how-it-works-5"><i class="fa fa-check"></i><b>9.1</b> How it works</a></li>
-<li class="chapter" data-level="9.2" data-path="google-analytics.html"><a href="google-analytics.html#setting-up-google-analytics"><i class="fa fa-check"></i><b>9.2</b> Setting up Google Analytics</a></li>
+<li class="chapter" data-level="9.2" data-path="google-analytics.html"><a href="google-analytics.html#ga-setup"><i class="fa fa-check"></i><b>9.2</b> Setting up Google Analytics</a></li>
 <li class="chapter" data-level="9.3" data-path="google-analytics.html"><a href="google-analytics.html#analyzing-traffic-using-googleanalyticsr"><i class="fa fa-check"></i><b>9.3</b> Analyzing traffic using googleAnalyticsR</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="extras.html"><a href="extras.html"><i class="fa fa-check"></i><b>10</b> Extras</a>

@@ -5,9 +5,7 @@ editor_options:
 ---
 
 ```{r, include = F}
-knitr::opts_chunk$set(
-  echo = T, message = F, warning = F, eval=F
-)
+knitr::opts_chunk$set(echo = T, message = F, warning = F, eval=T)
 ```
 
 # Analyzing traffic with Google Analytics {#google-analytics}
@@ -24,7 +22,7 @@ If you haven't already, complete the following prerequisites:
 
 Once you sign up for Google Analytics, the main objectives are to create an Account and a Property for your website domain name, then obtain a Tracking ID. This tracking code will go in the `config.yaml` file on your website, which in turn will instruct Google Analytics to collect the data on user traffic to your website.
 
-## Setting up Google Analytics
+## Setting up Google Analytics {#ga-setup}
 
 Follow these steps to integrate Google Analytics into your website:
 
@@ -48,31 +46,45 @@ Follow these steps to integrate Google Analytics into your website:
 
 [googleAnalyicsR](https://code.markedmondson.me/googleAnalyticsR/) is an R package for analyzing Google Analytics data stemming from traffic to your website.
 
-### Install the package
+### Dimensions and metrics
+
+In order to analyze your Google Analytics data, you need to gain a basic understand of [Dimensions and Metrics](https://support.google.com/analytics/answer/1033861?hl=en).
+
+Dimensions are attributes of your data and Metrics are quantitative measurements. For example, to analyze the count of users on your website in the last 60 days, the Dimension is `date` and the Metric is `users`.
+
+Google Analytics supports hunderds of Dimension-Metric combinations. My recommendation is to browse [Ultimate Google Analytics Dimensions and Metrics List](https://www.ovrdrv.com/blog/ultimate-google-analytics-dimensions-and-metrics-list/) to learn what is available. Also check out the [Practical Tips](https://code.markedmondson.me/googleAnalyticsR/articles/practical-tips.html) page written by the author of the `googleAnalyticsR` package.
+
+### Install googleAnalyticsR
 
 ```{r, eval = F}
 install.packages("googleAnalyticsR", dependencies = TRUE)
 ```
 
-### Authenticate your Google Analytics account
+### R packages for data analytics
 
 ```{r}
-library(googleAnalyticsR)
-library(googleAuthR)
-
-ga_auth(json_file = "googleanalyticsr-auth-key.json")
+library(googleAnalyticsR)  ## calling Google Analytics API
+library(dplyr)             ## data manipulation
+library(plotly)            ## interactive charts
+library(DT)                ## interactive tables
+library(leaflet)           ## interactive maps
 ```
 
-### Load packages for data analytics
+### Authenticate your Google Analytics account
 
-```{r}
-library(dplyr)
-library(plotly)
-library(DT)
-library(leaflet)
+```{r, echo=F, eval=T}
+googleAnalyticsR::ga_auth(json_file = "googleanalyticsr-auth-key.json")
+```
+
+Running `ga_auth()` in the R console will automatically open a page in your web browser and prompt you to authenticate your Google account.
+
+```{r, echo=T, eval=F}
+googleAnalyticsR::ga_auth()
 ```
 
 ### List your Google Analytics accounts and properties
+
+Running `ga_account_list()` will list the Google Analytics account that was created in step 1 of [Setting up Google Analytics](#ga-setup).
 
 ```{r}
 ## get your accounts
@@ -83,13 +95,22 @@ ga_accounts
 
 ### Obtain viewId associated with your website
 
+To send API calls to Google Analytics, you need to obtain the `viewId` associated with the account.
+
 ```{r}
 view_id <- ga_accounts %>%
   filter(accountName == "abndistro", webPropertyName == "Abnormal Distributions") %>%
   pull(viewId)
+
+print(view_id)
 ```
 
 ### Daily count of website users
+
+To query the count of website users over a given date range, use the following Dimension and Metric.
+
+- Dimension: `date`
+- Metric: `users`
 
 ```{r}
 daily_users <- google_analytics(
@@ -111,6 +132,12 @@ plot_ly(
 
 ### Users by device type
 
+To understand which device types your users are using to view your website, use the following Dimension and Metric.
+
+- Dimension: `deviceCategory`
+- Metric: `users`
+
+
 ```{r}
 users_by_device_type <- google_analytics(
   viewId = view_id,
@@ -131,6 +158,12 @@ plot_ly(
 
 ### Page views by page
 
+To measure the number of page views to each of your website pages, use the following Dimension and Metric.
+
+- Dimension: `pageTitle`
+- Metric: `pageviews`
+
+
 ```{r}
 page_views <- google_analytics(
   viewId = view_id,
@@ -146,6 +179,12 @@ page_views %>%
 ```
 
 ### Users by location {#users-by-location}
+
+To understand the geographical areas from which your webiste users view your webiste, use the following Dimension sand Metric.
+
+- Dimensions: `latitude`, `longitude`
+- Metric: `users`
+
 
 ```{r}
 users_location <- google_analytics(
@@ -169,4 +208,13 @@ users_location %>%
     fillOpacity = 0.5
   )
 ```
+
+### Avoiding data sampling
+
+The `google_analytics()` function has an argument named `anti_sampling`, which is set to `TRUE` by default. This means that queries which return more than 1,000 rows of data will be sampled to avoid putting strain on the Google Analytics API. To avoid this default sampling strategy, set `anti_sampling = FALSE` when making API calls via the `google_analytics()` function.
+
+## Closing thoughts
+
+Google Analytics is a complex topic which cannot be covered in its entirety in this book. For most, having a basic understanding of the available [Google Analytics Dimensions and Metrics](https://www.ovrdrv.com/blog/ultimate-google-analytics-dimensions-and-metrics-list/) should provide a solid foundation for interesting data analytics.
+
 
