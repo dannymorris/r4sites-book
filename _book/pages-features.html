@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 6 Managing pages and features | Create, Publish, and Analyze Personal Websites Using R and RStudio</title>
+  <title>Chapter 6 Configuring pages and features | Create, Publish, and Analyze Personal Websites Using R and RStudio</title>
   <meta name="description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 6 Managing pages and features | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
+  <meta property="og:title" content="Chapter 6 Configuring pages and features | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="images/logo/book-cover-300.png" />
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 6 Managing pages and features | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
+  <meta name="twitter:title" content="Chapter 6 Configuring pages and features | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
   
   <meta name="twitter:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
   <meta name="twitter:image" content="images/logo/book-cover-300.png" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Danny Morris" />
 
 
-<meta name="date" content="2021-04-29" />
+<meta name="date" content="2021-04-30" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -34,7 +34,7 @@
 <link rel="prev" href="fine-tune.html"/>
 <link rel="next" href="content.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
-<script src="libs/jquery-3.5.1/jquery.min.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -51,90 +51,8 @@
 
 
 
-<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
-<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-1.3.1/leaflet.js"></script>
-<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
-<script src="libs/proj4-2.6.2/proj4.min.js"></script>
-<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
-<script src="libs/plotly-binding-4.9.3/plotly.js"></script>
-<script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-1.57.1/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-1.57.1/plotly-latest.min.js"></script>
-<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
-<script src="libs/datatables-binding-0.17/datatables.js"></script>
-<link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
-<link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
-<script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
 
 
-<style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  background-color: #f8f8f8; }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ef2929; } /* Alert */
-code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
-code span.bn { color: #0000cf; } /* BaseN */
-code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
-code span.co { color: #8f5902; font-style: italic; } /* Comment */
-code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
-code span.dt { color: #204a87; } /* DataType */
-code span.dv { color: #0000cf; } /* DecVal */
-code span.er { color: #a40000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
-code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
-code span.ot { color: #8f5902; } /* Other */
-code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
-code span.ss { color: #4e9a06; } /* SpecialString */
-code span.st { color: #4e9a06; } /* String */
-code span.va { color: #000000; } /* Variable */
-code span.vs { color: #4e9a06; } /* VerbatimString */
-code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
-</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -207,12 +125,12 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.11" data-path="fine-tune.html"><a href="fine-tune.html#font-sizes"><i class="fa fa-check"></i><b>5.11</b> Font sizes</a></li>
 <li class="chapter" data-level="5.12" data-path="fine-tune.html"><a href="fine-tune.html#colors"><i class="fa fa-check"></i><b>5.12</b> Colors</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="pages-features.html"><a href="pages-features.html"><i class="fa fa-check"></i><b>6</b> Managing pages and features</a>
+<li class="chapter" data-level="6" data-path="pages-features.html"><a href="pages-features.html"><i class="fa fa-check"></i><b>6</b> Configuring pages and features</a>
 <ul>
 <li class="chapter" data-level="6.1" data-path="pages-features.html"><a href="pages-features.html#update-the-about-page"><i class="fa fa-check"></i><b>6.1</b> Update the About page</a></li>
 <li class="chapter" data-level="6.2" data-path="pages-features.html"><a href="pages-features.html#delete-default-posts"><i class="fa fa-check"></i><b>6.2</b> Delete default posts</a></li>
-<li class="chapter" data-level="6.3" data-path="pages-features.html"><a href="pages-features.html#language-translations"><i class="fa fa-check"></i><b>6.3</b> Language translations</a></li>
-<li class="chapter" data-level="6.4" data-path="pages-features.html"><a href="pages-features.html#configuring-contact-forms"><i class="fa fa-check"></i><b>6.4</b> Configuring contact forms</a></li>
+<li class="chapter" data-level="6.3" data-path="pages-features.html"><a href="pages-features.html#delete-language-translations"><i class="fa fa-check"></i><b>6.3</b> Delete language translations</a></li>
+<li class="chapter" data-level="6.4" data-path="pages-features.html"><a href="pages-features.html#configure-contact-forms"><i class="fa fa-check"></i><b>6.4</b> Configure contact forms</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="content.html"><a href="content.html"><i class="fa fa-check"></i><b>7</b> Authoring content</a>
 <ul>
@@ -231,6 +149,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.1" data-path="google-analytics.html"><a href="google-analytics.html#how-it-works-5"><i class="fa fa-check"></i><b>9.1</b> How it works</a></li>
 <li class="chapter" data-level="9.2" data-path="google-analytics.html"><a href="google-analytics.html#ga-setup"><i class="fa fa-check"></i><b>9.2</b> Setting up Google Analytics</a></li>
 <li class="chapter" data-level="9.3" data-path="google-analytics.html"><a href="google-analytics.html#analyzing-traffic-using-googleanalyticsr"><i class="fa fa-check"></i><b>9.3</b> Analyzing traffic using googleAnalyticsR</a></li>
+<li class="chapter" data-level="9.4" data-path="google-analytics.html"><a href="google-analytics.html#closing-thoughts-1"><i class="fa fa-check"></i><b>9.4</b> Closing thoughts</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="extras.html"><a href="extras.html"><i class="fa fa-check"></i><b>10</b> Extras</a>
 <ul>
@@ -261,26 +180,36 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
   <img class= "hero-image" src="https://i.imgur.com/gRJLHS0.png">
 </div>
 <div id="pages-features" class="section level1" number="6">
-<h1><span class="header-section-number">Chapter 6</span> Managing pages and features</h1>
+<h1><span class="header-section-number">Chapter 6</span> Configuring pages and features</h1>
+<p>Now that you have <a href="generate.html#generate">generated a website</a> and (optionally) <a href="fine-tune.html#fine-tune">tuned the look and feel</a>, this chapter teaches you how to configure, update, and delete certain features that are unlikely to be updated very frequently. These features include the About page, default posts, language translations, and contact forms.</p>
 <div id="update-the-about-page" class="section level2" number="6.1">
 <h2><span class="header-section-number">6.1</span> Update the About page</h2>
 <p>The Hugo Anatole theme comes with a default <a href="https://r4sites-anatole-custom.netlify.app/about/">About page</a>. To edit the About page, navigate to <code>content/english/about.md</code>. Replace the metadata (i.e. the parameters in between the <code>---</code> markers) then replace the body of the document using plain Markdown. <a href="https://raw.githubusercontent.com/dannymorris/r4sites-anatole-custom/master/content/english/about.md">&lt;/&gt; Code</a>.</p>
 </div>
 <div id="delete-default-posts" class="section level2" number="6.2">
 <h2><span class="header-section-number">6.2</span> Delete default posts</h2>
-<p>The Hugo Anatole theme comes with several default posts. To delete all default posts, navigate to the <code>content/english/post</code> folder and delete all files and folders <strong>except <code>_index.md</code></strong>.</p>
+<p>The Hugo Anatole theme comes with several default posts. To delete all default posts, navigate to the <code>content/english/post</code> folder and delete all files and folders <strong>except <code>_index.md</code></strong>. <a href="https://github.com/dannymorris/r4sites-anatole-custom/tree/master/content/english/post">&lt;/&gt; Code</a></p>
 </div>
-<div id="language-translations" class="section level2" number="6.3">
-<h2><span class="header-section-number">6.3</span> Language translations</h2>
-<p>By default, the Anatole theme supports English and Arabic language translation. To remove all content supporting a translation,</p>
+<div id="delete-language-translations" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> Delete language translations</h2>
+<p>By default, the Anatole theme supports English and Arabic language translations. To remove all content for a given translation, complete the following steps.</p>
 <ol style="list-style-type: decimal">
 <li><p>Delete the file <code>config/_default/menus.TRANSLATION.toml</code>.</p></li>
-<li><p>Edit the file <code>config/_default/languages.toml</code> by removing all references to the appropriate language parameters (<a href="https://github.com/dannymorris/anatole-site/blob/master/config/_default/languages.toml">example</a>).</p></li>
+<li><p>Edit the file <code>config/_default/languages.toml</code> by removing all references to the appropriate language parameters. <a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/languages.toml">&lt;/&gt; Code</a></p></li>
 <li><p>Delete the folder <code>content/TRANSLATION/</code> and all of its contents.</p></li>
 </ol>
 </div>
-<div id="configuring-contact-forms" class="section level2" number="6.4">
-<h2><span class="header-section-number">6.4</span> Configuring contact forms</h2>
+<div id="configure-contact-forms" class="section level2" number="6.4">
+<h2><span class="header-section-number">6.4</span> Configure contact forms</h2>
+<p>Contact forms are a handy feature for collecting user emails and soliciting feedback from your website visitors. The contact form on the <a href="https://r4sites-anatole-custom.netlify.app/about/">Contact</a> page of the default Hugo Anatole theme is powered by <a href="https://formspree.io">Formspree</a>. Formspree is not the only contact form provider, however it seems that many Hugo themes use Formspree for its simplicity. Formspree offers a user-friendly interface for creating and managing your contact forms, viewing responses to your forms, and exporting user data in CSV format.</p>
+<p>Follow the steps below to create a Formspree form “endpoint” and link it to the contact form on your website.</p>
+<ol style="list-style-type: decimal">
+<li><p>Sign in to <a href="https://formspree.io/login">Formspree</a>.</p></li>
+<li><p>Click “New Project” to create a new project for your website. <a href="https://i.imgur.com/jZnrcVL.png">📷 Image</a>.</p></li>
+<li><p>Click “New Form” to create a new contact form. <a href="https://i.imgur.com/BE4tOJ4.png">📷 Image</a></p></li>
+<li><p>Copy the form’s “endpoint” beginning with <code>https://</code>. <a href="https://i.imgur.com/2S2HVO6.png">📷 Image</a></p></li>
+<li><p>Open <code>config/_default/params.toml</code> in the main webiste folder, uncomment the <code>contactFormAction</code> parameter, and insert the form endpoint. <a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L16-L17">&lt;/&gt; Code</a>.</p></li>
+</ol>
 
 </div>
 </div>

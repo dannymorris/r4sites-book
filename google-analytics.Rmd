@@ -10,11 +10,11 @@ knitr::opts_chunk$set(echo = T, message = F, warning = F, eval=T)
 
 # Analyzing traffic with Google Analytics {#google-analytics}
 
-This chapter shows you how to embed Google Analytics on your website to capture traffic from users. Additionally, this chapter will provide some guidance on how to analyze traffic using the R package [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/).
+This chapter shows you how to integrate Google Analytics into your website to capture data on your website users including the number of users, the pages they view, the sources from which they arrive at your website, and their geographic locations. This chapter covers the basics of the [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) R package for querying your Google Analytics data from R. 
 
-If you haven't already, complete the following prerequisites:
+If you haven't already, complete the minimum prerequisites listed below:
 
-- [Create your blogdown website](#create-site-with-theme) and (optionally) [add some content](#content)
+- [Generate a website](#generate)
 - [Deploy your site on Netlify](#deploy)
 - [Sign up for Google Analytics](#create-accounts)
 
