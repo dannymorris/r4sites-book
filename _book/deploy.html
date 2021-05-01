@@ -301,8 +301,13 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">8.4</span> Update your website</h2>
 <p>To update the published version of your website, simply push your changes from your local environment to your GitHub repository. Netlify will detect the update to your GitHub repository and immediately proceed with publishing the latest version of your website.</p>
 <p>Assuming you have already pushed a version of your website to GitHub, use the <strong>add</strong> &gt; <strong>commit</strong> &gt; <strong>push</strong> Git workflow to push your updates to GitHub.</p>
-<pre><code>git add --all
-git commit -m &quot;short and sweet message describing your changes&quot;
+<pre><code># add all files to the local Git repo
+git add --all
+
+# commit files and include a brief message
+git commit -m &quot;brief message describing your changes&quot;
+
+# push files to GitHub
 git push origin master</code></pre>
 </div>
 <div id="purchasing-a-custom-domain-name" class="section level2" number="8.5">
