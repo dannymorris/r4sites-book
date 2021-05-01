@@ -2,8 +2,9 @@ introduction
 about-this-book
 target-audience
 motivating-use-cases
-inspiring-examples
+learn
 tools
+inspiring-examples
 about-hugo-static-websites-and-r-markdown
 faq
 about-the-author
@@ -58,8 +59,9 @@ example-posts
 tips-for-writing-posts
 deploy
 how-it-works-4
-upload-website-files-to-github
+upload-files-to-github
 configure-netlify-for-deployment
+updating-your-website
 purchasing-a-custom-domain-name
 google-analytics
 how-it-works-5
@@ -80,4 +82,3 @@ closing-thoughts-1
 extras
 stop-build-serve-site
 html-color-picker
-update-your-website

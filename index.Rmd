@@ -51,6 +51,29 @@ There are many excellent reasons to launch your very own personal website. Below
 
 - **Promote a product or service.** If you are thinking about selling your own products or services, consider publishing a landing page or an ecommerce site. [This landing page](https://r4sites.com/), which was built using the methodology in this book, is used to promote this book and generate sales.
 
+## What you will learn {#learn}
+
+This book will teach you how to build attractive,
+
+- Generate an initial website using the RStudio, the `blogdown` R package, and [Hugo themes](https://themes.gohugo.io/).
+- Fine tune the look and feel of your website including logos, colors, and fonts to reflect your unique style.
+- Configure features such as contact forms and page navigation.
+- Author posts (e.g. blog posts, tutorials, research articles, project portfolios, etc.) using plain Markdown, R, Python, and SQL within R Markdown documents.
+- Deploy your website to the internet using GitHub and Netlify.
+- Integrate Google Analytics into your website to capture traffic to your website, then use the `googleAnalyticsR` R package to analyze this data.
+
+## Tools you will use {#tools}
+
+The methodology described in this book for building websites uses the tools listed below. Note that all of the tools listed are **free to use**.
+
+- [R](https://cran.rstudio.com/) and the [blogdown](https://bookdown.org/yihui/blogdown/) package - Used for generating websites and authoring content.
+- [RStudio](https://www.rstudio.com/products/rstudio/#rstudio-desktop) - Used for managing your website project and creating a remarkable website development experience.
+- [Hugo](https://gohugo.io/) - Used by blogdown behind the scenes to generate beautiful, static websites.
+- [Git](https://git-scm.com/) and [GitHub](https://github.com/) - Used for pushing your website files from your local machine to a remote repository.
+- [Netlify](https://app.netlify.com/) - Used for publishing your website to the interent directly from your remote GitHub repository.
+- [Google Analytics](https://analytics.google.com/) and the [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) package - Used for analyzing user traffic on your website.
+- [Formspree](https://formspree.io) - Used for putting contact forms on your website and collecting responses.
+
 ## Inspiring examples
 
 Below are some examples of personal websites, blogs, and portfolios that have been built using Hugo and blogdown. Also, be sure check out the [Awesome Blogdown](https://awesome-blogdown.com/) website for many more examples.
@@ -65,17 +88,6 @@ Below are some examples of personal websites, blogs, and portfolios that have be
 
 - [Julia Silge](https://juliasilge.com/) - Personal website authored by Julia Silge. Simple and professional. Adapted from the [Hugo Academic](https://themes.gohugo.io/theme/academic/) theme.
 
-## Tools you will use {#tools}
-
-The methodology described in this book for building websites uses the tools listed below. Note that all of the tools listed are **free to use**.
-
-- [R](https://cran.rstudio.com/) and the [blogdown](https://bookdown.org/yihui/blogdown/) package - Used for generating websites and authoring content.
-- [RStudio](https://www.rstudio.com/products/rstudio/#rstudio-desktop) - Used for managing your website project and creating a remarkable website development experience.
-- [Hugo](https://gohugo.io/) - Used by blogdown behind the scenes to generate beautiful, static websites.
-- [Git](https://git-scm.com/) and [GitHub](https://github.com/) - Used for pushing your website files from your local machine to a remote repository.
-- [Netlify](https://app.netlify.com/) - Used for publishing your website to the interent directly from your remote GitHub repository.
-- [Google Analytics](https://analytics.google.com/) and the [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) package - Used for analyzing user traffic on your website.
-- [Formspree](https://formspree.io) - Used for putting contact forms on your website and collecting responses.
 
 ## About Hugo, static websites, and R Markdown
 
