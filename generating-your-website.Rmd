@@ -21,7 +21,7 @@ Follow these steps to generate a Hugo website using R and RStudio:
 
 1. Launch RStudio and install the blogdown package by running `install.packages("blogdown")` in the R console.
 
-2. Create a new RStudio Project by going to **File > New Project > New Directory > Website using blogdown.** [Example](https://i.imgur.com/eDg7V2k.png).
+2. Create a new RStudio Project by going to **File > New Project > New Directory > Website using blogdown.** [📷 Image](https://i.imgur.com/eDg7V2k.png).
 
 3. Configure the website to use the Anatole theme, as show in this [example configuration](https://i.imgur.com/0DxkDHe.png). Make sure to set the `Hugo theme:` parameter to `lxndrblz/anatole`. Click Create Project to generate the website.
 

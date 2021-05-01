@@ -26,19 +26,19 @@ Once you sign up for Google Analytics, the main objectives are to create an Acco
 
 Follow these steps to integrate Google Analytics into your website:
 
-1. Sign in to Google Analytics and navigate to Admin > Create Account. [Example](https://i.imgur.com/QRTa07k.png)
+1. Sign in to Google Analytics and navigate to Admin > Create Account. [📷 Image](https://i.imgur.com/QRTa07k.png)
 
 2. Under Account setup, provide an appropriate name (e.g. personal-website) and configure the Account Data Sharing Settings to your liking. The defaults should be fine. Click "Next".
 
 3. Under Property setup, provide an appropriate name (e.g. personal-website-property). 
 
-4. Under Property setup, click on "Show advanced options" to create a Universal Analytics property. For the Website URL, provide the URL to your website. Click "Next". [Example](https://i.imgur.com/0jffYnF.png)
+4. Under Property setup, click on "Show advanced options" to create a Universal Analytics property. For the Website URL, provide the URL to your website. Click "Next". [📷 Image](https://i.imgur.com/0jffYnF.png)
 
 5. Under About you business, configure the settings to your liking. Click "Next" and accept the terms of service.
 
-6. Locate the Tracking ID by returning back to the Admin console and selecting the Account and Property that were created in the previous steps. **Important:** Make sure you locate the Universal Analytics property that reads `property name (UA-XXXXXXX-X)` and not the GA4 property. Under Property, click on Tracking Info > Tracking Code ([example](https://i.imgur.com/GtiKfhq.png)). Copy the Tracking ID, which should appear in the form of UA-XXXXXXXXX-1. [Example](https://i.imgur.com/qcyaVBD.png)
+6. Locate the Tracking ID by returning back to the Admin console and selecting the Account and Property that were created in the previous steps. **Important:** Make sure you locate the Universal Analytics property that reads `property name (UA-XXXXXXX-X)` and not the GA4 property. Under Property, click on Tracking Info > Tracking Code ([📷 Image](https://i.imgur.com/GtiKfhq.png)). Copy the Tracking ID, which should appear in the form of UA-XXXXXXXXX-1. [📷 Image](https://i.imgur.com/qcyaVBD.png)
 
-7. Return to your RStudio Project where you are developing your website. Open the file `config.yaml` in the main directory and locate the `googleAnalytics:` parameter. Depending on the theme, this parameter may be written or spelled slightly differently. Paste your Google Analytics Tracking ID here, e.g. `googleAnalytics: 'UA-XXXXXXXXX-1'`. [Example](https://i.imgur.com/xgN24ah.png).
+7. Return to your RStudio Project where you are developing your website. Open the file `config.yaml` in the main directory and locate the `googleAnalytics:` parameter. Depending on the theme, this parameter may be written or spelled slightly differently. Paste your Google Analytics Tracking ID here, e.g. `googleAnalytics: 'UA-XXXXXXXXX-1'`. [📷 Image](https://i.imgur.com/xgN24ah.png).
 
 8. Push your changes to your GitHub repository to complete the Google Analytics integration.
 

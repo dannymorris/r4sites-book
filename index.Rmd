@@ -77,7 +77,7 @@ The methodology described in this book for building websites uses the tools list
 - [Google Analytics](https://analytics.google.com/) and the [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) package - Used for analyzing user traffic on your website.
 - [Formspree](https://formspree.io) - Used for putting contact forms on your website and collecting responses.
 
-## About Hugo and static websites
+## About Hugo, static websites, and R Markdown
 
 Hugo is a modern, user-friendly website generator that turns front-end content (Markdown, HTML, CSS, Javascript) into static websites. Static websites are client-side only, meaning they make no use of back-end servers or server-side scripting languages. The only thing required to run a static website is a web browser. Blogdown is an R package that leverages Hugo behind the scenes to generate static websites from the aforementioned front-end content *and* R Markdown documents. The integration of Hugo and R Markdown, which supports R, Python, and SQL languages, means website developers can author content that features code along with its output including tables and interactive data visualizations. 
 
@@ -101,7 +101,7 @@ Yes. Website content, such as blog posts, can be created using R Markdown docume
 
 **What is the role of RStudio in the process of building the types of websites described in this book?**
 
-RStudio is a free desktop application where all of your website development takes place. RStudio provides a simple interface for managing your website projects and the supporting materials including content, images, and code. RStudio also contains a "Viewer" pane, which will display your webiste locally and update it in real-time as you make changes to your website. This is discussed in more detail in the chapter [Curating the look, feel, and features](#curate-features).
+RStudio is a free desktop application where all of your website development takes place. RStudio provides a simple interface for managing your website projects and the supporting materials including content, images, and code. RStudio also contains a "Viewer" pane, which will display your webiste locally and update it in real-time as you make changes to your website. 
 
 **Can I publish my website behind a custom domain name?**
 

@@ -14,7 +14,7 @@ The key to creating an attractive, high-performing, and sustainable website is t
 
 Depending on your goals, you may be more or less restricted to certain Hugo themes. For example, if you intend to create content using R Markdown documents that feature code highlighting, tables, and interactive visualizations, then you may find that certain themes do a poor job of rendering these types of output. On the other hand, if you intend to create basic content using plain Markdown documents, you may not experience any content rendering issues with any of the themes you consider. Either way, you'll likely go through a few rounds of trial and error before you settle on a theme that meets most or all of your needs.
 
-**Tip:** When browsing Hugo themes, pay attention to the date on which the theme was most recently updated. [Example](https://i.imgur.com/fp7WH6s.png). It's best to avoid themes that have not been updated in the last few months or so.
+**Tip:** When browsing Hugo themes, pay attention to the date on which the theme was most recently updated. [📷 Image](https://i.imgur.com/fp7WH6s.png). It's best to avoid themes that have not been updated in the last few months or so.
 
 Here are some themes that I recommend based on performance, content rendering, and personal style preference. Note that this is not an exhaustive list of all themes that I would recommend.
 
@@ -50,7 +50,7 @@ To generate a blogdown website from a chosen theme, follow these steps:
 
 1. Browse the list of [Hugo themes](https://themes.gohugo.io/). Click on a theme you like, then click "Demo" to explore a complete example.
 
-2. Once you find something you really like, click "Download" on the theme homepage to be taken to the source code in GitHub. [Example](https://i.imgur.com/ld35gNP.png).
+2. Once you find something you really like, click "Download" on the theme homepage to be taken to the source code in GitHub. [📷 Image](https://i.imgur.com/ld35gNP.png).
 
 3. To create a website with your chosen theme, copy the user/theme-name in the GitHub URL. For example, if the source code is located at https://github.com/devcows/hugo-universal-theme, you'll want to copy `devcows/hugo-universal-theme`.
 

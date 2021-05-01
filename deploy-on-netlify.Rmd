@@ -54,6 +54,18 @@ Now that your website files are stored in GitHub, use Netlify to deploy your web
 
 5. Change your website's domain name (part of it at least). Default Netlify domain names tend to look something like this - https://dazzling-khorana-a6a8fe.netlify.app. To change this, go to *Site settings > Change site name*. Note that the domain extension is `.netlify.app` until you (optionally) purchase a custom domain name.
 
+## Update your website
+
+To update the published version of your website, simply push your changes from your local environment to your GitHub repository. Netlify will detect the update to your GitHub repository and immediately proceed with publishing the latest version of your website.
+
+Assuming you have already pushed a version of your website to GitHub, use the **add** > **commit** > **push** Git workflow to push your updates to GitHub.
+
+```
+git add --all
+git commit -m "short and sweet message describing your changes"
+git push origin master
+```
+
 ## Purchasing a custom domain name
 
 Netlify's default domain names end with `.netlify.app`. If you don't care for this domain extension, you can purchase a custom domain for your website. Though several domain registrars exist, the simplest route is to purchase a domain name through Netlify. If you use a domain registrar other than Netlify (e.g. Google Domains), you will have to manually configure Domain Name Servers and Domain Name System settings. With Netlify, all of this is taken care of for you.

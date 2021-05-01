@@ -4,7 +4,7 @@ target-audience
 motivating-use-cases
 inspiring-examples
 tools
-about-hugo-and-static-websites
+about-hugo-static-websites-and-r-markdown
 faq
 about-the-author
 complete-end-to-end-example
@@ -51,11 +51,11 @@ update-the-about-page
 delete-default-posts
 delete-language-translations
 configure-contact-forms
+customizing-contact-forms
 content
 create-new-posts-using-r-markdown
 example-posts
 tips-for-writing-posts
-adding-tags-and-categories
 deploy
 how-it-works-4
 upload-website-files-to-github
@@ -80,6 +80,4 @@ closing-thoughts-1
 extras
 stop-build-serve-site
 html-color-picker
-customizing-contact-forms
-add-code-highlighting
-add-tags-and-categories
+update-your-website
