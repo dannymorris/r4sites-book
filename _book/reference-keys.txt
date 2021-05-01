@@ -81,3 +81,5 @@ extras
 stop-build-serve-site
 html-color-picker
 customizing-contact-forms
+add-code-highlighting
+add-tags-and-categories

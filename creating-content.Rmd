@@ -43,6 +43,17 @@ output:
     toc: true
 ```
 
-#### Adding tags and categories
+#### Add code highlighting {-}
 
+Using the example above, add code highlighting to improve the readability of your code snippets by populating the `highlight` parameter. Though I recommend the `tango` highlighting scheme, [other options](https://bookdown.org/yihui/rmarkdown/) options are available.
 
+```
+output:
+  blogdown::html_page:
+    highlight: tango
+    toc: true
+```
+
+#### Add tags and categories {-}
+
+When creating new posts, think carefully about the Tags and Categories you attach to your post. Tags and Categories help with sorting and grouping your content, and they give gives Google crawlers an idea of what your blog post is about. According to [this webiste](https://databox.com/categories-vs-tags-for-seo), strive to attach 5-10 Categories and 5-10 Tags to each post to add just enough detail without confusing your readers.

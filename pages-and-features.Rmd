@@ -54,4 +54,4 @@ The contact form on the default Hugo Anatole theme includes fields for Name, Ema
 
 To edit the contact form on the Hugo Anatole theme, open `themes/anatole/layouts/partials/contact.html` and `themes/anatole/i18n/en.toml` in the RStudio editor. 
 
-To add a new field to the contact form, such as an optional "Job Title" field, update the `contact.html` file with a new input ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/layouts/partials/contact.html#L13-L16)) and update the `i18n/en.toml` file with an associated placeholder ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/i18n/en.toml#L35-L36)).
+To add a new field to the contact form, such as an optional "Job Title" field, update the `contact.html` file with a new input ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/layouts/partials/contact.html#L13-L16)) and update the `i18n/en.toml` file with an associated placeholder text value ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/i18n/en.toml#L35-L36)).
