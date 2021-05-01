@@ -18,9 +18,15 @@ The simplest way to add a new post is via the "New post" RStudio Addin. Follow t
 
 ## Example posts
 
-If you are unsure how to authr a post using R Markdown, take a look at the source code for the posts on the [Posts](https://r4sites-anatole-custom.netlify.app/post/) page on our customized Hugo Anatole website. 
+To learn how I prefer to structure my R Markdown posts, take a look at the source code for the sample posts on the [Posts](https://r4sites-anatole-custom.netlify.app/post/) page of our customized Hugo Anatole website. 
 
-- https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-rmd-covid/index.en.Rmd
+- [Sample post - Interactive tables and graphs in R](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-tables-graphs/index.en.Rmd)
+
+- [Sample post - Using Python in R Markdown](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd)
+
+- [Sample post - Using SQL in R Markdown](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-sql-in-r-markdown/index.en.Rmd)
+
+- [Sample post - Basic Markdown syntax](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-basic-markdown-syntax/index.en.Rmd)
 
 ## Tips for writing posts
 
