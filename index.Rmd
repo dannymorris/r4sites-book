@@ -35,22 +35,6 @@ The target audience for this book includes students, working professionals, and 
 
 Note that you do not have to be an experienced web developer to use the methodology described in this book. To learn more about whether or not this book is right for you, check out the [FAQ](#faq) section. 
 
-## Tools you will use {#tools}
-
-The methodology described in this book uses the tools listed below. Note that all of the tools listed are free to use.
-
-- [R](https://cran.rstudio.com/) and the [blogdown](https://bookdown.org/yihui/blogdown/) package - Used for generating websites and authoring content.
-- [RStudio](https://www.rstudio.com/products/rstudio/#rstudio-desktop) - Used for managing your website project and creating a remarkable website development experience.
-- [Hugo](https://gohugo.io/) - Used by blogdown behind the scenes to generate beautiful, static websites.
-- [Git](https://git-scm.com/) and [GitHub](https://github.com/) - Used for pushing your website files from your local machine to a remote repository.
-- [Netlify](https://app.netlify.com/) - Used for publishing your website to the interent directly from your remote GitHub repository.
-- [Google Analytics](https://analytics.google.com/) and the [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) package - Used for analyzing user traffic on your website.
-- [Formspree](https://formspree.io) - Used for putting contact forms on your website and collecting responses.
-
-## About Hugo and static websites
-
-Hugo is a modern, user-friendly website generator that turns front-end content (Markdown, HTML, CSS, Javascript) into static websites. Static websites are client-side only, meaning they make no use of back-end servers or server-side scripting languages. The only thing required to run a static website is a web browser. Blogdown is an R package that leverages Hugo behind the scenes to generate static websites from the aforementioned front-end content *and* R Markdown documents. The integration of Hugo and R Markdown, which supports R, Python, and SQL languages, means website developers can author content that features code along with its output including tables and interactive data visualizations. 
-
 ## Motivating use cases
 
 There are many excellent reasons to launch your very own personal website. Below is a list of ideas to get you thinking.
@@ -80,6 +64,22 @@ Below are some examples of personal websites, blogs, and portfolios that have be
 - [Maëlle Salmon](https://masalmon.eu/) - Personal website authored by Maëlle Salmon featuring a blog, list of talks, publications, and biography. Adapted from the [Blackburn](https://themes.gohugo.io/blackburn/) theme.
 
 - [Julia Silge](https://juliasilge.com/) - Personal website authored by Julia Silge. Simple and professional. Adapted from the [Hugo Academic](https://themes.gohugo.io/theme/academic/) theme.
+
+## Tools you will use {#tools}
+
+The methodology described in this book for building websites uses the tools listed below. Note that all of the tools listed are **free to use**.
+
+- [R](https://cran.rstudio.com/) and the [blogdown](https://bookdown.org/yihui/blogdown/) package - Used for generating websites and authoring content.
+- [RStudio](https://www.rstudio.com/products/rstudio/#rstudio-desktop) - Used for managing your website project and creating a remarkable website development experience.
+- [Hugo](https://gohugo.io/) - Used by blogdown behind the scenes to generate beautiful, static websites.
+- [Git](https://git-scm.com/) and [GitHub](https://github.com/) - Used for pushing your website files from your local machine to a remote repository.
+- [Netlify](https://app.netlify.com/) - Used for publishing your website to the interent directly from your remote GitHub repository.
+- [Google Analytics](https://analytics.google.com/) and the [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) package - Used for analyzing user traffic on your website.
+- [Formspree](https://formspree.io) - Used for putting contact forms on your website and collecting responses.
+
+## About Hugo and static websites
+
+Hugo is a modern, user-friendly website generator that turns front-end content (Markdown, HTML, CSS, Javascript) into static websites. Static websites are client-side only, meaning they make no use of back-end servers or server-side scripting languages. The only thing required to run a static website is a web browser. Blogdown is an R package that leverages Hugo behind the scenes to generate static websites from the aforementioned front-end content *and* R Markdown documents. The integration of Hugo and R Markdown, which supports R, Python, and SQL languages, means website developers can author content that features code along with its output including tables and interactive data visualizations. 
 
 ## FAQ {#faq}
 
