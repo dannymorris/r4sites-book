@@ -24,7 +24,7 @@
 <meta name="author" content="Danny Morris" />
 
 
-<meta name="date" content="2021-05-01" />
+<meta name="date" content="2021-05-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -34,7 +34,7 @@
 <link rel="prev" href="content.html"/>
 <link rel="next" href="google-analytics.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.5.1/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -51,6 +51,34 @@
 
 
 
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
+<script src="libs/plotly-binding-4.9.3/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.57.1/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.57.1/plotly-latest.min.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.17/datatables.js"></script>
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-196111394-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-196111394-1');
+</script>
 
 
 <style type="text/css">
@@ -268,24 +296,24 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Sign in to <a href="https://github.com/">GitHub</a> and create a new repository by clicking “New” in the Repositories section. Configure the repository accordingly, then click “Create repository.” <a href="https://i.imgur.com/dnmI973.png">📷 Image</a></p></li>
 <li><p>On your local machine, launch Git from the command line (e.g. Git Bash on Windows, Terminal on Mac/Linux) and run the following Git commands to sync a local Git repository with your newly created remote GitHub repository.</p></li>
 </ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="deploy.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Change the directory to your website&#39;s root folder</span></span>
-<span id="cb1-2"><a href="deploy.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> path/to/your/website</span>
-<span id="cb1-3"><a href="deploy.html#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="deploy.html#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># initialize local Git repository</span></span>
-<span id="cb1-5"><a href="deploy.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span>
-<span id="cb1-6"><a href="deploy.html#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="deploy.html#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># add all of your website files to the local Git repository</span></span>
-<span id="cb1-8"><a href="deploy.html#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="at">--all</span></span>
-<span id="cb1-9"><a href="deploy.html#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="deploy.html#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># commit your website files to the local Git repository</span></span>
-<span id="cb1-11"><a href="deploy.html#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;first commit&quot;</span></span>
-<span id="cb1-12"><a href="deploy.html#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="deploy.html#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># sync the local Git repository with the remote GitHub repository</span></span>
-<span id="cb1-14"><a href="deploy.html#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># change your_username and your_repo to your GitHub username and repository name</span></span>
-<span id="cb1-15"><a href="deploy.html#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/your_username/your_repo.git</span>
-<span id="cb1-16"><a href="deploy.html#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="deploy.html#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># push your files to GitHub</span></span>
-<span id="cb1-18"><a href="deploy.html#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin master</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="deploy.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Change the directory to your website&#39;s root folder</span></span>
+<span id="cb6-2"><a href="deploy.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> path/to/your/website</span>
+<span id="cb6-3"><a href="deploy.html#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="deploy.html#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># initialize local Git repository</span></span>
+<span id="cb6-5"><a href="deploy.html#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span>
+<span id="cb6-6"><a href="deploy.html#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="deploy.html#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># add all of your website files to the local Git repository</span></span>
+<span id="cb6-8"><a href="deploy.html#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="at">--all</span></span>
+<span id="cb6-9"><a href="deploy.html#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="deploy.html#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># commit your website files to the local Git repository</span></span>
+<span id="cb6-11"><a href="deploy.html#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;first commit&quot;</span></span>
+<span id="cb6-12"><a href="deploy.html#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-13"><a href="deploy.html#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co"># sync the local Git repository with the remote GitHub repository</span></span>
+<span id="cb6-14"><a href="deploy.html#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co"># change your_username and your_repo to your GitHub username and repository name</span></span>
+<span id="cb6-15"><a href="deploy.html#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/your_username/your_repo.git</span>
+<span id="cb6-16"><a href="deploy.html#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-17"><a href="deploy.html#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="co"># push your files to GitHub</span></span>
+<span id="cb6-18"><a href="deploy.html#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin master</span></code></pre></div>
 </div>
 <div id="configure-netlify-for-deployment" class="section level2" number="8.3">
 <h2><span class="header-section-number">8.3</span> Configure Netlify for deployment</h2>
