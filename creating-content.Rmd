@@ -10,7 +10,7 @@ New posts can be authored using either [R Markdown](https://bookdown.org/yihui/r
 
 #### Creating a new R Markdown post using RStudio {-}
 
-The simplest way to add a new post is via the "New post" RStudio Addin. Follow the steps below to create a new post using this approach.
+The simplest way to add a new post is via the "New post" RStudio Addin. Follow the steps below to create a new post using this approach:
 
 1. Select the RStudio Addin labeled "New post". [📷 Image](https://i.imgur.com/S9dl4DZ.png). 
 
@@ -18,7 +18,7 @@ The simplest way to add a new post is via the "New post" RStudio Addin. Follow t
 
 ## Example posts
 
-To learn how I prefer to structure my R Markdown posts, take a look at the source code for the sample posts on the [Posts](https://r4sites-anatole-custom.netlify.app/post/) page of our customized Hugo Anatole website. 
+To learn how I prefer to structure my R Markdown posts, take a look at the source code for the following sample posts on the [Posts](https://r4sites-anatole-custom.netlify.app/post/) page of the [demo website](https://r4sites-anatole-custom.netlify.app/):
 
 - [Sample post - Interactive tables and graphs in R](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-tables-graphs/index.en.Rmd)
 
@@ -56,4 +56,4 @@ output:
 
 #### Add tags and categories {-}
 
-When creating new posts, think carefully about the Tags and Categories you attach to your post. Tags and Categories help with sorting and grouping your content, and they give gives Google crawlers an idea of what your blog post is about. According to [this webiste](https://databox.com/categories-vs-tags-for-seo), strive to attach 5-10 Categories and 5-10 Tags to each post to add just enough detail without confusing your readers.
+When creating new posts, think carefully about the Tags and Categories you attach to your post. Tags and Categories help with sorting and grouping your content, and they give gives Google crawlers an idea of what your blog post is about. According to [this website](https://databox.com/categories-vs-tags-for-seo), strive to attach 5-10 Categories and 5-10 Tags to each post to add just enough detail without confusing your readers.

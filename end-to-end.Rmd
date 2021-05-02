@@ -5,11 +5,11 @@ editor_options:
 ---
 # Complete end-to-end example
 
-The purpose of this chapter is to inspire you with an example and to expose you to the entire process of creating, publishing, and analyzing your very own website. If you complete the steps described below, you will end up with [this final product](https://r4sites-anatole.netlify.app/). If you like the look and feel of this final product, then all you need to do afterwards is personalize it (e.g. add your own profile image) and author content. These topics are described in the following chapters.
+This chapter exposes you to the entire methodology for creating, publishing, and analyzing websites through a quick example. If you complete the steps described in this chapter, you will end up with this [basic website](https://r4sites-anatole.netlify.app/). Later chapters build upon this this basic website to create this [customized version](https://r4sites-anatole-custom.netlify.app/).
 
 ## How it works
 
-The steps to create, publish, and analyze your very own personal website include:
+The steps to create, publish, and analyze your very own personal website include the following:
 
 1. Install free software and create free accounts
 2. Generate the website using RStudio and the blogdown R package
@@ -38,7 +38,7 @@ Create free accounts with GitHub, Netlify, Google Analytics, and Formspree. Star
 
 ## Generate the website {#create-new-blogdown}
 
-[blogdown](https://bookdown.org/yihui/blogdown/) makes it super easy to generate a website that uses [Hugo](https://gohugo.io/). Follow the steps below to create a website on your local machine.
+[blogdown](https://bookdown.org/yihui/blogdown/) makes it super easy to generate a website that uses [Hugo](https://gohugo.io/). The steps to create a website on your local machine include:
 
 1. Launch RStudio and install the blogdown package by running `install.packages("blogdown")`.
 
@@ -50,7 +50,7 @@ Create free accounts with GitHub, Netlify, Google Analytics, and Formspree. Star
 
 ## Make some edits
 
-You will notice that the default Anatole theme contains placeholder text such as "My Blog" and "Call me Jane" on the homepage below the profile image. Follow the steps below to edit these placeholders.
+You will notice that the default Anatole theme contains placeholder text such as "My Blog" and "Call me Jane" on the homepage below the profile image. The steps to edit these placeholder examples include:
 
 1. Change "My Blog" on the homepage by navigating to `config/_default/languages.toml` and changing the `title` parameter. [</> Code](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/languages.toml#L2).
 
@@ -58,7 +58,7 @@ You will notice that the default Anatole theme contains placeholder text such as
 
 ## Integrate Google Analytics
 
-Integrate Google Analytics into your website to collect and analyze user traffic. If you haven't already, be sure to [create a free Google Analytics account](#create-accounts), then follow the steps below.
+Integrate Google Analytics into your website to collect and analyze user traffic. If you haven't already, be sure to [create a free Google Analytics account](#create-accounts), then proceed with the following steps:
 
 1. Sign in to Google Analytics and navigate to Admin > Create Account. [📷 Image](https://i.imgur.com/QRTa07k.png)
 
@@ -76,21 +76,21 @@ Integrate Google Analytics into your website to collect and analyze user traffic
 
 ## Integrate Formspree
 
-The [contact form](https://r4sites-anatole.netlify.app/contact/) on this demo website is powered by Formspree. Contact forms are a handy feature for collecting user feedback along with user emails. Formspree organizes and stores the responses to your contact form for you on their website. Follow the steps below to create a form "endpoint" and link it to the contact form on the demo website.
+The [contact form](https://r4sites-anatole.netlify.app/contact/) on this demo website is powered by Formspree. Contact forms are a handy feature for collecting user emails and feedback from your users. Formspree organizes and stores the responses to your contact form for you on their website. The steps below to create a form "endpoint" and link it to the contact form on the demo website include the following:
 
-- Sign in to [Formspree](https://formspree.io/login).
+1. Sign in to [Formspree](https://formspree.io/login).
 
-- Click "New Project" to create a new project for your website. [📷 Image](https://i.imgur.com/jZnrcVL.png).
+2. Click "New Project" to create a new project for your website. [📷 Image](https://i.imgur.com/jZnrcVL.png).
 
-- Click "New Form" to create a new contact form. [📷 Image](https://i.imgur.com/OYqo3Js.png)
+3. Click "New Form" to create a new contact form. [📷 Image](https://i.imgur.com/OYqo3Js.png)
 
-- Copy the form's "endpoint". [📷 Image](https://i.imgur.com/2S2HVO6.png)
+4. Copy the form's "endpoint". [📷 Image](https://i.imgur.com/2S2HVO6.png)
 
-- Update the `config/_default/params.toml` file in the main webiste folder to update the `contactFormAction` parameter with your form endpoint, as shown in this [example](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml#L18-L19).
+5. Update the `config/_default/params.toml` file in the main webiste folder to update the `contactFormAction` parameter with your form endpoint, as shown in this [example](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml#L18-L19).
 
 ## Push the website to GitHub
 
-Once your site is working locally, the next steps are to create a remote GitHub repository for your website, configure a local Git repository, and push your website files from your local environment to the remote repository. Follow these steps to create a remote GitHub repository and sync it to your local Git repository.
+Once your site is working locally, the next steps are to create a remote GitHub repository for your website, configure a local Git repository, and push your website files from your local environment to the remote repository. The steps to create a remote GitHub repository and sync it to your local Git repository include the following:
 
 1. Create a remote GitHub repository by signing in to [GitHub](https://github.com/) and clicking "New" in the Repositories section. Configure the repository accordingly, then click Create repository. [📷 Image](https://i.imgur.com/LW2AhCr.png)
 
@@ -101,17 +101,17 @@ Once your site is working locally, the next steps are to create a remote GitHub 
 # Change the directory to your website's root folder
 cd path/to/your/website/files
 
-# initialize local Git repo
+# initialize local Git repository
 git init
 
-# add your website files to the local Git repo
+# add your website files to the local Git repository
 git add --all
 
-# commit your website files to the local Git repo
+# commit your website files to the local Git repository
 git commit -m "first commit"
 
-# point the local Git repo to the remote GitHub repo
-# change your_username and your_repo to your GitHub username and repo name
+# point the local Git repository to the remote GitHub repository
+# change your_username and your_repo to your GitHub username and repository name
 git remote add origin https://github.com/your_username/your_repo.git
 
 # push your files to GitHub
@@ -120,11 +120,11 @@ git push -u origin master
 
 ## Deploy the website on Netlify
 
-Now that your website files are stored in your GitHub repository, use Netlify to deploy your website. Netlify will deploy your website directly from your GitHub repository. Any time you push new or edited content to the GitHub repo, Netlify will automatically deploy a new version of your website. This is known as continuous deployment and is key to rapid iteration. Follow these steps to deploy your website on Netlify.
+Now that your website files are stored in your GitHub repository, use Netlify to deploy your website. Netlify will deploy your website directly from your GitHub repository. Any time you push new or edited content to the GitHub repository, Netlify will automatically deploy a new version of your website. This is known as continuous deployment and is key to rapid iteration. The steps to deploy your website on Netlify include the following:
 
 1. Log in to Netlify account using your GitHub registration and click "New site from Git".
 
-2. Select GitHub as the Continuous Deployment provider, then choose the Github repository you configured in the previous steps.
+2. Select GitHub as the Continuous Deployment provider, then choose the GitHub repository you configured in the previous steps.
 
 3. Leave the site settings alone and click "Deploy site" to publish your website. [📷 Image](https://i.imgur.com/K4wmIJB.png)
 
@@ -134,13 +134,13 @@ Now that your website files are stored in your GitHub repository, use Netlify to
 
 [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) is an R package for querying Google Analytics data. This topic is discussed in more detail in the chapter [Analyzing traffic with Google Analytics](#google-analytics).
 
-The R code below does the following:
+The following R code performs the following tasks:
 
-- Load R packages for collecting and analyzing Google Analytics data
-- Authenticate Google Analytics account
-- List accounts and properties within your Google Analytics account, such as the ones associated with your newly created website
-- Return a query of users by geographic location 
-- Plot a map of users by geographic location
+1. Load R packages for collecting and analyzing Google Analytics data
+2. Authenticate Google Analytics account
+3. List accounts and properties within your Google Analytics account, such as the ones associated with your newly created website
+4. Return a query of users by geographic location 
+5. Plot a map of users by geographic location
 
 **Note:** The demo website created in the previous sections is not used in the following analysis because it has received no website traffic thus far. My personal website, Abnormal Distributions, is used instead.
 
@@ -230,7 +230,7 @@ map_plot <- users_location %>%
  )
 ```
 
-#### Map of Abnormal Distribtuions users by location {-}
+#### Map of Abnormal Distributions users by location {-}
 
 ```{r, eval = T}
 map_plot

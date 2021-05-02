@@ -28,7 +28,7 @@ Here are some themes that I recommend based on performance, content rendering, a
 
 - [Blackburn](https://themes.gohugo.io/blackburn/) - Clean layout. Easy to read and navigate. Great for personal websites, blogs, and portfolios.
 
-- [Beautiful Hugo](https://themes.gohugo.io/beautifulhugo/) - Crips, clean design. Great for personal websites, blogs, and portfolios.
+- [Beautiful Hugo](https://themes.gohugo.io/beautifulhugo/) - Crisp, clean design. Great for personal websites, blogs, and portfolios.
 
 #### Recommended themes for other use cases {-}
 

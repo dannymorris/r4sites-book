@@ -10,7 +10,7 @@ The Hugo Anatole theme comes with the following pages by default: Home, Posts, A
 
 To delete a page, open `config/_default/menus.en.toml` and delete all references to the page you want to delete. For example, to delete the Contact page, delete lines 19-23 in the `menus.en.toml` file. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/menus.en.toml#L19-L23)
 
-## Update the About page
+## Edit the About page
 
 The Hugo Anatole theme comes with a default [About page](https://r4sites-anatole-custom.netlify.app/about/). To edit the About page, navigate to `content/english/about.md`. Replace the metadata (i.e. the parameters in between the `---` markers) then replace the body of the document using plain Markdown. [</> Code](https://raw.githubusercontent.com/dannymorris/r4sites-anatole-custom/master/content/english/about.md).
 
@@ -20,7 +20,7 @@ The Hugo Anatole theme comes with several default posts. To delete all default p
 
 ## Delete language translations
 
-By default, the Anatole theme supports English and Arabic language translations. To remove all content for a given translation, complete the following steps.
+By default, the Anatole theme supports English and Arabic language translations. To remove all content for a given translation, complete the following steps:
 
 1. Delete the file `config/_default/menus.TRANSLATION.toml`.
 
@@ -28,11 +28,15 @@ By default, the Anatole theme supports English and Arabic language translations.
 
 3. Delete the folder `content/TRANSLATION/` and all of its contents.
 
+## Edit social media links
+
+The Hugo Anatole theme uses social media icons that link to social media profiles including LinkedIn, GitHub, Instagram, and Email. To set links to your personal profiles, open `config/_default/params.toml` and edit all `url` parameters ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L41-L59)). To remove a specific icon, delete all parameters associated with the icon. 
+
 ## Configure contact forms
 
 Contact forms are a feature of the default Hugo Anatole theme, though they are not a feature of all  Hugo themes. Contact forms are handy for collecting user emails and soliciting feedback from your website visitors. The contact form on the [Contact](https://r4sites-anatole-custom.netlify.app/about/) page of the default Hugo Anatole theme is powered by [Formspree](https://formspree.io). Formspree is not the only contact form provider, though it seems many Hugo themes integrate Formspree. Formspree's web app offers a user-friendly interface for creating and managing contact forms, viewing form submissions, and exporting user data in CSV format. If you ever want to do a "subscriber only" email campaign, contact forms are a great option for collecting emails.
 
-Follow the steps below to create a Formspree form "endpoint" and link it to the contact form on your website.
+Follow the steps below to create a Formspree form "endpoint" and link it to the contact form on your website:
 
 1. Sign in to [Formspree](https://formspree.io/login).
 
@@ -42,7 +46,7 @@ Follow the steps below to create a Formspree form "endpoint" and link it to the 
 
 4. Copy the form's "endpoint" beginning with `https://`. [📷 Image](https://i.imgur.com/2S2HVO6.png)
 
-5. Open `config/_default/params.toml` in the main webiste folder, uncomment the `contactFormAction` parameter, and insert the form endpoint. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L16-L17).
+5. Open `config/_default/params.toml` in the main website folder, uncomment the `contactFormAction` parameter, and insert the form endpoint. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L16-L17).
 
 #### Viewing your form submissions {-}
 

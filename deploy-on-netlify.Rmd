@@ -1,6 +1,6 @@
 # Deploying on Netlify {#deploy}
 
-This chapter describes a simple, repeatable approach to putting your website on the internet. If you haven't already, complete the following prerequisites. 
+This chapter describes a simple, repeatable approach to putting your website on the internet. If you haven't already, complete the following prerequisites:
 
 - [Create your blogdown website](#create-site-with-theme) and (optionally) [add some content](#content)
 - Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
@@ -23,17 +23,17 @@ Once your website is working locally, the next steps are to create a remote GitH
 # Change the directory to your website's root folder
 cd path/to/your/website
 
-# initialize local Git repo
+# initialize local Git repository
 git init
 
-# add all of your website files to the local Git repo
+# add all of your website files to the local Git repository
 git add --all
 
-# commit your website files to the local Git repo
+# commit your website files to the local Git repository
 git commit -m "first commit"
 
-# sync the local Git repo with the remote GitHub repo
-# change your_username and your_repo to your GitHub username and repo name
+# sync the local Git repository with the remote GitHub repository
+# change your_username and your_repo to your GitHub username and repository name
 git remote add origin https://github.com/your_username/your_repo.git
 
 # push your files to GitHub
@@ -42,7 +42,9 @@ git push -u origin master
 
 ## Configure Netlify for deployment
 
-Now that your website files are stored in GitHub, use Netlify to deploy your website. Netlify will deploy your website directly from your GitHub repository. Any time you push new or edited content to the GitHub repo, Netlify will automatically deploy a new version of your website. This is known as continuous deployment and is key to rapid iteration. Follow these steps to deploy your website on Netlify.
+Now that your website files are stored in GitHub, use Netlify to deploy your website. Netlify will deploy your website directly from your GitHub repository. Any time you push new or edited content to the GitHub repository, Netlify will automatically deploy a new version of your website. This is known as continuous deployment and is key to rapid iteration. 
+
+Follow these steps to deploy your website on Netlify:
 
 1. Log in to [Netlify](https://app.netlify.com/) and click "New site from Git".
 
@@ -61,7 +63,7 @@ To update the published version of your website, simply push your changes from y
 Assuming you have already pushed a version of your website to GitHub, use the **add** > **commit** > **push** Git workflow to push your updates to GitHub. [📷 Image](https://i.imgur.com/zJNAlIB.png)
 
 ```
-# add all files to the local Git repo
+# add all files to the local Git repository
 git add --all
 
 # commit files and include a brief message

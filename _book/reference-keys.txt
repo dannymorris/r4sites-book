@@ -1,11 +1,10 @@
 introduction
 about-this-book
 target-audience
-motivating-use-cases
+motivating-applications
 learn
 tools
 inspiring-examples
-about-hugo-static-websites-and-r-markdown
 faq
 about-the-author
 complete-end-to-end-example
@@ -48,9 +47,10 @@ colors
 pages-features
 rename-pages
 delete-pages
-update-the-about-page
+edit-the-about-page
 delete-default-posts
 delete-language-translations
+edit-social-media-links
 configure-contact-forms
 customizing-contact-forms
 content

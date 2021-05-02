@@ -4,7 +4,7 @@ Now that you have [generated a website](#generate) using a default Hugo theme, t
 
 ## How it works
 
-Recall that the types of static websites described in this book are simply a collection of text files including Markdown, HTML, CSS, and Javascript file types that Hugo compiles into a website. Therefore, changes to the look, feel, and features of your website are done simply by editing the relevant files and folders that make up your website.
+Recall that the types of static websites described in this book are simply a collection of text files including Markdown, HTML, CSS, and JavaScript file types that Hugo compiles into a website. Therefore, changes to the look, feel, and features of your website are done simply by editing the relevant files and folders that make up your website.
 
 ## About CSS
 
@@ -47,38 +47,37 @@ Navigate to `config.yaml` in the main directory and change the `baseURL` paramet
 
 This is a critical step to ensure your website and its dependencies are built and deployed properly.
 
-
 ## Title, description, and author
 
-- Change the **title** "My Blog" on the homepage by navigating to `config/_default/languages.toml` and changing the `title` parameter. [</> Code]().
+- Change the **title** "My Blog" on the homepage by navigating to `config/_default/languages.toml` and changing the `title` parameter. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/languages.toml#L2).
 
-- Change the **description** "Call me Jane" on the homepage by navigating to `config/_default/params.toml` and editing the `description` parameter. [</> Code]().
+- Change the **description** "Call me Jane" on the homepage by navigating to `config/_default/params.toml` and editing the `description` parameter. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L5).
 
-- Change the **author** "Jane Doe" by navigating to `config/_default/params.toml` and editing the `author` parameter. Doing this will change the title of your website as it appears in the web browser tab. [</> Code]().
+- Change the **author** "Jane Doe" by navigating to `config/_default/params.toml` and editing the `author` parameter. Doing this will change the title of your website as it appears in the web browser tab. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L3).
 
 ## Profile image
 
-The profile image is the main image on the homepage with a circular border. To edit this, navigate to `static/images/` and replace `profile.jpg` with your own image ([</> Code]()). If your image file is named `profile.jpg`, then no additional changes are needed. If not, navigate to `config/_default/params.toml` and edit the `profilePicture` paramater to point to your image.
+The profile image is the main image on the homepage with a circular border. To edit this, navigate to `static/images/` and replace `profile.jpg` with your own image. If your image file is named `profile.jpg`, then no additional changes are needed. If not, navigate to `config/_default/params.toml` and edit the `profilePicture` parameter to point to your image. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L6)
 
-Note that your profile image does not have to be a headshot. It could be a logo or any other image.
+Note that your profile image can be something other than a headshot, such as a project logo.
 
-If your image appears too wide/narrow or too tall/short, navigate to `themes/anatole/assets/css/style.css` and edit the CSS properties. For this theme, you will need to edit the CSS properties [here](#L901-L904) for narrow screen devices ([</> Code]()) and [here](#L291-L295) for wide screen devices ([</> Code]()).
+If your image appears too wide/narrow or too tall/short, navigate to `themes/anatole/assets/css/style.css` and edit the CSS properties. For this theme, you will need to edit the CSS properties for narrow screen devices ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L915-L917)) and [here](#L291-L295) for wide screen devices ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L293-L296)).
 
 ## Favicon {#favicon}
 
-The favicon is the tiny image that appears in the web browser tab when you visit the website. Navigate to `static/favicons/` and replace `favicon.ico` with your own favicon. If your favicon file is named `favicon.ico`, then no additional changes are needed. If not, navigate to `config/_default/params.toml` and change the `favicon` paramater to `favicons/your_filename.ico`.
+The favicon is the tiny image that appears in the web browser tab when you visit the website. Navigate to `static/favicons/` and replace `favicon.ico` with your own favicon. If your favicon file is named `favicon.ico`, then no additional changes are needed. If not, navigate to `config/_default/params.toml` and change the `favicon` parameter to `favicons/your_filename.ico`.
 
 To create a favicon from an image, visit https://favicon.io/favicon-converter/. Keep the file named `favicon.ico` in the same folder.
 
 ## Font style
 
-If you don't like the default font, you can easily change it. I recommend select a font from [Google Fonts](https://fonts.google.com/). For this example, I will use the [Noto Sans](https://fonts.google.com/specimen/Noto+Sans?query=noto+sans) font.
+If you don't like the default font, you can easily change it. I recommend selecting from [Google Fonts](https://fonts.google.com/). For this example, I will use the [Noto Sans](https://fonts.google.com/specimen/Noto+Sans?query=noto+sans) font.
 
-Follow the steps listed below to a Google Font.
+The steps to import a Google Font include the following:
 
 1. Locate and select your chosen font from from [Google Fonts](https://fonts.google.com/).
 
-2. Look at all of the available styles (e.g. Regular, Bold, Italic, etc.) and decide which styles you would like to import into your website. I recommend importing all available styles. To import all availalbe styles, select "+ Select this style" beside each style. [📷 Image](https://i.imgur.com/ZEopFOB.png)
+2. Look at all of the available styles (e.g. Regular, Bold, Italic, etc.) and decide which styles you would like to import into your website. I recommend importing all available styles. To import all available styles, select "+ Select this style" beside each style. [📷 Image](https://i.imgur.com/ZEopFOB.png)
 
 3. Select the "\@import" option under "Use on the web". Copy the HTML code **in between** the `style` tags([📷 Image](https://i.imgur.com/GE1L643.png)) and paste it into the main CSS file located at `themes/anatole/assets/css/style.css` ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L3)).
 
@@ -88,19 +87,17 @@ Follow the steps listed below to a Google Font.
 
 Overall, the Anatole uses quite small font sizes throughout. To change font sizes, locate the webpage element you want to modify using the [Inspect tool](#inspect-tool) in your browser. For the selected element, experiment with a `font-size` parameters (e.g. `font-size: 20px`). Once you are satisfied, edit the main CSS file located at `themes/anatole/assets/css/style.css` by adding the `font-size` property to the appropriate class.
 
-Below is a list of ideas for you to consider.
+Consider the following edits:
 
 - Increase the font size of the `p` class, which essentially affects all text throughout the website. Change the `font-size` property from 14px to 16px or higher. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L55-59). 
 
-- Inrease the font size of the text in the navigation bar located at the top of the website when viewed on a wide screen. Change the `font-size` property for the `.page-top .nav` class from 12px to 16px or higher.
-
-For example, the increase the font size of the headline "I help people launch personal websites, blogs, and project portfolios" on the homepage, edit the `font-size` property for the `.sidebar .logo-title .description` class. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L46)
+- Increase the font size of the text in the **navigation bar** located at the top of the website when viewed on a wide screen. Change the `font-size` property of the `.page-top .nav` class from 12px to 16px or higher. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L200-L207)
 
 ## Colors
 
 Other than static images, you can change the color of any webpage attribute. To change a color, locate the webpage element you want to modify using the [Inspect tool](#inspect-tool) in your browser and experiment with the `color` and `background-color` properties. 
 
-Below is a list of ideas for you to consider regarding color changes.
+Consider the following edits:
 
 - **Social media icons:** These are visible beneath the website title on the homepage. Open the main CSS file located at `themes/anatole/assets/css/style.css` and edit the `.sidebar .social-links i` class by specifying a `color` attribute. Here I have chosen to use the HEX color `#6a92c5`. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L322-325)
 

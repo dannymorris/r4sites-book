@@ -25,42 +25,44 @@ favicon: images/favicon.ico
 In 2018, I had virtually no online presence other than about 100 random LinkedIn connections. I knew this was a problem given my budding interest in Data Science, the increasing demand for project portfolios, and the perceived need to "stand out" in the digital crowd.
 
 
-So, I learned how to publish my first personal website, [Abnormal Distributions](https://abndistro.com/). Yes, I know, it looks outdated and definitely not as cool as [this personal website](https://benc.dev/). However, Abnormal Distributions served as the launchpad for growing my online presence. Since going live, it has served over 50,000 page views and 20,000 users from [all over the world](#users-by-location). To date, [this post](https://abndistro.com/post/2019/07/07/detecting-image-differences-using-python-and-opencv/) is by far the most popular. I began posting content on LinkedIn with links to my website, and in the span of a year I received 1,700 LinkedIn connection requests from Data Scientists and professionals in related fields. I began receiving job opportunities from recruiters who would reference Abnormal Distributions as the reason for wanting to connect. Abnormal Distributions turned out to be a wonderful investment of time and energy and an amazing learning experience. It helped spark my creativity, deepen my subject matter expertise through writing, and give me the confidence to engage with the digital crowd.
+So, I learned how to publish my first personal website, [Abnormal Distributions](https://abndistro.com/). Yes, I know, it looks outdated and definitely not as cool as [this personal website](https://benc.dev/). However, Abnormal Distributions aided significantly in growing my online presence. Since going live, Abnormal Distributions has served over 50,000 page views and 20,000 users from [all over the world](#users-by-location). To date, [this post](https://abndistro.com/post/2019/07/07/detecting-image-differences-using-python-and-opencv/) is by far the most popular. I began posting content on LinkedIn with links to my website, and in the span of a year I received 1,700 LinkedIn connection requests from Data Scientists and professionals in related fields. I began receiving job opportunities from recruiters who would reference Abnormal Distributions as the reason for wanting to connect. Abnormal Distributions turned out to be a wonderful investment of time and energy and an amazing learning experience. It helped spark my creativity, deepen my subject matter expertise through writing, and give me the confidence to engage with the digital crowd.
 
-**My goal with this book is to help you launch your own personal website, blog, or project portfolio.** You will learn the exact methdology that I use to create, design, publish, and analyze websites using R, RStudio, and other freely available tools including GitHub, Hugo, Netlify, and Google Analytics. All of the tools presented in this book are free to download or available through free accounts. No prior experience in web development, R, or any of the aforementioned technologies is needed to be successful with this book.
+**My goal with this book is to help you launch your very own personal website.** 
+
+You will learn the exact methodology that I use to create, design, publish, and analyze websites using R, RStudio, and other freely available tools including GitHub, Hugo, Netlify, and Google Analytics. All of the tools presented in this book are either free to download or available through free accounts. No prior experience in web development, R, or any of the aforementioned technologies is needed to be successful with this book.
 
 ## Target audience
 
-The target audience for this book includes students, working professionals, and researchers who want to launch their very own personal website. Most likely, however, this book will appeal to students and practitioners who associate with R, Data Analytics, Data Science, Machine Learning, Statistics, Mathematics, and related fields where technical writing is commonplace.
+The target audience for this book includes students, working professionals, and researchers who want to launch their very own personal website. Most likely, however, this book will appeal to individuals in these segments who associate with R, Data Analytics, Data Science, Machine Learning, Statistics, Mathematics, and related fields where technical writing is common.
 
-Note that you do not have to be an experienced web developer to use the methodology described in this book. To learn more about whether or not this book is right for you, check out the [FAQ](#faq) section. 
+Note that you do not have to be an experienced web developer to successfully use the methodology described in this book. To learn more about whether or not this book is right for you, check out the [FAQ](#faq) section. 
 
-## Motivating use cases
+## Motivating applications
 
-There are many excellent reasons to launch your very own personal website. Below is a list of ideas to get you thinking.
+There are many excellent applications for personal websites. Below is a list of ideas to motivate your thinking.
 
-- **Be seen without being seen**. If you are introverted like me, the thought of networking and promoting yourself in-person is a bit overwhelming. Operating a personal website is a great way to market yourself and meet people without being physically present. 
+- **Be seen (without being seen)**. If you are introverted like me, the thought of networking and promoting yourself in-person is a bit overwhelming. Operating a personal website is a great way to market yourself, display your skills, and connect with a global audience without being physically present. 
 
 - **Enrich your social media presence.** Personal websites give your social media viewers a path to learning more about you and the work you are doing. Start by enriching your LinkedIn profile by inserting links to your website in your headline, summary, Featured section, and any posts you make.
 
-- **Personalize your job applications.** If there is a job you really want or a company you would love to work for, create a personalized website for this company with hyperfocused content and share it with the recruiter, hiring manager, current employees, and anyone else in the company's network who might be impressed. I built [this website](https://goofy-franklin-7b6d1d.netlify.app/) when I applied to RStudio (spoiler: I did not get the job).
+- **Personalize your job applications.** If there is a job you really want or a company you would love to work for, create a personalized website for this company with hyperfocused content and share it with the recruiter, hiring manager, current employees, and anyone else in the company's network who might be impressed. I built [this website](https://goofy-franklin-7b6d1d.netlify.app/) when I applied to RStudio. Spoiler: I did not get the job. 🤷‍♂️
 
-- **Establish yourself as a thought leader.** Are you passionate about certain topics? Create a website and start writing! Direct people to your website as often as you can to establish your thought leadership on the topic. By the way, you do not have to be an expert to be a thought leader. If you are learning a new topic and have some ideas you want to share, then you are a thought leader.
+- **Establish yourself as a thought leader.** Are you passionate about certain topics? Create a website and start writing! Direct people to your website as often as you can to reinforce your thought leadership on the topic. By the way, you do not have to be an expert to be a thought leader. If you are learning a new topic and have some ideas you want to share, then you are a thought leader.
 
-- **Organize content for a specific class or project.** This use case is a supreme opportunity to display leadership. If you are taking a class or working on a project, consider publishing a website (for free, of course) to organize your learnings and all essential documentation, as shown in [this example](https://dssquad-wiki.netlify.app/).
+- **Organize content for a specific class or project.** This use case is a supreme opportunity for students to display leadership. If you are taking a class or working on a project, consider publishing a website (for free, of course) to communicate your progress and organize essential documentation, as shown in [this example](https://dssquad-wiki.netlify.app/).
 
-- **Promote a product or service.** If you are thinking about selling your own products or services, consider publishing a landing page or an ecommerce site. [This landing page](https://r4sites.com/), which was built using the methodology in this book, is used to promote this book and generate sales.
+- **Promote a product or service.** If you are thinking about selling your own products or services, consider publishing a landing page or an ecommerce site. [This landing page](https://r4sites.com/), which was built using the methodology in this book, serves to promote this book and generate sales.
 
 ## What you will learn {#learn}
 
-This book will teach you how to build attractive,
+You will learn how to edit [this default website](https://themes.gohugo.io/theme/anatole/) to create a [customized, finished version](https://r4sites-anatole-custom.netlify.app/) that reflects your personal style. Throughout the process of making edits, you will learn how to do the following:
 
-- Generate an initial website using the RStudio, the `blogdown` R package, and [Hugo themes](https://themes.gohugo.io/).
+- Generate websites using R and RStudio in three simple steps.
 - Fine tune the look and feel of your website including logos, colors, and fonts to reflect your unique style.
-- Configure features such as contact forms and page navigation.
-- Author posts (e.g. blog posts, tutorials, research articles, project portfolios, etc.) using plain Markdown, R, Python, and SQL within R Markdown documents.
-- Deploy your website to the internet using GitHub and Netlify.
-- Integrate Google Analytics into your website to capture traffic to your website, then use the `googleAnalyticsR` R package to analyze this data.
+- Configure features such as contact forms, pages, and social media links.
+- Author content such as blog posts, tutorials, research articles, and project portfolios using R, Python, SQL, and Markdown.
+- Deploy your website to the internet.
+- Integrate Google Analytics into your website to capture user activity on your website, then use R to analyze this data.
 
 ## Tools you will use {#tools}
 
@@ -70,15 +72,15 @@ The methodology described in this book for building websites uses the tools list
 - [RStudio](https://www.rstudio.com/products/rstudio/#rstudio-desktop) - Used for managing your website project and creating a remarkable website development experience.
 - [Hugo](https://gohugo.io/) - Used by blogdown behind the scenes to generate beautiful, static websites.
 - [Git](https://git-scm.com/) and [GitHub](https://github.com/) - Used for pushing your website files from your local machine to a remote repository.
-- [Netlify](https://app.netlify.com/) - Used for publishing your website to the interent directly from your remote GitHub repository.
+- [Netlify](https://app.netlify.com/) - Used for publishing your website to the internet directly from your remote GitHub repository.
 - [Google Analytics](https://analytics.google.com/) and the [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) package - Used for analyzing user traffic on your website.
 - [Formspree](https://formspree.io) - Used for putting contact forms on your website and collecting responses.
 
 ## Inspiring examples
 
-Below are some examples of personal websites, blogs, and portfolios that have been built using Hugo and blogdown. Also, be sure check out the [Awesome Blogdown](https://awesome-blogdown.com/) website for many more examples.
+Below are some examples of personal websites that have been built using the methodology described in this book. For even more inspiration, check out the [Awesome Blogdown](https://awesome-blogdown.com/) website.
 
-- [Abnormal Distributions](https://abndistro.com) - My personal website and blog. Outrageously simple and straightforward. Designed for sharing tutorials and ideas. Based on the [Hugo Xmin theme](https://themes.gohugo.io/hugo-xmin/).
+- [Abnormal Distributions](https://abndistro.com) - My personal website and blog. Outrageously simple and straightforward. Designed for sharing tutorials and ideas. Adapted from the [Hugo Xmin](https://themes.gohugo.io/hugo-xmin/) theme.
 
 - [R-Ladies NYC](http://www.rladiesnyc.org/) - Organization website dedicated to promoting gender diversity in the R community. Clean, modern layout. Great design for promoting groups, teams, projects, and events. Adapted form the [Hugo Academic](https://themes.gohugo.io/academic/) theme.
 
@@ -87,11 +89,6 @@ Below are some examples of personal websites, blogs, and portfolios that have be
 - [Maëlle Salmon](https://masalmon.eu/) - Personal website authored by Maëlle Salmon featuring a blog, list of talks, publications, and biography. Adapted from the [Blackburn](https://themes.gohugo.io/blackburn/) theme.
 
 - [Julia Silge](https://juliasilge.com/) - Personal website authored by Julia Silge. Simple and professional. Adapted from the [Hugo Academic](https://themes.gohugo.io/theme/academic/) theme.
-
-
-## About Hugo, static websites, and R Markdown
-
-Hugo is a modern, user-friendly website generator that turns front-end content (Markdown, HTML, CSS, Javascript) into static websites. Static websites are client-side only, meaning they make no use of back-end servers or server-side scripting languages. The only thing required to run a static website is a web browser. Blogdown is an R package that leverages Hugo behind the scenes to generate static websites from the aforementioned front-end content *and* R Markdown documents. The integration of Hugo and R Markdown, which supports R, Python, and SQL languages, means website developers can author content that features code along with its output including tables and interactive data visualizations. 
 
 ## FAQ {#faq}
 
@@ -105,7 +102,7 @@ Absolutely not. In fact, this book presents information with the assumption that
 
 **Do I need to know R to build the types of websites described in this book?**
 
-Not at all. You could create and publish your personal website without knowing or writing a single line of R code. The methodology described in this book simply explains how to integrate R and its ouutput (e.g. tables, graphs) into a website. If you don't know R, a website could be a great way to learn it and document your journey!
+Not at all. You could create and publish your personal website without knowing or writing a single line of R code. The methodology described in this book simply explains how to integrate R and its output (e.g. tables, graphs) into a website. If you don't know R, a website could be a great way to learn it and document your journey!
 
 **Can I author content using programming languages other than R?**
 
@@ -113,7 +110,7 @@ Yes. Website content, such as blog posts, can be created using R Markdown docume
 
 **What is the role of RStudio in the process of building the types of websites described in this book?**
 
-RStudio is a free desktop application where all of your website development takes place. RStudio provides a simple interface for managing your website projects and the supporting materials including content, images, and code. RStudio also contains a "Viewer" pane, which will display your webiste locally and update it in real-time as you make changes to your website. 
+RStudio is a free desktop application where all of your website development takes place. RStudio provides a simple interface for managing your website projects and the supporting materials including content, images, and code. RStudio also contains a "Viewer" pane, which will display your website locally and update it in real-time as you make changes to your website. 
 
 **Can I publish my website behind a custom domain name?**
 
