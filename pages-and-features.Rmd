@@ -57,7 +57,7 @@ Follow the steps below to create a Formspree form "endpoint" and link it to the 
 
 5. Open `config/_default/params.toml` in the main website folder, uncomment the `contactFormAction` parameter, and insert the form endpoint. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L16-L17).
 
-## Customizing contact forms
+## Customize contact forms
 
 The contact form on the default Hugo Anatole theme includes fields for Name, Email, and Message. These defaults are likely to work for most use cases, however it is possible to create new fields.
 
@@ -65,6 +65,10 @@ To edit the contact form on the Hugo Anatole theme, open `themes/anatole/layouts
 
 To add a new field to the contact form, such as an optional "Job Title" field, update the `contact.html` file with a new input ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/layouts/partials/contact.html#L13-L16)) and update the `i18n/en.toml` file with an associated placeholder text value ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/i18n/en.toml#L35-L36)).
 
-## Viewing contact form submissions
+## View contact form submissions
 
 Once your contact form endpoint is configured, submissions to your contact form can be viewed in your Formspree account. Sign in to Formspree, locate your form, and select "Submissions" to view and (optionally) export your submissions. [📷 Image](https://i.imgur.com/zua7Wuh.png)
+
+## Next steps
+
+Proceed with [authoring new content](#content) to learn how to add blog posts, tutorials, research articles, and project write-ups using R Markdown.

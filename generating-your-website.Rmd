@@ -38,6 +38,6 @@ The best part of this feature is that as you make and save changes to your websi
 
 ## Next steps
 
-Continue on to the chapter [Curating the look, feel, and features](#curate-features) to learn how to customize the default theme to capture your personal style.
+Proceed with [fine tuning the look and feel](#fine-tune) of your website to learn how to add flavor to your website and capture your personal style.
 
 

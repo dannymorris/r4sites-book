@@ -1,6 +1,6 @@
 # Going live on the internet {#deploy}
 
-This chapter describes a simple, repeatable approach to putting your website on the internet. 
+This chapter teaches you how to deploy your website to the internet using Netlify and GitHub. 
 
 ## Prerequisites
 
@@ -63,7 +63,7 @@ Follow these steps to deploy your website on Netlify:
 
 5. Change your website's domain name (part of it at least). Default Netlify domain names tend to look something like this - https://dazzling-khorana-a6a8fe.netlify.app. To change this, go to *Site settings > Change site name*. Note that the domain extension is `.netlify.app` until you (optionally) purchase a custom domain name.
 
-## Updating your website
+## Update your website
 
 To update the published version of your website, simply push your changes from your local environment to your GitHub repository. Netlify will detect the update to your GitHub repository and immediately proceed with publishing the latest version of your website.
 
@@ -80,7 +80,7 @@ git commit -m "brief message describing your changes"
 git push origin master
 ```
 
-## Purchasing a custom domain name
+## Purchase a custom domain name
 
 Netlify's default domain names end with `.netlify.app`. If you don't care for this domain extension, you can purchase a custom domain for your website. Though several domain registrars exist, the simplest route is to purchase a domain name through Netlify. If you use a domain registrar other than Netlify (e.g. Google Domains), you will have to manually configure Domain Name Servers and Domain Name System settings. With Netlify, all of this is taken care of for you.
 
@@ -93,4 +93,8 @@ Follow the simple steps below to purchase a custom domain through Netlify:
 3. Search for a domain name you like, then click "Verify" to determine if the domain is already owned or available for purchase. If available, confirm the purchase with a credit card and (optionally) set the domain name to auto-renew annually. [📷 Image](https://i.imgur.com/y2s7wQR.png).
 
 4. Enable IPv6 to reach areas of the world where connectivity via IPv4 is not possible. Do this by signing in to Netlify and navigating to *Team overview > Domains*, select your custom domain name, and click "Enable IPv6 on your domain". [📷 Image](https://docs.netlify.com/domains-https/netlify-dns/#ipv6-traffic).
+
+## Next steps
+
+Proceed with [analyzing user traffic](#content) to learn how to integrate Google Analytics into your website and analyze the data using R.
 

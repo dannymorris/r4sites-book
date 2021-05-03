@@ -1,6 +1,6 @@
 --- 
 title: "Create, Publish, and Analyze Personal Websites Using R and RStudio"
-subtitle: "A digital handbook with step-by-step instructions for launching your very own personal website, blog, or project portfolio using R, RStudio, and other freely available technologies including GitHub, Hugo, Netlify, and Google Analytics"
+subtitle: "A digital handbook with step-by-step instructions for launching your very own personal website using R, RStudio, and other freely available technologies including GitHub, Hugo, Netlify, and Google Analytics"
 author: "Danny Morris"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -118,7 +118,7 @@ RStudio is a free desktop application where all of your website development take
 
 Yes. See the chapter on [Deploying on Netlify](#deploy).
 
-## About the Author
+## About the author
 
 Hi! My name is Danny Morris, and thanks for checking out my book. I am an industry Data Scientist with a passion for writing, creating visual content, and building predictive models. I have published over a dozen websites for various purposes using the methodology described in this book. 
 More than anything, I love helping people launch or elevate their professional journey. Feel free to shoot me an <a href="mailto:dmorris10667@gmail.com">email</a> and connect with me on [LinkedIn](https://www.linkedin.com/in/drmorris87/).

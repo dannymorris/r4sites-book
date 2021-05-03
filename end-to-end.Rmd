@@ -133,7 +133,7 @@ Now that your website files are stored in your GitHub repository, use Netlify to
 
 ## Analyze Google Analytics data
 
-[googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) is an R package for querying Google Analytics data. This topic is discussed in more detail in the chapter [Analyzing traffic with Google Analytics](#google-analytics).
+[googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) is an R package for querying Google Analytics data. This topic is discussed in more detail in the chapter [Analyzing user traffic](#google-analytics).
 
 The following R code performs the following tasks:
 
@@ -237,8 +237,6 @@ map_plot <- users_location %>%
 map_plot
 ```
 
-## Closing thoughts
+## Next steps
 
-The steps to create and publish a website presented in this chapter are discussed in greater detail in the following chapters. Start with the next chapter, [Choosing a Hugo theme](#choose-theme), to learn about choosing a website layout and style that aligns with your vision and goals for your website.
-
-If you like the look and feel of the website created in this chapter, keep using it! You would only need to make a few more edits including the [favicon](#favicon) and any placeholder text. Optional edits include custom images, logos, font styles, color palettes, pages, and language translations. These edits are described in the chapter [Curating the look, feel, and features](#curate-features). If you are interested in jumping straight into writing content (e.g. blog posts), learn how that works in the chapter [Authoring content](#content).
+This chapter presents the steps to create, publish, and analyze personal websites with very little detail. To get into the details behind each step, start with [generating your website](#generate).

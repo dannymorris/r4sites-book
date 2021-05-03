@@ -27,7 +27,7 @@ Before you proceed, complete the following prerequisites:
 
 Once you sign up for Google Analytics, the main objectives are to create an Account and a Property for your website domain name, then obtain a Tracking ID. This tracking code will go in the `config.yaml` file on your website, which in turn will instruct Google Analytics to collect the data on user traffic to your website.
 
-## Setting up Google Analytics {#ga-setup}
+## Set up Google Analytics {#ga-setup}
 
 Follow these steps to integrate Google Analytics into your website:
 
@@ -47,9 +47,9 @@ Follow these steps to integrate Google Analytics into your website:
 
 8. Push your changes to your GitHub repository to complete the Google Analytics integration.
 
-## Analyzing traffic using googleAnalyticsR
+## Analyze traffic using R
 
-[googleAnalyicsR](https://code.markedmondson.me/googleAnalyticsR/) is an R package for analyzing Google Analytics data stemming from traffic to your website.
+[googleAnalyicsR](https://code.markedmondson.me/googleAnalyticsR/) is an R package that makes it easy to query your Google Analytics data.
 
 ### Dimensions and metrics
 

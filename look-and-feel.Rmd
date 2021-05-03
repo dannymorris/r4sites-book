@@ -110,3 +110,7 @@ Consider the following edits:
 
 - **Post tags:** These are visible on the homepage beneath post titles and summaries. Open the main CSS file located at `themes/anatole/assets/css/style.css` and edit the `.post .post-footer .meta a` class and editing the`color` attribute. Here I have chosen to use the HEX color `#6a92c5`. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L479-482)
 
+## Next steps
+
+Proceed with [configuring pages and features](#pages-features) to learn how to edit the default content on your website and configure the contact form.
+
