@@ -229,13 +229,18 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="7" data-path="content.html"><a href="content.html"><i class="fa fa-check"></i><b>7</b> Authoring content</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="content.html"><a href="content.html#create-new-posts-using-r-markdown"><i class="fa fa-check"></i><b>7.1</b> Create new posts using R Markdown</a></li>
+<li class="chapter" data-level="7.1" data-path="content.html"><a href="content.html#how-it-works-4"><i class="fa fa-check"></i><b>7.1</b> How it works</a></li>
 <li class="chapter" data-level="7.2" data-path="content.html"><a href="content.html#example-posts"><i class="fa fa-check"></i><b>7.2</b> Example posts</a></li>
-<li class="chapter" data-level="7.3" data-path="content.html"><a href="content.html#tips-for-writing-posts"><i class="fa fa-check"></i><b>7.3</b> Tips for writing posts</a></li>
+<li class="chapter" data-level="7.3" data-path="content.html"><a href="content.html#create-a-new-post"><i class="fa fa-check"></i><b>7.3</b> Create a new post</a></li>
+<li class="chapter" data-level="7.4" data-path="content.html"><a href="content.html#add-a-summary"><i class="fa fa-check"></i><b>7.4</b> Add a summary</a></li>
+<li class="chapter" data-level="7.5" data-path="content.html"><a href="content.html#add-a-table-of-contents"><i class="fa fa-check"></i><b>7.5</b> Add a table of contents</a></li>
+<li class="chapter" data-level="7.6" data-path="content.html"><a href="content.html#add-code-highlighting"><i class="fa fa-check"></i><b>7.6</b> Add code highlighting</a></li>
+<li class="chapter" data-level="7.7" data-path="content.html"><a href="content.html#add-tags-and-categories"><i class="fa fa-check"></i><b>7.7</b> Add tags and categories</a></li>
+<li class="chapter" data-level="7.8" data-path="content.html"><a href="content.html#enable-disqus-comments"><i class="fa fa-check"></i><b>7.8</b> Enable Disqus comments</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="deploy.html"><a href="deploy.html"><i class="fa fa-check"></i><b>8</b> Deploying on Netlify</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="deploy.html"><a href="deploy.html#how-it-works-4"><i class="fa fa-check"></i><b>8.1</b> How it works</a></li>
+<li class="chapter" data-level="8.1" data-path="deploy.html"><a href="deploy.html#how-it-works-5"><i class="fa fa-check"></i><b>8.1</b> How it works</a></li>
 <li class="chapter" data-level="8.2" data-path="deploy.html"><a href="deploy.html#upload-files-to-github"><i class="fa fa-check"></i><b>8.2</b> Upload files to GitHub</a></li>
 <li class="chapter" data-level="8.3" data-path="deploy.html"><a href="deploy.html#configure-netlify-for-deployment"><i class="fa fa-check"></i><b>8.3</b> Configure Netlify for deployment</a></li>
 <li class="chapter" data-level="8.4" data-path="deploy.html"><a href="deploy.html#updating-your-website"><i class="fa fa-check"></i><b>8.4</b> Updating your website</a></li>
@@ -243,7 +248,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="9" data-path="google-analytics.html"><a href="google-analytics.html"><i class="fa fa-check"></i><b>9</b> Analyzing traffic with Google Analytics</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="google-analytics.html"><a href="google-analytics.html#how-it-works-5"><i class="fa fa-check"></i><b>9.1</b> How it works</a></li>
+<li class="chapter" data-level="9.1" data-path="google-analytics.html"><a href="google-analytics.html#how-it-works-6"><i class="fa fa-check"></i><b>9.1</b> How it works</a></li>
 <li class="chapter" data-level="9.2" data-path="google-analytics.html"><a href="google-analytics.html#ga-setup"><i class="fa fa-check"></i><b>9.2</b> Setting up Google Analytics</a></li>
 <li class="chapter" data-level="9.3" data-path="google-analytics.html"><a href="google-analytics.html#analyzing-traffic-using-googleanalyticsr"><i class="fa fa-check"></i><b>9.3</b> Analyzing traffic using googleAnalyticsR</a></li>
 <li class="chapter" data-level="9.4" data-path="google-analytics.html"><a href="google-analytics.html#closing-thoughts-1"><i class="fa fa-check"></i><b>9.4</b> Closing thoughts</a></li>
@@ -285,7 +290,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li>Sign up for <a href="https://github.com/">GitHub</a></li>
 <li>Sign up for <a href="https://app.netlify.com/">Netlify</a></li>
 </ul>
-<div id="how-it-works-4" class="section level2" number="8.1">
+<div id="how-it-works-5" class="section level2" number="8.1">
 <h2><span class="header-section-number">8.1</span> How it works</h2>
 <p>Hugo (the static site generator used by blogdown), GitHub, and Netlify are the three tools that make it incredibly simple to deploy your website to the internet. The main steps are to upload your website files to a remote GitHub repository, then create a new site in Netlify that points to your GitHub repository URL. Netlify will then do all of the heavy lifting of building and deploying your Hugo website to the internet. All of this can be done in a matter of minutes with just a few lines of code and a few clicks.</p>
 </div>
@@ -296,24 +301,24 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Sign in to <a href="https://github.com/">GitHub</a> and create a new repository by clicking “New” in the Repositories section. Configure the repository accordingly, then click “Create repository.” <a href="https://i.imgur.com/dnmI973.png">📷 Image</a></p></li>
 <li><p>On your local machine, launch Git from the command line (e.g. Git Bash on Windows, Terminal on Mac/Linux) and run the following Git commands to sync a local Git repository with your newly created remote GitHub repository.</p></li>
 </ol>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="deploy.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Change the directory to your website&#39;s root folder</span></span>
-<span id="cb6-2"><a href="deploy.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> path/to/your/website</span>
-<span id="cb6-3"><a href="deploy.html#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="deploy.html#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># initialize local Git repository</span></span>
-<span id="cb6-5"><a href="deploy.html#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span>
-<span id="cb6-6"><a href="deploy.html#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-7"><a href="deploy.html#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># add all of your website files to the local Git repository</span></span>
-<span id="cb6-8"><a href="deploy.html#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="at">--all</span></span>
-<span id="cb6-9"><a href="deploy.html#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-10"><a href="deploy.html#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># commit your website files to the local Git repository</span></span>
-<span id="cb6-11"><a href="deploy.html#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;first commit&quot;</span></span>
-<span id="cb6-12"><a href="deploy.html#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-13"><a href="deploy.html#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co"># sync the local Git repository with the remote GitHub repository</span></span>
-<span id="cb6-14"><a href="deploy.html#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co"># change your_username and your_repo to your GitHub username and repository name</span></span>
-<span id="cb6-15"><a href="deploy.html#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/your_username/your_repo.git</span>
-<span id="cb6-16"><a href="deploy.html#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-17"><a href="deploy.html#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="co"># push your files to GitHub</span></span>
-<span id="cb6-18"><a href="deploy.html#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin master</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="deploy.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Change the directory to your website&#39;s root folder</span></span>
+<span id="cb4-2"><a href="deploy.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> path/to/your/website</span>
+<span id="cb4-3"><a href="deploy.html#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="deploy.html#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># initialize local Git repository</span></span>
+<span id="cb4-5"><a href="deploy.html#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span>
+<span id="cb4-6"><a href="deploy.html#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="deploy.html#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># add all of your website files to the local Git repository</span></span>
+<span id="cb4-8"><a href="deploy.html#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="at">--all</span></span>
+<span id="cb4-9"><a href="deploy.html#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="deploy.html#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co"># commit your website files to the local Git repository</span></span>
+<span id="cb4-11"><a href="deploy.html#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;first commit&quot;</span></span>
+<span id="cb4-12"><a href="deploy.html#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="deploy.html#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co"># sync the local Git repository with the remote GitHub repository</span></span>
+<span id="cb4-14"><a href="deploy.html#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co"># change your_username and your_repo to your GitHub username and repository name</span></span>
+<span id="cb4-15"><a href="deploy.html#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/your_username/your_repo.git</span>
+<span id="cb4-16"><a href="deploy.html#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-17"><a href="deploy.html#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="co"># push your files to GitHub</span></span>
+<span id="cb4-18"><a href="deploy.html#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin master</span></code></pre></div>
 </div>
 <div id="configure-netlify-for-deployment" class="section level2" number="8.3">
 <h2><span class="header-section-number">8.3</span> Configure Netlify for deployment</h2>
