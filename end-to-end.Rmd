@@ -239,4 +239,4 @@ map_plot
 
 ## Next steps
 
-This chapter presents the steps to create, publish, and analyze personal websites with very little detail. To get into the details behind each step, start with [generating your website](#generate).
+This chapter presents the steps to create, publish, and analyze personal websites with very little detail. To get into the details behind each step, start with [discovering your style](#choose-theme).

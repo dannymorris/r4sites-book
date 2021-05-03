@@ -1,10 +1,12 @@
-# Choosing your preferred style {#choose-theme}
+# Discovering your style {#choose-theme}
 
-This chapter provides some guidance on exploring website layouts and styles that inspire you, reflect your unique style, and achieve your website goals. Evaluating layouts and styles in a significant step in your website planning phase. A good theme that inspires you can have an enormous effect of unlocking your creativity and empowering you to author great content.
+This chapter provides some guidance on choosing website styles that inspire you, reflect your unique style, and achieve your website goals. Evaluating styles is a significant step in your website planning phase. A good theme that inspires you can have an enormous effect of unlocking your creativity and empowering you to author great content.
 
 ## How it works
 
-[Hugo](https://gohugo.io/), the static website generator upon which the websites in this book are based, is supported by an active developer community that has contributed dozens of [beautiful, free, pre-built design themes](https://themes.gohugo.io/) for you to use in your own website project. Hugo themes are professionally designed, convenient, and fully functional out of the box. Hugo themes eliminate the need to design your own website layout and style from scratch, making professional websites accessible to quite literally anyone. Spend some time browsing the [Hugo themes]((https://themes.gohugo.io/)) to see what is out there for you to use in your own website project. The steps required to generate a website with your preferred theme are discussed in the next chapter.
+The first step in creating your personal website is to choose a style for your website. The style of the website includes the layout, default features, placement of images, and other visual aspects that distinguish one style from another. For example, [this style](https://themes.gohugo.io/vex-hugo/) and [this style](https://themes.gohugo.io/hugo-split-theme/) give off noticeably different impressions.
+
+To find your style, browse the complete list of [beautiful, free, pre-built Hugo themes](https://themes.gohugo.io/). These themes, which are created by expert Hugo developers, are available to you for use in your personal website project. Hugo themes eliminate the need to design your own website layout and style from scratch, making professional websites accessible to quite literally anyone.
 
 ## The 90/10 rule for themes
 
