@@ -8,7 +8,7 @@ This chapter provides general guidance on authoring new content such as blog pos
 
 Before you proceed, complete the following prerequisites:
 
-1. [Choose your preferred style](#choose-theme)
+1. (optional) [Discover your style](#choose-theme)
 2. [Generate your website](#generate)
 3. (optional) [Fine tune the look and feel](#fine-tune)
 4. (optional) [Configure pages and features](#pages-features)

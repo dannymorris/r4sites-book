@@ -8,7 +8,7 @@ This chapter teaches you how to configure, update, and delete website features t
 
 Before you proceed, complete the following prerequisites:
 
-1. [Choose your preferred style](#choose-theme)
+1. (optional) [Discover your style](#choose-theme)
 2. [Generate your website](#generate)
 3. (optional) [Fine tune the look and feel](#fine-tune)
 4. (optional) Sign up for [Formspree](https://formspree.io)

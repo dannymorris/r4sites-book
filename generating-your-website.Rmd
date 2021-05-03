@@ -10,7 +10,7 @@ Before you proceed, complete the following prerequisites:
 
 1. [Install R](https://cran.rstudio.com/)
 2. [Install RStudio](https://www.rstudio.com/products/rstudio/download/#download)
-3. [Choose your preferred style](#choose-theme)
+3. (optional) [Discover your style](#choose-theme)
 
 My recommendation is to download the latest versions, which at the time of this writing are R 4.0 and RStudio 1.4.
 

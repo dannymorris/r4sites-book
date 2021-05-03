@@ -8,7 +8,7 @@ This chapter teaches you how to customize the look and feel of your website and 
 
 Before you proceed, complete the following prerequisites:
 
-1. [Choose your preferred style](#choose-theme)
+1. (optional) [Discover your style](#choose-theme)
 2. [Generate your website](#generate)
 
 ## How it works
