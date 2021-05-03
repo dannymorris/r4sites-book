@@ -1,9 +1,14 @@
-# Generating a blogdown website {#generate}
+# Generating your website {#generate}
 
-This chapter teaches you how to generate an initial website, the first and most influential step in your journey to owning your very own website. If you haven't already, start by completing the following prerequisites:
+This chapter teaches you the three basic steps to generate your initial website, the first and most influential step in your journey to owning your very own website. 
 
-- [Install R](https://cran.rstudio.com/)
-- [Install RStudio](https://www.rstudio.com/products/rstudio/download/#download)
+## Prerequisites
+
+Before you proceed, complete the following prerequisites:
+
+1. [Install R](https://cran.rstudio.com/)
+2. [Install RStudio](https://www.rstudio.com/products/rstudio/download/#download)
+3. [Choose your preferred style](#choose-theme)
 
 My recommendation is to download the latest versions, which at the time of this writing are R 4.0 and RStudio 1.4.
 

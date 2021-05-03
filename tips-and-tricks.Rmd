@@ -1,0 +1,24 @@
+# Tips and tricks {#tips-tricks}
+
+This chapter reinforces some basic tips and tricks for you to consider while developing your website.
+
+## Serve your website locally
+
+The blogdown package includes a handy function called `serve_site()`. Running this function in the R console with your website's RStudio Project loaded will render a local copy of your entire website in the RStudio "Viewer" pane, as shown in this [example](https://i.imgur.com/oxZgeqM.png).
+
+While serving your website locally, the local version will update in real-time as you make and save changes to your website's codebase. This feature of blogdown, known as LiveReload, enables rapid trial and error on your local machine without ever having to leave the RStudio environment.
+
+## Push frequent updates to GitHub
+
+Assuming you have [pushed your website to GitHub](#inital-push) already, use the **add** > **commit** > **push** Git workflow to push your updates to GitHub. I recommend pushing updates frequently to keep your GitHub repository updated. 
+
+```
+# add all files to the local Git repository
+git add --all
+
+# commit files and include a brief message
+git commit -m "brief message describing your changes"
+
+# push files to GitHub
+git push origin master
+```

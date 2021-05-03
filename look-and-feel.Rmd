@@ -1,6 +1,13 @@
 # Fine tuning the look and feel {#fine-tune}
 
-Now that you have [generated a website](#generate) using a default Hugo theme, this chapter teaches you how to edit the look and feel of your website and how to personalize certain features including fonts, colors, logos, page navigation, contact forms, and social media links.
+This chapter teaches you how to customize the look and feel of your website and how to personalize certain features including the website title, profile image, favicon, font styles, font properties, and colors.
+
+## Prerequisites
+
+Before you proceed, complete the following prerequisites:
+
+1. [Choose your preferred style](#choose-theme)
+2. [Generate your website](#generate)
 
 ## How it works
 

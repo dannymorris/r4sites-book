@@ -1,17 +1,24 @@
-# Deploying on Netlify {#deploy}
+# Going live on the internet {#deploy}
 
-This chapter describes a simple, repeatable approach to putting your website on the internet. If you haven't already, complete the following prerequisites:
+This chapter describes a simple, repeatable approach to putting your website on the internet. 
 
-- [Create your blogdown website](#create-site-with-theme) and (optionally) [add some content](#content)
-- Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- Sign up for [GitHub](https://github.com/)
-- Sign up for [Netlify](https://app.netlify.com/)
+## Prerequisites
+
+Before you proceed, complete the following prerequisites:
+
+1. [Choose your preferred style](#choose-theme)
+2. [Generate your website](#generate)
+3. (optional) [Fine tune the look and feel](#fine-tune)
+4. (optional) [Configure pages and features](#pages-features)
+5. Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+6. Sign up for [GitHub](https://github.com/)
+7. Sign up for [Netlify](https://app.netlify.com/)
 
 ## How it works
 
 Hugo (the static site generator used by blogdown), GitHub, and Netlify are the three tools that make it incredibly simple to deploy your website to the internet. The main steps are to upload your website files to a remote GitHub repository, then create a new site in Netlify that points to your GitHub repository URL. Netlify will then do all of the heavy lifting of building and deploying your Hugo website to the internet. All of this can be done in a matter of minutes with just a few lines of code and a few clicks.
 
-## Upload files to GitHub
+## Upload files to GitHub {#initial-push}
 
 Once your website is working locally, the next steps are to create a remote GitHub repository for your website files, configure a local Git repository, and push your website files from your local Git repository to your remote GitHub repository. Follow these simple steps to make this happen:
 
@@ -60,7 +67,7 @@ Follow these steps to deploy your website on Netlify:
 
 To update the published version of your website, simply push your changes from your local environment to your GitHub repository. Netlify will detect the update to your GitHub repository and immediately proceed with publishing the latest version of your website.
 
-Assuming you have already pushed a version of your website to GitHub, use the **add** > **commit** > **push** Git workflow to push your updates to GitHub. [📷 Image](https://i.imgur.com/zJNAlIB.png)
+Assuming you have [pushed your website to GitHub](#inital-push) already, use the **add** > **commit** > **push** Git workflow to push your updates to GitHub. [📷 Image](https://i.imgur.com/zJNAlIB.png)
 
 ```
 # add all files to the local Git repository

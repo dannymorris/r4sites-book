@@ -1,6 +1,15 @@
-# Authoring content {#content}
+# Authoring new content {#content}
 
-This chapter provides general guidance on authoring content such as blog posts, tutorials, research articles, and project write-ups.
+This chapter provides general guidance on authoring new content such as blog posts, tutorials, research articles, and project write-ups using R Markdown.
+
+## Prerequisites
+
+Before you proceed, complete the following prerequisites:
+
+1. [Choose your preferred style](#choose-theme)
+2. [Generate your website](#generate)
+3. (optional) [Fine tune the look and feel](#fine-tune)
+4. (optional) [Configure pages and features](#pages-features)
 
 ## How it works
 
@@ -45,5 +54,3 @@ Though I recommend the `tango` highlighting scheme, [other options](https://book
 ## Add tags and categories
 
 Add "tags" and "categories" to your posts to organize your content and to give Google crawlers an idea of what your blog post is about. According to [this website](https://databox.com/categories-vs-tags-for-seo), strive to attach no more than 5-10 categories and 5-10 tags to each post. To add tags and categories to your post, edit the `Tags` adn `Categories` parameters in the document metadata. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd#L24-L25)
-
-## Enable Disqus comments

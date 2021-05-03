@@ -8,15 +8,20 @@ editor_options:
 knitr::opts_chunk$set(echo = T, message = F, warning = F, eval=T)
 ```
 
-# Analyzing traffic with Google Analytics {#google-analytics}
+# Analyzing user traffic {#google-analytics}
 
 This chapter shows you how to integrate Google Analytics into your website to capture data on your website users including the number of users, the pages they view, the sources from which they arrive at your website, and their geographic locations. This chapter covers the basics of the [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) R package for querying your Google Analytics data from R. 
 
-If you haven't already, complete the minimum prerequisites listed below:
+## Prerequisites
 
-- [Generate a website](#generate)
-- [Deploy your site on Netlify](#deploy)
-- [Sign up for Google Analytics](#create-accounts)
+Before you proceed, complete the following prerequisites:
+
+1. [Choose your preferred style](#choose-theme)
+2. [Generate your website](#generate)
+3. (optional) [Fine tune the look and feel](#fine-tune)
+4. (optional) [Configure pages and features](#pages-features)
+5. [Go live on the internet](#deploy)
+6. [Sign up for Google Analytics](#create-accounts)
 
 ## How it works
 

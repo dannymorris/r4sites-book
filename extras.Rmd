@@ -1,5 +1,0 @@
-# Extras
-
-## Stop, build, serve site
-
-## HTML color picker

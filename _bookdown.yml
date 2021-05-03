@@ -14,4 +14,4 @@ rmd_files:
   - creating-content.Rmd
   - deploy-on-netlify.Rmd
   - google-analytics.Rmd
-  - extras.Rmd
+  - tips-and-tricks.Rmd

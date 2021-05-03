@@ -55,14 +55,16 @@ There are many excellent applications for personal websites. Below is a list of 
 
 ## What you will learn {#learn}
 
-You will learn how to edit [this default website](https://themes.gohugo.io/theme/anatole/) to create a [customized, finished version](https://r4sites-anatole-custom.netlify.app/) that reflects your personal style. Throughout the process of making edits, you will learn how to do the following:
+You will learn how to edit [this default website](https://themes.gohugo.io/theme/anatole/) to create a [customized version](https://r4sites-anatole-custom.netlify.app/) that reflects your personal style. From this process, you will learn how to do the following:
 
 - Generate websites using R and RStudio in three simple steps.
 - Fine tune the look and feel of your website including logos, colors, and fonts to reflect your unique style.
 - Configure features such as contact forms, pages, and social media links.
 - Author content such as blog posts, tutorials, research articles, and project portfolios using R, Python, SQL, and Markdown.
-- Deploy your website to the internet.
+- Deploy your website to the internet using Netlify and GitHub.
 - Integrate Google Analytics into your website to capture user activity on your website, then use R to analyze this data.
+
+**Note:** Though this book focuses on a specific website transformation, the knowledge you will acquire will transfer to other website transformation efforts that follow the methodology described in this book.
 
 ## Tools you will use {#tools}
 

@@ -3,9 +3,10 @@ output: html_document
 editor_options: 
   chunk_output_type: console
 ---
+
 # Complete end-to-end example
 
-This chapter exposes you to the entire methodology for creating, publishing, and analyzing websites through a quick example. If you complete the steps described in this chapter, you will end up with this [basic website](https://r4sites-anatole.netlify.app/). Later chapters build upon this this basic website to create this [customized version](https://r4sites-anatole-custom.netlify.app/).
+This chapter exposes you to the entire methodology to create, publish, and analyze websites through a quick example. If you complete the steps described in this chapter, you will end up with this [basic website](https://r4sites-anatole.netlify.app/). Later chapters build upon this this basic website to create this [customized version](https://r4sites-anatole-custom.netlify.app/).
 
 ## How it works
 
