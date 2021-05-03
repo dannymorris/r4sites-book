@@ -53,7 +53,7 @@ Though I recommend the `tango` highlighting scheme, [other options](https://book
 
 ## Add tags and categories
 
-Add "tags" and "categories" to your posts to organize your content and to give Google crawlers an idea of what your blog post is about. According to [this website](https://databox.com/categories-vs-tags-for-seo), strive to attach no more than 5-10 categories and 5-10 tags to each post. To add tags and categories to your post, edit the `Tags` adn `Categories` parameters in the document metadata. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd#L24-L25)
+Add "tags" and "categories" to your posts to organize your content and to give Google crawlers an idea of what your blog post is about. According to [this website](https://databox.com/categories-vs-tags-for-seo), strive to attach no more than 5-10 categories and 5-10 tags to each post. To add tags and categories to your post, edit the `Tags` and `Categories` parameters in the document metadata. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd#L24-L25)
 
 ## Next steps
 
