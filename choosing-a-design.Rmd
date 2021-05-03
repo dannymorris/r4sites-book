@@ -1,18 +1,20 @@
 # Discovering your style {#choose-theme}
 
-This chapter provides some guidance on choosing website styles that inspire you, reflect your unique style, and achieve your website goals. Evaluating styles is a significant step in your website planning phase. A good theme that inspires you can have an enormous effect of unlocking your creativity and empowering you to author great content.
+This chapter provides some guidance on discovering a website style that inspires you, unlocks your creativity, and achieves your website goals. Finding a style is the first step in creating and publishing your own personal website.
+
+**Note:** Though this chapter introduces a variety of styles for your consideration, all subsequent chapters will use the [default Hugo Anatole theme](https://themes.gohugo.io/theme/anatole/) as the basis for creating, publishing, and analyzing a customized alternative. The finished product can be found here - https://r4sites-anatole-custom.netlify.app/.
 
 ## How it works
 
-The first step in creating your personal website is to choose a style for your website. The style of the website includes the layout, default features, placement of images, and other visual aspects that distinguish one style from another. For example, [this style](https://themes.gohugo.io/vex-hugo/) and [this style](https://themes.gohugo.io/hugo-split-theme/) give off noticeably different impressions.
+The style of a website includes the general layout, look and feel, and other visual aspects that distinguish one style from another. For example, [this style](https://themes.gohugo.io/vex-hugo/) and [this style](https://themes.gohugo.io/hugo-split-theme/) give off noticeably different impressions.
 
-To find your style, browse the complete list of [beautiful, free, pre-built Hugo themes](https://themes.gohugo.io/). These themes, which are created by expert Hugo developers, are available to you for use in your personal website project. Hugo themes eliminate the need to design your own website layout and style from scratch, making professional websites accessible to quite literally anyone.
+To find your style, browse the complete list of [beautiful, free, pre-built Hugo themes](https://themes.gohugo.io/). Hugo themes, which are created by expert Hugo developers, are an essential part of the methodology described in this book. Hugo themes are **freely available** for you to use in your personal website project. They eliminate the need to design your own website layout and style from scratch, making professional websites accessible to quite literally anyone.
 
-## The 90/10 rule for themes
+## The 90/10 rule for choosing a theme
 
-The key to creating an attractive, high-performing, and sustainable website is to select a Hugo theme that contains 90% or more of the look, feel, and functionality you desire for your website. The remaining 10% of your website design can come from basic design tweaks such as colors, fonts, images, and adding/removing basic features. Unless you are (or want to be) a front end Hugo web developer, attempting too many changes to your favorite Hugo theme increases your risk of making poor decision decisions and negatively affecting your website's overall look and performance.
+The 90/10 rule states that 90% or more of the look, feel, and functionality you desire for your website should come from the default Hugo theme, while the remaining 10% or less can come from simple design tweaks such as colors, font styles, custom images, and the addition of basic features including Google Analytics. In other words, do not select a Hugo theme if you feel the need to change it significantly. Unless you are (or want to be) a Hugo developer, attempting too many changes to your chosen theme increases your risk of making poor decision decisions and negatively affecting your website's overall look and performance.
 
-### Recommended themes
+## Recommended Hugo themes
 
 Depending on your goals, you may be more or less restricted to certain Hugo themes. For example, if you intend to create content using R Markdown documents that feature code highlighting, tables, and interactive visualizations, then you may find that certain themes do a poor job of rendering these types of output. On the other hand, if you intend to create basic content using plain Markdown documents, you may not experience any content rendering issues with any of the themes you consider. Either way, you'll likely go through a few rounds of trial and error before you settle on a theme that meets most or all of your needs.
 
@@ -20,7 +22,9 @@ Depending on your goals, you may be more or less restricted to certain Hugo them
 
 Here are some themes that I recommend based on performance, content rendering, and personal style preference. Note that this is not an exhaustive list of all themes that I would recommend.
 
-#### Recommended themes for content created with Markdown {-}
+#### Recommended themes for content created with R Markdown {-}
+
+If you intend to add content to your personal website featuring code written in R, Python, or SQL, consider one of the following themes:
 
 - [Tranquilpeak](https://themes.gohugo.io/hugo-tranquilpeak-theme/) - Modern, clean layout. Easy to customize and very readable. Great for personal websites, blogs, and portfolios.
 
@@ -46,20 +50,10 @@ Here are some themes that I recommend based on performance, content rendering, a
 
 - [Hugo Scroll](https://themes.gohugo.io/hugo-scroll/) - Simple, highly visual layout for promoting your services or expertise
 
-## Generating websites from themes {#create-site-with-theme}
-
-To generate a blogdown website from a chosen theme, follow these steps:
-
-1. Browse the list of [Hugo themes](https://themes.gohugo.io/). Click on a theme you like, then click "Demo" to explore a complete example.
-
-2. Once you find something you really like, click "Download" on the theme homepage to be taken to the source code in GitHub. [📷 Image](https://i.imgur.com/ld35gNP.png).
-
-3. To create a website with your chosen theme, copy the user/theme-name in the GitHub URL. For example, if the source code is located at https://github.com/devcows/hugo-universal-theme, you'll want to copy `devcows/hugo-universal-theme`.
-
-4. Follow the steps to [generate a website](#generate) described in the next chapter.
-
 ## Next steps
 
-This chapter teaches you the basic steps to create, publish, and analyze your very own website. The following chapters explain this material in greater detail, helping you to understand some of the deeper technical aspects as well as the techniques for customizing your website. Continue on to the chapter [Generating a blogdown website](#generate) to get started.
+This chapter discusses Hugo themes and the importance of finding a theme that matches your personal style.
+
+Looking ahead, all subsequent chapters will use the [default Hugo Anatole theme](https://themes.gohugo.io/theme/anatole/) as the basis for creating, publishing, and analyzing a customized website. The finished product can be found here - https://r4sites-anatole-custom.netlify.app/
 
 

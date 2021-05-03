@@ -2,6 +2,8 @@
 
 This chapter teaches you the three basic steps to generate your initial website, the first and most influential step in your journey to owning your very own website. 
 
+**Note:** This chapter and all subsequent chapters will use the [default Hugo Anatole theme](https://themes.gohugo.io/theme/anatole/) as the basis for creating, publishing, and analyzing a customized alternative. The finished product can be found here - https://r4sites-anatole-custom.netlify.app/.
+
 ## Prerequisites
 
 Before you proceed, complete the following prerequisites:
@@ -20,7 +22,7 @@ The R package [blogdown](https://bookdown.org/yihui/blogdown/) in tandem with RS
 
 This chapter, and all subsequent chapters, will build upon the default [Hugo Anatole theme](https://themes.gohugo.io/hugo-tranquilpeak-theme/). The finished product can be seen here - https://r4sites-anatole-demo.netlify.app/
 
-## Generate your site in three steps {#generate-site}
+## Generate your site{#generate-site}
 
 Follow these steps to generate a Hugo website using R and RStudio:
 
@@ -28,7 +30,9 @@ Follow these steps to generate a Hugo website using R and RStudio:
 
 2. Create a new RStudio Project by going to **File > New Project > New Directory > Website using blogdown.** [📷 Image](https://i.imgur.com/eDg7V2k.png).
 
-3. Configure the website to use the Anatole theme, as show in this [example configuration](https://i.imgur.com/0DxkDHe.png). Make sure to set the `Hugo theme:` parameter to `lxndrblz/anatole`. Click Create Project to generate the website.
+3. Configure the website to use the Anatole theme, as show in this [example configuration](https://i.imgur.com/0DxkDHe.png). Make sure to set the `Hugo theme` parameter to `lxndrblz/anatole`. Click Create Project to generate the website.
+
+To **use a different Hugo theme**, locate and select the theme in the list of [Hugo themes](https://themes.gohugo.io/). Click "Download" on the theme homepage to be taken to the source code on GitHub ([📷 Image](https://i.imgur.com/ld35gNP.png)). Copy the user/theme-name in the GitHub URL, then add this information to the `Hugo theme` parameter in the website cofiguration. For example, if the source code is located at https://github.com/devcows/hugo-universal-theme, insert `devcows/hugo-universal-theme` into the `Hugo theme` parameter.
 
 ## Serve the website locally {#serve-site}
 

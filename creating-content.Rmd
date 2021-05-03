@@ -2,6 +2,8 @@
 
 This chapter provides general guidance on authoring new content such as blog posts, tutorials, research articles, and project write-ups using R Markdown.
 
+**Note:** This chapter builds upon the [default Hugo Anatole theme](https://themes.gohugo.io/theme/anatole/) created in chapter 2. The finished product can be found here - https://r4sites-anatole-custom.netlify.app/.
+
 ## Prerequisites
 
 Before you proceed, complete the following prerequisites:

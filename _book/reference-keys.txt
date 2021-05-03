@@ -97,3 +97,5 @@ closing-thoughts
 tips-tricks
 serve-your-website-locally
 push-frequent-updates-to-github
+the-9010-rule-for-choosing-a-theme
+recommended-hugo-themes

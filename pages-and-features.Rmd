@@ -2,6 +2,8 @@
 
 This chapter teaches you how to configure, update, and delete website features that are unlikely to change very frequently. These features include page names, the About page, default posts, language translations, social media links, and contact forms.
 
+**Note:** This chapter builds upon the [default Hugo Anatole theme](https://themes.gohugo.io/theme/anatole/) created in chapter 2. The finished product can be found here - https://r4sites-anatole-custom.netlify.app/.
+
 ## Prerequisites
 
 Before you proceed, complete the following prerequisites:
