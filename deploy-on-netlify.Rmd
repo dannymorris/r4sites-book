@@ -69,7 +69,7 @@ To update the published version of your website, simply push your changes from y
 
 Assuming you have [pushed your website to GitHub](#inital-push) already, use the **add** > **commit** > **push** Git workflow to push your updates to GitHub. [📷 Image](https://i.imgur.com/zJNAlIB.png)
 
-```
+```{bash, eval=F}
 # add all files to the local Git repository
 git add --all
 

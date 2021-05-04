@@ -21,9 +21,8 @@ analyze-google-analytics-data
 next-steps
 choose-theme
 how-it-works-1
-the-9010-rule-for-themes
-recommended-themes
-create-site-with-theme
+the-9010-rule-for-choosing-a-theme
+recommended-hugo-themes
 next-steps-1
 generate
 prerequisites
@@ -97,5 +96,6 @@ closing-thoughts
 tips-tricks
 serve-your-website-locally
 push-frequent-updates-to-github
-the-9010-rule-for-choosing-a-theme
-recommended-hugo-themes
+demo-deploy
+push-demo
+update-the-live-website
