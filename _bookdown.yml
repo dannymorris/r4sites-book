@@ -15,3 +15,4 @@ rmd_files:
   - deploy-on-netlify.Rmd
   - google-analytics.Rmd
   - tips-and-tricks.Rmd
+  - getting-help.Rmd

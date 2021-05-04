@@ -8,11 +8,11 @@ editor_options:
 knitr::opts_chunk$set(echo = T, message = F, warning = F, eval=T)
 ```
 
-# Analyzing user traffic {#google-analytics}
+# Integrating Google Analytics {#google-analytics}
 
-This chapter shows you how to integrate Google Analytics into your website to capture data on your website users including the number of users, the pages they view, the sources from which they arrive at your website, and their geographic locations. This chapter covers the basics of the [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) R package for querying your Google Analytics data from R. 
+This chapter shows you how to integrate Google Analytics into your website to capture user data including the number of users on your website, the pages they view, the sources from which they arrive at your website, and their geographic locations. This chapter also covers the basics of the [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) R package for querying your Google Analytics data from R. 
 
-**Note:** This chapter builds upon the [default Hugo Anatole theme](https://themes.gohugo.io/theme/anatole/) created in chapter 2. The finished product can be found here - https://r4sites-anatole-custom.netlify.app/.
+**Note:** This chapter builds upon the [default Hugo Anatole theme](https://themes.gohugo.io/theme/anatole/) created in chapter 4 and edited in chapters 5, 6, 7, and 8. The finished product can be found here - https://r4sites-anatole-custom.netlify.app/.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ Before you proceed, complete the following prerequisites:
 3. (optional) [Fine tune the look and feel](#fine-tune)
 4. (optional) [Configure pages and features](#pages-features)
 5. [Go live on the internet](#deploy)
-6. [Sign up for Google Analytics](#create-accounts)
+6. [Sign up for Google Analytics](https://marketingplatform.google.com/about/analytics/)
 
 ## How it works
 
@@ -45,13 +45,42 @@ Follow these steps to integrate Google Analytics into your website:
 
 6. Locate the Tracking ID by returning back to the Admin console and selecting the Account and Property that were created in the previous steps. **Important:** Make sure you locate the Universal Analytics property that reads `property name (UA-XXXXXXX-X)` and not the GA4 property. Under Property, click on Tracking Info > Tracking Code ([📷 Image](https://i.imgur.com/GtiKfhq.png)). Copy the Tracking ID, which should appear in the form of UA-XXXXXXXXX-1. [📷 Image](https://i.imgur.com/qcyaVBD.png)
 
-7. Return to your RStudio Project where you are developing your website. Open the file `config.yaml` in the main directory and locate the `googleAnalytics:` parameter. Depending on the theme, this parameter may be written or spelled slightly differently. Paste your Google Analytics Tracking ID here, e.g. `googleAnalytics: 'UA-XXXXXXXXX-1'`. [📷 Image](https://i.imgur.com/xgN24ah.png).
+7. Return to your RStudio Project where you are developing your website. Open the file `config.yaml` in the main directory and locate the `googleAnalytics:` parameter. Depending on the theme, this parameter may be written or spelled slightly differently. Paste your Google Analytics Tracking ID here, e.g. `googleAnalytics: 'UA-XXXXXXXXX-1'`. [📷 Image](https://i.imgur.com/xgN24ah.png)
 
-8. Push your changes to your GitHub repository to complete the Google Analytics integration.
+## Push updates to GitHub
 
-## Analyze traffic using R
+Any time you make changes to your website, such as integrating Google Analytics or authoring a new post, you will need to push these changes to your GitHub repository to update the live version of your website on the internet.
 
-[googleAnalyicsR](https://code.markedmondson.me/googleAnalyticsR/) is an R package that makes it easy to query your Google Analytics data.
+To update your live website with Google Analytics integration, open your preferred Git terminal and push your code to GitHub using the  **add** > **commit** > **push** Git workflow. Once pushed, Netlify will detect the push event and automatically trigger a fresh deploy of your website. This is known as **continuous deployment.**
+
+```{bash, eval=F}
+# add all files to the local Git repository
+git add --all
+
+# commit files and include a brief message
+git commit -m "brief message describing your changes"
+
+# push files to GitHub
+git push origin master
+```
+
+## Browse the Google Analytics UI
+
+You can analyze your Google Analytics data using a third party client, such as R, or by browsing the Google Analytics UI. The following steps will take you on a quick tour of the Google Analytics UI:
+
+1. Sign in to [Google Analytics](https://analytics.google.com/)
+
+2. Click on "All Web Site Data". [📷 Image](https://i.imgur.com/lyNPi8E.png)
+
+3. In the dropdown menu, select the Account and Property you created during the initial [setup](#ga-setup), then select the "All Web Site Data" View. [📷 Image](https://i.imgur.com/xSjCS75.png)
+
+4. Browse the Home page to view data such as active users, user acquisition sources, and sessions by country. [📷 Image](https://i.imgur.com/2u2mCey.png)
+
+5. Browse the Reports ([📷 Image](https://i.imgur.com/3vvGhD0.png)) to learn more about your users including how they arrive at your website and which pages they tend to view.
+
+## Use R for data analysis
+
+[googleAnalyicsR](https://code.markedmondson.me/googleAnalyticsR/) is an R package that makes it easy and fun to query your Google Analytics data.
 
 ### Dimensions and metrics
 
@@ -192,7 +221,6 @@ To understand the geographical areas from which your website users view your web
 - Dimensions: `latitude`, `longitude`
 - Metric: `users`
 
-
 ```{r}
 users_location <- google_analytics(
   viewId = view_id,
@@ -219,9 +247,3 @@ users_location %>%
 ### Avoiding data sampling
 
 The `google_analytics()` function has an argument named `anti_sampling`, which is set to `TRUE` by default. This means that queries which return more than 1,000 rows of data will be sampled to avoid putting strain on the Google Analytics API. To avoid this default sampling strategy, set `anti_sampling = FALSE` when making API calls via the `google_analytics()` function.
-
-## Closing thoughts
-
-Google Analytics is a complex topic which cannot be covered in its entirety in this book. For most, having a basic understanding of the available [Google Analytics Dimensions and Metrics](https://www.ovrdrv.com/blog/ultimate-google-analytics-dimensions-and-metrics-list/) should provide a solid foundation for interesting data analytics.
-
-

@@ -6,7 +6,7 @@ editor_options:
 
 # Complete end-to-end example
 
-This chapter exposes you to the entire methodology to create, publish, and analyze websites through a quick example. If you complete the steps described in this chapter, you will end up with this [basic website](https://r4sites-anatole.netlify.app/). In later chapters, you will make edits to this basic website to create a [customized version](https://r4sites-anatole-custom.netlify.app/).
+This chapter exposes you to the entire methodology to create, publish, and analyze websites through a quick example. If you complete the steps described in this chapter, you will end up with this [basic website](https://r4sites-anatole.netlify.app/). In later chapters, you will make edits to this basic website to create a [customized version](https://r4sites-anatole-custom.netlify.app/) with your own original content.
 
 Let's get started!
 
@@ -123,9 +123,9 @@ Google Analytics is a tool for collecting user traffic and activity on your webs
 
 7. Return to your RStudio Project. Open `config/_default/params.toml` in the main directory and create a `googleAnalytics` parameter. Insert your tracking code as the parameter value. [</> Code](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml#L16-L17).
 
-## Update the live website
+## Push updates to GitHub
 
-After we [pushed the website to GitHub](#push-demo), we made changes to the code base by adding Google Analytics integration. To update the live website on the internet, these changes need to be pushed to GitHub. Doing so will force Netlify to deploy a fresh copy to the internet.
+After having [pushed the website to GitHub](#push-demo), we made changes to the code base by adding Google Analytics integration in the previous step. To complete the Google Analytics integration, push the updates to GitHub. Doing so will force Netlify to deploy a fresh copy to the internet with Google Analytics fully integrated.
 
 To push changes to GitHub, use the **add > commit > push** Git workflow.
 
@@ -242,4 +242,4 @@ map_plot
 
 ## Next steps
 
-This chapter presents the steps to create, publish, and analyze personal websites with very little detail. To get into the details behind each step, start with [discovering your style](#choose-theme).
+This chapter presents the steps to create, publish, and analyze personal websites with very little detail. To get into the details of each step, start with [discovering your style](#choose-theme).

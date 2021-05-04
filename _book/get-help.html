@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 8 Going live on the internet | Create, Publish, and Analyze Personal Websites Using R and RStudio</title>
+  <title>Chapter 11 Getting help | Create, Publish, and Analyze Personal Websites Using R and RStudio</title>
   <meta name="description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 8 Going live on the internet | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
+  <meta property="og:title" content="Chapter 11 Getting help | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="images/logo/book-cover-300.png" />
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 8 Going live on the internet | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
+  <meta name="twitter:title" content="Chapter 11 Getting help | Create, Publish, and Analyze Personal Websites Using R and RStudio" />
   
   <meta name="twitter:description" content="A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics." />
   <meta name="twitter:image" content="images/logo/book-cover-300.png" />
@@ -31,10 +31,10 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="content.html"/>
-<link rel="next" href="google-analytics.html"/>
+<link rel="prev" href="tips-tricks.html"/>
+
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
-<script src="libs/jquery-3.5.1/jquery.min.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -51,25 +51,6 @@
 
 
 
-<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
-<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-1.3.1/leaflet.js"></script>
-<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
-<script src="libs/proj4-2.6.2/proj4.min.js"></script>
-<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
-<script src="libs/plotly-binding-4.9.3/plotly.js"></script>
-<script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-1.57.1/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-1.57.1/plotly-latest.min.js"></script>
-<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
-<script src="libs/datatables-binding-0.17/datatables.js"></script>
-<link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
-<link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
-<script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-196111394-1"></script>
 <script>
@@ -81,69 +62,6 @@
 </script>
 
 
-<style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  background-color: #f8f8f8; }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ef2929; } /* Alert */
-code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
-code span.bn { color: #0000cf; } /* BaseN */
-code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
-code span.co { color: #8f5902; font-style: italic; } /* Comment */
-code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
-code span.dt { color: #204a87; } /* DataType */
-code span.dv { color: #0000cf; } /* DecVal */
-code span.er { color: #a40000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
-code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
-code span.ot { color: #8f5902; } /* Other */
-code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
-code span.ss { color: #4e9a06; } /* SpecialString */
-code span.st { color: #4e9a06; } /* String */
-code span.va { color: #000000; } /* Variable */
-code span.vs { color: #4e9a06; } /* VerbatimString */
-code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
-</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -269,7 +187,11 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="10.2" data-path="tips-tricks.html"><a href="tips-tricks.html#push-updates-to-github-2"><i class="fa fa-check"></i><b>10.2</b> Push updates to GitHub</a></li>
 <li class="chapter" data-level="10.3" data-path="tips-tricks.html"><a href="tips-tricks.html#rebuild-a-clean-website"><i class="fa fa-check"></i><b>10.3</b> Rebuild a clean website</a></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path="get-help.html"><a href="get-help.html"><i class="fa fa-check"></i><b>11</b> Getting help</a></li>
+<li class="chapter" data-level="11" data-path="get-help.html"><a href="get-help.html"><i class="fa fa-check"></i><b>11</b> Getting help</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="get-help.html"><a href="get-help.html#connect-with-me"><i class="fa fa-check"></i><b>11.1</b> Connect with me</a></li>
+<li class="chapter" data-level="11.2" data-path="get-help.html"><a href="get-help.html#additional-resources"><i class="fa fa-check"></i><b>11.2</b> Additional resources</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -293,79 +215,24 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="https://i.imgur.com/gRJLHS0.png">
 </div>
-<div id="deploy" class="section level1" number="8">
-<h1><span class="header-section-number">Chapter 8</span> Going live on the internet</h1>
-<p>This chapter teaches you how to deploy your website to the internet using Netlify and GitHub.</p>
-<p><strong>Note:</strong> This chapter builds upon the <a href="https://themes.gohugo.io/theme/anatole/">default Hugo Anatole theme</a> created in chapter 4 and edited in chapters 5, 6, and 7. The finished product can be found here - <a href="https://r4sites-anatole-custom.netlify.app/" class="uri">https://r4sites-anatole-custom.netlify.app/</a>.</p>
-<div id="prerequisites-4" class="section level2" number="8.1">
-<h2><span class="header-section-number">8.1</span> Prerequisites</h2>
-<p>Before you proceed, complete the following prerequisites:</p>
-<ol style="list-style-type: decimal">
-<li><a href="choose-theme.html#choose-theme">Choose your preferred style</a></li>
-<li><a href="generate.html#generate">Generate your website</a></li>
-<li>(optional) <a href="fine-tune.html#fine-tune">Fine tune the look and feel</a></li>
-<li>(optional) <a href="pages-features.html#pages-features">Configure pages and features</a></li>
-<li>Install <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git</a></li>
-<li>Sign up for <a href="https://github.com/">GitHub</a></li>
-<li>Sign up for <a href="https://app.netlify.com/">Netlify</a></li>
-</ol>
+<div id="get-help" class="section level1" number="11">
+<h1><span class="header-section-number">Chapter 11</span> Getting help</h1>
+<p>Despite the wealth of information in this book, it does not (and simply cannot) cover all possible topics and ideas relevant to the subject of the book. For example, this book recommends several Hugo themes yet a single theme is used as the basis for explaining and demonstrating concepts. Additionally, the number of edits that can be made to any given website design is infinite yet this book guides readers through a small, finite number of edits that significantly alter the design. I suspect many readers will want to venture beyond the scope of this book and pursue new ideas that are not discussed in this book.</p>
+<div id="connect-with-me" class="section level2" number="11.1">
+<h2><span class="header-section-number">11.1</span> Connect with me</h2>
+<p>For help with your own website project, I encourage readers to reach out to me directly via <a href="mailto:dmorris10667@gmail.com">email</a> or on <a href="https://www.linkedin.com/in/drmorris87/">LinkedIn</a>. I will make an honest effort to provide assistance if the request is reasonable.</p>
 </div>
-<div id="how-it-works-4" class="section level2" number="8.2">
-<h2><span class="header-section-number">8.2</span> How it works</h2>
-<p>Hugo (the static site generator used by blogdown), GitHub, and Netlify are the three tools that make it incredibly simple to deploy your website to the internet. The main steps are to upload your website files to a remote GitHub repository, then create a new site in Netlify that points to your GitHub repository URL. Netlify will then do all of the heavy lifting of building and deploying your Hugo website to the internet. All of this can be done in a matter of minutes with just a few lines of code and a few clicks.</p>
-</div>
-<div id="initial-push" class="section level2" number="8.3">
-<h2><span class="header-section-number">8.3</span> Upload files to GitHub</h2>
-<p>Once your website is working locally, the next steps are to create a remote GitHub repository for your website files, configure a local Git repository, and push your website files from your local Git repository to your remote GitHub repository. Follow these simple steps to make this happen:</p>
-<ol style="list-style-type: decimal">
-<li><p>Sign in to <a href="https://github.com/">GitHub</a> and create a new repository by clicking “New” in the Repositories section. Configure the repository accordingly, then click “Create repository.” <a href="https://i.imgur.com/dnmI973.png">📷 Image</a></p></li>
-<li><p>On your local machine, launch Git from the command line (e.g. Git Bash on Windows, Terminal on Mac/Linux) and run the following Git commands to sync a local Git repository with your newly created remote GitHub repository.</p></li>
-</ol>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="deploy.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Change the directory to your website&#39;s root folder</span></span>
-<span id="cb5-2"><a href="deploy.html#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> path/to/your/website</span>
-<span id="cb5-3"><a href="deploy.html#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="deploy.html#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># initialize local Git repository</span></span>
-<span id="cb5-5"><a href="deploy.html#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span>
-<span id="cb5-6"><a href="deploy.html#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-7"><a href="deploy.html#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># add all of your website files to the local Git repository</span></span>
-<span id="cb5-8"><a href="deploy.html#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="at">--all</span></span>
-<span id="cb5-9"><a href="deploy.html#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-10"><a href="deploy.html#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># commit your website files to the local Git repository</span></span>
-<span id="cb5-11"><a href="deploy.html#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;first commit&quot;</span></span>
-<span id="cb5-12"><a href="deploy.html#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-13"><a href="deploy.html#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co"># sync the local Git repository with the remote GitHub repository</span></span>
-<span id="cb5-14"><a href="deploy.html#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co"># change your_username and your_repo to your GitHub username and repository name</span></span>
-<span id="cb5-15"><a href="deploy.html#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/your_username/your_repo.git</span>
-<span id="cb5-16"><a href="deploy.html#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-17"><a href="deploy.html#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="co"># push your files to GitHub</span></span>
-<span id="cb5-18"><a href="deploy.html#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin master</span></code></pre></div>
-</div>
-<div id="configure-netlify-for-deployment" class="section level2" number="8.4">
-<h2><span class="header-section-number">8.4</span> Configure Netlify for deployment</h2>
-<p>Now that your website files are stored in GitHub, use Netlify to deploy your website. Netlify will deploy your website directly from your GitHub repository. Any time you push new or edited content to the GitHub repository, Netlify will automatically deploy a new version of your website. This is known as continuous deployment and is key to rapid iteration.</p>
-<p>Follow these steps to deploy your website on Netlify:</p>
-<ol style="list-style-type: decimal">
-<li><p>Log in to <a href="https://app.netlify.com/">Netlify</a> and click “New site from Git.”</p></li>
-<li><p>Select GitHub as the Continuous Deployment provider, then choose your website’s GitHub repository.</p></li>
-<li><p>Leave the site settings alone and click “Deploy site” to publish your website. <a href="https://i.imgur.com/wjDFnvJ.png">📷 Image</a></p></li>
-<li><p>After a few seconds, your website will be deployed on Netlify. To view your website on the internet, return to the Site Overview section and locate the default domain name generated by Netlify (<a href="https://i.imgur.com/t6IW44i.png">📷 Image</a>).</p></li>
-<li><p>Change your website’s domain name (part of it at least). Default Netlify domain names tend to look something like this - <a href="https://dazzling-khorana-a6a8fe.netlify.app" class="uri">https://dazzling-khorana-a6a8fe.netlify.app</a>. To change this, go to <em>Site settings &gt; Change site name</em>. Note that the domain extension is <code>.netlify.app</code> until you (optionally) purchase a custom domain name.</p></li>
-</ol>
-</div>
-<div id="purchase-a-custom-domain-name" class="section level2" number="8.5">
-<h2><span class="header-section-number">8.5</span> Purchase a custom domain name</h2>
-<p>Netlify’s default domain names end with <code>.netlify.app</code>. If you don’t care for this domain extension, you can purchase a custom domain for your website. Though several domain registrars exist, the simplest route is to purchase a domain name through Netlify. If you use a domain registrar other than Netlify (e.g. Google Domains), you will have to manually configure Domain Name Servers and Domain Name System settings. With Netlify, all of this is taken care of for you.</p>
-<p>Follow the simple steps below to purchase a custom domain through Netlify:</p>
-<ol style="list-style-type: decimal">
-<li><p>Log in to <a href="https://app.netlify.com/">Netlify</a>, open your site, and click on “Domain settings.” <a href="https://i.imgur.com/ACjNs4w.png">📷 Image</a>.</p></li>
-<li><p>Under Custom domains, click “Add custom domain.”</p></li>
-<li><p>Search for a domain name you like, then click “Verify” to determine if the domain is already owned or available for purchase. If available, confirm the purchase with a credit card and (optionally) set the domain name to auto-renew annually. <a href="https://i.imgur.com/y2s7wQR.png">📷 Image</a>.</p></li>
-<li><p>Enable IPv6 to reach areas of the world where connectivity via IPv4 is not possible. Do this by signing in to Netlify and navigating to <em>Team overview &gt; Domains</em>, select your custom domain name, and click “Enable IPv6 on your domain.” <a href="https://docs.netlify.com/domains-https/netlify-dns/#ipv6-traffic">📷 Image</a>.</p></li>
-</ol>
-</div>
-<div id="next-steps-6" class="section level2" number="8.6">
-<h2><span class="header-section-number">8.6</span> Next steps</h2>
-<p>Proceed with <a href="content.html#content">integrating Google Analytics</a> and learning how to use R and the <code>googleAnalyticsR</code> package to analyze user traffic on your website.</p>
+<div id="additional-resources" class="section level2" number="11.2">
+<h2><span class="header-section-number">11.2</span> Additional resources</h2>
+<p>To learn more about the methodology and the tools described in this book, I recommend the following resources:</p>
+<ul>
+<li><p><a href="https://bookdown.org/yihui/blogdown/">blogdown: Creating Websites with R Markdown</a></p></li>
+<li><p><a href="https://bookdown.org/yihui/rmarkdown/">R Markdown: The Definitive Guide</a></p></li>
+<li><p><a href="https://code.markedmondson.me/googleAnalyticsR/">googleAnalyticsR</a></p></li>
+<li><p><a href="https://gohugo.io/documentation/">Hugo documentation</a></p></li>
+<li><p><a href="https://docs.netlify.com/">Netlify documenatation</a></p></li>
+<li><p><a href="https://formspree.io/formbutton/docs">Formspree documentation</a></p></li>
+</ul>
 
 </div>
 </div>
@@ -374,8 +241,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="content.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="google-analytics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="tips-tricks.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

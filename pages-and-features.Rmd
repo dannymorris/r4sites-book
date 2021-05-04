@@ -2,7 +2,7 @@
 
 This chapter teaches you how to configure, update, and delete website features that are unlikely to change very frequently. These features include page names, the About page, default posts, language translations, social media links, and contact forms.
 
-**Note:** This chapter builds upon the [default Hugo Anatole theme](https://themes.gohugo.io/theme/anatole/) created in chapter 2. The finished product can be found here - https://r4sites-anatole-custom.netlify.app/.
+**Note:** This chapter builds upon the [default Hugo Anatole theme](https://themes.gohugo.io/theme/anatole/) created in chapter 4 and edited in chapter 5. The finished product can be found here - https://r4sites-anatole-custom.netlify.app/.
 
 ## Prerequisites
 
@@ -73,4 +73,6 @@ Once your contact form endpoint is configured, submissions to your contact form 
 
 ## Next steps
 
-Proceed with [authoring new content](#content) to learn how to add blog posts, tutorials, research articles, and project write-ups using R Markdown.
+Proceed with [authoring new content](#content) including blog posts, tutorials, research articles, and project write-ups using R Markdown.
+
+Optionally, skip and ahead and [deploy your website to the internet](#deploy). Though the steps to deploy your website are covered in a later chapter, readers are welcome to complete these steps at any point following the initial generation of the website.

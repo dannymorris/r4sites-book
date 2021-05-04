@@ -24,7 +24,7 @@
 <meta name="author" content="Danny Morris" />
 
 
-<meta name="date" content="2021-05-03" />
+<meta name="date" content="2021-05-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -34,7 +34,7 @@
 <link rel="prev" href="pages-features.html"/>
 <link rel="next" href="deploy.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
-<script src="libs/jquery-3.5.1/jquery.min.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -51,25 +51,6 @@
 
 
 
-<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
-<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-1.3.1/leaflet.js"></script>
-<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
-<script src="libs/proj4-2.6.2/proj4.min.js"></script>
-<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
-<script src="libs/plotly-binding-4.9.3/plotly.js"></script>
-<script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-1.57.1/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-1.57.1/plotly-latest.min.js"></script>
-<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
-<script src="libs/datatables-binding-0.17/datatables.js"></script>
-<link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
-<link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
-<script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-196111394-1"></script>
 <script>
@@ -81,69 +62,6 @@
 </script>
 
 
-<style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  background-color: #f8f8f8; }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ef2929; } /* Alert */
-code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
-code span.bn { color: #0000cf; } /* BaseN */
-code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
-code span.co { color: #8f5902; font-style: italic; } /* Comment */
-code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
-code span.dt { color: #204a87; } /* DataType */
-code span.dv { color: #0000cf; } /* DecVal */
-code span.er { color: #a40000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
-code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
-code span.ot { color: #8f5902; } /* Other */
-code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
-code span.ss { color: #4e9a06; } /* SpecialString */
-code span.st { color: #4e9a06; } /* String */
-code span.va { color: #000000; } /* Variable */
-code span.vs { color: #4e9a06; } /* VerbatimString */
-code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
-</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -182,7 +100,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.6" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#push-demo"><i class="fa fa-check"></i><b>2.6</b> Push the website to GitHub</a></li>
 <li class="chapter" data-level="2.7" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#demo-deploy"><i class="fa fa-check"></i><b>2.7</b> Deploy the website on Netlify</a></li>
 <li class="chapter" data-level="2.8" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#integrate-google-analytics"><i class="fa fa-check"></i><b>2.8</b> Integrate Google Analytics</a></li>
-<li class="chapter" data-level="2.9" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#update-the-live-website"><i class="fa fa-check"></i><b>2.9</b> Update the live website</a></li>
+<li class="chapter" data-level="2.9" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#push-updates-to-github"><i class="fa fa-check"></i><b>2.9</b> Push updates to GitHub</a></li>
 <li class="chapter" data-level="2.10" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#analyze-google-analytics-data"><i class="fa fa-check"></i><b>2.10</b> Analyze Google Analytics data</a></li>
 <li class="chapter" data-level="2.11" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html#next-steps"><i class="fa fa-check"></i><b>2.11</b> Next steps</a></li>
 </ul></li>
@@ -239,7 +157,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.2" data-path="content.html"><a href="content.html#how-it-works-3"><i class="fa fa-check"></i><b>7.2</b> How it works</a></li>
 <li class="chapter" data-level="7.3" data-path="content.html"><a href="content.html#example-posts"><i class="fa fa-check"></i><b>7.3</b> Example posts</a></li>
 <li class="chapter" data-level="7.4" data-path="content.html"><a href="content.html#create-a-new-post"><i class="fa fa-check"></i><b>7.4</b> Create a new post</a></li>
-<li class="chapter" data-level="7.5" data-path="content.html"><a href="content.html#add-a-summary"><i class="fa fa-check"></i><b>7.5</b> Add a summary</a></li>
+<li class="chapter" data-level="7.5" data-path="content.html"><a href="content.html#add-a-post-summary"><i class="fa fa-check"></i><b>7.5</b> Add a post summary</a></li>
 <li class="chapter" data-level="7.6" data-path="content.html"><a href="content.html#add-a-table-of-contents"><i class="fa fa-check"></i><b>7.6</b> Add a table of contents</a></li>
 <li class="chapter" data-level="7.7" data-path="content.html"><a href="content.html#add-code-highlighting"><i class="fa fa-check"></i><b>7.7</b> Add code highlighting</a></li>
 <li class="chapter" data-level="7.8" data-path="content.html"><a href="content.html#add-tags-and-categories"><i class="fa fa-check"></i><b>7.8</b> Add tags and categories</a></li>
@@ -251,22 +169,28 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.2" data-path="deploy.html"><a href="deploy.html#how-it-works-4"><i class="fa fa-check"></i><b>8.2</b> How it works</a></li>
 <li class="chapter" data-level="8.3" data-path="deploy.html"><a href="deploy.html#initial-push"><i class="fa fa-check"></i><b>8.3</b> Upload files to GitHub</a></li>
 <li class="chapter" data-level="8.4" data-path="deploy.html"><a href="deploy.html#configure-netlify-for-deployment"><i class="fa fa-check"></i><b>8.4</b> Configure Netlify for deployment</a></li>
-<li class="chapter" data-level="8.5" data-path="deploy.html"><a href="deploy.html#update-your-website"><i class="fa fa-check"></i><b>8.5</b> Update your website</a></li>
-<li class="chapter" data-level="8.6" data-path="deploy.html"><a href="deploy.html#purchase-a-custom-domain-name"><i class="fa fa-check"></i><b>8.6</b> Purchase a custom domain name</a></li>
-<li class="chapter" data-level="8.7" data-path="deploy.html"><a href="deploy.html#next-steps-6"><i class="fa fa-check"></i><b>8.7</b> Next steps</a></li>
+<li class="chapter" data-level="8.5" data-path="deploy.html"><a href="deploy.html#purchase-a-custom-domain-name"><i class="fa fa-check"></i><b>8.5</b> Purchase a custom domain name</a></li>
+<li class="chapter" data-level="8.6" data-path="deploy.html"><a href="deploy.html#next-steps-6"><i class="fa fa-check"></i><b>8.6</b> Next steps</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="google-analytics.html"><a href="google-analytics.html"><i class="fa fa-check"></i><b>9</b> Analyzing user traffic</a>
+<li class="chapter" data-level="9" data-path="google-analytics.html"><a href="google-analytics.html"><i class="fa fa-check"></i><b>9</b> Integrating Google Analytics</a>
 <ul>
 <li class="chapter" data-level="9.1" data-path="google-analytics.html"><a href="google-analytics.html#prerequisites-5"><i class="fa fa-check"></i><b>9.1</b> Prerequisites</a></li>
 <li class="chapter" data-level="9.2" data-path="google-analytics.html"><a href="google-analytics.html#how-it-works-5"><i class="fa fa-check"></i><b>9.2</b> How it works</a></li>
 <li class="chapter" data-level="9.3" data-path="google-analytics.html"><a href="google-analytics.html#ga-setup"><i class="fa fa-check"></i><b>9.3</b> Set up Google Analytics</a></li>
-<li class="chapter" data-level="9.4" data-path="google-analytics.html"><a href="google-analytics.html#analyze-traffic-using-r"><i class="fa fa-check"></i><b>9.4</b> Analyze traffic using R</a></li>
-<li class="chapter" data-level="9.5" data-path="google-analytics.html"><a href="google-analytics.html#closing-thoughts"><i class="fa fa-check"></i><b>9.5</b> Closing thoughts</a></li>
+<li class="chapter" data-level="9.4" data-path="google-analytics.html"><a href="google-analytics.html#push-updates-to-github-1"><i class="fa fa-check"></i><b>9.4</b> Push updates to GitHub</a></li>
+<li class="chapter" data-level="9.5" data-path="google-analytics.html"><a href="google-analytics.html#browse-the-google-analytics-ui"><i class="fa fa-check"></i><b>9.5</b> Browse the Google Analytics UI</a></li>
+<li class="chapter" data-level="9.6" data-path="google-analytics.html"><a href="google-analytics.html#use-r-for-data-analysis"><i class="fa fa-check"></i><b>9.6</b> Use R for data analysis</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="tips-tricks.html"><a href="tips-tricks.html"><i class="fa fa-check"></i><b>10</b> Tips and tricks</a>
 <ul>
-<li class="chapter" data-level="10.1" data-path="tips-tricks.html"><a href="tips-tricks.html#serve-your-website-locally"><i class="fa fa-check"></i><b>10.1</b> Serve your website locally</a></li>
-<li class="chapter" data-level="10.2" data-path="tips-tricks.html"><a href="tips-tricks.html#push-frequent-updates-to-github"><i class="fa fa-check"></i><b>10.2</b> Push frequent updates to GitHub</a></li>
+<li class="chapter" data-level="10.1" data-path="tips-tricks.html"><a href="tips-tricks.html#serve-local"><i class="fa fa-check"></i><b>10.1</b> Serve your website locally</a></li>
+<li class="chapter" data-level="10.2" data-path="tips-tricks.html"><a href="tips-tricks.html#push-updates-to-github-2"><i class="fa fa-check"></i><b>10.2</b> Push updates to GitHub</a></li>
+<li class="chapter" data-level="10.3" data-path="tips-tricks.html"><a href="tips-tricks.html#rebuild-a-clean-website"><i class="fa fa-check"></i><b>10.3</b> Rebuild a clean website</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="get-help.html"><a href="get-help.html"><i class="fa fa-check"></i><b>11</b> Getting help</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="get-help.html"><a href="get-help.html#connect-with-me"><i class="fa fa-check"></i><b>11.1</b> Connect with me</a></li>
+<li class="chapter" data-level="11.2" data-path="get-help.html"><a href="get-help.html#additional-resources"><i class="fa fa-check"></i><b>11.2</b> Additional resources</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -294,7 +218,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="content" class="section level1" number="7">
 <h1><span class="header-section-number">Chapter 7</span> Authoring new content</h1>
 <p>This chapter provides general guidance on authoring new content such as blog posts, tutorials, research articles, and project write-ups using R Markdown.</p>
-<p><strong>Note:</strong> This chapter builds upon the <a href="https://themes.gohugo.io/theme/anatole/">default Hugo Anatole theme</a> created in chapter 2. The finished product can be found here - <a href="https://r4sites-anatole-custom.netlify.app/" class="uri">https://r4sites-anatole-custom.netlify.app/</a>.</p>
+<p><strong>Note:</strong> This chapter builds upon the <a href="https://themes.gohugo.io/theme/anatole/">default Hugo Anatole theme</a> created in chapter 4 and edited in chapters 5 and 6. The finished product can be found here - <a href="https://r4sites-anatole-custom.netlify.app/" class="uri">https://r4sites-anatole-custom.netlify.app/</a>.</p>
 <div id="prerequisites-3" class="section level2" number="7.1">
 <h2><span class="header-section-number">7.1</span> Prerequisites</h2>
 <p>Before you proceed, complete the following prerequisites:</p>
@@ -326,11 +250,12 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <ol style="list-style-type: decimal">
 <li><p>Select the RStudio Addin labeled “New post.” <a href="https://i.imgur.com/S9dl4DZ.png">📷 Image</a>.</p></li>
 <li><p>Configure the new post by specifying the post Title, Author, Date, Subdirectory, and Format. <strong>Do not specify Tags and Categories</strong> at this point. Be sure to place the new post in the <code>post</code> Subdirectory and set the Format to <code>R Markdown (.Rmd)</code>. <a href="https://i.imgur.com/ciCv6yC.png">📷 Image</a>.</p></li>
-<li><p>Update and create parameters in the post metadata including <code>title</code>, <code>author</code>, <code>summary</code>, <code>date</code>, <code>output</code>, <code>Tags</code>, and <code>Categories</code>. Learn more by viewing the source code for the example posts described in the next section.</p></li>
+<li><p>Update (or create) parameters in the post metadata including <code>title</code>, <code>author</code>, <code>summary</code>, <code>date</code>, <code>output</code>, <code>Tags</code>, and <code>Categories</code> (<a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd#L1-L17">📷 Image</a>). Continue reading to learn more.</p></li>
 </ol>
 </div>
-<div id="add-a-summary" class="section level2" number="7.5">
-<h2><span class="header-section-number">7.5</span> Add a summary</h2>
+<div id="add-a-post-summary" class="section level2" number="7.5">
+<h2><span class="header-section-number">7.5</span> Add a post summary</h2>
+<p>Add a summary to your R Markdown post to insert a summarization of the post beneath the post title on the <a href="https://r4sites-anatole-custom.netlify.app/">Home</a> page (<a href="https://i.imgur.com/SjZ24e1.png">📷 Image</a>). To add a summary, create a <code>summary</code> parameter in the document metadata. <a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd#L3">&lt;/&gt; Code</a></p>
 </div>
 <div id="add-a-table-of-contents" class="section level2" number="7.6">
 <h2><span class="header-section-number">7.6</span> Add a table of contents</h2>
@@ -339,7 +264,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="add-code-highlighting" class="section level2" number="7.7">
 <h2><span class="header-section-number">7.7</span> Add code highlighting</h2>
 <p>Add code highlighting to improve the readability of your code snippets. To add code highlighting, edit the <code>output</code> parameter in the document metadata. <a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd#L6-L9">&lt;/&gt; Code</a></p>
-<p>Though I recommend the <code>tango</code> highlighting scheme, <a href="https://bookdown.org/yihui/rmarkdown/">other options</a> options are available.</p>
+<p>Though I recommend the <code>tango</code> highlighting scheme, other <a href="https://bookdown.org/yihui/rmarkdown/">code highlighting options</a> options are available.</p>
 </div>
 <div id="add-tags-and-categories" class="section level2" number="7.8">
 <h2><span class="header-section-number">7.8</span> Add tags and categories</h2>
@@ -347,7 +272,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="next-steps-5" class="section level2" number="7.9">
 <h2><span class="header-section-number">7.9</span> Next steps</h2>
-<p>Proceed with <a href="deploy.html#deploy">going live on the internet</a> to learn how to deploy your website to the web.</p>
+<p>Proceed with <a href="deploy.html#deploy">going live on the internet</a> by pushing your website to GitHub and configuring Netlify for continuous deployment.</p>
 
 </div>
 </div>

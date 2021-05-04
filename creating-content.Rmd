@@ -2,7 +2,7 @@
 
 This chapter provides general guidance on authoring new content such as blog posts, tutorials, research articles, and project write-ups using R Markdown.
 
-**Note:** This chapter builds upon the [default Hugo Anatole theme](https://themes.gohugo.io/theme/anatole/) created in chapter 2. The finished product can be found here - https://r4sites-anatole-custom.netlify.app/.
+**Note:** This chapter builds upon the [default Hugo Anatole theme](https://themes.gohugo.io/theme/anatole/) created in chapter 4 and edited in chapters 5 and 6. The finished product can be found here - https://r4sites-anatole-custom.netlify.app/.
 
 ## Prerequisites
 
@@ -39,9 +39,11 @@ The [Posts page](https://r4sites-anatole-custom.netlify.app/post/) is the design
 
 2. Configure the new post by specifying the post Title, Author, Date, Subdirectory, and Format. **Do not specify Tags and Categories** at this point. Be sure to place the new post in the `post` Subdirectory and set the Format to `R Markdown (.Rmd)`. [📷 Image](https://i.imgur.com/ciCv6yC.png).
 
-3. Update and create parameters in the post metadata including `title`, `author`, `summary`, `date`, `output`, `Tags`, and `Categories`. Learn more by viewing the source code for the example posts described in the next section.
+3. Update (or create) parameters in the post metadata including `title`, `author`, `summary`, `date`, `output`, `Tags`, and `Categories` ([📷 Image](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd#L1-L17)). Continue reading to learn more.
 
-## Add a summary
+## Add a post summary
+
+Add a summary to your R Markdown post to insert a summarization of the post beneath the post title on the [Home](https://r4sites-anatole-custom.netlify.app/) page ([📷 Image](https://i.imgur.com/SjZ24e1.png)). To add a summary, create a `summary` parameter in the document metadata. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd#L3)
 
 ## Add a table of contents
 
@@ -51,7 +53,7 @@ Add a table of contents to your R Markdown post to improve navigation and enable
 
 Add code highlighting to improve the readability of your code snippets. To add code highlighting, edit the `output` parameter in the document metadata. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd#L6-L9)
 
-Though I recommend the `tango` highlighting scheme, [other options](https://bookdown.org/yihui/rmarkdown/) options are available.
+Though I recommend the `tango` highlighting scheme, other [code highlighting options](https://bookdown.org/yihui/rmarkdown/) options are available.
 
 ## Add tags and categories
 
@@ -59,4 +61,4 @@ Add "tags" and "categories" to your posts to organize your content and to give G
 
 ## Next steps
 
-Proceed with [going live on the internet](#deploy) to learn how to deploy your website to the web.
+Proceed with [going live on the internet](#deploy) by pushing your website to GitHub and configuring Netlify for continuous deployment.

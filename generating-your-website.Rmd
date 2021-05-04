@@ -42,6 +42,8 @@ The best part of this feature is that as you make and save changes to your websi
 
 ## Next steps
 
-Proceed with [fine tuning the look and feel](#fine-tune) of your website to learn how to add flavor to your website and capture your personal style.
+Proceed with [fine tuning the look and feel](#fine-tune) including font styles, colors, and profile images.
+
+Optionally, skip and ahead and [deploy your website to the internet](#deploy). Though the steps to deploy your website are covered in a later chapter, readers are welcome to complete these steps at any point following the initial generation of the website.
 
 

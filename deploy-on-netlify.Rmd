@@ -2,6 +2,8 @@
 
 This chapter teaches you how to deploy your website to the internet using Netlify and GitHub. 
 
+**Note:** This chapter builds upon the [default Hugo Anatole theme](https://themes.gohugo.io/theme/anatole/) created in chapter 4 and edited in chapters 5, 6, and 7. The finished product can be found here - https://r4sites-anatole-custom.netlify.app/.
+
 ## Prerequisites
 
 Before you proceed, complete the following prerequisites:
@@ -63,23 +65,6 @@ Follow these steps to deploy your website on Netlify:
 
 5. Change your website's domain name (part of it at least). Default Netlify domain names tend to look something like this - https://dazzling-khorana-a6a8fe.netlify.app. To change this, go to *Site settings > Change site name*. Note that the domain extension is `.netlify.app` until you (optionally) purchase a custom domain name.
 
-## Update your website
-
-To update the published version of your website, simply push your changes from your local environment to your GitHub repository. Netlify will detect the update to your GitHub repository and immediately proceed with publishing the latest version of your website.
-
-Assuming you have [pushed your website to GitHub](#inital-push) already, use the **add** > **commit** > **push** Git workflow to push your updates to GitHub. [📷 Image](https://i.imgur.com/zJNAlIB.png)
-
-```{bash, eval=F}
-# add all files to the local Git repository
-git add --all
-
-# commit files and include a brief message
-git commit -m "brief message describing your changes"
-
-# push files to GitHub
-git push origin master
-```
-
 ## Purchase a custom domain name
 
 Netlify's default domain names end with `.netlify.app`. If you don't care for this domain extension, you can purchase a custom domain for your website. Though several domain registrars exist, the simplest route is to purchase a domain name through Netlify. If you use a domain registrar other than Netlify (e.g. Google Domains), you will have to manually configure Domain Name Servers and Domain Name System settings. With Netlify, all of this is taken care of for you.
@@ -96,5 +81,5 @@ Follow the simple steps below to purchase a custom domain through Netlify:
 
 ## Next steps
 
-Proceed with [analyzing user traffic](#content) to learn how to integrate Google Analytics into your website and analyze the data using R.
+Proceed with [integrating Google Analytics](#content) and learning how to use R and the `googleAnalyticsR` package to analyze user traffic on your website.
 

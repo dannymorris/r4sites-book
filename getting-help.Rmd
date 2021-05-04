@@ -1,0 +1,33 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include = F}
+knitr::opts_chunk$set(echo = T, message = F, warning = F, eval=T)
+```
+
+# Getting help {#get-help}
+
+Despite the wealth of information in this book, it does not (and simply cannot) cover all possible topics and ideas relevant to the subject of the book. For example, this book recommends several Hugo themes yet a single theme is used as the basis for explaining and demonstrating concepts. Additionally, the number of edits that can be made to any given website design is infinite yet this book guides readers through a small, finite number of edits that significantly alter the design. I suspect many readers will want to venture beyond the scope of this book and pursue new ideas that are not discussed in this book.
+
+## Connect with me
+
+For help with your own website project, I encourage readers to reach out to me directly via [email](mailto:dmorris10667@gmail.com) or on [LinkedIn](https://www.linkedin.com/in/drmorris87/). I will make an honest effort to provide assistance if the request is reasonable.
+
+## Additional resources
+
+To learn more about the methodology and the tools described in this book, I recommend the following resources:
+
+- [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/)
+
+- [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+
+- [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/)
+
+- [Hugo documentation](https://gohugo.io/documentation/)
+
+- [Netlify documenatation](https://docs.netlify.com/)
+
+- [Formspree documentation](https://formspree.io/formbutton/docs)
