@@ -10,10 +10,10 @@ This chapter teaches you how to configure website features that are unlikely to 
 
 Before you proceed, complete the following prerequisites:
 
-1. (optional) [Discover your style](#choose-theme)
-2. [Generate your website](#generate)
-3. (optional) [Fine tune the look and feel](#fine-tune)
-4. Sign up for [Formspree](https://formspree.io)
+1. (optional) [Discover your style](#choose-theme){target="blank"}
+2. [Generate your website](#generate){target="blank"}
+3. (optional) [Fine tune the look and feel](#fine-tune){target="blank"}
+4. Sign up for [Formspree](https://formspree.io){target="blank"}
 
 ## Before you begin
 
@@ -46,11 +46,11 @@ To delete a page, open `config/_default/menus.en.toml` and delete all references
 
 ## Edit the About page
 
-To edit the default [About page](https://r4sites-anatole-custom.netlify.app/about/), open `content/english/about.md`. Replace the metadata (i.e. the parameters in between the `---` markers) then replace the body of the document using plain Markdown. [</> Code](https://raw.githubusercontent.com/dannymorris/r4sites-anatole-custom/master/content/english/about.md){target="blank"}
+To edit the default [About page](https://r4sites-anatole-custom.netlify.app/about/){target="blank"}, open `content/english/about.md`. Replace the metadata (i.e. the parameters in between the `---` markers) then replace the body of the document using plain Markdown. [</> Code](https://raw.githubusercontent.com/dannymorris/r4sites-anatole-custom/master/content/english/about.md){target="blank"}
 
 ## Delete default posts
 
-The Hugo Anatole theme comes with several [default posts](https://themes.gohugo.io//theme/anatole/post/). To delete all default posts, navigate to the `content/english/post` folder and delete all files and folders **except `_index.md`**. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/tree/master/content/english/post){target="blank"}
+The Hugo Anatole theme comes with several [default posts](https://themes.gohugo.io//theme/anatole/post/){target="blank"}. To delete all default posts, navigate to the `content/english/post` folder and delete all files and folders **except `_index.md`**. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/tree/master/content/english/post){target="blank"}
 
 ## Edit post date format
 
@@ -108,6 +108,6 @@ Once your contact form endpoint is configured, submissions to your contact form 
 
 ## Next steps
 
-Proceed with [authoring original content](#content) such as blog posts, tutorials, research articles, and project write-ups using R Markdown.
+Proceed with [authoring original content](#content){target="blank"} such as blog posts, tutorials, research articles, and project write-ups using R Markdown.
 
-Optionally, skip ahead and [deploy your website to the internet](#deploy). Though the steps to deploy your website are covered in a later chapter, readers are welcome to complete these steps at any point following the initial generation of the website.
+Optionally, skip ahead and [deploy your website to the internet](#deploy){target="blank"}. Though the steps to deploy your website are covered in a later chapter, readers are welcome to complete these steps at any point following the initial generation of the website.

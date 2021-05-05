@@ -10,8 +10,8 @@ This chapter teaches you how to customize the look and feel of your website and 
 
 Before you proceed, complete the following prerequisites:
 
-1. (optional) [Discover your style](#choose-theme)
-2. [Generate your website](#generate)
+1. (optional) [Discover your style](#choose-theme){target="blank"}
+2. [Generate your website](#generate){target="blank"}
 
 ## How it works
 
@@ -19,21 +19,21 @@ This chapter will teach you how to use your own images in your website and how t
 
 ## About CSS
 
-If you are not familiar with CSS (Cascading Style Sheets), spend a moment looking over [the CSS file](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css) that controls the appearance of the website generated in the previous chapter. While HTML defines the general layout of a webpage, CSS is used to control the appearance of an HTML webpage and its elements including font styles, colors, buttons, links, positioning of images, and so on. If you intend to alter the look and feel of your website, I recommend devoting attention to your website's CSS.
+If you are not familiar with CSS (Cascading Style Sheets), spend a moment looking over [the CSS file](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css){target="blank"} that controls the appearance of the website generated in the previous chapter. While HTML defines the general layout of a webpage, CSS is used to control the appearance of an HTML webpage and its elements including font styles, colors, buttons, links, positioning of images, and so on. If you intend to alter the look and feel of your website, I recommend devoting attention to your website's CSS.
 
-To learn more about CSS, visit [w3schools](https://www.w3schools.com/css/) for tutorials and continue reading to learn about the [Inspect tool](#inspect-tool) in your browser.
+To learn more about CSS, visit [w3schools](https://www.w3schools.com/css/){target="blank"} for tutorials and continue reading to learn about the [Inspect tool](#inspect-tool){target="blank"} in your browser.
 
 ## About the Inspect tool {#inspect-tool}
 
 The "Inspect" tool in your browser is a powerful tool for experimenting with changes to CSS properties directly in the browser. Using the Inspect tool results in temporary changes to the CSS, and when the browser is refreshed the original CSS properties are restored. 
 
-Access this tool in the browser by right-clicking on any page element you want to edit (e.g. images, text, links, buttons) and click on "Inspect". [📷 Image](https://i.imgur.com/0h0H4VW.png)
+Access this tool in the browser by right-clicking on any page element you want to edit (e.g. images, text, links, buttons) and click on "Inspect". [📷 Image](https://i.imgur.com/0h0H4VW.png){target="blank"}
 
-To learn more about the Inspect tool, I recommend watching this [short YouTube video](https://www.youtube.com/watch?v=1l4xz1QQhew).
+To learn more about the Inspect tool, I recommend watching this [short YouTube video](https://www.youtube.com/watch?v=1l4xz1QQhew){target="blank"}.
 
 ## Before you begin
 
-After you [generate a website](#generate) and before you begin making edits to your website's features, prepare your RStudio environment by serving the site locally and opening a few important files.
+After you [generate a website](#generate){target="blank"} and before you begin making edits to your website's features, prepare your RStudio environment by serving the site locally and opening a few important files.
 
 #### Serve the site locally {-}
 
@@ -50,23 +50,23 @@ Open the files listed below in RStudio to better prepare yourself for making edi
 
 ## Update the base URL
 
-Open `config.yaml` in the main directory and change the `baseURL` parameter from `https://example.com` to `"/"`. The default `example.com` domain name is just a placeholder, and switching to `"/"` will instruct instruct Netlify to deploy your website behind your Netlify domain name. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config.yaml#L1)
+Open `config.yaml` in the main directory and change the `baseURL` parameter from `https://example.com` to `"/"`. The default `example.com` domain name is just a placeholder, and switching to `"/"` will instruct instruct Netlify to deploy your website behind your Netlify domain name. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config.yaml#L1){target="blank"}
 
 This is a critical step to ensure your website and its dependencies are built and deployed properly.
 
 ## Title, description, and author
 
-- Change the **title** "My Blog" on the Home page by opening `config/_default/languages.toml` and changing the `title` parameter. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/languages.toml#L2).
+- Change the **title** "My Blog" on the Home page by opening `config/_default/languages.toml` and changing the `title` parameter. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/languages.toml#L2){target="blank"}
 
-- Change the **description** "Call me Jane" on the Home page by opening `config/_default/params.toml` and editing the `description` parameter. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L5).
+- Change the **description** "Call me Jane" on the Home page by opening `config/_default/params.toml` and editing the `description` parameter. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L5){target="blank"}
 
-- Change the **author** "Jane Doe" by opening `config/_default/params.toml` and editing the `author` parameter. Doing this will change the title of your website as it appears in the web browser tab. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L3).
+- Change the **author** "Jane Doe" by opening `config/_default/params.toml` and editing the `author` parameter. Doing this will change the title of your website as it appears in the web browser tab. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L3){target="blank"}
 
 ## Profile image
 
-The profile image is the main image on the Home page. To use your own image, navigate to `static/images/` and replace `profile.jpg` with your own image. If your image file is also named `profile.jpg`, then no additional edits are needed. If not, open `config/_default/params.toml` and update the `profilePicture` parameter with your image file name. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L6)
+The profile image is the main image on the Home page. To use your own image, navigate to `static/images/` and replace `profile.jpg` with your own image. If your image file is also named `profile.jpg`, then no additional edits are needed. If not, open `config/_default/params.toml` and update the `profilePicture` parameter with your image file name. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L6){target="blank"}
 
-If you are unhappy with the image dimensions (e.g. too narrow or too wide), open `themes/anatole/assets/css/style.css` and edit the CSS properties. For this theme, you will need to edit the CSS properties for narrow screen devices ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L915-L917)) and wide screen devices ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L293-L296)).
+If you are unhappy with the image dimensions (e.g. too narrow or too wide), open `themes/anatole/assets/css/style.css` and edit the CSS properties. For this theme, you will need to edit the CSS properties for narrow screen devices ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L915-L917){target="blank"}) and wide screen devices ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L293-L296){target="blank"}).
 
 ## Favicon {#favicon}
 
@@ -76,40 +76,40 @@ To create a favicon from an image, visit https://favicon.io/favicon-converter/.
 
 ## Font style
 
-If you don't like the default font, you can easily change it. I recommend selecting from [Google Fonts](https://fonts.google.com/). For this example, I will use the [Noto Sans](https://fonts.google.com/specimen/Noto+Sans?query=noto+sans) font.
+If you don't like the default font, you can easily change it. I recommend selecting from [Google Fonts](https://fonts.google.com/){target="blank"}. For this example, I will use the [Noto Sans](https://fonts.google.com/specimen/Noto+Sans?query=noto+sans){target="blank"} font.
 
 The steps to import a Google Font include the following:
 
-1. Locate and select your chosen font from from [Google Fonts](https://fonts.google.com/).
+1. Locate and select your chosen font from from [Google Fonts](https://fonts.google.com/){target="blank"}.
 
-2. Look at all of the available styles (e.g. Regular, Bold, Italic, etc.) and decide which styles you would like to import into your website. I recommend importing all available styles. To import all available styles, select "+ Select this style" beside each style. [📷 Image](https://i.imgur.com/ZEopFOB.png)
+2. Look at all of the available styles (e.g. Regular, Bold, Italic, etc.) and decide which styles you would like to import into your website. I recommend importing all available styles. To import all available styles, select "+ Select this style" beside each style. [📷 Image](https://i.imgur.com/ZEopFOB.png){target="blank"}
 
-3. Select the "\@import" option under "Use on the web". Copy the HTML code **in between** the `style` tags([📷 Image](https://i.imgur.com/GE1L643.png)) and paste it into the main CSS file located at `themes/anatole/assets/css/style.css` ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L3)).
+3. Select the "\@import" option under "Use on the web". Copy the HTML code **in between** the `style` tags([📷 Image](https://i.imgur.com/GE1L643.png){target="blank"}) and paste it into the main CSS file located at `themes/anatole/assets/css/style.css`. ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L3){target="blank"})
 
-4. Under "use on the web", locate the CSS rule for specifying `font-family` ([📷 Image](https://i.imgur.com/0Nfmgdw.png)). In your main CSS file located at `themes/anatole/assets/css/style.css`, update all instances of `font-family` to change all font styles to your new font. Fortunately, the Anatole theme only specifies `font-family` in a single location. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L46).
+4. Under "use on the web", locate the CSS rule for specifying `font-family` ([📷 Image](https://i.imgur.com/0Nfmgdw.png){target="blank"}). In your main CSS file located at `themes/anatole/assets/css/style.css`, update all instances of `font-family` to change all font styles to your new font. Fortunately, the Anatole theme only specifies `font-family` in a single location. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L46){target="blank"}
 
 ## Font sizes
 
-In general, the Hugo Anatole theme uses rather small font sizes throughout the website. To change font sizes, locate the webpage element you want to modify using the [Inspect tool](#inspect-tool) in your browser. For the selected element, experiment with the `font-size` property (e.g. `font-size: 20px`). Once you are satisfied, edit the main CSS file located at `themes/anatole/assets/css/style.css` by adding the `font-size` property to the appropriate CSS class.
+In general, the Hugo Anatole theme uses rather small font sizes throughout the website. To change font sizes, locate the webpage element you want to modify using the [Inspect tool](#inspect-tool){target="blank"} in your browser. For the selected element, experiment with the `font-size` property (e.g. `font-size: 20px`). Once you are satisfied, edit the main CSS file located at `themes/anatole/assets/css/style.css` by adding the `font-size` property to the appropriate CSS class.
 
 Consider the following edits:
 
-- Increase the font size of the `p` class, which will essentially increase the font size throughout the entire website. Change the `font-size` property from 14px to 16px or higher. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L55-59). 
+- Increase the font size of the `p` class, which will essentially increase the font size throughout the entire website. Change the `font-size` property from 14px to 16px or higher. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L55-59){target="blank"}
 
-- Increase the font size of the text in the **navigation bar** located at the top of the website when viewed on a wide screen. Change the `font-size` property of the `.page-top .nav` class from 12px to 16px or higher. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L200-L207)
+- Increase the font size of the text in the **navigation bar** located at the top of the website when viewed on a wide screen. Change the `font-size` property of the `.page-top .nav` class from 12px to 16px or higher. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L200-L207){target="blank"}
 
 ## Colors
 
-You can change the color of essentially any webpage attribute including text, backgrounds, borders, and so on. To change a color, locate the webpage element you want to modify using the [Inspect tool](#inspect-tool) in your browser and experiment with the `color` or `background-color` properties. 
+You can change the color of essentially any webpage attribute including text, backgrounds, borders, and so on. To change a color, locate the webpage element you want to modify using the [Inspect tool](#inspect-tool){target="blank"} in your browser and experiment with the `color` or `background-color` properties. 
 
 Consider the following edits:
 
-- **Social media icons:** These are visible beneath the website title on the Home page. Open the main CSS file located at `themes/anatole/assets/css/style.css` and edit the `.sidebar .social-links i` class by specifying a `color` attribute. Here I have chosen to use the HEX color #a4a4a4. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L322-325) [📷 Image](https://i.imgur.com/Q7uhdaQ.png)
+- **Social media icons:** These are visible beneath the website title on the Home page. Open the main CSS file located at `themes/anatole/assets/css/style.css` and edit the `.sidebar .social-links i` class by specifying a `color` attribute. Here I have chosen to use the HEX color #a4a4a4. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L322-325){target="blank"} [📷 Image](https://i.imgur.com/Q7uhdaQ.png){target="blank"}
 
-- **Post tags:** These are visible on the Home page beneath post titles and summaries. Open the main CSS file located at `themes/anatole/assets/css/style.css` and edit the `.post .post-footer .meta a` class and editing the`color` attribute. Here I have chosen to use the HEX color #6a92c5. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L479-482) [📷 Image](https://i.imgur.com/JnueFsN.png)
+- **Post tags:** These are visible on the Home page beneath post titles and summaries. Open the main CSS file located at `themes/anatole/assets/css/style.css` and edit the `.post .post-footer .meta a` class and editing the`color` attribute. Here I have chosen to use the HEX color #6a92c5. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L479-482){target="blank"} [📷 Image](https://i.imgur.com/JnueFsN.png){target="blank"}
 
 ## Next steps
 
-Proceed with [configuring pages and features](#pages-features) including contact forms and social media links.
+Proceed with [configuring pages and features](#pages-features){target="blank"} including contact forms and social media links.
 
-Optionally, skip ahead and [deploy your website to the internet](#deploy). Though the steps to deploy your website are covered in a later chapter, readers are welcome to complete these steps at any point following the initial generation of the website.
+Optionally, skip ahead and [deploy your website to the internet](#deploy){target="blank"}. Though the steps to deploy your website are covered in a later chapter, readers are welcome to complete these steps at any point following the initial generation of the website.
