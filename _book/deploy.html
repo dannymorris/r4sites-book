@@ -34,7 +34,7 @@
 <link rel="prev" href="content.html"/>
 <link rel="next" href="google-analytics.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
-<script src="libs/jquery-3.5.1/jquery.min.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -51,25 +51,6 @@
 
 
 
-<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
-<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-1.3.1/leaflet.js"></script>
-<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
-<script src="libs/proj4-2.6.2/proj4.min.js"></script>
-<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
-<script src="libs/plotly-binding-4.9.3/plotly.js"></script>
-<script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-1.57.1/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-1.57.1/plotly-latest.min.js"></script>
-<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
-<script src="libs/datatables-binding-0.17/datatables.js"></script>
-<link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
-<link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
-<script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-196111394-1"></script>
 <script>
@@ -307,7 +288,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">8.1</span> Prerequisites</h2>
 <p>Before you proceed, complete the following prerequisites:</p>
 <ol style="list-style-type: decimal">
-<li><a href="choose-theme.html#choose-theme">Choose your preferred style</a></li>
+<li>(optional) <a href="choose-theme.html#choose-theme">Discover your style</a></li>
 <li><a href="generate.html#generate">Generate your website</a></li>
 <li>(optional) <a href="fine-tune.html#fine-tune">Fine tune the look and feel</a></li>
 <li>(optional) <a href="pages-features.html#pages-features">Configure pages and features</a></li>
@@ -318,49 +299,50 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="how-it-works-4" class="section level2" number="8.2">
 <h2><span class="header-section-number">8.2</span> How it works</h2>
-<p>Hugo (the static site generator used by blogdown), GitHub, and Netlify are the three tools that make it incredibly simple to deploy your website to the internet. The main steps are to upload your website files to a remote GitHub repository, then create a new site in Netlify that points to your GitHub repository URL. Netlify will then do all of the heavy lifting of building and deploying your Hugo website to the internet. All of this can be done in a matter of minutes with just a few lines of code and a few clicks.</p>
+<p>GitHub and Netlify work together to make it remarkably simple to deploy your website to the internet. Simply upload your website codebase to GitHub, then configure Netlify to deploy your website with a few simple clicks. Once your website is live, Netlify will automatically rebuild and redeploy your website any time you push changes to your GitHub repository. This process is known as <strong>continuous deployment.</strong></p>
 </div>
 <div id="initial-push" class="section level2" number="8.3">
 <h2><span class="header-section-number">8.3</span> Upload files to GitHub</h2>
-<p>Once your website is working locally, the next steps are to create a remote GitHub repository for your website files, configure a local Git repository, and push your website files from your local Git repository to your remote GitHub repository. Follow these simple steps to make this happen:</p>
+<p>To push your website files to GitHub, complete the following steps:</p>
 <ol style="list-style-type: decimal">
 <li><p>Sign in to <a href="https://github.com/">GitHub</a> and create a new repository by clicking “New” in the Repositories section. Configure the repository accordingly, then click “Create repository.” <a href="https://i.imgur.com/dnmI973.png">📷 Image</a></p></li>
-<li><p>On your local machine, launch Git from the command line (e.g. Git Bash on Windows, Terminal on Mac/Linux) and run the following Git commands to sync a local Git repository with your newly created remote GitHub repository.</p></li>
+<li><p>On your local machine, launch a Git terminal (e.g. Git Bash on Windows, Terminal on Mac/Linux) and run the following Git commands to initialize a local Git repository and sync it with your remote GitHub repository:</p></li>
 </ol>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="deploy.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Change the directory to your website&#39;s root folder</span></span>
-<span id="cb5-2"><a href="deploy.html#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> path/to/your/website</span>
-<span id="cb5-3"><a href="deploy.html#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="deploy.html#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># initialize local Git repository</span></span>
-<span id="cb5-5"><a href="deploy.html#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span>
-<span id="cb5-6"><a href="deploy.html#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-7"><a href="deploy.html#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># add all of your website files to the local Git repository</span></span>
-<span id="cb5-8"><a href="deploy.html#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="at">--all</span></span>
-<span id="cb5-9"><a href="deploy.html#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-10"><a href="deploy.html#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># commit your website files to the local Git repository</span></span>
-<span id="cb5-11"><a href="deploy.html#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;first commit&quot;</span></span>
-<span id="cb5-12"><a href="deploy.html#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-13"><a href="deploy.html#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co"># sync the local Git repository with the remote GitHub repository</span></span>
-<span id="cb5-14"><a href="deploy.html#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co"># change your_username and your_repo to your GitHub username and repository name</span></span>
-<span id="cb5-15"><a href="deploy.html#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/your_username/your_repo.git</span>
-<span id="cb5-16"><a href="deploy.html#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-17"><a href="deploy.html#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="co"># push your files to GitHub</span></span>
-<span id="cb5-18"><a href="deploy.html#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin master</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="deploy.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Change the directory to your website&#39;s root folder</span></span>
+<span id="cb1-2"><a href="deploy.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> path/to/your/website</span>
+<span id="cb1-3"><a href="deploy.html#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="deploy.html#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># initialize a local Git repository</span></span>
+<span id="cb1-5"><a href="deploy.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span>
+<span id="cb1-6"><a href="deploy.html#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="deploy.html#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># add all of your website files to the local Git repository</span></span>
+<span id="cb1-8"><a href="deploy.html#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="at">--all</span></span>
+<span id="cb1-9"><a href="deploy.html#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="deploy.html#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># commit your website files to the local Git repository</span></span>
+<span id="cb1-11"><a href="deploy.html#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;first commit&quot;</span></span>
+<span id="cb1-12"><a href="deploy.html#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="deploy.html#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># sync the local Git repository with the remote GitHub repository</span></span>
+<span id="cb1-14"><a href="deploy.html#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># change your_username and your_repo to your GitHub username and </span></span>
+<span id="cb1-15"><a href="deploy.html#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># website repository name</span></span>
+<span id="cb1-16"><a href="deploy.html#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/your-username/your-repo.git</span>
+<span id="cb1-17"><a href="deploy.html#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="deploy.html#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co"># push your files to GitHub</span></span>
+<span id="cb1-19"><a href="deploy.html#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin master</span></code></pre></div>
 </div>
 <div id="configure-netlify-for-deployment" class="section level2" number="8.4">
 <h2><span class="header-section-number">8.4</span> Configure Netlify for deployment</h2>
-<p>Now that your website files are stored in GitHub, use Netlify to deploy your website. Netlify will deploy your website directly from your GitHub repository. Any time you push new or edited content to the GitHub repository, Netlify will automatically deploy a new version of your website. This is known as continuous deployment and is key to rapid iteration.</p>
+<p>With your website codebase in GitHub, configure Netlify to build and deploy your website with a few simple clicks. Once your website is live, Netlify will automatically rebuild and redeploy your website any time you push changes to your GitHub repository. This process is known as <strong>continuous deployment.</strong></p>
 <p>Follow these steps to deploy your website on Netlify:</p>
 <ol style="list-style-type: decimal">
 <li><p>Log in to <a href="https://app.netlify.com/">Netlify</a> and click “New site from Git.”</p></li>
 <li><p>Select GitHub as the Continuous Deployment provider, then choose your website’s GitHub repository.</p></li>
-<li><p>Leave the site settings alone and click “Deploy site” to publish your website. <a href="https://i.imgur.com/wjDFnvJ.png">📷 Image</a></p></li>
-<li><p>After a few seconds, your website will be deployed on Netlify. To view your website on the internet, return to the Site Overview section and locate the default domain name generated by Netlify (<a href="https://i.imgur.com/t6IW44i.png">📷 Image</a>).</p></li>
-<li><p>Change your website’s domain name (part of it at least). Default Netlify domain names tend to look something like this - <a href="https://dazzling-khorana-a6a8fe.netlify.app" class="uri">https://dazzling-khorana-a6a8fe.netlify.app</a>. To change this, go to <em>Site settings &gt; Change site name</em>. Note that the domain extension is <code>.netlify.app</code> until you (optionally) purchase a custom domain name.</p></li>
+<li><p>Leave the site settings as-is and click “Deploy site” to deploy your website to the internet. <a href="https://i.imgur.com/wjDFnvJ.png">📷 Image</a></p></li>
+<li><p>After a few seconds, your website will be live on the internet. To view it, return to the Site Overview section and locate the default domain name generated by Netlify (<a href="https://i.imgur.com/t6IW44i.png">📷 Image</a>).</p></li>
+<li><p>Change your website’s domain name (part of it at least). Default Netlify domain names tend to look something like this - <em>dazzling-khorana-a6a8fe.netlify.app.</em> To change this, go to <em>Site settings &gt; Change site name</em>. Note that the domain extension will remain <code>.netlify.app</code> until you (optionally) purchase a custom domain name.</p></li>
 </ol>
 </div>
 <div id="purchase-a-custom-domain-name" class="section level2" number="8.5">
 <h2><span class="header-section-number">8.5</span> Purchase a custom domain name</h2>
-<p>Netlify’s default domain names end with <code>.netlify.app</code>. If you don’t care for this domain extension, you can purchase a custom domain for your website. Though several domain registrars exist, the simplest route is to purchase a domain name through Netlify. If you use a domain registrar other than Netlify (e.g. Google Domains), you will have to manually configure Domain Name Servers and Domain Name System settings. With Netlify, all of this is taken care of for you.</p>
+<p>Netlify’s default domain names use the <code>.netlify.app</code> extension. If you prefer something different, such as <code>.com</code>, you can purchase a custom domain for your website. Though several domain registrars exist, the simplest route is to purchase a domain name through Netlify. If you use a domain registrar other than Netlify (e.g. Google Domains), you will have to manually configure Domain Name Servers and Domain Name System settings. With Netlify, all of this is taken care of for you.</p>
 <p>Follow the simple steps below to purchase a custom domain through Netlify:</p>
 <ol style="list-style-type: decimal">
 <li><p>Log in to <a href="https://app.netlify.com/">Netlify</a>, open your site, and click on “Domain settings.” <a href="https://i.imgur.com/ACjNs4w.png">📷 Image</a>.</p></li>

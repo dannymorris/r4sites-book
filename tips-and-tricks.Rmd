@@ -6,13 +6,13 @@ This chapter reinforces some basic tips and tricks for you to consider while dev
 
 The blogdown package includes a handy function called `serve_site()`. Running this function in the R console with your website's RStudio Project loaded will render a local copy of your entire website in the RStudio "Viewer" pane, as shown in this [example](https://i.imgur.com/oxZgeqM.png).
 
-While serving your website locally, the local version will update in real-time as you make and save changes to your website's codebase. This feature of blogdown, known as LiveReload, enables rapid trial and error on your local machine without ever having to leave the RStudio environment.
+While serving your website locally, the local version will update in real-time as you make and save changes to your website's codebase. This feature of blogdown, known as LiveReload, lets you experiment with changes to your website and receive instant feedback.
 
 ## Push updates to GitHub
 
-Any time you make changes to your website, such as the addition of a new post, you will need to push these changes to your GitHub repository to update the live version of your website on the internet.
+Any time you make changes to your website, such as integrating Google Analytics or authoring a new post, you will need to push these changes to your GitHub repository to force Netlify to rebuild and redeploy your website to the internet.
 
-Assuming you have already [pushed your website to GitHub](#inital-push), use the **add** > **commit** > **push** Git workflow to push updates. Netlify will detect the push event and automatically trigger a fresh deploy of your website. This is known as **continuous deployment.**
+Assuming you have already [pushed your website to GitHub](#inital-push), use the **add** > **commit** > **push** Git workflow to push updates. I recommend pushing updates frequently to keep your GitHub repository up-to-date.
 
 ```{bash, eval=F}
 # add all files to the local Git repository
@@ -24,6 +24,10 @@ git commit -m "brief message describing your changes"
 # push files to GitHub
 git push origin master
 ```
+
+## Check your website
+
+At any point during the development of your webiste, consider running `blogdown::check_site()` in the R console. This function will run a number of checks against your website to discover any problems.
 
 ## Rebuild a clean website
 
@@ -40,4 +44,4 @@ blogdown::build_site()
 blogdown::serve_site()
 ```
 
-If you continue to experience buggy behavior, restart RStudio and run the code again.
+If you continue to experience buggy behavior, try restarting RStudio and running the code again.

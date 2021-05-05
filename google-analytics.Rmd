@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = T, message = F, warning = F, eval=T)
 
 # Integrating Google Analytics {#google-analytics}
 
-This chapter shows you how to integrate Google Analytics into your website to capture user data including the number of users on your website, the pages they view, the sources from which they arrive at your website, and their geographic locations. This chapter also covers the basics of the [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) R package for querying your Google Analytics data from R. 
+This chapter shows you how to integrate Google Analytics into your website to capture user data such as the number of users on your website, the pages they view, and their geographic locations. This chapter also covers the basics of the [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) R package for querying your Google Analytics data from R. 
 
 :::design
 **Note:** This chapter builds upon the website generated in chapter 4 and edited in chapters 5, 6, 7, and 8. The final result can be viewed here - https://r4sites-anatole-custom.netlify.app/.
@@ -29,7 +29,7 @@ Before you proceed, complete the following prerequisites:
 
 ## How it works
 
-Once you sign up for Google Analytics, the main objectives are to create an Account and a Property for your website domain name, then obtain a Tracking ID. This tracking code will go in the `config.yaml` file on your website, which in turn will instruct Google Analytics to collect the data on user traffic to your website.
+Once you sign up for Google Analytics, you will need to create an Account, Property, and Tracking ID for your website. Placing the Tracking ID into the `config.yaml` file and triggering a fresh website deployment will complete the Google Analytics integration and enable you to being analyzing the data immediately.
 
 ## Set up Google Analytics {#ga-setup}
 
@@ -51,9 +51,9 @@ Follow these steps to integrate Google Analytics into your website:
 
 ## Push updates to GitHub
 
-Any time you make changes to your website, such as integrating Google Analytics or authoring a new post, you will need to push these changes to your GitHub repository to update the live version of your website on the internet.
+Any time you make changes to your website, such as integrating Google Analytics or authoring a new post, you will need to push these changes to your GitHub repository to force Netlify to rebuild and redeploy your website to the internet.
 
-To update your live website with Google Analytics integration, open your preferred Git terminal and push your code to GitHub using the  **add** > **commit** > **push** Git workflow. Once pushed, Netlify will detect the push event and automatically trigger a fresh deploy of your website. This is known as **continuous deployment.**
+To complete the Google Analytics integration, open Git terminal (e.g. Git Bash on Windows, Terminal on Mac/Linux) and push your code to GitHub using the  **add** > **commit** > **push** Git workflow. 
 
 ```{bash, eval=F}
 # add all files to the local Git repository
@@ -65,6 +65,20 @@ git commit -m "brief message describing your changes"
 # push files to GitHub
 git push origin master
 ```
+
+## Confirm the integration
+
+After completing the Google Analytics integration, run the following test to confirm the integration:
+
+1. Open your website in your browser.
+
+2. Sign in to [Google Analytics](https://analytics.google.com/)
+
+3. Click on "All Web Site Data". [📷 Image](https://i.imgur.com/lyNPi8E.png)
+
+4. In the dropdown menu, select the Account and Property you created during the initial [setup](#ga-setup), then select the "All Web Site Data" View. [📷 Image](https://i.imgur.com/xSjCS75.png)
+
+5. Go to the Home page and locate the card titled "Active Users right now". If the integration was successful, this value should be a minimum of 1 since you are currently on your website. [📷 Image](https://i.imgur.com/KPbUB7G.png)
 
 ## Browse the Google Analytics UI
 
@@ -82,7 +96,7 @@ You can analyze your Google Analytics data using a third party client, such as R
 
 ## Use R for data analysis
 
-[googleAnalyicsR](https://code.markedmondson.me/googleAnalyticsR/) is an R package that makes it easy and fun to query your Google Analytics data.
+[googleAnalyicsR](https://code.markedmondson.me/googleAnalyticsR/) is an R package that makes it easy and fun to query your Google Analytics data. Before diving into the code, spend some time learning about Google Analytics Dimensions and Metrics.
 
 ### Dimensions and metrics
 
@@ -90,7 +104,7 @@ In order to analyze your Google Analytics data, you need to gain a basic underst
 
 Dimensions are attributes of your data and Metrics are quantitative measurements. For example, to analyze the count of users on your website in the last 60 days, the Dimension is `date` and the Metric is `users`.
 
-Google Analytics supports hundreds of Dimension-Metric combinations. My recommendation is to browse [Ultimate Google Analytics Dimensions and Metrics List](https://www.ovrdrv.com/blog/ultimate-google-analytics-dimensions-and-metrics-list/) to learn what is available. Also check out the [Practical Tips](https://code.markedmondson.me/googleAnalyticsR/articles/practical-tips.html) page written by the author of the `googleAnalyticsR` package.
+Google Analytics supports hundreds of Dimension-Metric combinations. My recommendation is to browse the [Ultimate Google Analytics Dimensions and Metrics List](https://www.ovrdrv.com/blog/ultimate-google-analytics-dimensions-and-metrics-list/) to learn what is available. 
 
 ### Install googleAnalyticsR
 
@@ -98,10 +112,10 @@ Google Analytics supports hundreds of Dimension-Metric combinations. My recommen
 install.packages("googleAnalyticsR", dependencies = TRUE)
 ```
 
-### R packages for data analytics
+### R packages for data analysis
 
 ```{r}
-library(googleAnalyticsR)  ## calling Google Analytics API
+library(googleAnalyticsR)  ## querying your Google Analytics data
 library(dplyr)             ## data manipulation
 library(plotly)            ## interactive charts
 library(DT)                ## interactive tables
@@ -114,15 +128,15 @@ library(leaflet)           ## interactive maps
 googleAnalyticsR::ga_auth(json_file = "googleanalyticsr-auth-key.json")
 ```
 
-Running `ga_auth()` in the R console will automatically open a page in your web browser and prompt you to authenticate your Google account.
+Running `ga_auth()` in the R console will take you to your web browser and prompt you to authenticate your Google account.
 
 ```{r, echo=T, eval=F}
 googleAnalyticsR::ga_auth()
 ```
 
-### List your Google Analytics accounts and properties
+### List your Google Analytics Accounts and Properties
 
-Running `ga_account_list()` will list the Google Analytics account that was created in step 1 of [Setting up Google Analytics](#ga-setup).
+Running `ga_account_list()` will list the Google Analytics account that was created in step 1 of [Set up Google Analytics](#ga-setup).
 
 ```{r}
 ## get your accounts
@@ -131,9 +145,9 @@ ga_accounts <- ga_account_list()
 ga_accounts
 ```
 
-### Obtain viewId associated with your website
+### Obtain the viewId associated with your website
 
-To send API calls to Google Analytics, you need to obtain the `viewId` associated with the account.
+To send API calls to Google Analytics, you need to obtain the `viewId` associated with your website's Account and Property name.
 
 ```{r}
 view_id <- ga_accounts %>%
@@ -191,7 +205,7 @@ plot_ly(
   y = ~users,
   type = "bar"
 ) %>%
-  layout(title = "Users by device type")
+  layout(title = "Most users are on desktop devices")
 ```
 
 ### Page views by page
@@ -216,7 +230,7 @@ page_views %>%
   DT::datatable()
 ```
 
-### Users by location {#users-by-location}
+### Users by geographic location {#users-by-location}
 
 To understand the geographical areas from which your website users view your website, use the following Dimension sand Metric:
 
@@ -248,4 +262,4 @@ users_location %>%
 
 ### Avoiding data sampling
 
-The `google_analytics()` function has an argument named `anti_sampling`, which is set to `TRUE` by default. This means that queries which return more than 1,000 rows of data will be sampled to avoid putting strain on the Google Analytics API. To avoid this default sampling strategy, set `anti_sampling = FALSE` when making API calls via the `google_analytics()` function.
+The `google_analytics()` function has an argument named `anti_sampling`, which is set to `TRUE` by default. This means that queries which return more than 1,000 rows of data will be sampled to avoid putting strain on the Google Analytics API. To avoid this default sampling strategy, set `anti_sampling = FALSE` when making API calls using the `google_analytics()` function.

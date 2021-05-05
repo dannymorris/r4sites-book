@@ -100,3 +100,7 @@ rebuild-a-clean-website
 get-help
 connect-with-me
 additional-resources
+confirm-the-integration
+r-packages-for-data-analysis
+obtain-the-viewid-associated-with-your-website
+check-your-website
