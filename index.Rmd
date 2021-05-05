@@ -51,7 +51,7 @@ There are many excellent applications for personal websites. Below is a list of 
 
 - **Organize content for a specific class or project.** This use case is a supreme opportunity for students to display leadership. If you are taking a class or working on a project, consider publishing a website (for free, of course) to communicate your progress and organize essential documentation, as shown in [this example](https://dssquad-wiki.netlify.app/).
 
-- **Promote a product or service.** If you are thinking about selling your own products or services, consider publishing a landing page or an ecommerce site. [This landing page](https://r4sites.com/), which was built using the methodology in this book, serves to promote this book and generate sales.
+- **Promote a product or service.** If you are thinking about selling your own products or services, consider publishing a landing page or an ecommerce site. I built [this landing page] at a time when I was considering building websites for local clients.
 
 ## What you will learn {#learn}
 
