@@ -35,7 +35,7 @@ You will learn the exact methodology that I use to create, design, publish, and 
 
 The target audience for this book includes students, working professionals, and researchers who want to launch their very own personal website. Most likely, however, this book will appeal to individuals in these segments who associate with R, Data Analytics, Data Science, Machine Learning, Statistics, Mathematics, and related fields where technical writing is common.
 
-Note that you do not have to be an experienced web developer to successfully use the methodology described in this book. To learn more about whether or not this book is right for you, check out the [FAQ](#faq) section. 
+Note that you do not have to be an experienced web developer to successfully use the methodology described in this book. To learn more about whether or not this book is right for you, check out the [FAQ](#faq){target="blank"} section. 
 
 ## Reasons to have a website
 
@@ -66,7 +66,7 @@ During this process, you will learn how to do the following:
 - Deploy your website to the internet using Netlify and GitHub.
 - Integrate Google Analytics into your website to capture user activity on your website, then use R to analyze this data.
 
-#### Why start with the Hugo Anatole theme? {-}
+#### Why start with the Hugo Anatole theme? {-#anatole}
 
 The default Hugo Anatole design theme is an excellent starting point for creating a personal website. By default, the Hugo Anatole design theme contains a rich set of features, including:
 
@@ -120,7 +120,7 @@ Absolutely nothing, unless you elect to purchase custom domains name which are t
 
 **Do I need a background in web development to create my own website?**
 
-Absolutely not. In fact, this book presents information with the assumption that readers do not have a background in web development. You will find that the [tools described in this book](#tools) make it very simple for anyone to create attractive, feature-rich, and sustainable websites.
+Absolutely not. In fact, this book presents information with the assumption that readers do not have a background in web development. You will find that the [tools described in this book](#tools){target="blank"} make it very simple for anyone to create attractive, feature-rich, and sustainable websites.
 
 **Do I need to know R to build the types of websites described in this book?**
 
@@ -136,7 +136,7 @@ RStudio is a free desktop application where all of your website development take
 
 **Can I publish my website behind a custom domain name?**
 
-Yes. This topic is discussed in the chapter [Going live on the internet](#deploy).
+Yes. This topic is discussed in the chapter [Going live on the internet](#deploy){target="blank"}.
 
 ## About the author
 

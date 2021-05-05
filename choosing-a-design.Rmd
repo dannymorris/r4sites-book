@@ -3,14 +3,14 @@
 This chapter will help you discover a website style that inspires you, unlocks your creativity, and achieves your website goals. Choosing a style is among the most important steps of developing and operating a successful website.
 
 :::design
-**Note:** Though this chapter introduces a variety of styles for your consideration, all subsequent chapters will use the [Hugo Anatole](https://themes.gohugo.io/theme/anatole/){target="blank"} style to explain and implement concepts. Over the course of this book, the default Hugo Anatole style will be edited sequentially to produce the [final result](https://r4sites-anatole-custom.netlify.app/){target="blank"}. If you choose to work with a different style, be prepared to adapt the information presented in later chapters to your individual use case.
+**Note:** Though this chapter introduces a variety of styles for your consideration, all subsequent chapters will use the [Hugo Anatole](https://themes.gohugo.io/theme/anatole/){target="blank"} style to explain and implement concepts. Over the course of this book, the default Hugo Anatole style will be edited sequentially to produce the final result which can be viewed here - [https://r4sites-anatole-custom.netlify.app/](https://r4sites-anatole-custom.netlify.app/){target="blank"}. If you choose to work with a different style, be prepared to adapt the information presented in later chapters to your individual use case.
 :::
 
 ## How it works
 
 The style of a website includes the general layout, look and feel, and other visual aspects that distinguish one style from another. For example, [this style](https://themes.gohugo.io/vex-hugo/){target="blank"} and [this style](https://themes.gohugo.io/hugo-split-theme/){target="blank"} give off noticeably different impressions.
 
-To find your style, browse the complete list of [beautiful, free, pre-built Hugo themes](https://themes.gohugo.io/){target="blank"}. Hugo themes, which are created by expert Hugo developers, are **freely available** for you to use in your personal website project. Using a Hugo theme as the starting point for your final website style eliminates the need to design a style from scratch. Chapter 4, [Generating your website](#generate), teaches you how to create a website using a Hugo theme in three simple steps. 
+To find your style, browse the complete list of [beautiful, free, pre-built Hugo themes](https://themes.gohugo.io/){target="blank"}. Hugo themes, which are created by expert Hugo developers, are **freely available** for you to use in your personal website project. Using a Hugo theme as the starting point for your final website style eliminates the need to design a style from scratch. Chapter 4, [Generating your website](#generate){target="blank"}, teaches you how to create a website using a Hugo theme in three simple steps. 
 
 ## The 90/10 rule for choosing a theme
 
@@ -20,7 +20,7 @@ The 90/10 rule states that 90% or more of the look, feel, and functionality you 
 
 Depending on your goals, you may be more or less restricted to certain [Hugo themes](https://themes.gohugo.io/){target="blank"}. For example, if you intend to create content using R Markdown documents that contain code written in R, Python, or SQL, then you may find that certain themes do a poor job of rendering output produced by these languages. On the other hand, if you intend to create basic content using plain Markdown documents, you may not experience any content rendering issues with any of the themes you consider. 
 
-**Tip:** When browsing Hugo themes, pay attention to the date on which the theme was most recently updated. [📷 Image](https://i.imgur.com/fp7WH6s.png){target="blank"}. It's best to avoid themes that have not been updated in the last few months or so.
+**Tip:** When browsing Hugo themes, pay attention to the date on which the theme was most recently updated ([📷 Image](https://i.imgur.com/fp7WH6s.png){target="blank"}). It's best to avoid themes that have not been updated in the last few months or so.
 
 Below is a list of themes that I recommend based on performance, content rendering, and personal style preference. Note that this is not an exhaustive list of all themes that I would recommend.
 
@@ -28,9 +28,7 @@ Below is a list of themes that I recommend based on performance, content renderi
 
 If you intend to add content to your personal website featuring code written in R, Python, or SQL, consider one of the following themes:
 
-- [Tranquilpeak](https://themes.gohugo.io/hugo-tranquilpeak-theme/){target="blank"} - Modern, clean layout. Easy to customize and very readable. Great for personal websites, blogs, and portfolios.
-
-- [Anatole](https://themes.gohugo.io/anatole/){target="blank"} - Similar to Tranquilpeak with a more sophisticated About page.
+- [Anatole](https://themes.gohugo.io/anatole/){target="blank"} - My favorite theme with a [rich set of features](#anatole){target="blank"}.
 
 - [Eureka](https://themes.gohugo.io/hugo-eureka/){target="blank"} - Clean, professional layout. Easy to customize. Great for portfolios and professional landing pages.
 
@@ -54,6 +52,6 @@ If you intend to add content to your personal website featuring code written in 
 
 ## Next steps
 
-Proceed with [generating a website](#generate) in three simple steps using RStudio.
+Proceed with [generating a website](#generate){target="blank"} in three simple steps using RStudio.
 
 

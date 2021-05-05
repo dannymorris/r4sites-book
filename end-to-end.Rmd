@@ -67,7 +67,7 @@ The [contact form](https://r4sites-anatole.netlify.app/contact/){target="blank"}
 
 Once your site is working locally, the next steps are to create a remote GitHub repository for your website, configure a local Git repository, and push your website files from your local environment to the remote repository.
 
-1. Create a remote GitHub repository by signing in to [GitHub](https://github.com/){target="blank"} and clicking "New" in the Repositories section. Configure the repository accordingly, then click Create repository. [📷 Image](https://i.imgur.com/LW2AhCr.png){target="blank"}
+1. Create a remote GitHub repository by signing in to [GitHub](https://github.com/){target="blank"} and clicking "New" in the Repositories section. Configure the repository accordingly, then click Create repository. [📷 Image](https://i.imgur.com/dnmI973.png){target="blank"}
 
 2. Launch a Git terminal (e.g. Git Bash on Windows, Terminal on Mac/Linux) and run the following Git commands to push files from the local environment to the remote GitHub repository: 
 
@@ -96,17 +96,17 @@ git push -u origin master
 
 Now that your website files are stored in a GitHub repository, follow the steps below to configure Netlify to deploy your website to the internet:
 
-1. Log in to Netlify and click "New site from Git". [📷 Image](https://i.imgur.com/ztaGsN3m.png){target="blank"}
+1. Log in to Netlify and click "New site from Git". [📷 Image](https://i.imgur.com/ztaGsN3.png){target="blank"}
 
 2. Select GitHub as the Continuous Deployment provider, then select your website's GitHub repository.
 
 3. Accept the suggested site settings and click "Deploy site" to publish your website to the internet. [📷 Image](https://i.imgur.com/wjDFnvJ.png){target="blank"}
 
-4. Locate your website's URL by returning to the Site Overview section. By default, Netlify generates a random domain name with an extension of `.netlify.app` ([📷 Image](https://i.imgur.com/8TV9NQ1.png){target="blank"}). Though the domain name extension cannot be changed (unless you purchase a custom domain), the domain name prefix can be changed by navigating to *Site settings > Change site name*. [📷 Image](https://i.imgur.com/kiyzULE.png){target="blank"}
+4. Locate your website's URL by returning to the Site Overview section. By default, Netlify generates a random domain name with an extension of `.netlify.app`. Though the domain name extension cannot be changed (unless you purchase a custom domain), the domain name prefix can be changed by navigating to *Site settings > Change site name*. [📷 Image](https://i.imgur.com/kiyzULE.png){target="blank"}
 
 ## Integrate Google Analytics
 
-Google Analytics is a tool for collecting user traffic and activity on your website. [Create a free Google Analytics account](#create-accounts) to begin using Google Analytics, then proceed with the following steps:
+Google Analytics is a tool for collecting user traffic and activity on your website. [Create a free Google Analytics account](https://marketingplatform.google.com/about/analytics/){target="blank"} to begin using Google Analytics, then proceed with the following steps:
 
 1. Sign in to Google Analytics and navigate to *Admin > Create Account*. [📷 Image](https://i.imgur.com/QRTa07k.png){target="blank"}
 
@@ -124,7 +124,7 @@ Google Analytics is a tool for collecting user traffic and activity on your webs
 
 ## Push updates to GitHub
 
-After having [pushed the website to GitHub](#push-demo), we made changes to the code base by adding Google Analytics integration in the previous step. To complete the Google Analytics integration, push the updates to GitHub. Doing so will force Netlify to deploy a fresh copy to the internet with Google Analytics fully integrated.
+After having [pushed the website to GitHub](#push-demo){target="blank"}, we made changes to the code base by adding Google Analytics integration in the previous step. To complete the Google Analytics integration, push the updates to GitHub. Doing so will force Netlify to deploy a fresh copy to the internet with Google Analytics fully integrated.
 
 To push changes to GitHub, use the **add > commit > push** Git workflow.
 
@@ -141,7 +141,7 @@ git push origin master
 
 ## Analyze Google Analytics data
 
-[googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/){target="blank"} is an R package for analyzing Google Analytics data in R. This topic is discussed in more detail in the chapter [Analyzing user traffic](#google-analytics).
+[googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/){target="blank"} is an R package for analyzing Google Analytics data in R. This topic is discussed in more detail in the chapter [Integrating Google Analytics](#google-analytics){target="blank"}.
 
 The R code below exemplifies the workflow for authenticating, collecting, and analyzing Google Analytics data in R.
 
@@ -241,4 +241,4 @@ map_plot
 
 ## Next steps
 
-This chapter presents the steps to create, publish, and analyze personal websites with very little detail. To get into the details of each step, start with [discovering your style](#choose-theme).
+This chapter presents the steps to create, publish, and analyze personal websites with very little detail. To get into the details of each step, start with [discovering your style](#choose-theme){target="blank"}.

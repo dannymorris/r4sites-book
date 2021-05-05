@@ -12,7 +12,7 @@ Before you proceed, complete the following prerequisites:
 
 1. [Install R](https://cran.rstudio.com/){target="blank"}
 2. [Install RStudio](https://www.rstudio.com/products/rstudio/download/#download){target="blank"}
-3. (optional) [Discover your style](#choose-theme)
+3. (optional) [Discover your style](#choose-theme){target="blank"}
 
 My recommendation is to download the latest versions, which at the time of this writing are R 4.0 and RStudio 1.4.
 
@@ -32,7 +32,7 @@ Follow these steps to generate a website using RStudio:
 
 ## Use a different Hugo theme
 
-To use a theme other than Anatole, locate and select the theme from the list of [Hugo themes](https://themes.gohugo.io/){target="blank"}. Click "Download" on the theme homepage to view the source code on GitHub ([📷 Image](https://i.imgur.com/ld35gNP.png){target="blank"}). Copy the user/theme-name in the GitHub URL, then add this information to the `Hugo theme` parameter in the website configuration. For example, if the source code is located at https://github.com/devcows/hugo-universal-theme, insert `devcows/hugo-universal-theme` into the `Hugo theme` parameter.
+To use a theme other than Anatole, locate and select the theme from the list of [Hugo themes](https://themes.gohugo.io/){target="blank"}. Click "Download" on the theme homepage to view the source code on GitHub ([📷 Image](https://i.imgur.com/ld35gNP.png){target="blank"}). Copy the user/theme-name in the GitHub URL, then add this information to the `Hugo theme` parameter in the website configuration. For example, if the source code is located at [https://github.com/devcows/hugo-universal-theme](https://github.com/devcows/hugo-universal-theme), insert `devcows/hugo-universal-theme` into the `Hugo theme` parameter.
 
 ## Serve the website locally {#serve-site}
 
@@ -42,8 +42,8 @@ The best part of this feature is that as you make and save changes to your websi
 
 ## Next steps
 
-Proceed with [fine tuning the look and feel](#fine-tune) including font styles, colors, and profile images.
+Proceed with [fine tuning the look and feel](#fine-tune){target="blank"} including font styles, colors, and profile images.
 
-Optionally, skip ahead and [deploy your website to the internet](#deploy). Though the steps to deploy your website are covered in a later chapter, readers are welcome to complete these steps at any point following the initial generation of the website.
+Optionally, skip ahead and [deploy your website to the internet](#deploy){target="blank"}. Though the steps to deploy your website are covered in a later chapter, readers are welcome to complete these steps at any point following the initial generation of the website.
 
 
