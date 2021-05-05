@@ -32,7 +32,7 @@ Follow these steps to generate a website using RStudio:
 
 ## Use a different Hugo theme
 
-To use a theme other than Anatole, locate and select the theme from the list of [Hugo themes](https://themes.gohugo.io/). Click "Download" on the theme homepage to view the source code on GitHub ([📷 Image](https://i.imgur.com/ld35gNP.png)). Copy the user/theme-name in the GitHub URL, then add this information to the `Hugo theme` parameter in the website cofiguration. For example, if the source code is located at https://github.com/devcows/hugo-universal-theme, insert `devcows/hugo-universal-theme` into the `Hugo theme` parameter.
+To use a theme other than Anatole, locate and select the theme from the list of [Hugo themes](https://themes.gohugo.io/). Click "Download" on the theme homepage to view the source code on GitHub ([📷 Image](https://i.imgur.com/ld35gNP.png)). Copy the user/theme-name in the GitHub URL, then add this information to the `Hugo theme` parameter in the website configuration. For example, if the source code is located at https://github.com/devcows/hugo-universal-theme, insert `devcows/hugo-universal-theme` into the `Hugo theme` parameter.
 
 ## Serve the website locally {#serve-site}
 

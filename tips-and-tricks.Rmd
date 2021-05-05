@@ -27,7 +27,7 @@ git push origin master
 
 ## Check your website
 
-At any point during the development of your webiste, consider running `blogdown::check_site()` in the R console. This function will run a number of checks against your website to discover any problems.
+At any point during the development of your website, consider running `blogdown::check_site()` in the R console. This function will run a number of checks against your website to discover any problems.
 
 ## Rebuild a clean website
 
