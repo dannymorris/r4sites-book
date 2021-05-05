@@ -112,13 +112,6 @@ div.rstudio-tip, div.tip, div.gotcha, div.design, div.hat{
   background-color: #fcfcfc;
 }
 
-div.promote {
-  text-align: center !important;
-  line-height: 100px;
-  padding-left: 0px;
-  background-image: url("../images/divs/lightbulb.png");
-}
-
 div.rstudio-tip {
   background-image: url("../images/divs/rstudio.png");
 }
@@ -135,7 +128,11 @@ div.gotcha {
 }
 
 div.design {
-  background-image: url("../images/divs/design.png");
+  background-image: url("images/divs/waving-hand.png");
+}
+
+div.design a {
+  font-weight: 800;
 }
 
 div.hat {

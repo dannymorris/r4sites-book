@@ -27,8 +27,8 @@ next-steps-1
 generate
 prerequisites
 how-it-works-1
-use-case
 generate-site
+use-a-different-hugo-theme
 serve-site
 next-steps-2
 fine-tune
@@ -36,7 +36,6 @@ prerequisites-1
 how-it-works-2
 about-css
 inspect-tool
-use-case-1
 before-you-begin
 update-the-base-url
 title-description-and-author
@@ -52,6 +51,7 @@ rename-pages
 delete-pages
 edit-the-about-page
 delete-default-posts
+edit-post-date-format
 delete-language-translations
 edit-social-media-links
 configure-contact-forms
@@ -63,7 +63,7 @@ prerequisites-3
 how-it-works-3
 example-posts
 create-a-new-post
-add-a-summary
+add-a-post-summary
 add-a-table-of-contents
 add-code-highlighting
 add-tags-and-categories
@@ -100,4 +100,3 @@ rebuild-a-clean-website
 get-help
 connect-with-me
 additional-resources
-add-a-post-summary

@@ -12,7 +12,9 @@ knitr::opts_chunk$set(echo = T, message = F, warning = F, eval=T)
 
 This chapter shows you how to integrate Google Analytics into your website to capture user data including the number of users on your website, the pages they view, the sources from which they arrive at your website, and their geographic locations. This chapter also covers the basics of the [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) R package for querying your Google Analytics data from R. 
 
-**Note:** This chapter builds upon the [default Hugo Anatole theme](https://themes.gohugo.io/theme/anatole/) created in chapter 4 and edited in chapters 5, 6, 7, and 8. The finished product can be found here - https://r4sites-anatole-custom.netlify.app/.
+:::design
+**Note:** This chapter builds upon the website generated in chapter 4 and edited in chapters 5, 6, 7, and 8. The final result can be viewed here - https://r4sites-anatole-custom.netlify.app/.
+:::
 
 ## Prerequisites
 

@@ -1,8 +1,10 @@
 # Configuring pages and features {#pages-features}
 
-This chapter teaches you how to configure, update, and delete website features that are unlikely to change very frequently. These features include page names, the About page, default posts, language translations, social media links, and contact forms.
+This chapter teaches you how to configure website features that are unlikely to change very frequently. These features include page names, the About page text, default posts, language translations, social media links, and contact forms.
 
-**Note:** This chapter builds upon the [default Hugo Anatole theme](https://themes.gohugo.io/theme/anatole/) created in chapter 4 and edited in chapter 5. The finished product can be found here - https://r4sites-anatole-custom.netlify.app/.
+:::design
+**Note:** This chapter builds upon the website generated in chapter 4 and edited in chapter 5. All subsequent chapters will do the same. The final version can be viewed here - https://r4sites-anatole-custom.netlify.app/.
+:::
 
 ## Prerequisites
 
@@ -11,11 +13,11 @@ Before you proceed, complete the following prerequisites:
 1. (optional) [Discover your style](#choose-theme)
 2. [Generate your website](#generate)
 3. (optional) [Fine tune the look and feel](#fine-tune)
-4. (optional) Sign up for [Formspree](https://formspree.io)
+4. Sign up for [Formspree](https://formspree.io)
 
 ## Rename pages
 
-The Hugo Anatole theme comes with the following pages by default: Home, Posts, About, and Contact. To rename these pages, open `config/_default/menus.en.toml` and edit the `name` parameters accordingly. For example, rename the "About" page to "About Me" to clearly communicate that this page contains your personal biography. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/menus.en.toml)
+The Hugo Anatole theme comes with the following default pages: Home, Posts, About, and Contact. To rename these pages, open `config/_default/menus.en.toml` and edit the `name` parameters accordingly. For example, rename the "About" page to "About Me" to clearly communicate that this page contains your personal biography. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/menus.en.toml)
 
 ## Delete pages
 
@@ -23,11 +25,17 @@ To delete a page, open `config/_default/menus.en.toml` and delete all references
 
 ## Edit the About page
 
-The Hugo Anatole theme comes with a default [About page](https://r4sites-anatole-custom.netlify.app/about/). To edit the About page, navigate to `content/english/about.md`. Replace the metadata (i.e. the parameters in between the `---` markers) then replace the body of the document using plain Markdown. [</> Code](https://raw.githubusercontent.com/dannymorris/r4sites-anatole-custom/master/content/english/about.md).
+To edit the default [About page](https://r4sites-anatole-custom.netlify.app/about/), open `content/english/about.md`. Replace the metadata (i.e. the parameters in between the `---` markers) then replace the body of the document using plain Markdown. [</> Code](https://raw.githubusercontent.com/dannymorris/r4sites-anatole-custom/master/content/english/about.md).
 
 ## Delete default posts
 
-The Hugo Anatole theme comes with several default posts. To delete all default posts, navigate to the `content/english/post` folder and delete all files and folders **except `_index.md`**. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/tree/master/content/english/post)
+The Hugo Anatole theme comes with several [default posts](https://themes.gohugo.io//theme/anatole/post/). To delete all default posts, navigate to the `content/english/post` folder and delete all files and folders **except `_index.md`**. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/tree/master/content/english/post)
+
+## Edit post date format
+
+By default, the Hugo Anatole theme displays dates of posts in the format of `Day/Month/Year` ([📷 Image](https://i.imgur.com/k2suw8t.png)). To alter the date format, open `config/_default/params.toml` and edit the `singleDateFormat`, `indexDateFormat`, and `listDateFormat` parameters. 
+
+For example, to switch the date format to `Year-Month-Day`, update the values for all three parameters to `"2006-01-02"` ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L21-L23)). In this example, `2006` requests the 4-digit year, `01` requests the 2-digit month, and `02` requests the 2-digit day.
 
 ## Delete language translations
 
@@ -41,7 +49,7 @@ By default, the Anatole theme supports English and Arabic language translations.
 
 ## Edit social media links
 
-The Hugo Anatole theme uses social media icons that link to social media profiles including LinkedIn, GitHub, Instagram, and Email. To set links to your personal profiles, open `config/_default/params.toml` and edit all `url` parameters ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L41-L59)). To remove a specific icon, delete all parameters associated with the icon. 
+The Hugo Anatole theme uses social media icons on the Home page that link to social media profiles including LinkedIn, GitHub, Instagram, and Email. To set links to your personal profiles, open `config/_default/params.toml` and edit all `url` parameters ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L41-L59)). To remove a specific icon, delete all parameters associated with the icon. 
 
 ## Configure contact forms
 
@@ -73,6 +81,6 @@ Once your contact form endpoint is configured, submissions to your contact form 
 
 ## Next steps
 
-Proceed with [authoring new content](#content) including blog posts, tutorials, research articles, and project write-ups using R Markdown.
+Proceed with [authoring new content](#content) such as blog posts, tutorials, research articles, and project write-ups using R Markdown.
 
-Optionally, skip and ahead and [deploy your website to the internet](#deploy). Though the steps to deploy your website are covered in a later chapter, readers are welcome to complete these steps at any point following the initial generation of the website.
+Optionally, skip ahead and [deploy your website to the internet](#deploy). Though the steps to deploy your website are covered in a later chapter, readers are welcome to complete these steps at any point following the initial generation of the website.

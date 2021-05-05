@@ -34,7 +34,7 @@
 <link rel="prev" href="pages-features.html"/>
 <link rel="next" href="deploy.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.5.1/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -51,6 +51,25 @@
 
 
 
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
+<script src="libs/plotly-binding-4.9.3/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.57.1/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.57.1/plotly-latest.min.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.17/datatables.js"></script>
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-196111394-1"></script>
 <script>
@@ -62,6 +81,69 @@
 </script>
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -115,8 +197,8 @@
 <ul>
 <li class="chapter" data-level="4.1" data-path="generate.html"><a href="generate.html#prerequisites"><i class="fa fa-check"></i><b>4.1</b> Prerequisites</a></li>
 <li class="chapter" data-level="4.2" data-path="generate.html"><a href="generate.html#how-it-works-1"><i class="fa fa-check"></i><b>4.2</b> How it works</a></li>
-<li class="chapter" data-level="4.3" data-path="generate.html"><a href="generate.html#use-case"><i class="fa fa-check"></i><b>4.3</b> Use case</a></li>
-<li class="chapter" data-level="4.4" data-path="generate.html"><a href="generate.html#generate-site"><i class="fa fa-check"></i><b>4.4</b> Generate your site</a></li>
+<li class="chapter" data-level="4.3" data-path="generate.html"><a href="generate.html#generate-site"><i class="fa fa-check"></i><b>4.3</b> Generate your site</a></li>
+<li class="chapter" data-level="4.4" data-path="generate.html"><a href="generate.html#use-a-different-hugo-theme"><i class="fa fa-check"></i><b>4.4</b> Use a different Hugo theme</a></li>
 <li class="chapter" data-level="4.5" data-path="generate.html"><a href="generate.html#serve-site"><i class="fa fa-check"></i><b>4.5</b> Serve the website locally</a></li>
 <li class="chapter" data-level="4.6" data-path="generate.html"><a href="generate.html#next-steps-2"><i class="fa fa-check"></i><b>4.6</b> Next steps</a></li>
 </ul></li>
@@ -126,16 +208,15 @@
 <li class="chapter" data-level="5.2" data-path="fine-tune.html"><a href="fine-tune.html#how-it-works-2"><i class="fa fa-check"></i><b>5.2</b> How it works</a></li>
 <li class="chapter" data-level="5.3" data-path="fine-tune.html"><a href="fine-tune.html#about-css"><i class="fa fa-check"></i><b>5.3</b> About CSS</a></li>
 <li class="chapter" data-level="5.4" data-path="fine-tune.html"><a href="fine-tune.html#inspect-tool"><i class="fa fa-check"></i><b>5.4</b> About the Inspect tool</a></li>
-<li class="chapter" data-level="5.5" data-path="fine-tune.html"><a href="fine-tune.html#use-case-1"><i class="fa fa-check"></i><b>5.5</b> Use case</a></li>
-<li class="chapter" data-level="5.6" data-path="fine-tune.html"><a href="fine-tune.html#before-you-begin"><i class="fa fa-check"></i><b>5.6</b> Before you begin</a></li>
-<li class="chapter" data-level="5.7" data-path="fine-tune.html"><a href="fine-tune.html#update-the-base-url"><i class="fa fa-check"></i><b>5.7</b> Update the base URL</a></li>
-<li class="chapter" data-level="5.8" data-path="fine-tune.html"><a href="fine-tune.html#title-description-and-author"><i class="fa fa-check"></i><b>5.8</b> Title, description, and author</a></li>
-<li class="chapter" data-level="5.9" data-path="fine-tune.html"><a href="fine-tune.html#profile-image"><i class="fa fa-check"></i><b>5.9</b> Profile image</a></li>
-<li class="chapter" data-level="5.10" data-path="fine-tune.html"><a href="fine-tune.html#favicon"><i class="fa fa-check"></i><b>5.10</b> Favicon</a></li>
-<li class="chapter" data-level="5.11" data-path="fine-tune.html"><a href="fine-tune.html#font-style"><i class="fa fa-check"></i><b>5.11</b> Font style</a></li>
-<li class="chapter" data-level="5.12" data-path="fine-tune.html"><a href="fine-tune.html#font-sizes"><i class="fa fa-check"></i><b>5.12</b> Font sizes</a></li>
-<li class="chapter" data-level="5.13" data-path="fine-tune.html"><a href="fine-tune.html#colors"><i class="fa fa-check"></i><b>5.13</b> Colors</a></li>
-<li class="chapter" data-level="5.14" data-path="fine-tune.html"><a href="fine-tune.html#next-steps-3"><i class="fa fa-check"></i><b>5.14</b> Next steps</a></li>
+<li class="chapter" data-level="5.5" data-path="fine-tune.html"><a href="fine-tune.html#before-you-begin"><i class="fa fa-check"></i><b>5.5</b> Before you begin</a></li>
+<li class="chapter" data-level="5.6" data-path="fine-tune.html"><a href="fine-tune.html#update-the-base-url"><i class="fa fa-check"></i><b>5.6</b> Update the base URL</a></li>
+<li class="chapter" data-level="5.7" data-path="fine-tune.html"><a href="fine-tune.html#title-description-and-author"><i class="fa fa-check"></i><b>5.7</b> Title, description, and author</a></li>
+<li class="chapter" data-level="5.8" data-path="fine-tune.html"><a href="fine-tune.html#profile-image"><i class="fa fa-check"></i><b>5.8</b> Profile image</a></li>
+<li class="chapter" data-level="5.9" data-path="fine-tune.html"><a href="fine-tune.html#favicon"><i class="fa fa-check"></i><b>5.9</b> Favicon</a></li>
+<li class="chapter" data-level="5.10" data-path="fine-tune.html"><a href="fine-tune.html#font-style"><i class="fa fa-check"></i><b>5.10</b> Font style</a></li>
+<li class="chapter" data-level="5.11" data-path="fine-tune.html"><a href="fine-tune.html#font-sizes"><i class="fa fa-check"></i><b>5.11</b> Font sizes</a></li>
+<li class="chapter" data-level="5.12" data-path="fine-tune.html"><a href="fine-tune.html#colors"><i class="fa fa-check"></i><b>5.12</b> Colors</a></li>
+<li class="chapter" data-level="5.13" data-path="fine-tune.html"><a href="fine-tune.html#next-steps-3"><i class="fa fa-check"></i><b>5.13</b> Next steps</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="pages-features.html"><a href="pages-features.html"><i class="fa fa-check"></i><b>6</b> Configuring pages and features</a>
 <ul>
@@ -144,12 +225,13 @@
 <li class="chapter" data-level="6.3" data-path="pages-features.html"><a href="pages-features.html#delete-pages"><i class="fa fa-check"></i><b>6.3</b> Delete pages</a></li>
 <li class="chapter" data-level="6.4" data-path="pages-features.html"><a href="pages-features.html#edit-the-about-page"><i class="fa fa-check"></i><b>6.4</b> Edit the About page</a></li>
 <li class="chapter" data-level="6.5" data-path="pages-features.html"><a href="pages-features.html#delete-default-posts"><i class="fa fa-check"></i><b>6.5</b> Delete default posts</a></li>
-<li class="chapter" data-level="6.6" data-path="pages-features.html"><a href="pages-features.html#delete-language-translations"><i class="fa fa-check"></i><b>6.6</b> Delete language translations</a></li>
-<li class="chapter" data-level="6.7" data-path="pages-features.html"><a href="pages-features.html#edit-social-media-links"><i class="fa fa-check"></i><b>6.7</b> Edit social media links</a></li>
-<li class="chapter" data-level="6.8" data-path="pages-features.html"><a href="pages-features.html#configure-contact-forms"><i class="fa fa-check"></i><b>6.8</b> Configure contact forms</a></li>
-<li class="chapter" data-level="6.9" data-path="pages-features.html"><a href="pages-features.html#customize-contact-forms"><i class="fa fa-check"></i><b>6.9</b> Customize contact forms</a></li>
-<li class="chapter" data-level="6.10" data-path="pages-features.html"><a href="pages-features.html#view-contact-form-submissions"><i class="fa fa-check"></i><b>6.10</b> View contact form submissions</a></li>
-<li class="chapter" data-level="6.11" data-path="pages-features.html"><a href="pages-features.html#next-steps-4"><i class="fa fa-check"></i><b>6.11</b> Next steps</a></li>
+<li class="chapter" data-level="6.6" data-path="pages-features.html"><a href="pages-features.html#edit-post-date-format"><i class="fa fa-check"></i><b>6.6</b> Edit post date format</a></li>
+<li class="chapter" data-level="6.7" data-path="pages-features.html"><a href="pages-features.html#delete-language-translations"><i class="fa fa-check"></i><b>6.7</b> Delete language translations</a></li>
+<li class="chapter" data-level="6.8" data-path="pages-features.html"><a href="pages-features.html#edit-social-media-links"><i class="fa fa-check"></i><b>6.8</b> Edit social media links</a></li>
+<li class="chapter" data-level="6.9" data-path="pages-features.html"><a href="pages-features.html#configure-contact-forms"><i class="fa fa-check"></i><b>6.9</b> Configure contact forms</a></li>
+<li class="chapter" data-level="6.10" data-path="pages-features.html"><a href="pages-features.html#customize-contact-forms"><i class="fa fa-check"></i><b>6.10</b> Customize contact forms</a></li>
+<li class="chapter" data-level="6.11" data-path="pages-features.html"><a href="pages-features.html#view-contact-form-submissions"><i class="fa fa-check"></i><b>6.11</b> View contact form submissions</a></li>
+<li class="chapter" data-level="6.12" data-path="pages-features.html"><a href="pages-features.html#next-steps-4"><i class="fa fa-check"></i><b>6.12</b> Next steps</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="content.html"><a href="content.html"><i class="fa fa-check"></i><b>7</b> Authoring new content</a>
 <ul>
@@ -218,7 +300,9 @@
 <div id="content" class="section level1" number="7">
 <h1><span class="header-section-number">Chapter 7</span> Authoring new content</h1>
 <p>This chapter provides general guidance on authoring new content such as blog posts, tutorials, research articles, and project write-ups using R Markdown.</p>
-<p><strong>Note:</strong> This chapter builds upon the <a href="https://themes.gohugo.io/theme/anatole/">default Hugo Anatole theme</a> created in chapter 4 and edited in chapters 5 and 6. The finished product can be found here - <a href="https://r4sites-anatole-custom.netlify.app/" class="uri">https://r4sites-anatole-custom.netlify.app/</a>.</p>
+<div class="design">
+<p><strong>Note:</strong> This chapter builds upon the website generated in chapter 4 and edited in chapters 5 and 6. All subsequent chapters will do the same. The final result can be viewed here - <a href="https://r4sites-anatole-custom.netlify.app/" class="uri">https://r4sites-anatole-custom.netlify.app/</a>.</p>
+</div>
 <div id="prerequisites-3" class="section level2" number="7.1">
 <h2><span class="header-section-number">7.1</span> Prerequisites</h2>
 <p>Before you proceed, complete the following prerequisites:</p>
@@ -236,7 +320,7 @@
 </div>
 <div id="example-posts" class="section level2" number="7.3">
 <h2><span class="header-section-number">7.3</span> Example posts</h2>
-<p>The following posts on the <a href="https://r4sites-anatole-custom.netlify.app/post/">Posts</a> page of the <a href="https://r4sites-anatole-custom.netlify.app/">demo website</a> are meant to teach you my approach to authoring posts using R Markdown and configuring the post metadata to activate useful features such as code highlighting.</p>
+<p>The following posts on the <a href="https://r4sites-anatole-custom.netlify.app/post/">Posts</a> page intend to show you my approach to authoring posts using R Markdown and configuring the post to contain useful features including code highlighting and a table of contents.</p>
 <ul>
 <li><p><strong>Using R in R Markdown</strong> - Post includes a table of contents and code highlighting. Content covers interactive HTML tables via the <a href="https://rstudio.github.io/DT/">DT</a> package, and interactive plots via the <a href="https://plotly.com/r/">plotly</a> package. (<a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd">&lt;/&gt; Code</a>) (<a href="https://r4sites-anatole-custom.netlify.app/post/2021-04-22-sample-post-using-r-in-r-markdown/">📄 Page</a>)</p></li>
 <li><p><strong>Using Python in R Markdown</strong> - Post includes a table of contents and code highlighting. Content covers the use of Conda environments, inserting and executing Python code chunks, and displaying plots. (<a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd">&lt;/&gt; Code</a>) (<a href="https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-using-python-in-r-markdown/">📄 Page</a>)</p></li>
@@ -246,7 +330,8 @@
 </div>
 <div id="create-a-new-post" class="section level2" number="7.4">
 <h2><span class="header-section-number">7.4</span> Create a new post</h2>
-<p>The <a href="https://r4sites-anatole-custom.netlify.app/post/">Posts page</a> is the designated home for your content. This is where you can include your blog posts, tutorials, research articles, project descriptions, or other creative content. The simplest way to add a new post is via the “New post” RStudio Addin. Follow the steps below to create a new post using this approach:</p>
+<p>The <a href="https://r4sites-anatole-custom.netlify.app/post/">Posts page</a> is the designated home for your original content. This is where your users can find your blog posts, tutorials, research articles, project descriptions, or other original content.</p>
+<p>The simplest way to add a new post is via the “New post” RStudio Addin. Follow the steps below to create a new post using this approach:</p>
 <ol style="list-style-type: decimal">
 <li><p>Select the RStudio Addin labeled “New post.” <a href="https://i.imgur.com/S9dl4DZ.png">📷 Image</a>.</p></li>
 <li><p>Configure the new post by specifying the post Title, Author, Date, Subdirectory, and Format. <strong>Do not specify Tags and Categories</strong> at this point. Be sure to place the new post in the <code>post</code> Subdirectory and set the Format to <code>R Markdown (.Rmd)</code>. <a href="https://i.imgur.com/ciCv6yC.png">📷 Image</a>.</p></li>
@@ -268,7 +353,7 @@
 </div>
 <div id="add-tags-and-categories" class="section level2" number="7.8">
 <h2><span class="header-section-number">7.8</span> Add tags and categories</h2>
-<p>Add “tags” and “categories” to your posts to organize your content and to give Google crawlers an idea of what your blog post is about. According to <a href="https://databox.com/categories-vs-tags-for-seo">this website</a>, strive to attach no more than 5-10 categories and 5-10 tags to each post. To add tags and categories to your post, edit the <code>Tags</code> and <code>Categories</code> parameters in the document metadata. <a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd#L24-L25">&lt;/&gt; Code</a></p>
+<p>Add “tags” and “categories” to your posts to organize your content and to give Google crawlers an idea of what your post is about. According to <a href="https://databox.com/categories-vs-tags-for-seo">this website</a>, strive to attach no more than 5-10 categories and 5-10 tags to each post. To add tags and categories to your post, edit the <code>Tags</code> and <code>Categories</code> parameters in the document metadata. <a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd#L24-L25">&lt;/&gt; Code</a></p>
 </div>
 <div id="next-steps-5" class="section level2" number="7.9">
 <h2><span class="header-section-number">7.9</span> Next steps</h2>

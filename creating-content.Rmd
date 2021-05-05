@@ -2,7 +2,9 @@
 
 This chapter provides general guidance on authoring new content such as blog posts, tutorials, research articles, and project write-ups using R Markdown.
 
-**Note:** This chapter builds upon the [default Hugo Anatole theme](https://themes.gohugo.io/theme/anatole/) created in chapter 4 and edited in chapters 5 and 6. The finished product can be found here - https://r4sites-anatole-custom.netlify.app/.
+:::design
+**Note:** This chapter builds upon the website generated in chapter 4 and edited in chapters 5 and 6. All subsequent chapters will do the same. The final result can be viewed here - https://r4sites-anatole-custom.netlify.app/.
+:::
 
 ## Prerequisites
 
@@ -21,7 +23,7 @@ R Markdown is very similar to plain Markdown with one massive exception: R Markd
 
 ## Example posts
 
-The following posts on the [Posts](https://r4sites-anatole-custom.netlify.app/post/) page of the [demo website](https://r4sites-anatole-custom.netlify.app/) are meant to teach you my approach to authoring posts using R Markdown and configuring the post metadata to activate useful features such as code highlighting.
+The following posts on the [Posts](https://r4sites-anatole-custom.netlify.app/post/) page intend to show you my approach to authoring posts using R Markdown and configuring the post to contain useful features including code highlighting and a table of contents.
 
 - **Using R in R Markdown** - Post includes a table of contents and code highlighting. Content covers interactive HTML tables via the [DT](https://rstudio.github.io/DT/) package, and interactive plots via the [plotly](https://plotly.com/r/) package. ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd)) ([📄 Page](https://r4sites-anatole-custom.netlify.app/post/2021-04-22-sample-post-using-r-in-r-markdown/))
 
@@ -33,7 +35,9 @@ The following posts on the [Posts](https://r4sites-anatole-custom.netlify.app/po
 
 ## Create a new post
 
-The [Posts page](https://r4sites-anatole-custom.netlify.app/post/) is the designated home for your content. This is where you can include your blog posts, tutorials, research articles, project descriptions, or other creative content. The simplest way to add a new post is via the "New post" RStudio Addin. Follow the steps below to create a new post using this approach:
+The [Posts page](https://r4sites-anatole-custom.netlify.app/post/) is the designated home for your original content. This is where your users can find your blog posts, tutorials, research articles, project descriptions, or other original content. 
+
+The simplest way to add a new post is via the "New post" RStudio Addin. Follow the steps below to create a new post using this approach:
 
 1. Select the RStudio Addin labeled "New post". [📷 Image](https://i.imgur.com/S9dl4DZ.png). 
 
@@ -57,7 +61,7 @@ Though I recommend the `tango` highlighting scheme, other [code highlighting opt
 
 ## Add tags and categories
 
-Add "tags" and "categories" to your posts to organize your content and to give Google crawlers an idea of what your blog post is about. According to [this website](https://databox.com/categories-vs-tags-for-seo), strive to attach no more than 5-10 categories and 5-10 tags to each post. To add tags and categories to your post, edit the `Tags` and `Categories` parameters in the document metadata. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd#L24-L25)
+Add "tags" and "categories" to your posts to organize your content and to give Google crawlers an idea of what your post is about. According to [this website](https://databox.com/categories-vs-tags-for-seo), strive to attach no more than 5-10 categories and 5-10 tags to each post. To add tags and categories to your post, edit the `Tags` and `Categories` parameters in the document metadata. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd#L24-L25)
 
 ## Next steps
 

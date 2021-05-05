@@ -2,7 +2,9 @@
 
 This chapter teaches you how to deploy your website to the internet using Netlify and GitHub. 
 
-**Note:** This chapter builds upon the [default Hugo Anatole theme](https://themes.gohugo.io/theme/anatole/) created in chapter 4 and edited in chapters 5, 6, and 7. The finished product can be found here - https://r4sites-anatole-custom.netlify.app/.
+:::design
+**Note:** This chapter builds upon the website generated in chapter 4 and edited in chapters 5, 6, and 7. All subsequent chapters will do the same. The final result can be viewed here - https://r4sites-anatole-custom.netlify.app/.
+:::
 
 ## Prerequisites
 
