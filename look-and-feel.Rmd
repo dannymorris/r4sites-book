@@ -72,7 +72,7 @@ If you are unhappy with the image dimensions (e.g. too narrow or too wide), open
 
 The favicon is the tiny image that appears in the web browser tab when you visit the website. Navigate to `static/favicons/` and replace `favicon.ico` with your own favicon. If your favicon file is named `favicon.ico`, then no additional changes are needed. If not, open `config/_default/params.toml` and update the `favicon` parameter with your favicon file name.
 
-To create a favicon from an image, visit https://favicon.io/favicon-converter/.
+To create a favicon from an image, visit [https://favicon.io/favicon-converter/](https://favicon.io/favicon-converter/){target="blank"}.
 
 ## Font style
 
