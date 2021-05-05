@@ -84,5 +84,5 @@ Follow the simple steps below to purchase a custom domain through Netlify:
 
 ## Next steps
 
-Proceed with [integrating Google Analytics](#content) and learning how to use R and the `googleAnalyticsR` package to analyze user traffic on your website.
+Proceed with [integrating Google Analytics](#content){target="blank"} and learning how to use R and the `googleAnalyticsR` package to analyze user traffic on your website.
 

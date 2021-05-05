@@ -1,3 +1,170 @@
+--- 
+title: "Create, Publish, and Analyze Personal Websites Using R and RStudio"
+subtitle: "A digital handbook with step-by-step instructions for launching your own personal website using R, RStudio, and other freely available technologies including GitHub, Hugo, Netlify, and Google Analytics"
+author: "Danny Morris"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics."
+cover-image: images/logo/book-cover-300.png
+favicon: images/favicon.ico
+---
+
+# Introduction
+
+Placeholder
+
+
+## About this book
+## Target audience
+## Reasons to have a website
+## What you will learn {#learn}
+#### Why start with the Hugo Anatole theme? {-#anatole}
+## Tools you will use {#tools}
+## Inspiring examples
+## Getting support
+## FAQ {#faq}
+## About the author
+
+<!--chapter:end:index.Rmd-->
+
+
+# Complete end-to-end example
+
+Placeholder
+
+
+## Install software
+## Create accounts {#create-accounts}
+## Generate a website {#create-new-blogdown}
+## Make some edits
+## Integrate Formspree
+## Push the website to GitHub {#push-demo}
+## Deploy the website on Netlify {#demo-deploy}
+## Integrate Google Analytics
+## Push updates to GitHub
+## Analyze Google Analytics data
+#### Map of Abnormal Distributions users by location {-}
+## Next steps
+
+<!--chapter:end:end-to-end.Rmd-->
+
+
+# Discovering your style {#choose-theme}
+
+Placeholder
+
+
+## How it works
+## The 90/10 rule for choosing a theme
+## Recommended Hugo themes
+#### Recommended themes for content created with R Markdown {-}
+#### Recommended themes for other use cases {-}
+## Next steps
+
+<!--chapter:end:choosing-a-design.Rmd-->
+
+
+# Generating your website {#generate}
+
+Placeholder
+
+
+## Prerequisites
+## How it works
+## Generate your site{#generate-site}
+## Use a different Hugo theme
+## Serve the website locally {#serve-site}
+## Next steps
+
+<!--chapter:end:generating-your-website.Rmd-->
+
+
+# Fine tuning the look and feel {#fine-tune}
+
+Placeholder
+
+
+## Prerequisites
+## How it works
+## About CSS
+## About the Inspect tool {#inspect-tool}
+## Before you begin
+#### Serve the site locally {-}
+#### Open important files in RStudio {-}
+## Update the base URL
+## Title, description, and author
+## Profile image
+## Favicon {#favicon}
+## Font style
+## Font sizes
+## Colors
+## Next steps
+
+<!--chapter:end:look-and-feel.Rmd-->
+
+
+# Configuring pages and features {#pages-features}
+
+Placeholder
+
+
+## Prerequisites
+## Before you begin
+#### Serve the site locally {-}
+#### Locate important files in RStudio {-}
+## Rename pages
+## Delete pages
+## Edit the About page
+## Delete default posts
+## Edit post date format
+## Remove dates from Posts page
+## Delete language translations
+## Edit social media links
+## Configure contact forms
+## Customize contact forms
+## View contact form submissions
+## Next steps
+
+<!--chapter:end:pages-and-features.Rmd-->
+
+
+# Authoring original content {#content}
+
+Placeholder
+
+
+## Prerequisites
+## How it works
+## Example R Markdown posts
+## Create a new post
+## Add a post summary
+## Add a table of contents
+## Add code highlighting
+## Add tags and categories
+## Add a post thumbnail
+## Next steps
+
+<!--chapter:end:creating-content.Rmd-->
+
+
+# Going live on the internet {#deploy}
+
+Placeholder
+
+
+## Prerequisites
+## How it works
+## Upload files to GitHub {#initial-push}
+## Configure Netlify for deployment
+## Purchase a custom domain name
+## Next steps
+
+<!--chapter:end:deploy-on-netlify.Rmd-->
+
 ---
 output: html_document
 editor_options: 
@@ -261,3 +428,32 @@ users_location %>%
 ### Avoiding data sampling
 
 The `google_analytics()` function has an argument named `anti_sampling`, which is set to `TRUE` by default. This means that queries which return more than 1,000 rows of data will be sampled to avoid putting strain on the Google Analytics API. To avoid this default sampling strategy, set `anti_sampling = FALSE` when making API calls using the `google_analytics()` function.
+
+<!--chapter:end:google-analytics.Rmd-->
+
+
+# Tips and tricks {#tips-tricks}
+
+Placeholder
+
+
+## Serve your website locally {#serve-local}
+## Push updates to GitHub
+## Check your website
+## Rebuild a clean website
+## Find free images
+
+<!--chapter:end:tips-and-tricks.Rmd-->
+
+
+# Getting help {#get-help}
+
+Placeholder
+
+
+## Join the Slack workspace
+## Connect with me
+## Additional resources
+
+<!--chapter:end:getting-help.Rmd-->
+
