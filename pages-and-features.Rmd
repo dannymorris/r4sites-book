@@ -15,6 +15,27 @@ Before you proceed, complete the following prerequisites:
 3. (optional) [Fine tune the look and feel](#fine-tune)
 4. Sign up for [Formspree](https://formspree.io)
 
+## Before you begin
+
+For an optimal development experience, consider the following suggestions before you start to configure pages and features:
+
+#### Serve the site locally {-}
+
+In the R console, run `blogdown::serve_site()` to render a live, local copy of the website in the "Viewer" pane. Any time you save an edit, your local copy will update in real-time and provide you with instant feedback on your edits. 
+
+#### Locate important files in RStudio {-}
+
+The files listed below are referenced throughout this chapter. Consider either opening these files in RStudio or, at the very least, locate them ahead of time to gain some experience navigating the website file structure.
+
+- `config.yaml`
+- `config/_default/menus.en.toml`
+- `config/_default/languages.toml` 
+- `config/_default/params.toml` 
+- `content/english/about.md`
+- `themes/anatole/layouts/_default/list.html`
+- `themes/anatole/layouts/partials/contact.html`
+- `themes/anatole/i18n/en.toml`
+
 ## Rename pages
 
 The Hugo Anatole theme comes with the following default pages: Home, Posts, About, and Contact. To rename these pages, open `config/_default/menus.en.toml` and edit the `name` parameters accordingly. For example, rename the "About" page to "About Me" to clearly communicate that this page contains your personal biography. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/menus.en.toml)
@@ -36,6 +57,12 @@ The Hugo Anatole theme comes with several [default posts](https://themes.gohugo.
 By default, the Hugo Anatole theme displays dates of posts in the format of `Day/Month/Year` ([📷 Image](https://i.imgur.com/k2suw8t.png)). To alter the date format, open `config/_default/params.toml` and edit the `singleDateFormat`, `indexDateFormat`, and `listDateFormat` parameters. 
 
 For example, to switch the date format to `Year-Month-Day`, update the values for all three parameters to `"2006-01-02"` ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L21-L23)). In this example, `2006` requests the 4-digit year, `01` requests the 2-digit month, and `02` requests the 2-digit day.
+
+## Remove dates from Posts page
+
+When viewed on a device with a small, narrow screen (e.g. mobile phone), the dates to the right of the post titles on the Posts page may appear broken ([📷 Image](https://i.imgur.com/RznGw5r.png)). On narrow screen, there is an insufficient amount of screen space to display both the post title and the post date in a side-by-side fashion.
+
+My preference is to remove the post dates from the Posts page altogether. Note this does not affect the post dates on the Home page or on the post itself. To remove post dates from the Posts page, open `themes/anatole/layouts/_default/list.html` and comment out (or delete) lines 11-14. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/layouts/_default/list.html#L10-L15)
 
 ## Delete language translations
 

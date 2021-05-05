@@ -47,11 +47,13 @@ colors
 next-steps-3
 pages-features
 prerequisites-2
+before-you-begin-1
 rename-pages
 delete-pages
 edit-the-about-page
 delete-default-posts
 edit-post-date-format
+remove-dates-from-posts-page
 delete-language-translations
 edit-social-media-links
 configure-contact-forms
@@ -61,7 +63,7 @@ next-steps-4
 content
 prerequisites-3
 how-it-works-3
-example-posts
+example-r-markdown-posts
 create-a-new-post
 add-a-post-summary
 add-a-table-of-contents
@@ -102,4 +104,3 @@ rebuild-a-clean-website
 get-help
 connect-with-me
 additional-resources
-example-r-markdown-posts
