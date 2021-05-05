@@ -102,3 +102,4 @@ rebuild-a-clean-website
 get-help
 connect-with-me
 additional-resources
+example-r-markdown-posts
