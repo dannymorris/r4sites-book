@@ -34,7 +34,7 @@
 
 <link rel="next" href="complete-end-to-end-example.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.5.1/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -51,6 +51,25 @@
 
 
 
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
+<script src="libs/plotly-binding-4.9.3/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.57.1/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.57.1/plotly-latest.min.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.17/datatables.js"></script>
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-196111394-1"></script>
 <script>
@@ -62,6 +81,69 @@
 </script>
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -87,8 +169,9 @@
 <li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#learn"><i class="fa fa-check"></i><b>1.4</b> What you will learn</a></li>
 <li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#tools"><i class="fa fa-check"></i><b>1.5</b> Tools you will use</a></li>
 <li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#inspiring-examples"><i class="fa fa-check"></i><b>1.6</b> Inspiring examples</a></li>
-<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#faq"><i class="fa fa-check"></i><b>1.7</b> FAQ</a></li>
-<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i><b>1.8</b> About the author</a></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#getting-support"><i class="fa fa-check"></i><b>1.7</b> Getting support</a></li>
+<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#faq"><i class="fa fa-check"></i><b>1.8</b> FAQ</a></li>
+<li class="chapter" data-level="1.9" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i><b>1.9</b> About the author</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html"><i class="fa fa-check"></i><b>2</b> Complete end-to-end example</a>
 <ul>
@@ -191,7 +274,7 @@
 <li class="chapter" data-level="10.2" data-path="tips-tricks.html"><a href="tips-tricks.html#push-updates-to-github-2"><i class="fa fa-check"></i><b>10.2</b> Push updates to GitHub</a></li>
 <li class="chapter" data-level="10.3" data-path="tips-tricks.html"><a href="tips-tricks.html#check-your-website"><i class="fa fa-check"></i><b>10.3</b> Check your website</a></li>
 <li class="chapter" data-level="10.4" data-path="tips-tricks.html"><a href="tips-tricks.html#rebuild-a-clean-website"><i class="fa fa-check"></i><b>10.4</b> Rebuild a clean website</a></li>
-<li class="chapter" data-level="10.5" data-path="tips-tricks.html"><a href="tips-tricks.html#finding-free-images"><i class="fa fa-check"></i><b>10.5</b> Finding free images</a></li>
+<li class="chapter" data-level="10.5" data-path="tips-tricks.html"><a href="tips-tricks.html#find-free-images"><i class="fa fa-check"></i><b>10.5</b> Find free images</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="get-help.html"><a href="get-help.html"><i class="fa fa-check"></i><b>11</b> Getting help</a>
 <ul>
@@ -237,7 +320,7 @@
 <div id="about-this-book" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> About this book</h2>
 <p>In 2018, I had virtually no online presence other than about 100 random LinkedIn connections. I knew this was a problem given my budding interest in Data Science, the increasing demand for project portfolios, and my perceived need to “stand out” in the digital crowd.</p>
-<p>So, I learned how to publish my first personal website, <a href="https://abndistro.com/">Abnormal Distributions</a>. Yes, I know, it looks outdated and definitely not as cool as <a href="https://benc.dev/">this website</a>. However, Abnormal Distributions took my online presence and my career to new heights. Since going live, Abnormal Distributions has served over 50,000 page views and 20,000 users from <a href="google-analytics.html#users-by-location">all over the world</a>. I began posting content on LinkedIn with links to my website, and in the span of a year I received 1,700 LinkedIn connection requests from Data Scientists and professionals in related fields. I began receiving job opportunities from recruiters who discovered me by landing on my website. Abnormal Distributions sparked my creativity, deepened my subject matter expertise through writing, and gave me the tools I needed to confidently engage with the digital crowd. It turned out to be a wonderful investment of time and energy.</p>
+<p>So, I learned how to publish my first personal website, <a href="https://abndistro.com/" target="blank">Abnormal Distributions</a>. Yes, I know, it looks outdated and definitely not as cool as <a href="https://benc.dev/" target="blank">this website</a>. However, Abnormal Distributions took my online presence and my career to new heights. Since going live, Abnormal Distributions has served over 50,000 page views and 20,000 users from <a href="https://i.imgur.com/Qvx08ry.png" target="blank">all over the world</a>. I began posting content on LinkedIn with links to my website, and in the span of a year I received 1,700 LinkedIn connection requests from Data Scientists and professionals in related fields. I began receiving job opportunities from recruiters who discovered me by landing on my website. Abnormal Distributions sparked my creativity, deepened my subject matter expertise through writing, and gave me the tools I needed to confidently engage with the digital crowd. It turned out to be a wonderful investment of time and energy.</p>
 <p><strong>My goal with this book is to help you launch your own personal website</strong> and, hopefully, experience the same personal transformation that I experienced after I launched mine.</p>
 <p>You will learn the exact methodology that I use to create, design, publish, and analyze websites using R, RStudio, and other freely available tools including GitHub, Hugo, Netlify, and Google Analytics. No prior experience in web development, R, or any of the aforementioned tools is needed to be successful with this book.</p>
 </div>
@@ -252,15 +335,15 @@
 <ul>
 <li><p><strong>Captivate an audience</strong>. A personal website presents an amazing opportunity to captivate audiences including professional recruiters, hiring managers, current employers, colleagues, fellow students, and more. Having your own website featuring your original content is one of the best ways to gain recognition and increase your competitive advantage.</p></li>
 <li><p><strong>Enrich your social media presence.</strong> Personal websites give your social media viewers a path to learning more about you and the work you are doing. Start by enriching your LinkedIn profile by inserting links to your website in your headline, summary, Featured section, and any posts you make.</p></li>
-<li><p><strong>Personalize your job applications.</strong> If there is a job you really want or a company you would love to work for, create a personalized website for this company with hyperfocused content and share it with the recruiter, hiring manager, current employees, and anyone else in the company’s network who might be impressed. I built <a href="https://goofy-franklin-7b6d1d.netlify.app/">this website</a> when I applied to RStudio. Spoiler: I did not get the job. 🤷‍♂️</p></li>
+<li><p><strong>Personalize your job applications.</strong> If there is a job you really want or a company you would love to work for, create a personalized website for this company with hyperfocused content and share it with the recruiter, hiring manager, current employees, and anyone else in the company’s network who might be impressed. I built <a href="https://goofy-franklin-7b6d1d.netlify.app/" target="blank">this website</a> when I applied to RStudio. Spoiler: I did not get the job. 🤷‍♂️</p></li>
 <li><p><strong>Establish yourself as a thought leader.</strong> Are you passionate about certain topics? Create a website and start writing! Direct people to your website as often as you can to reinforce your thought leadership on the topic. By the way, you do not have to be an expert to be a thought leader. If you are learning a new topic and have some ideas you want to share, then you are a thought leader.</p></li>
-<li><p><strong>Organize content for a specific class or project.</strong> This use case is a supreme opportunity for students to display leadership. If you are taking a class or working on a project, consider publishing a website (for free, of course) to communicate your progress and organize essential documentation, as shown in <a href="https://dssquad-wiki.netlify.app/">this example</a>.</p></li>
+<li><p><strong>Organize content for a specific class or project.</strong> This use case is a supreme opportunity for students to display leadership. If you are taking a class or working on a project, consider publishing a website (for free, of course) to communicate your progress and organize essential documentation, as shown in <a href="https://dssquad-wiki.netlify.app/" target="blank">this example</a>.</p></li>
 <li><p><strong>Promote a product or service.</strong> If you are thinking about selling your own products or services, consider publishing a landing page or an ecommerce site. I built [this landing page] at a time when I was considering building websites for local clients.</p></li>
 </ul>
 </div>
 <div id="learn" class="section level2" number="1.4">
 <h2><span class="header-section-number">1.4</span> What you will learn</h2>
-<p>You will learn how to create, design, publish, and analyze your personal website using the <a href="https://themes.gohugo.io/theme/anatole/">Hugo Anatole</a> design theme as the starting point. You will gradually edit this starter theme and author your own original content, resulting in <a href="https://r4sites-anatole-custom.netlify.app/">your own website</a>.</p>
+<p>You will learn how to create, design, publish, and analyze your personal website using the <a href="https://themes.gohugo.io/theme/anatole/" target="blank">Hugo Anatole</a> design theme as the starting point. You will gradually edit this starter theme and author your own original content, resulting in <a href="https://r4sites-anatole-custom.netlify.app/" target="blank">your own website</a>.</p>
 <p>During this process, you will learn how to do the following:</p>
 <ul>
 <li>Generate websites using R and RStudio in three simple steps.</li>
@@ -290,28 +373,33 @@
 <h2><span class="header-section-number">1.5</span> Tools you will use</h2>
 <p>The methodology described in this book uses the following <strong>freely available</strong> tools:</p>
 <ul>
-<li><a href="https://cran.rstudio.com/">R</a> and the <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> R package</li>
-<li><a href="https://www.rstudio.com/products/rstudio/#rstudio-desktop">RStudio</a></li>
-<li><a href="https://gohugo.io/">Hugo</a></li>
-<li><a href="https://git-scm.com/">Git</a> and <a href="https://github.com/">GitHub</a></li>
-<li><a href="https://app.netlify.com/">Netlify</a></li>
-<li><a href="https://analytics.google.com/">Google Analytics</a> and the <a href="https://code.markedmondson.me/googleAnalyticsR/">googleAnalyticsR</a> R package</li>
-<li><a href="https://formspree.io">Formspree</a></li>
+<li><a href="https://cran.rstudio.com/" target="blank">R</a> and the <a href="https://bookdown.org/yihui/blogdown/" target="blank">blogdown</a> R package</li>
+<li><a href="https://www.rstudio.com/products/rstudio/#rstudio-desktop" target="blank">RStudio</a></li>
+<li><a href="https://gohugo.io/" target="blank">Hugo</a></li>
+<li><a href="https://git-scm.com/" target="blank">Git</a> and <a href="https://github.com/" target="blank">GitHub</a></li>
+<li><a href="https://app.netlify.com/" target="blank">Netlify</a></li>
+<li><a href="https://analytics.google.com/" target="blank">Google Analytics</a> and the <a href="https://code.markedmondson.me/googleAnalyticsR/" target="blank">googleAnalyticsR</a> R package</li>
+<li><a href="https://formspree.io" target="blank">Formspree</a></li>
 </ul>
 </div>
 <div id="inspiring-examples" class="section level2" number="1.6">
 <h2><span class="header-section-number">1.6</span> Inspiring examples</h2>
 <p>Below are some examples of personal websites, blogs, and portfolios that have been built using the methodology described in this book.</p>
 <ul>
-<li><p><a href="https://abndistro.com">Abnormal Distributions</a> - My personal blog. Outrageously simple and straightforward. Designed for sharing tutorials and ideas. Adapted from the <a href="https://themes.gohugo.io/hugo-xmin/">Hugo Xmin</a> theme.</p></li>
-<li><p><a href="https://www.alexbilz.com/">Alex Bilz</a> - Personal website authored by Alex Bilz, creator of the <a href="https://themes.gohugo.io/theme/anatole/">Hugo Anatole</a> website design which is featured throughout this book.</p></li>
-<li><p><a href="http://www.rladiesnyc.org/">R-Ladies NYC</a> - Organization website dedicated to promoting gender diversity in the R community. Clean, modern layout. Great design for promoting groups, teams, projects, and events. Adapted form the <a href="https://themes.gohugo.io/academic/">Hugo Academic</a> theme.</p></li>
-<li><p><a href="https://evanodell.com/blog/">Evan Odell</a> - Personal website authored by Evan Odell featuring a blog, project portfolio, and biography. Crisp, clean, readable layout. Adapted from the <a href="https://themes.gohugo.io/beautifulhugo/">Beautiful Hugo</a> theme.</p></li>
-<li><p><a href="https://masalmon.eu/">Maëlle Salmon</a> - Personal website authored by Maëlle Salmon featuring a blog, list of talks, publications, and biography. Adapted from the <a href="https://themes.gohugo.io/blackburn/">Blackburn</a> theme.</p></li>
+<li><p><a href="https://abndistro.com" target="blank">Abnormal Distributions</a> - My personal blog. Outrageously simple and straightforward. Designed for sharing tutorials and ideas. Adapted from the <a href="https://themes.gohugo.io/hugo-xmin/" target="blank">Hugo Xmin</a> theme.</p></li>
+<li><p><a href="https://www.alexbilz.com/" target="blank">Alex Bilz</a> - Personal website authored by Alex Bilz, creator of the <a href="https://themes.gohugo.io/theme/anatole/" target="blank">Hugo Anatole</a> website design which is featured throughout this book.</p></li>
+<li><p><a href="http://www.rladiesnyc.org/" target="blank">R-Ladies NYC</a> - Organization website dedicated to promoting gender diversity in the R community. Clean, modern layout. Great design for promoting groups, teams, projects, and events. Adapted form the <a href="https://themes.gohugo.io/academic/" target="blank">Hugo Academic</a> theme.</p></li>
+<li><p><a href="https://evanodell.com/blog/" target="blank">Evan Odell</a> - Personal website authored by Evan Odell featuring a blog, project portfolio, and biography. Crisp, clean, readable layout. Adapted from the <a href="https://themes.gohugo.io/beautifulhugo/" target="blank">Beautiful Hugo</a> theme.</p></li>
+<li><p><a href="https://masalmon.eu/" target="blank">Maëlle Salmon</a> - Personal website authored by Maëlle Salmon featuring a blog, list of talks, publications, and biography. Adapted from the <a href="https://themes.gohugo.io/blackburn/" target="blank">Blackburn</a> theme.</p></li>
 </ul>
 </div>
-<div id="faq" class="section level2" number="1.7">
-<h2><span class="header-section-number">1.7</span> FAQ</h2>
+<div id="getting-support" class="section level2" number="1.7">
+<h2><span class="header-section-number">1.7</span> Getting support</h2>
+<p>The Slack workspace for this book is the best way to get help with your own website project. Slack is a place to chat, share files, and interact with others including myself.</p>
+<p><a href="https://join.slack.com/t/r4sitesbooksupport/shared_invite/zt-pyua4ua9-L~taaOqLzEeCbW5o9w9eLQ" target="blank">Accept this invitation</a> to join the Slack workspace.</p>
+</div>
+<div id="faq" class="section level2" number="1.8">
+<h2><span class="header-section-number">1.8</span> FAQ</h2>
 <p><strong>What is the financial cost to create, publish, and analyze the types of websites described in this book?</strong></p>
 <p>Absolutely nothing, unless you elect to purchase custom domains name which are typically $1 USD per month.</p>
 <p><strong>Do I need a background in web development to create my own website?</strong></p>
@@ -325,10 +413,10 @@
 <p><strong>Can I publish my website behind a custom domain name?</strong></p>
 <p>Yes. This topic is discussed in the chapter <a href="deploy.html#deploy">Going live on the internet</a>.</p>
 </div>
-<div id="about-the-author" class="section level2" number="1.8">
-<h2><span class="header-section-number">1.8</span> About the author</h2>
+<div id="about-the-author" class="section level2" number="1.9">
+<h2><span class="header-section-number">1.9</span> About the author</h2>
 <p>Hi! My name is Danny Morris, and thanks for checking out my book. I am an industry Data Scientist with a passion for writing, creating visual content, and building predictive models. I have published over a dozen websites for various purposes using the methodology described in this book.
-More than anything, I love helping people establish and grow their careers. I believe having a personal website is an excellent option for anyone looking to take a step in their career. Feel free to shoot me an <a href="mailto:dmorris10667@gmail.com">email</a> and connect with me on <a href="https://www.linkedin.com/in/drmorris87/">LinkedIn</a>.</p>
+More than anything, I love helping people establish and grow their careers. I believe having a personal website is an excellent option for anyone looking to take a step in their career. Feel free to shoot me an <a href="mailto:dmorris10667@gmail.com" target="blank">email</a> and connect with me on <a href="https://www.linkedin.com/in/drmorris87/" target="blank">LinkedIn</a>.</p>
 
 </div>
 </div>

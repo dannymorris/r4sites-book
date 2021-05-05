@@ -10,10 +10,10 @@ knitr::opts_chunk$set(echo = T, message = F, warning = F, eval=T)
 
 # Integrating Google Analytics {#google-analytics}
 
-This chapter shows you how to integrate Google Analytics into your website to capture user data such as the number of users on your website, the pages they view, and their geographic locations. This chapter also covers the basics of the [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) R package for querying your Google Analytics data from R. 
+This chapter shows you how to integrate Google Analytics into your website to capture user data such as the number of users on your website, the pages they view, and their geographic locations. This chapter also covers the basics of the [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/){target="blank"} R package for querying your Google Analytics data from R. 
 
 :::design
-**Note:** This chapter builds upon the website generated in chapter 4 and edited in chapters 5, 6, 7, and 8. The final result can be viewed here - https://r4sites-anatole-custom.netlify.app/.
+**Note:** This chapter builds upon the website generated in chapter 4 and edited in chapters 5, 6, 7, and 8. The final result can be viewed here - [https://r4sites-anatole-custom.netlify.app/](https://r4sites-anatole-custom.netlify.app/){target="blank"}.
 :::
 
 ## Prerequisites
@@ -25,7 +25,7 @@ Before you proceed, complete the following prerequisites:
 3. (optional) [Fine tune the look and feel](#fine-tune)
 4. (optional) [Configure pages and features](#pages-features)
 5. [Go live on the internet](#deploy)
-6. [Sign up for Google Analytics](https://marketingplatform.google.com/about/analytics/)
+6. [Sign up for Google Analytics](https://marketingplatform.google.com/about/analytics/){target="blank"}
 
 ## How it works
 
@@ -35,19 +35,19 @@ Once you sign up for Google Analytics, you will need to create an Account, Prope
 
 Follow these steps to integrate Google Analytics into your website:
 
-1. Sign in to Google Analytics and navigate to Admin > Create Account. [📷 Image](https://i.imgur.com/QRTa07k.png)
+1. Sign in to Google Analytics and navigate to Admin > Create Account. [📷 Image](https://i.imgur.com/QRTa07k.png){target="blank"}
 
 2. Under Account setup, provide an appropriate name (e.g. personal-website) and configure the Account Data Sharing Settings to your liking. The defaults should be fine. Click "Next".
 
 3. Under Property setup, provide an appropriate name (e.g. personal-website-property). 
 
-4. Under Property setup, click on "Show advanced options" to create a Universal Analytics property. For the Website URL, provide the URL to your website. Click "Next". [📷 Image](https://i.imgur.com/0jffYnF.png)
+4. Under Property setup, click on "Show advanced options" to create a Universal Analytics property. For the Website URL, provide the URL to your website. Click "Next". [📷 Image](https://i.imgur.com/0jffYnF.png){target="blank"}
 
 5. Under About you business, configure the settings to your liking. Click "Next" and accept the terms of service.
 
-6. Locate the Tracking ID by returning back to the Admin console and selecting the Account and Property that were created in the previous steps. **Important:** Make sure you locate the Universal Analytics property that reads `property name (UA-XXXXXXX-X)` and not the GA4 property. Under Property, click on Tracking Info > Tracking Code ([📷 Image](https://i.imgur.com/GtiKfhq.png)). Copy the Tracking ID, which should appear in the form of UA-XXXXXXXXX-1. [📷 Image](https://i.imgur.com/qcyaVBD.png)
+6. Locate the Tracking ID by returning back to the Admin console and selecting the Account and Property that were created in the previous steps. **Important:** Make sure you locate the Universal Analytics property that reads `property name (UA-XXXXXXX-X)` and not the GA4 property. Under Property, click on Tracking Info > Tracking Code ([📷 Image](https://i.imgur.com/GtiKfhq.png){target="blank"}). Copy the Tracking ID, which should appear in the form of UA-XXXXXXXXX-1. [📷 Image](https://i.imgur.com/qcyaVBD.png){target="blank"}
 
-7. Return to your RStudio Project where you are developing your website. Open the file `config.yaml` in the main directory and locate the `googleAnalytics:` parameter. Depending on the theme, this parameter may be written or spelled slightly differently. Paste your Google Analytics Tracking ID here, e.g. `googleAnalytics: 'UA-XXXXXXXXX-1'`. [📷 Image](https://i.imgur.com/xgN24ah.png)
+7. Return to your RStudio Project where you are developing your website. Open the file `config.yaml` in the main directory and locate the `googleAnalytics:` parameter. Depending on the theme, this parameter may be written or spelled slightly differently. Paste your Google Analytics Tracking ID here, e.g. `googleAnalytics: 'UA-XXXXXXXXX-1'`. [📷 Image](https://i.imgur.com/xgN24ah.png){target="blank"}
 
 ## Push updates to GitHub
 
@@ -72,39 +72,39 @@ After completing the Google Analytics integration, run the following test to con
 
 1. Open your website in your browser.
 
-2. Sign in to [Google Analytics](https://analytics.google.com/)
+2. Sign in to [Google Analytics](https://analytics.google.com/){target="blank"}.
 
-3. Click on "All Web Site Data". [📷 Image](https://i.imgur.com/lyNPi8E.png)
+3. Click on "All Web Site Data". [📷 Image](https://i.imgur.com/lyNPi8E.png){target="blank"}
 
-4. In the dropdown menu, select the Account and Property you created during the initial [setup](#ga-setup), then select the "All Web Site Data" View. [📷 Image](https://i.imgur.com/xSjCS75.png)
+4. In the dropdown menu, select the Account and Property you created during the initial [setup](#ga-setup), then select the "All Web Site Data" View. [📷 Image](https://i.imgur.com/xSjCS75.png){target="blank"}
 
-5. Go to the Home page and locate the card titled "Active Users right now". If the integration was successful, this value should be a minimum of 1 since you are currently on your website. [📷 Image](https://i.imgur.com/KPbUB7G.png)
+5. Go to the Home page and locate the card titled "Active Users right now". If the integration was successful, this value should be a minimum of 1 since you are currently on your website. [📷 Image](https://i.imgur.com/KPbUB7G.png){target="blank"}
 
 ## Browse the Google Analytics UI
 
 You can analyze your Google Analytics data using a third party client, such as R, or by browsing the Google Analytics UI. The following steps will take you on a quick tour of the Google Analytics UI:
 
-1. Sign in to [Google Analytics](https://analytics.google.com/)
+1. Sign in to [Google Analytics](https://analytics.google.com/){target="blank"}.
 
-2. Click on "All Web Site Data". [📷 Image](https://i.imgur.com/lyNPi8E.png)
+2. Click on "All Web Site Data". [📷 Image](https://i.imgur.com/lyNPi8E.png){target="blank"}
 
-3. In the dropdown menu, select the Account and Property you created during the initial [setup](#ga-setup), then select the "All Web Site Data" View. [📷 Image](https://i.imgur.com/xSjCS75.png)
+3. In the dropdown menu, select the Account and Property you created during the initial [setup](#ga-setup), then select the "All Web Site Data" View. [📷 Image](https://i.imgur.com/xSjCS75.png){target="blank"}
 
-4. Browse the Home page to view data such as active users, user acquisition sources, and sessions by country. [📷 Image](https://i.imgur.com/2u2mCey.png)
+4. Browse the Home page to view data such as active users, user acquisition sources, and sessions by country. [📷 Image](https://i.imgur.com/2u2mCey.png){target="blank"}
 
-5. Browse the Reports ([📷 Image](https://i.imgur.com/3vvGhD0.png)) to learn more about your users including how they arrive at your website and which pages they tend to view.
+5. Browse the Reports ([📷 Image](https://i.imgur.com/3vvGhD0.png){target="blank"}) to learn more about your users including how they arrive at your website and which pages they tend to view.
 
 ## Use R for data analysis
 
-[googleAnalyicsR](https://code.markedmondson.me/googleAnalyticsR/) is an R package that makes it easy and fun to query your Google Analytics data. Before diving into the code, spend some time learning about Google Analytics Dimensions and Metrics.
+[googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/){target="blank"} is an R package that makes it easy and fun to query your Google Analytics data. Before diving into the code, spend some time learning about Google Analytics Dimensions and Metrics.
 
 ### Dimensions and metrics
 
-In order to analyze your Google Analytics data, you need to gain a basic understand of [Dimensions and Metrics](https://support.google.com/analytics/answer/1033861?hl=en).
+In order to analyze your Google Analytics data, you need to gain a basic understand of [Dimensions and Metrics](https://support.google.com/analytics/answer/1033861?hl=en){target="blank"}.
 
 Dimensions are attributes of your data and Metrics are quantitative measurements. For example, to analyze the count of users on your website in the last 60 days, the Dimension is `date` and the Metric is `users`.
 
-Google Analytics supports hundreds of Dimension-Metric combinations. My recommendation is to browse the [Ultimate Google Analytics Dimensions and Metrics List](https://www.ovrdrv.com/blog/ultimate-google-analytics-dimensions-and-metrics-list/) to learn what is available. 
+Google Analytics supports hundreds of Dimension-Metric combinations. My recommendation is to browse the [Ultimate Google Analytics Dimensions and Metrics List](https://www.ovrdrv.com/blog/ultimate-google-analytics-dimensions-and-metrics-list/){target="blank"} to learn what is available. 
 
 ### Install googleAnalyticsR
 
@@ -189,7 +189,6 @@ To understand which device types your users are using to view your website, use 
 - Dimension: `deviceCategory`
 - Metric: `users`
 
-
 ```{r}
 users_by_device_type <- google_analytics(
   viewId = view_id,
@@ -214,7 +213,6 @@ To measure the number of page views to each of your website pages, use the follo
 
 - Dimension: `pageTitle`
 - Metric: `pageviews`
-
 
 ```{r}
 page_views <- google_analytics(

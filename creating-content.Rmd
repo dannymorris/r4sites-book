@@ -3,7 +3,7 @@
 This chapter provides general guidance on authoring original content such as blog posts, tutorials, research articles, and project write-ups using R Markdown.
 
 :::design
-**Note:** This chapter builds upon the website generated in chapter 4 and edited in chapters 5 and 6. All subsequent chapters will do the same. The final result can be viewed here - https://r4sites-anatole-custom.netlify.app/.
+**Note:** This chapter builds upon the website generated in chapter 4 and edited in chapters 5 and 6. All subsequent chapters will do the same. The final result can be viewed here - [https://r4sites-anatole-custom.netlify.app/](https://r4sites-anatole-custom.netlify.app/){target="blank"}.
 :::
 
 ## Prerequisites
@@ -19,53 +19,53 @@ Before you proceed, complete the following prerequisites:
 
 More than anything else on your website, your original content is your opportunity to share your ideas and captivate your viewers. For personal websites, original content often takes the form of blog posts, tutorials, research articles, and project portfolios. In all likelihood, your website visitors will spend most of their time reading your original content.
 
-Your original content can be authored using either [R Markdown](https://bookdown.org/yihui/rmarkdown/html-document.html) or [plain Markdown](https://www.markdownguide.org/getting-started/) documents, and the output will reside on your website's [Posts page](https://r4sites-anatole-custom.netlify.app/post/).  
+Your original content can be authored using either [R Markdown](https://bookdown.org/yihui/rmarkdown/html-document.html){target="blank"} or [plain Markdown](https://www.markdownguide.org/getting-started/){target="blank"} documents, and the output will reside on your website's [Posts page](https://r4sites-anatole-custom.netlify.app/post/){target="blank"}.  
 
-**My recommendation is to use R Markdown for authoring original content.** R Markdown is very similar to plain Markdown with one massive exception: R Markdown supports the integration and execution of R, Python, and SQL code within the document. This means your content can include dynamic output such as code printing, interactive tables, interactive graphs, and any other form of output that can be generated from these programming languages ([example](https://abndistro.com/post/2020/07/12/time-series-forecasting-as-a-supervised-machine-learning-problem/)). For this reason, R Markdown is substantially more flexible than plain Markdown for writing technical content. To learn more about R Markdown, I recommend reading [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/).
+**My recommendation is to use R Markdown for authoring original content.** R Markdown is very similar to plain Markdown with one massive exception: R Markdown supports the integration and execution of R, Python, and SQL code within the document. This means your content can include dynamic output such as code printing, interactive tables, interactive graphs, and any other form of output that can be generated from these programming languages ([example](https://abndistro.com/post/2020/07/12/time-series-forecasting-as-a-supervised-machine-learning-problem/){target="blank"}). For this reason, R Markdown is substantially more flexible than plain Markdown for writing technical content. To learn more about R Markdown, I recommend reading [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/){target="blank"}.
 
 ## Example R Markdown posts
 
 If you have never authored an R Markdown document, spend some time looking through these example posts including their source code and associated output on the website. In the source code, inspect the metadata parameters in between the `---` markers at the top of the document, then inspect the post body to gain a basic understanding of how text and code chunks are intertwined. 
 
-- **Using R in R Markdown** - Post includes a table of contents, code highlighting, and thumbnail image. Content covers interactive HTML tables via the [DT](https://rstudio.github.io/DT/) package, and interactive plots via the [plotly](https://plotly.com/r/) package. ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd)) ([📄 Page](https://r4sites-anatole-custom.netlify.app/post/2021-04-22-sample-post-using-r-in-r-markdown/))
+- **Using R in R Markdown** - Post includes a table of contents, code highlighting, and thumbnail image. Content covers interactive HTML tables via the [DT](https://rstudio.github.io/DT/){target="blank"} package, and interactive plots via the [plotly](https://plotly.com/r/){target="blank"} package. ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd){target="blank"}) ([📄 Page](https://r4sites-anatole-custom.netlify.app/post/2021-04-22-sample-post-using-r-in-r-markdown/){target="blank"})
 
-- **Using Python in R Markdown** - Post includes a table of contents, code highlighting, and thumbnail image. Content covers the use of Conda environments, inserting and executing Python code chunks, and displaying plots. ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd)) ([📄 Page](https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-using-python-in-r-markdown/))
+- **Using Python in R Markdown** - Post includes a table of contents, code highlighting, and thumbnail image. Content covers the use of Conda environments, inserting and executing Python code chunks, and displaying plots. ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd){target="blank"}) ([📄 Page](https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-using-python-in-r-markdown/){target="blank"})
 
-- **Using SQL in R Markdown** - Post includes a table of contents and code highlighting. Content covers inserting and executing pure SQL code chunks and using R to execute SQL queries. ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-sql-in-r-markdown/index.en.Rmd)) ([📄 Page](https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-using-sql-in-r-markdown/))
+- **Using SQL in R Markdown** - Post includes a table of contents and code highlighting. Content covers inserting and executing pure SQL code chunks and using R to execute SQL queries. ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-sql-in-r-markdown/index.en.Rmd){target="blank"}) ([📄 Page](https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-using-sql-in-r-markdown/){target="blank"})
 
-- **Basic Markdown syntax** - Post includes a thumbnail image but no table of contents or code highlighting. Content covers basic Markdown syntax. ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-basic-markdown-syntax/index.en.Rmd)) ([📄 Page](https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-basic-markdown-syntax/))
+- **Basic Markdown syntax** - Post includes a thumbnail image but no table of contents or code highlighting. Content covers basic Markdown syntax. ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-basic-markdown-syntax/index.en.Rmd){target="blank"}) ([📄 Page](https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-basic-markdown-syntax/){target="blank"})
 
 ## Create a new post
 
 The simplest way to add a new post is via the "New post" RStudio Addin. Follow the steps below to create a new post using this approach:
 
-1. Select the RStudio Addin labeled "New post". [📷 Image](https://i.imgur.com/S9dl4DZ.png). 
+1. Select the RStudio Addin labeled "New post". [📷 Image](https://i.imgur.com/S9dl4DZ.png){target="blank"}
 
-2. Configure the new post by specifying the post Title, Author, Date, Subdirectory, and Format. **Do not specify Tags and Categories** at this point. Be sure to place the new post in the `post` Subdirectory and set the Format to `R Markdown (.Rmd)`. [📷 Image](https://i.imgur.com/ciCv6yC.png).
+2. Configure the new post by specifying the post Title, Author, Date, Subdirectory, and Format. **Do not specify Tags and Categories** at this point. Be sure to place the new post in the `post` Subdirectory and set the Format to `R Markdown (.Rmd)`. [📷 Image](https://i.imgur.com/ciCv6yC.png){target="blank"}
 
-3. Update (or create) parameters in the post metadata including `title`, `author`, `summary`, `date`, `output`, `Tags`, and `Categories` ([📷 Image](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd#L1-L17)). Continue reading to learn more.
+3. Update (or create) parameters in the post metadata including `title`, `author`, `summary`, `date`, `output`, `Tags`, and `Categories` ([📷 Image](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd#L1-L17){target="blank"}). Continue reading to learn more.
 
 ## Add a post summary
 
-Add a summary to your R Markdown post to insert a summarization of the post beneath the post title on the [Home](https://r4sites-anatole-custom.netlify.app/) page ([📷 Image](https://i.imgur.com/SjZ24e1.png)). To add a summary, create a `summary` parameter in the document metadata. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd#L3)
+Add a summary to your R Markdown post to insert a summarization of the post beneath the post title on the [Home](https://r4sites-anatole-custom.netlify.app/){target="blank"} page ([📷 Image](https://i.imgur.com/SjZ24e1.png){target="blank"}). To add a summary, create a `summary` parameter in the document metadata. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd#L3){target="blank"}
 
 ## Add a table of contents
 
-Add a table of contents to your R Markdown post to improve navigation and enable an overall better user experience. To add a table of contents, edit the `output` parameter in the document metadata. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd#L6-L9)
+Add a table of contents to your R Markdown post to improve navigation and enable an overall better user experience. To add a table of contents, edit the `output` parameter in the document metadata. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd#L6-L9){target="blank"}
 
 ## Add code highlighting
 
-Add code highlighting to improve the readability of your code snippets. To add code highlighting, edit the `output` parameter in the document metadata. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd#L6-L9)
+Add code highlighting to improve the readability of your code snippets. To add code highlighting, edit the `output` parameter in the document metadata. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd#L6-L9){target="blank"}
 
-Though I recommend the `tango` highlighting scheme, other [code highlighting options](https://bookdown.org/yihui/rmarkdown/) options are available.
+Though I recommend the `tango` highlighting scheme, other [code highlighting options](https://bookdown.org/yihui/rmarkdown/){target="blank"} options are available.
 
 ## Add tags and categories
 
-Add "tags" and "categories" to your posts to organize your content and to give Google crawlers an idea of what your post is about. According to [this website](https://databox.com/categories-vs-tags-for-seo), strive to attach no more than 5-10 categories and 5-10 tags to each post. To add tags and categories to your post, edit the `Tags` and `Categories` parameters in the document metadata. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd#L24-L25)
+Add "tags" and "categories" to your posts to organize your content and to give Google crawlers an idea of what your post is about. According to [this website](https://databox.com/categories-vs-tags-for-seo){target="blank"}, strive to attach no more than 5-10 categories and 5-10 tags to each post. To add tags and categories to your post, edit the `Tags` and `Categories` parameters in the document metadata. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd#L24-L25){target="blank"}
 
 ## Add a post thumbnail
 
-A post thumbnail is an image that appears above the post title on the Home page ([📷 Image](https://i.imgur.com/ITLkYTP.png)) and at the beginning of the post itself. To include a thumbnail for a post, create a `thumbnail` parameter in the document metadata and insert the path to your image located in the `static/images` folder. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd#L15)
+A post thumbnail is an image that appears above the post title on the Home page ([📷 Image](https://i.imgur.com/ITLkYTP.png){target="blank"}) and at the beginning of the post itself. To include a thumbnail for a post, create a `thumbnail` parameter in the document metadata and insert the path to your image located in the `static/images` folder. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd#L15){target="blank"}
 
 ## Next steps
 

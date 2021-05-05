@@ -3,7 +3,7 @@
 This chapter teaches you how to configure website features that are unlikely to change very frequently. These features include page names, the About page text, default posts, language translations, social media links, and contact forms.
 
 :::design
-**Note:** This chapter builds upon the website generated in chapter 4 and edited in chapter 5. All subsequent chapters will do the same. The final version can be viewed here - https://r4sites-anatole-custom.netlify.app/.
+**Note:** This chapter builds upon the website generated in chapter 4 and edited in chapter 5. All subsequent chapters will do the same. The final version can be viewed here - [https://r4sites-anatole-custom.netlify.app/](https://r4sites-anatole-custom.netlify.app/){target="blank"}.
 :::
 
 ## Prerequisites
@@ -38,31 +38,31 @@ The files listed below are referenced throughout this chapter. Consider either o
 
 ## Rename pages
 
-The Hugo Anatole theme comes with the following default pages: Home, Posts, About, and Contact. To rename these pages, open `config/_default/menus.en.toml` and edit the `name` parameters accordingly. For example, rename the "About" page to "About Me" to clearly communicate that this page contains your personal biography. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/menus.en.toml)
+The Hugo Anatole theme comes with the following default pages: Home, Posts, About, and Contact. To rename these pages, open `config/_default/menus.en.toml` and edit the `name` parameters accordingly. For example, rename the "About" page to "About Me" to clearly communicate that this page contains your personal biography. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/menus.en.toml){target="blank"}
 
 ## Delete pages
 
-To delete a page, open `config/_default/menus.en.toml` and delete all references to the page you want to delete. For example, to delete the Contact page, delete lines 19-23 in the `menus.en.toml` file. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/menus.en.toml#L19-L23)
+To delete a page, open `config/_default/menus.en.toml` and delete all references to the page you want to delete. For example, to delete the Contact page, delete lines 19-23 in the `menus.en.toml` file. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/menus.en.toml#L19-L23){target="blank"}
 
 ## Edit the About page
 
-To edit the default [About page](https://r4sites-anatole-custom.netlify.app/about/), open `content/english/about.md`. Replace the metadata (i.e. the parameters in between the `---` markers) then replace the body of the document using plain Markdown. [</> Code](https://raw.githubusercontent.com/dannymorris/r4sites-anatole-custom/master/content/english/about.md).
+To edit the default [About page](https://r4sites-anatole-custom.netlify.app/about/), open `content/english/about.md`. Replace the metadata (i.e. the parameters in between the `---` markers) then replace the body of the document using plain Markdown. [</> Code](https://raw.githubusercontent.com/dannymorris/r4sites-anatole-custom/master/content/english/about.md){target="blank"}
 
 ## Delete default posts
 
-The Hugo Anatole theme comes with several [default posts](https://themes.gohugo.io//theme/anatole/post/). To delete all default posts, navigate to the `content/english/post` folder and delete all files and folders **except `_index.md`**. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/tree/master/content/english/post)
+The Hugo Anatole theme comes with several [default posts](https://themes.gohugo.io//theme/anatole/post/). To delete all default posts, navigate to the `content/english/post` folder and delete all files and folders **except `_index.md`**. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/tree/master/content/english/post){target="blank"}
 
 ## Edit post date format
 
-By default, the Hugo Anatole theme displays dates of posts in the format of `Day/Month/Year` ([📷 Image](https://i.imgur.com/k2suw8t.png)). To alter the date format, open `config/_default/params.toml` and edit the `singleDateFormat`, `indexDateFormat`, and `listDateFormat` parameters. 
+By default, the Hugo Anatole theme displays dates of posts in the format of `Day/Month/Year` ([📷 Image](https://i.imgur.com/k2suw8t.png){target="blank"}). To alter the date format, open `config/_default/params.toml` and edit the `singleDateFormat`, `indexDateFormat`, and `listDateFormat` parameters. 
 
-For example, to switch the date format to `Year-Month-Day`, update the values for all three parameters to `"2006-01-02"` ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L21-L23)). In this example, `2006` requests the 4-digit year, `01` requests the 2-digit month, and `02` requests the 2-digit day.
+For example, to switch the date format to `Year-Month-Day`, update the values for all three parameters to `"2006-01-02"` ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L21-L23){target="blank"}). In this example, `2006` requests the 4-digit year, `01` requests the 2-digit month, and `02` requests the 2-digit day.
 
 ## Remove dates from Posts page
 
-When viewed on a device with a small, narrow screen (e.g. mobile phone), the dates to the right of the post titles on the Posts page may appear broken ([📷 Image](https://i.imgur.com/RznGw5r.png)). On narrow screen, there is an insufficient amount of screen space to display both the post title and the post date in a side-by-side fashion.
+When viewed on a device with a small, narrow screen (e.g. mobile phone), the dates to the right of the post titles on the Posts page may appear broken ([📷 Image](https://i.imgur.com/RznGw5r.png){target="blank"}). On narrow screen, there is an insufficient amount of screen space to display both the post title and the post date in a side-by-side fashion.
 
-My preference is to remove the post dates from the Posts page altogether. Note this does not affect the post dates on the Home page or on the post itself. To remove post dates from the Posts page, open `themes/anatole/layouts/_default/list.html` and comment out (or delete) lines 11-14. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/layouts/_default/list.html#L10-L15)
+My preference is to remove the post dates from the Posts page altogether. Note this does not affect the post dates on the Home page or on the post itself. To remove post dates from the Posts page, open `themes/anatole/layouts/_default/list.html` and comment out (or delete) lines 11-14. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/layouts/_default/list.html#L10-L15){target="blank"}
 
 ## Delete language translations
 
@@ -70,29 +70,29 @@ By default, the Anatole theme supports English and Arabic language translations.
 
 1. Delete the file `config/_default/menus.TRANSLATION.toml`.
 
-2. Edit the file `config/_default/languages.toml` by removing all references to the appropriate language parameters. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/languages.toml)
+2. Edit the file `config/_default/languages.toml` by removing all references to the appropriate language parameters. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/languages.toml){target="blank"}
 
 3. Delete the folder `content/TRANSLATION/` and all of its contents.
 
 ## Edit social media links
 
-The Hugo Anatole theme uses social media icons on the Home page that link to social media profiles including LinkedIn, GitHub, Instagram, and Email. To set links to your personal profiles, open `config/_default/params.toml` and edit all `url` parameters ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L41-L59)). To remove a specific icon, delete all parameters associated with the icon. 
+The Hugo Anatole theme uses social media icons on the Home page that link to social media profiles including LinkedIn, GitHub, Instagram, and Email. To set links to your personal profiles, open `config/_default/params.toml` and edit all `url` parameters ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L41-L59){target="blank"}). To remove a specific icon, delete all parameters associated with the icon. 
 
 ## Configure contact forms
 
-Contact forms are a feature of the default Hugo Anatole theme, though they are not a feature of all  Hugo themes. Contact forms are handy for collecting user emails and soliciting feedback from your website visitors. The contact form on the [Contact](https://r4sites-anatole-custom.netlify.app/about/) page of the default Hugo Anatole theme is powered by [Formspree](https://formspree.io). Formspree is not the only contact form provider, though it seems many Hugo themes integrate Formspree. Formspree's web app offers a user-friendly interface for creating and managing contact forms, viewing form submissions, and exporting user data in CSV format. If you ever want to do a "subscriber only" email campaign, contact forms are a great option for collecting emails.
+Contact forms are a feature of the default Hugo Anatole theme, though they are not a feature of all  Hugo themes. Contact forms are handy for collecting user emails and soliciting feedback from your website visitors. The contact form on the [Contact](https://r4sites-anatole-custom.netlify.app/about/){target="blank"} page of the default Hugo Anatole theme is powered by [Formspree](https://formspree.io){target="blank"}. Formspree is not the only contact form provider, though it seems many Hugo themes integrate Formspree. Formspree's web app offers a user-friendly interface for creating and managing contact forms, viewing form submissions, and exporting user data in CSV format. If you ever want to do a "subscriber only" email campaign, contact forms are a great option for collecting emails.
 
 Follow the steps below to create a Formspree form "endpoint" and link it to the contact form on your website:
 
-1. Sign in to [Formspree](https://formspree.io/login).
+1. Sign in to [Formspree](https://formspree.io/login){target="blank"}.
 
-2. Click "New Project" to create a new project for your website. [📷 Image](https://i.imgur.com/jZnrcVL.png).
+2. Click "New Project" to create a new project for your website. [📷 Image](https://i.imgur.com/jZnrcVL.png){target="blank"}
 
-3. Click "New Form" to create a new contact form. [📷 Image](https://i.imgur.com/BE4tOJ4.png)
+3. Click "New Form" to create a new contact form. [📷 Image](https://i.imgur.com/BE4tOJ4.png){target="blank"}
 
-4. Copy the form's "endpoint" beginning with `https://`. [📷 Image](https://i.imgur.com/2S2HVO6.png)
+4. Copy the form's "endpoint" beginning with `https://`. [📷 Image](https://i.imgur.com/2S2HVO6.png){target="blank"}
 
-5. Open `config/_default/params.toml` in the main website folder, uncomment the `contactFormAction` parameter, and insert the form endpoint. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L16-L17).
+5. Open `config/_default/params.toml` in the main website folder, uncomment the `contactFormAction` parameter, and insert the form endpoint. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L16-L17){target="blank"}
 
 ## Customize contact forms
 
@@ -100,14 +100,14 @@ The contact form on the default Hugo Anatole theme includes fields for Name, Ema
 
 To edit the contact form on the Hugo Anatole theme, open `themes/anatole/layouts/partials/contact.html` and `themes/anatole/i18n/en.toml` in the RStudio editor. 
 
-To add a new field to the contact form, such as an optional "Job Title" field, update the `contact.html` file with a new input ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/layouts/partials/contact.html#L13-L16)) and update the `i18n/en.toml` file with an associated placeholder text value ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/i18n/en.toml#L35-L36)).
+To add a new field to the contact form, such as an optional "Job Title" field, update the `contact.html` file with a new input ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/layouts/partials/contact.html#L13-L16){target="blank"}) and update the `i18n/en.toml` file with an associated placeholder text value ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/i18n/en.toml#L35-L36){target="blank"})
 
 ## View contact form submissions
 
-Once your contact form endpoint is configured, submissions to your contact form can be viewed in your Formspree account. Sign in to Formspree, locate your form, and select "Submissions" to view and (optionally) export your submissions. [📷 Image](https://i.imgur.com/zua7Wuh.png)
+Once your contact form endpoint is configured, submissions to your contact form can be viewed in your Formspree account. Sign in to Formspree, locate your form, and select "Submissions" to view and (optionally) export your submissions. [📷 Image](https://i.imgur.com/zua7Wuh.png){target="blank"}
 
 ## Next steps
 
-Proceed with [authoring new content](#content) such as blog posts, tutorials, research articles, and project write-ups using R Markdown.
+Proceed with [authoring original content](#content) such as blog posts, tutorials, research articles, and project write-ups using R Markdown.
 
 Optionally, skip ahead and [deploy your website to the internet](#deploy). Though the steps to deploy your website are covered in a later chapter, readers are welcome to complete these steps at any point following the initial generation of the website.

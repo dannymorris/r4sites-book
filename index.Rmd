@@ -25,7 +25,7 @@ favicon: images/favicon.ico
 In 2018, I had virtually no online presence other than about 100 random LinkedIn connections. I knew this was a problem given my budding interest in Data Science, the increasing demand for project portfolios, and my perceived need to "stand out" in the digital crowd.
 
 
-So, I learned how to publish my first personal website, [Abnormal Distributions](https://abndistro.com/). Yes, I know, it looks outdated and definitely not as cool as [this website](https://benc.dev/). However, Abnormal Distributions took my online presence and my career to new heights. Since going live, Abnormal Distributions has served over 50,000 page views and 20,000 users from [all over the world](#users-by-location). I began posting content on LinkedIn with links to my website, and in the span of a year I received 1,700 LinkedIn connection requests from Data Scientists and professionals in related fields. I began receiving job opportunities from recruiters who discovered me by landing on my website. Abnormal Distributions sparked my creativity, deepened my subject matter expertise through writing, and gave me the tools I needed to confidently engage with the digital crowd. It turned out to be a wonderful investment of time and energy.
+So, I learned how to publish my first personal website, [Abnormal Distributions](https://abndistro.com/){target="blank"}. Yes, I know, it looks outdated and definitely not as cool as [this website](https://benc.dev/){target="blank"}. However, Abnormal Distributions took my online presence and my career to new heights. Since going live, Abnormal Distributions has served over 50,000 page views and 20,000 users from [all over the world](https://i.imgur.com/Qvx08ry.png){target="blank"}. I began posting content on LinkedIn with links to my website, and in the span of a year I received 1,700 LinkedIn connection requests from Data Scientists and professionals in related fields. I began receiving job opportunities from recruiters who discovered me by landing on my website. Abnormal Distributions sparked my creativity, deepened my subject matter expertise through writing, and gave me the tools I needed to confidently engage with the digital crowd. It turned out to be a wonderful investment of time and energy.
 
 **My goal with this book is to help you launch your own personal website** and, hopefully, experience the same personal transformation that I experienced after I launched mine. 
 
@@ -45,17 +45,17 @@ There are many excellent reasons to have a personal website. Below is a list of 
 
 - **Enrich your social media presence.** Personal websites give your social media viewers a path to learning more about you and the work you are doing. Start by enriching your LinkedIn profile by inserting links to your website in your headline, summary, Featured section, and any posts you make.
 
-- **Personalize your job applications.** If there is a job you really want or a company you would love to work for, create a personalized website for this company with hyperfocused content and share it with the recruiter, hiring manager, current employees, and anyone else in the company's network who might be impressed. I built [this website](https://goofy-franklin-7b6d1d.netlify.app/) when I applied to RStudio. Spoiler: I did not get the job. 🤷‍♂️
+- **Personalize your job applications.** If there is a job you really want or a company you would love to work for, create a personalized website for this company with hyperfocused content and share it with the recruiter, hiring manager, current employees, and anyone else in the company's network who might be impressed. I built [this website](https://goofy-franklin-7b6d1d.netlify.app/){target="blank"} when I applied to RStudio. Spoiler: I did not get the job. 🤷‍♂️
 
 - **Establish yourself as a thought leader.** Are you passionate about certain topics? Create a website and start writing! Direct people to your website as often as you can to reinforce your thought leadership on the topic. By the way, you do not have to be an expert to be a thought leader. If you are learning a new topic and have some ideas you want to share, then you are a thought leader.
 
-- **Organize content for a specific class or project.** This use case is a supreme opportunity for students to display leadership. If you are taking a class or working on a project, consider publishing a website (for free, of course) to communicate your progress and organize essential documentation, as shown in [this example](https://dssquad-wiki.netlify.app/).
+- **Organize content for a specific class or project.** This use case is a supreme opportunity for students to display leadership. If you are taking a class or working on a project, consider publishing a website (for free, of course) to communicate your progress and organize essential documentation, as shown in [this example](https://dssquad-wiki.netlify.app/){target="blank"}.
 
 - **Promote a product or service.** If you are thinking about selling your own products or services, consider publishing a landing page or an ecommerce site. I built [this landing page] at a time when I was considering building websites for local clients.
 
 ## What you will learn {#learn}
 
-You will learn how to create, design, publish, and analyze your personal website using the [Hugo Anatole](https://themes.gohugo.io/theme/anatole/) design theme as the starting point. You will gradually edit this starter theme and author your own original content, resulting in [your own website](https://r4sites-anatole-custom.netlify.app/).
+You will learn how to create, design, publish, and analyze your personal website using the [Hugo Anatole](https://themes.gohugo.io/theme/anatole/){target="blank"} design theme as the starting point. You will gradually edit this starter theme and author your own original content, resulting in [your own website](https://r4sites-anatole-custom.netlify.app/){target="blank"}.
 
 During this process, you will learn how to do the following:
 
@@ -84,27 +84,33 @@ The default Hugo Anatole design theme is an excellent starting point for creatin
 
 The methodology described in this book uses the following **freely available** tools:
 
-- [R](https://cran.rstudio.com/) and the [blogdown](https://bookdown.org/yihui/blogdown/) R package
-- [RStudio](https://www.rstudio.com/products/rstudio/#rstudio-desktop)
-- [Hugo](https://gohugo.io/)
-- [Git](https://git-scm.com/) and [GitHub](https://github.com/)
-- [Netlify](https://app.netlify.com/)
-- [Google Analytics](https://analytics.google.com/) and the [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) R package
-- [Formspree](https://formspree.io)
+- [R](https://cran.rstudio.com/){target="blank"} and the [blogdown](https://bookdown.org/yihui/blogdown/){target="blank"} R package
+- [RStudio](https://www.rstudio.com/products/rstudio/#rstudio-desktop){target="blank"}
+- [Hugo](https://gohugo.io/){target="blank"}
+- [Git](https://git-scm.com/){target="blank"} and [GitHub](https://github.com/){target="blank"}
+- [Netlify](https://app.netlify.com/){target="blank"}
+- [Google Analytics](https://analytics.google.com/){target="blank"} and the [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/){target="blank"} R package
+- [Formspree](https://formspree.io){target="blank"}
 
 ## Inspiring examples
 
 Below are some examples of personal websites, blogs, and portfolios that have been built using the methodology described in this book. 
 
-- [Abnormal Distributions](https://abndistro.com) - My personal blog. Outrageously simple and straightforward. Designed for sharing tutorials and ideas. Adapted from the [Hugo Xmin](https://themes.gohugo.io/hugo-xmin/) theme.
+- [Abnormal Distributions](https://abndistro.com){target="blank"} - My personal blog. Outrageously simple and straightforward. Designed for sharing tutorials and ideas. Adapted from the [Hugo Xmin](https://themes.gohugo.io/hugo-xmin/){target="blank"} theme.
 
-- [Alex Bilz](https://www.alexbilz.com/) - Personal website authored by Alex Bilz, creator of the [Hugo Anatole](https://themes.gohugo.io/theme/anatole/) website design which is featured throughout this book.
+- [Alex Bilz](https://www.alexbilz.com/){target="blank"} - Personal website authored by Alex Bilz, creator of the [Hugo Anatole](https://themes.gohugo.io/theme/anatole/){target="blank"} website design which is featured throughout this book.
 
-- [R-Ladies NYC](http://www.rladiesnyc.org/) - Organization website dedicated to promoting gender diversity in the R community. Clean, modern layout. Great design for promoting groups, teams, projects, and events. Adapted form the [Hugo Academic](https://themes.gohugo.io/academic/) theme.
+- [R-Ladies NYC](http://www.rladiesnyc.org/){target="blank"} - Organization website dedicated to promoting gender diversity in the R community. Clean, modern layout. Great design for promoting groups, teams, projects, and events. Adapted form the [Hugo Academic](https://themes.gohugo.io/academic/){target="blank"} theme.
 
-- [Evan Odell](https://evanodell.com/blog/) - Personal website authored by Evan Odell featuring a blog, project portfolio, and biography. Crisp, clean, readable layout. Adapted from the [Beautiful Hugo](https://themes.gohugo.io/beautifulhugo/) theme.
+- [Evan Odell](https://evanodell.com/blog/){target="blank"} - Personal website authored by Evan Odell featuring a blog, project portfolio, and biography. Crisp, clean, readable layout. Adapted from the [Beautiful Hugo](https://themes.gohugo.io/beautifulhugo/){target="blank"} theme.
 
-- [Maëlle Salmon](https://masalmon.eu/) - Personal website authored by Maëlle Salmon featuring a blog, list of talks, publications, and biography. Adapted from the [Blackburn](https://themes.gohugo.io/blackburn/) theme.
+- [Maëlle Salmon](https://masalmon.eu/){target="blank"} - Personal website authored by Maëlle Salmon featuring a blog, list of talks, publications, and biography. Adapted from the [Blackburn](https://themes.gohugo.io/blackburn/){target="blank"} theme.
+
+## Getting support
+
+The Slack workspace for this book is the best way to get help with your own website project. Slack is a place to chat, share files, and interact with others including myself.
+
+[Accept this invitation](https://join.slack.com/t/r4sitesbooksupport/shared_invite/zt-pyua4ua9-L~taaOqLzEeCbW5o9w9eLQ){target="blank"} to join the Slack workspace.
 
 ## FAQ {#faq}
 
@@ -135,4 +141,4 @@ Yes. This topic is discussed in the chapter [Going live on the internet](#deploy
 ## About the author
 
 Hi! My name is Danny Morris, and thanks for checking out my book. I am an industry Data Scientist with a passion for writing, creating visual content, and building predictive models. I have published over a dozen websites for various purposes using the methodology described in this book. 
-More than anything, I love helping people establish and grow their careers. I believe having a personal website is an excellent option for anyone looking to take a step in their career. Feel free to shoot me an <a href="mailto:dmorris10667@gmail.com">email</a> and connect with me on [LinkedIn](https://www.linkedin.com/in/drmorris87/).
+More than anything, I love helping people establish and grow their careers. I believe having a personal website is an excellent option for anyone looking to take a step in their career. Feel free to shoot me an [email](mailto:dmorris10667@gmail.com){target="blank"} and connect with me on [LinkedIn](https://www.linkedin.com/in/drmorris87/){target="blank"}.

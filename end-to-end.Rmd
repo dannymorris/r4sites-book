@@ -6,7 +6,7 @@ editor_options:
 
 # Complete end-to-end example
 
-This chapter exposes you to the entire methodology to create, publish, and analyze websites through a quick example. If you complete the steps described in this chapter, you will end up with this [basic website](https://r4sites-anatole.netlify.app/). In later chapters, you will make edits to this basic website to create a [customized version](https://r4sites-anatole-custom.netlify.app/) with your own original content.
+This chapter exposes you to the entire methodology to create, publish, and analyze websites through a quick example. If you complete the steps described in this chapter, you will end up with this [basic website](https://r4sites-anatole.netlify.app/){target="blank"}. In later chapters, you will make edits to this basic website to create a [customized version](https://r4sites-anatole-custom.netlify.app/){target="blank"} with your own original content.
 
 Let's get started!
 
@@ -14,63 +14,62 @@ Let's get started!
 
 Begin by installing these free, open source tools. My recommendation is to download the latest versions, which at the time of this writing are R 4.0, RStudio 1.4, Git 2.31.1.
 
-- [R](https://cran.rstudio.com/)
-- [RStudio](https://www.rstudio.com/products/rstudio/download/#download)
-- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [R](https://cran.rstudio.com/){target="blank"}
+- [RStudio](https://www.rstudio.com/products/rstudio/download/#download){target="blank"}
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){target="blank"}
 
 ## Create accounts {#create-accounts}
 
 Create free accounts with GitHub, Netlify, Google Analytics, and Formspree. Start with GitHub, then use your GitHub registration to sign up for a Netlify account. To sign up for Google Analytics, click the link below and locate “Start for free” on the landing page.
 
-- [GitHub](https://github.com/)
-- [Netlify](https://app.netlify.com/)
-- [Google Analytics](https://marketingplatform.google.com/about/analytics/)
-- [Formspree](https://formspree.io/register)
+- [GitHub](https://github.com/){target="blank"}
+- [Netlify](https://app.netlify.com/){target="blank"}
+- [Google Analytics](https://marketingplatform.google.com/about/analytics/){target="blank"}
+- [Formspree](https://formspree.io/register){target="blank"}
 
 ## Generate a website {#create-new-blogdown}
 
-The [blogdown](https://bookdown.org/yihui/blogdown/) R package makes it remarkably easy to generate websites that use the [Hugo](https://gohugo.io/) framework behind the scenes. The steps to create a website include the following:
+The [blogdown](https://bookdown.org/yihui/blogdown/){target="blank"} R package makes it remarkably easy to generate websites that use the [Hugo](https://gohugo.io/){target="blank"} framework behind the scenes. The steps to create a website include the following:
 
 1. Launch RStudio and install the blogdown package by running `install.packages("blogdown")` in the R console.
 
-2. Create a new RStudio Project by going to *File > New Project > New Directory > Website using blogdown*. [📷 Image](https://i.imgur.com/eDg7V2k.png).
+2. Create a new RStudio Project by going to *File > New Project > New Directory > Website using blogdown*. [📷 Image](https://i.imgur.com/eDg7V2k.png){target="blank"}.
 
-3. Using the RStudio New Project Wizard, generate a website using the [Hugo Anatole theme](https://themes.gohugo.io/anatole/) by inserting `xndrblz/anatole` in the `Hugo theme` parameter. Click Create Project to generate the website. [📷 Image](https://i.imgur.com/lkD1ZlU.png).
+3. Using the RStudio New Project Wizard, generate a website using the [Hugo Anatole theme](https://themes.gohugo.io/anatole/){target="blank"} by inserting `xndrblz/anatole` in the `Hugo theme` parameter. Click Create Project to generate the website. [📷 Image](https://i.imgur.com/lkD1ZlU.png){target="blank"}.
 
-4. Confirm that everything is working properly by running `blogdown::serve_site()` in the R console. A local, live, and fully functional preview of your website will appear in the Viewer pane in RStudio. [📷 Image](https://i.imgur.com/oxZgeqM.png).
+4. Confirm that everything is working properly by running `blogdown::serve_site()` in the R console. A local, live, and fully functional preview of your website will appear in the Viewer pane in RStudio. [📷 Image](https://i.imgur.com/oxZgeqM.png){target="blank"}.
 
 ## Make some edits
 
 You will notice that the default website contains placeholder text such as "My Blog" and "Call me Jane" on the home page. The steps to edit these placeholder text examples include the following:
 
-1. Edit "My Blog" on the home page by navigating to `config/_default/languages.toml` and changing the `title` parameter. [</> Code](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/languages.toml#L2).
+1. Edit "My Blog" on the home page by navigating to `config/_default/languages.toml` and changing the `title` parameter. [</> Code](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/languages.toml#L2){target="blank"}.
 
-2. Edit "Call me Jane" on the home page by navigating to `config/_default/params.toml` and editing the `title` parameter. Feel free to experiment with editing other parameters including `description`, `profilePicture`, and social media links. [</> Code](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml#L3-L6).
+2. Edit "Call me Jane" on the home page by navigating to `config/_default/params.toml` and editing the `title` parameter. Feel free to experiment with editing other parameters including `description`, `profilePicture`, and social media links. [</> Code](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml#L3-L6){target="blank"}.
 
 ## Integrate Formspree
 
-The [contact form](https://r4sites-anatole.netlify.app/contact/) on the Contact page is powered by Formspree. Contact forms are a handy feature for collecting user emails and feedback from your users. The steps to create a Formspree contact form "endpoint" and link it to the contact form on the website include the following:
+The [contact form](https://r4sites-anatole.netlify.app/contact/){target="blank"} on the Contact page is powered by Formspree. Contact forms are a handy feature for collecting user emails and feedback from your users. The steps to create a Formspree contact form "endpoint" and link it to the contact form on the website include the following:
 
-1. Sign in to [Formspree](https://formspree.io/login).
+1. Sign in to [Formspree](https://formspree.io/login){target="blank"}.
 
-2. Click "New Project" to create a new project for your website. [📷 Image](https://i.imgur.com/jZnrcVL.png).
+2. Click "New Project" to create a new project for your website. [📷 Image](https://i.imgur.com/jZnrcVL.png){target="blank"}.
 
-3. Click "New Form" to create a new contact form. [📷 Image](https://i.imgur.com/OYqo3Js.png)
+3. Click "New Form" to create a new contact form. [📷 Image](https://i.imgur.com/OYqo3Js.png){target="blank"}
 
-4. Copy the form's "endpoint". [📷 Image](https://i.imgur.com/2S2HVO6.png)
+4. Copy the form's "endpoint". [📷 Image](https://i.imgur.com/2S2HVO6.png){target="blank"}
 
-5. Open `config/_default/params.toml` and insert the form endpoint into the `contactFormAction` parameter. [</> Code](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml#L18-L19).
+5. Open `config/_default/params.toml` and insert the form endpoint into the `contactFormAction` parameter. [</> Code](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml#L18-L19){target="blank"}.
 
-6. Fill out the contact form on the website and click "Send". Sign in to the Formspree, locate your newly created form, and select "Submissions" to view your submission. [📷 Image](https://i.imgur.com/zua7Wuh.png)
+6. Fill out the contact form on the website and click "Send". Sign in to the Formspree, locate your newly created form, and select "Submissions" to view your submission. [📷 Image](https://i.imgur.com/zua7Wuh.png){target="blank"}
 
 ## Push the website to GitHub {#push-demo}
 
 Once your site is working locally, the next steps are to create a remote GitHub repository for your website, configure a local Git repository, and push your website files from your local environment to the remote repository.
 
-1. Create a remote GitHub repository by signing in to [GitHub](https://github.com/) and clicking "New" in the Repositories section. Configure the repository accordingly, then click Create repository. [📷 Image](https://i.imgur.com/LW2AhCr.png)
+1. Create a remote GitHub repository by signing in to [GitHub](https://github.com/){target="blank"} and clicking "New" in the Repositories section. Configure the repository accordingly, then click Create repository. [📷 Image](https://i.imgur.com/LW2AhCr.png){target="blank"}
 
 2. Launch a Git terminal (e.g. Git Bash on Windows, Terminal on Mac/Linux) and run the following Git commands to push files from the local environment to the remote GitHub repository: 
-
 
 ```{bash, eval=F}
 # Change the directory to your website's root folder
@@ -97,31 +96,31 @@ git push -u origin master
 
 Now that your website files are stored in a GitHub repository, follow the steps below to configure Netlify to deploy your website to the internet:
 
-1. Log in to Netlify and click "New site from Git". [📷 Image](https://i.imgur.com/ztaGsN3m.png)
+1. Log in to Netlify and click "New site from Git". [📷 Image](https://i.imgur.com/ztaGsN3m.png){target="blank"}
 
 2. Select GitHub as the Continuous Deployment provider, then select your website's GitHub repository.
 
-3. Accept the suggested site settings and click "Deploy site" to publish your website to the internet. [📷 Image](https://i.imgur.com/wjDFnvJ.png)
+3. Accept the suggested site settings and click "Deploy site" to publish your website to the internet. [📷 Image](https://i.imgur.com/wjDFnvJ.png){target="blank"}
 
-4. Locate your website's URL by returning to the Site Overview section. By default, Netlify generates a random domain name with an extension of `.netlify.app` ([📷 Image](https://i.imgur.com/8TV9NQ1.png)). Though the domain name extension cannot be changed (unless you purchase a custom domain), the domain name prefix can be changed by navigating to *Site settings > Change site name*. [📷 Image](https://i.imgur.com/kiyzULE.png)
+4. Locate your website's URL by returning to the Site Overview section. By default, Netlify generates a random domain name with an extension of `.netlify.app` ([📷 Image](https://i.imgur.com/8TV9NQ1.png){target="blank"}). Though the domain name extension cannot be changed (unless you purchase a custom domain), the domain name prefix can be changed by navigating to *Site settings > Change site name*. [📷 Image](https://i.imgur.com/kiyzULE.png){target="blank"}
 
 ## Integrate Google Analytics
 
 Google Analytics is a tool for collecting user traffic and activity on your website. [Create a free Google Analytics account](#create-accounts) to begin using Google Analytics, then proceed with the following steps:
 
-1. Sign in to Google Analytics and navigate to *Admin > Create Account*. [📷 Image](https://i.imgur.com/QRTa07k.png)
+1. Sign in to Google Analytics and navigate to *Admin > Create Account*. [📷 Image](https://i.imgur.com/QRTa07k.png){target="blank"}
 
 2. Under Account setup, provide an appropriate name (e.g. my-example-site) and configure the Account Data Sharing Settings to your liking. Click "Next".
 
 3. Under Property setup, provide an appropriate name (e.g. example-site-property). 
 
-4. Under Property setup, click on "Show advanced options" to create a Universal Analytics property. For the Website URL, insert the URL provided by Netlify when you [deployed your website](#demo-deploy). Click "Next". [📷 Image](https://i.imgur.com/aYeAANl.png)
+4. Under Property setup, click on "Show advanced options" to create a Universal Analytics property. For the Website URL, insert the URL provided by Netlify when you [deployed your website](#demo-deploy). Click "Next". [📷 Image](https://i.imgur.com/aYeAANl.png){target="blank"}
 
 5. Under About your business, configure the settings to your liking. Click "Next" and accept the terms of service.
 
-6. Locate the Tracking Code by returning to the Google Analytics home page and navigating to the Admin console. Select the Account and Property that were created in the previous steps. Under Property, click on *Tracking Info > Tracking Code*. Copy the Tracking ID, which should appear in the form of UA-XXXXXXXXX-1. [📷 Image](https://i.imgur.com/qcyaVBD.png)
+6. Locate the Tracking Code by returning to the Google Analytics home page and navigating to the Admin console. Select the Account and Property that were created in the previous steps. Under Property, click on *Tracking Info > Tracking Code*. Copy the Tracking ID, which should appear in the form of UA-XXXXXXXXX-1. [📷 Image](https://i.imgur.com/qcyaVBD.png){target="blank"}
 
-7. Return to your RStudio Project. Open `config/_default/params.toml` in the main directory and create a `googleAnalytics` parameter. Insert your tracking code as the parameter value. [</> Code](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml#L16-L17).
+7. Return to your RStudio Project. Open `config/_default/params.toml` in the main directory and create a `googleAnalytics` parameter. Insert your tracking code as the parameter value. [</> Code](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml#L16-L17){target="blank"}.
 
 ## Push updates to GitHub
 
@@ -142,7 +141,7 @@ git push origin master
 
 ## Analyze Google Analytics data
 
-[googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) is an R package for analyzing Google Analytics data in R. This topic is discussed in more detail in the chapter [Analyzing user traffic](#google-analytics).
+[googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/){target="blank"} is an R package for analyzing Google Analytics data in R. This topic is discussed in more detail in the chapter [Analyzing user traffic](#google-analytics).
 
 The R code below exemplifies the workflow for authenticating, collecting, and analyzing Google Analytics data in R.
 

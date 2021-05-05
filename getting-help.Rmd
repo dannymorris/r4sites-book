@@ -16,24 +16,24 @@ Despite the wealth of information in this book, it does not (and simply cannot) 
 
 The Slack workspace is the best way to get help with your own website project. Slack is a place to chat, share files, and interact with others including myself.
 
-[Accept this invitation](https://join.slack.com/t/r4sitesbooksupport/shared_invite/zt-pyua4ua9-L~taaOqLzEeCbW5o9w9eLQ) to join the Slack workspace.
+[Accept this invitation](https://join.slack.com/t/r4sitesbooksupport/shared_invite/zt-pyua4ua9-L~taaOqLzEeCbW5o9w9eLQ){target="blank"} to join the Slack workspace.
 
 ## Connect with me
 
-Readers are welcome to reach out to me directly via [email](mailto:dmorris10667@gmail.com) or [LinkedIn](https://www.linkedin.com/in/drmorris87/).
+Readers are welcome to reach out to me directly via [email](mailto:dmorris10667@gmail.com){target="blank"} or [LinkedIn](https://www.linkedin.com/in/drmorris87/){target="blank"}.
 
 ## Additional resources
 
 To learn more about the methodology and the tools described in this book, I recommend the following resources:
 
-- [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/)
+- [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/){target="blank"} 
 
-- [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+- [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/){target="blank"} 
 
-- [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/)
+- [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/){target="blank"} 
 
-- [Hugo documentation](https://gohugo.io/documentation/)
+- [Hugo documentation](https://gohugo.io/documentation/){target="blank"} 
 
-- [Netlify documentation](https://docs.netlify.com/)
+- [Netlify documentation](https://docs.netlify.com/){target="blank"} 
 
-- [Formspree documentation](https://formspree.io/formbutton/docs)
+- [Formspree documentation](https://formspree.io/formbutton/docs){target="blank"} 

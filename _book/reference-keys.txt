@@ -1,10 +1,11 @@
 introduction
 about-this-book
 target-audience
-motivating-applications
+reasons-to-have-a-website
 learn
 tools
 inspiring-examples
+getting-support
 faq
 about-the-author
 complete-end-to-end-example
@@ -102,9 +103,8 @@ serve-local
 push-updates-to-github-2
 check-your-website
 rebuild-a-clean-website
-finding-free-images
+find-free-images
 get-help
 join-the-slack-workspace
 connect-with-me
 additional-resources
-reasons-to-have-a-website

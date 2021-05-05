@@ -165,12 +165,13 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#about-this-book"><i class="fa fa-check"></i><b>1.1</b> About this book</a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#target-audience"><i class="fa fa-check"></i><b>1.2</b> Target audience</a></li>
-<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#motivating-applications"><i class="fa fa-check"></i><b>1.3</b> Motivating applications</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#reasons-to-have-a-website"><i class="fa fa-check"></i><b>1.3</b> Reasons to have a website</a></li>
 <li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#learn"><i class="fa fa-check"></i><b>1.4</b> What you will learn</a></li>
 <li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#tools"><i class="fa fa-check"></i><b>1.5</b> Tools you will use</a></li>
 <li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#inspiring-examples"><i class="fa fa-check"></i><b>1.6</b> Inspiring examples</a></li>
-<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#faq"><i class="fa fa-check"></i><b>1.7</b> FAQ</a></li>
-<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i><b>1.8</b> About the author</a></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#getting-support"><i class="fa fa-check"></i><b>1.7</b> Getting support</a></li>
+<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#faq"><i class="fa fa-check"></i><b>1.8</b> FAQ</a></li>
+<li class="chapter" data-level="1.9" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i><b>1.9</b> About the author</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html"><i class="fa fa-check"></i><b>2</b> Complete end-to-end example</a>
 <ul>
@@ -273,7 +274,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="10.2" data-path="tips-tricks.html"><a href="tips-tricks.html#push-updates-to-github-2"><i class="fa fa-check"></i><b>10.2</b> Push updates to GitHub</a></li>
 <li class="chapter" data-level="10.3" data-path="tips-tricks.html"><a href="tips-tricks.html#check-your-website"><i class="fa fa-check"></i><b>10.3</b> Check your website</a></li>
 <li class="chapter" data-level="10.4" data-path="tips-tricks.html"><a href="tips-tricks.html#rebuild-a-clean-website"><i class="fa fa-check"></i><b>10.4</b> Rebuild a clean website</a></li>
-<li class="chapter" data-level="10.5" data-path="tips-tricks.html"><a href="tips-tricks.html#finding-free-images"><i class="fa fa-check"></i><b>10.5</b> Finding free images</a></li>
+<li class="chapter" data-level="10.5" data-path="tips-tricks.html"><a href="tips-tricks.html#find-free-images"><i class="fa fa-check"></i><b>10.5</b> Find free images</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="get-help.html"><a href="get-help.html"><i class="fa fa-check"></i><b>11</b> Getting help</a>
 <ul>
@@ -308,21 +309,21 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">Chapter 4</span> Generating your website</h1>
 <p>This chapter teaches you how to generate a website in three simple steps using RStudio.</p>
 <div class="design">
-<p><strong>Note:</strong> This chapter and all subsequent chapters will use the <a href="https://themes.gohugo.io/theme/anatole/">Hugo Anatole</a> theme as the basis for explaining and implementing concepts. Over the course of this book, the default Hugo Anatole website will be edited sequentially to produce the <a href="https://r4sites-anatole-custom.netlify.app/">final result</a>.</p>
+<p><strong>Note:</strong> This chapter and all subsequent chapters will use the <a href="https://themes.gohugo.io/theme/anatole/" target="blank">Hugo Anatole</a> theme as the basis for explaining and implementing concepts. Over the course of this book, the default Hugo Anatole website will be edited sequentially to produce the final result which can be viewed here -<a href="https://r4sites-anatole-custom.netlify.app/" target="blank">https://r4sites-anatole-custom.netlify.app/</a>.</p>
 </div>
 <div id="prerequisites" class="section level2" number="4.1">
 <h2><span class="header-section-number">4.1</span> Prerequisites</h2>
 <p>Before you proceed, complete the following prerequisites:</p>
 <ol style="list-style-type: decimal">
-<li><a href="https://cran.rstudio.com/">Install R</a></li>
-<li><a href="https://www.rstudio.com/products/rstudio/download/#download">Install RStudio</a></li>
+<li><a href="https://cran.rstudio.com/" target="blank">Install R</a></li>
+<li><a href="https://www.rstudio.com/products/rstudio/download/#download" target="blank">Install RStudio</a></li>
 <li>(optional) <a href="choose-theme.html#choose-theme">Discover your style</a></li>
 </ol>
 <p>My recommendation is to download the latest versions, which at the time of this writing are R 4.0 and RStudio 1.4.</p>
 </div>
 <div id="how-it-works-1" class="section level2" number="4.2">
 <h2><span class="header-section-number">4.2</span> How it works</h2>
-<p>RStudio’s New Project Wizard makes it remarkably easy to generate a <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> website in three simple steps. Behind the scenes, RStudio and blogdown use <a href="https://gohugo.io/">Hugo</a> to generate your website.</p>
+<p>RStudio’s New Project Wizard makes it remarkably easy to generate a <a href="https://bookdown.org/yihui/blogdown/" target="blank">blogdown</a> website in three simple steps. Behind the scenes, RStudio and blogdown use <a href="https://gohugo.io/" target="blank">Hugo</a> to generate your website.</p>
 </div>
 <div id="generate-site" class="section level2" number="4.3">
 <h2><span class="header-section-number">4.3</span> Generate your site</h2>
@@ -330,16 +331,16 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <ol style="list-style-type: decimal">
 <li><p>Launch RStudio and install the blogdown package by running <code>install.packages("blogdown")</code> in the R console.</p></li>
 <li><p>Create a new RStudio Project by going to <strong>File &gt; New Project &gt; New Directory &gt; Website using blogdown.</strong> <a href="https://i.imgur.com/eDg7V2k.png" target="_blank">📷 Image</a>.</p></li>
-<li><p>Configure the website to use the Hugo Anatole theme by setting the <code>Hugo theme</code> parameter to <code>lxndrblz/anatole</code>. Click Create Project to generate the website. <a href="https://i.imgur.com/0DxkDHe.png">📷 Image</a></p></li>
+<li><p>Configure the website to use the Hugo Anatole theme by setting the <code>Hugo theme</code> parameter to <code>lxndrblz/anatole</code>. Click Create Project to generate the website. <a href="https://i.imgur.com/0DxkDHe.png" target="blank">📷 Image</a></p></li>
 </ol>
 </div>
 <div id="use-a-different-hugo-theme" class="section level2" number="4.4">
 <h2><span class="header-section-number">4.4</span> Use a different Hugo theme</h2>
-<p>To use a theme other than Anatole, locate and select the theme from the list of <a href="https://themes.gohugo.io/">Hugo themes</a>. Click “Download” on the theme homepage to view the source code on GitHub (<a href="https://i.imgur.com/ld35gNP.png">📷 Image</a>). Copy the user/theme-name in the GitHub URL, then add this information to the <code>Hugo theme</code> parameter in the website configuration. For example, if the source code is located at <a href="https://github.com/devcows/hugo-universal-theme" class="uri">https://github.com/devcows/hugo-universal-theme</a>, insert <code>devcows/hugo-universal-theme</code> into the <code>Hugo theme</code> parameter.</p>
+<p>To use a theme other than Anatole, locate and select the theme from the list of <a href="https://themes.gohugo.io/" target="blank">Hugo themes</a>. Click “Download” on the theme homepage to view the source code on GitHub (<a href="https://i.imgur.com/ld35gNP.png" target="blank">📷 Image</a>). Copy the user/theme-name in the GitHub URL, then add this information to the <code>Hugo theme</code> parameter in the website configuration. For example, if the source code is located at <a href="https://github.com/devcows/hugo-universal-theme" class="uri">https://github.com/devcows/hugo-universal-theme</a>, insert <code>devcows/hugo-universal-theme</code> into the <code>Hugo theme</code> parameter.</p>
 </div>
 <div id="serve-site" class="section level2" number="4.5">
 <h2><span class="header-section-number">4.5</span> Serve the website locally</h2>
-<p>The <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> package includes a handy function called <code>serve_site()</code>. Running this function in the R console with your website’s RStudio Project loaded will render a local copy of your entire website in the RStudio “Viewer” pane, as shown in this <a href="https://i.imgur.com/oxZgeqM.png">example</a>.</p>
+<p>The <a href="https://bookdown.org/yihui/blogdown/" target="blank">blogdown</a> package includes a handy function called <code>serve_site()</code>. Running this function in the R console with your website’s RStudio Project loaded will render a local copy of your entire website in the RStudio “Viewer” pane. <a href="https://i.imgur.com/oxZgeqM.png" target="blank">📷 Image</a></p>
 <p>The best part of this feature is that as you make and save changes to your website files, the local rendering will update in real-time and reflect your changes. This feature of blogdown, known as LiveReload, empowers you to test ideas and receive instant feedback without having to leave the RStudio environment.</p>
 </div>
 <div id="next-steps-2" class="section level2" number="4.6">

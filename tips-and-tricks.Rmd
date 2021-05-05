@@ -4,7 +4,7 @@ This chapter reinforces some basic tips and tricks for you to consider while dev
 
 ## Serve your website locally {#serve-local}
 
-The blogdown package includes a handy function called `serve_site()`. Running this function in the R console with your website's RStudio Project loaded will render a local copy of your entire website in the RStudio "Viewer" pane, as shown in this [example](https://i.imgur.com/oxZgeqM.png).
+The blogdown package includes a handy function called `serve_site()`. Running this function in the R console with your website's RStudio Project loaded will render a local copy of your entire website in the RStudio "Viewer" pane. [📷 Image](https://i.imgur.com/oxZgeqM.png){target="blank"}
 
 While serving your website locally, the local version will update in real-time as you make and save changes to your website's codebase. This feature of blogdown, known as LiveReload, lets you experiment with changes to your website and receive instant feedback.
 
@@ -46,6 +46,6 @@ blogdown::serve_site()
 
 If you continue to experience buggy behavior, try restarting RStudio and running the code again.
 
-## Finding free images
+## Find free images
 
-If you need images for your website (e.g. post thumbnail), I recommend using free images from [Unsplash](https://unsplash.com/). 
+If you need images for your website (e.g. post thumbnail), I recommend using free images from [Unsplash](https://unsplash.com/){target="blank"}. 

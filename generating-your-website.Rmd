@@ -3,22 +3,22 @@
 This chapter teaches you how to generate a website in three simple steps using RStudio. 
 
 :::design
-**Note:** This chapter and all subsequent chapters will use the [Hugo Anatole](https://themes.gohugo.io/theme/anatole/) theme as the basis for explaining and implementing concepts. Over the course of this book, the default Hugo Anatole website will be edited sequentially to produce the [final result](https://r4sites-anatole-custom.netlify.app/).
+**Note:** This chapter and all subsequent chapters will use the [Hugo Anatole](https://themes.gohugo.io/theme/anatole/){target="blank"} theme as the basis for explaining and implementing concepts. Over the course of this book, the default Hugo Anatole website will be edited sequentially to produce the final result which can be viewed here -[https://r4sites-anatole-custom.netlify.app/](https://r4sites-anatole-custom.netlify.app/){target="blank"}.
 :::
 
 ## Prerequisites
 
 Before you proceed, complete the following prerequisites:
 
-1. [Install R](https://cran.rstudio.com/)
-2. [Install RStudio](https://www.rstudio.com/products/rstudio/download/#download)
+1. [Install R](https://cran.rstudio.com/){target="blank"}
+2. [Install RStudio](https://www.rstudio.com/products/rstudio/download/#download){target="blank"}
 3. (optional) [Discover your style](#choose-theme)
 
 My recommendation is to download the latest versions, which at the time of this writing are R 4.0 and RStudio 1.4.
 
 ## How it works
 
-RStudio's New Project Wizard makes it remarkably easy to generate a [blogdown](https://bookdown.org/yihui/blogdown/) website in three simple steps. Behind the scenes, RStudio and blogdown use [Hugo](https://gohugo.io/) to generate your website.
+RStudio's New Project Wizard makes it remarkably easy to generate a [blogdown](https://bookdown.org/yihui/blogdown/){target="blank"} website in three simple steps. Behind the scenes, RStudio and blogdown use [Hugo](https://gohugo.io/){target="blank"} to generate your website.
 
 ## Generate your site{#generate-site}
 
@@ -28,15 +28,15 @@ Follow these steps to generate a website using RStudio:
 
 2. Create a new RStudio Project by going to **File > New Project > New Directory > Website using blogdown.** [📷 Image](https://i.imgur.com/eDg7V2k.png){target="_blank"}.
 
-3. Configure the website to use the Hugo Anatole theme by setting the `Hugo theme` parameter to `lxndrblz/anatole`. Click Create Project to generate the website. [📷 Image](https://i.imgur.com/0DxkDHe.png)
+3. Configure the website to use the Hugo Anatole theme by setting the `Hugo theme` parameter to `lxndrblz/anatole`. Click Create Project to generate the website. [📷 Image](https://i.imgur.com/0DxkDHe.png){target="blank"}
 
 ## Use a different Hugo theme
 
-To use a theme other than Anatole, locate and select the theme from the list of [Hugo themes](https://themes.gohugo.io/). Click "Download" on the theme homepage to view the source code on GitHub ([📷 Image](https://i.imgur.com/ld35gNP.png)). Copy the user/theme-name in the GitHub URL, then add this information to the `Hugo theme` parameter in the website configuration. For example, if the source code is located at https://github.com/devcows/hugo-universal-theme, insert `devcows/hugo-universal-theme` into the `Hugo theme` parameter.
+To use a theme other than Anatole, locate and select the theme from the list of [Hugo themes](https://themes.gohugo.io/){target="blank"}. Click "Download" on the theme homepage to view the source code on GitHub ([📷 Image](https://i.imgur.com/ld35gNP.png){target="blank"}). Copy the user/theme-name in the GitHub URL, then add this information to the `Hugo theme` parameter in the website configuration. For example, if the source code is located at https://github.com/devcows/hugo-universal-theme, insert `devcows/hugo-universal-theme` into the `Hugo theme` parameter.
 
 ## Serve the website locally {#serve-site}
 
-The [blogdown](https://bookdown.org/yihui/blogdown/) package includes a handy function called `serve_site()`. Running this function in the R console with your website's RStudio Project loaded will render a local copy of your entire website in the RStudio "Viewer" pane, as shown in this [example](https://i.imgur.com/oxZgeqM.png).
+The [blogdown](https://bookdown.org/yihui/blogdown/){target="blank"} package includes a handy function called `serve_site()`. Running this function in the R console with your website's RStudio Project loaded will render a local copy of your entire website in the RStudio "Viewer" pane. [📷 Image](https://i.imgur.com/oxZgeqM.png){target="blank"}
 
 The best part of this feature is that as you make and save changes to your website files, the local rendering will update in real-time and reflect your changes. This feature of blogdown, known as LiveReload, empowers you to test ideas and receive instant feedback without having to leave the RStudio environment.
 

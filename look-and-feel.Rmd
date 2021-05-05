@@ -3,7 +3,7 @@
 This chapter teaches you how to customize the look and feel of your website and how to personalize artistic elements including the website title, profile image, favicon, font style, font properties, and color choices.
 
 :::design
-**Note:** This chapter builds upon the website generated in chapter 4. All subsequent chapters will do the same. The final result can be viewed here - https://r4sites-anatole-custom.netlify.app/.
+**Note:** This chapter builds upon the website generated in chapter 4. All subsequent chapters will do the same. The final result can be viewed here - [https://r4sites-anatole-custom.netlify.app/](https://r4sites-anatole-custom.netlify.app/){target="blank"}.
 :::
 
 ## Prerequisites
