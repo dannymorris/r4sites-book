@@ -136,7 +136,7 @@ googleAnalyticsR::ga_auth()
 
 ### List your Google Analytics Accounts and Properties
 
-Running `ga_account_list()` will list the Google Analytics account that was created in step 1 of [Set up Google Analytics](#ga-setup).
+Running `ga_account_list()` will list the Google Analytics account that was created in step 1 of [Set up Google Analytics](#ga-setup){target="blank"}.
 
 ```{r}
 ## get your accounts
