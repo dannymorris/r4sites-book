@@ -34,7 +34,7 @@
 
 <link rel="next" href="complete-end-to-end-example.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
-<script src="libs/jquery-3.5.1/jquery.min.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -51,25 +51,6 @@
 
 
 
-<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
-<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-1.3.1/leaflet.js"></script>
-<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
-<script src="libs/proj4-2.6.2/proj4.min.js"></script>
-<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
-<script src="libs/plotly-binding-4.9.3/plotly.js"></script>
-<script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-1.57.1/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-1.57.1/plotly-latest.min.js"></script>
-<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
-<script src="libs/datatables-binding-0.17/datatables.js"></script>
-<link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
-<link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
-<script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-196111394-1"></script>
 <script>
@@ -81,69 +62,6 @@
 </script>
 
 
-<style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  background-color: #f8f8f8; }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ef2929; } /* Alert */
-code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
-code span.bn { color: #0000cf; } /* BaseN */
-code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
-code span.co { color: #8f5902; font-style: italic; } /* Comment */
-code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
-code span.dt { color: #204a87; } /* DataType */
-code span.dv { color: #0000cf; } /* DecVal */
-code span.er { color: #a40000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
-code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
-code span.ot { color: #8f5902; } /* Other */
-code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
-code span.ss { color: #4e9a06; } /* SpecialString */
-code span.st { color: #4e9a06; } /* String */
-code span.va { color: #000000; } /* Variable */
-code span.vs { color: #4e9a06; } /* VerbatimString */
-code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
-</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -165,7 +83,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#about-this-book"><i class="fa fa-check"></i><b>1.1</b> About this book</a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#target-audience"><i class="fa fa-check"></i><b>1.2</b> Target audience</a></li>
-<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#motivating-applications"><i class="fa fa-check"></i><b>1.3</b> Motivating applications</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#reasons-to-have-a-website"><i class="fa fa-check"></i><b>1.3</b> Reasons to have a website</a></li>
 <li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#learn"><i class="fa fa-check"></i><b>1.4</b> What you will learn</a></li>
 <li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#tools"><i class="fa fa-check"></i><b>1.5</b> Tools you will use</a></li>
 <li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#inspiring-examples"><i class="fa fa-check"></i><b>1.6</b> Inspiring examples</a></li>
@@ -273,7 +191,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="10.2" data-path="tips-tricks.html"><a href="tips-tricks.html#push-updates-to-github-2"><i class="fa fa-check"></i><b>10.2</b> Push updates to GitHub</a></li>
 <li class="chapter" data-level="10.3" data-path="tips-tricks.html"><a href="tips-tricks.html#check-your-website"><i class="fa fa-check"></i><b>10.3</b> Check your website</a></li>
 <li class="chapter" data-level="10.4" data-path="tips-tricks.html"><a href="tips-tricks.html#rebuild-a-clean-website"><i class="fa fa-check"></i><b>10.4</b> Rebuild a clean website</a></li>
-<li class="chapter" data-level="10.5" data-path="tips-tricks.html"><a href="tips-tricks.html#using-free-images"><i class="fa fa-check"></i><b>10.5</b> Using free images</a></li>
+<li class="chapter" data-level="10.5" data-path="tips-tricks.html"><a href="tips-tricks.html#finding-free-images"><i class="fa fa-check"></i><b>10.5</b> Finding free images</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="get-help.html"><a href="get-help.html"><i class="fa fa-check"></i><b>11</b> Getting help</a>
 <ul>
@@ -328,11 +246,11 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>The target audience for this book includes students, working professionals, and researchers who want to launch their very own personal website. Most likely, however, this book will appeal to individuals in these segments who associate with R, Data Analytics, Data Science, Machine Learning, Statistics, Mathematics, and related fields where technical writing is common.</p>
 <p>Note that you do not have to be an experienced web developer to successfully use the methodology described in this book. To learn more about whether or not this book is right for you, check out the <a href="index.html#faq">FAQ</a> section.</p>
 </div>
-<div id="motivating-applications" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> Motivating applications</h2>
-<p>There are many excellent applications for personal websites. Below is a list of ideas to motivate your thinking.</p>
+<div id="reasons-to-have-a-website" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> Reasons to have a website</h2>
+<p>There are many excellent reasons to have a personal website. Below is a list of ideas to motivate your thinking.</p>
 <ul>
-<li><p><strong>Be seen (without being seen)</strong>. If you are introverted like me, the thought of networking and promoting yourself in-person is a bit overwhelming. Operating a personal website is a great way to market yourself, display your skills, and connect with a global audience without being physically present.</p></li>
+<li><p><strong>Captivate an audience</strong>. A personal website presents an amazing opportunity to captivate audiences including professional recruiters, hiring managers, current employers, colleagues, fellow students, and more. Having your own website featuring your original content is one of the best ways to gain recognition and increase your competitive advantage.</p></li>
 <li><p><strong>Enrich your social media presence.</strong> Personal websites give your social media viewers a path to learning more about you and the work you are doing. Start by enriching your LinkedIn profile by inserting links to your website in your headline, summary, Featured section, and any posts you make.</p></li>
 <li><p><strong>Personalize your job applications.</strong> If there is a job you really want or a company you would love to work for, create a personalized website for this company with hyperfocused content and share it with the recruiter, hiring manager, current employees, and anyone else in the company’s network who might be impressed. I built <a href="https://goofy-franklin-7b6d1d.netlify.app/">this website</a> when I applied to RStudio. Spoiler: I did not get the job. 🤷‍♂️</p></li>
 <li><p><strong>Establish yourself as a thought leader.</strong> Are you passionate about certain topics? Create a website and start writing! Direct people to your website as often as you can to reinforce your thought leadership on the topic. By the way, you do not have to be an expert to be a thought leader. If you are learning a new topic and have some ideas you want to share, then you are a thought leader.</p></li>
@@ -342,7 +260,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="learn" class="section level2" number="1.4">
 <h2><span class="header-section-number">1.4</span> What you will learn</h2>
-<p>You will learn how to create, design, publish, and analyze your personal website using the <a href="https://themes.gohugo.io/theme/anatole/">Hugo Anatole</a> design theme as the starting point. You will gradually edit the Hugo Anatole theme and author your own original content, resulting in something like <a href="https://r4sites-anatole-custom.netlify.app/">this</a>.</p>
+<p>You will learn how to create, design, publish, and analyze your personal website using the <a href="https://themes.gohugo.io/theme/anatole/">Hugo Anatole</a> design theme as the starting point. You will gradually edit this starter theme and author your own original content, resulting in <a href="https://r4sites-anatole-custom.netlify.app/">your own website</a>.</p>
 <p>During this process, you will learn how to do the following:</p>
 <ul>
 <li>Generate websites using R and RStudio in three simple steps.</li>
@@ -352,13 +270,14 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li>Deploy your website to the internet using Netlify and GitHub.</li>
 <li>Integrate Google Analytics into your website to capture user activity on your website, then use R to analyze this data.</li>
 </ul>
-<div id="why-hugo-anatole" class="section level4 unnumbered">
-<h4>Why Hugo Anatole?</h4>
-<p>The default Hugo Anatole design theme is an excellent starting point for creating your own personal website. By default, the Hugo Anatole design theme contains a rich set of features, including:</p>
+<div id="why-start-with-the-hugo-anatole-theme" class="section level4 unnumbered">
+<h4>Why start with the Hugo Anatole theme?</h4>
+<p>The default Hugo Anatole design theme is an excellent starting point for creating a personal website. By default, the Hugo Anatole design theme contains a rich set of features, including:</p>
 <ul>
-<li>Optimal layout for rendering code, tables, and graphs written in R, Python, and SQL</li>
-<li>Easy to customize fonts, colors, text, and advanced features</li>
-<li>Excellent ratings on SEO, performance, accessibility, and best practices</li>
+<li>Optimal layout for rendering code, tables, and graphs written in R, Python, and SQL.</li>
+<li>Easy to customize fonts, colors, text, and advanced features.</li>
+<li>Easy to author original content.</li>
+<li>Excellent ratings on SEO, performance, accessibility, and best practices.</li>
 <li>Clean layout and clear navigation</li>
 <li>Supports Google Analytics integration</li>
 <li>Supports Formspree integration</li>
@@ -385,7 +304,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>Below are some examples of personal websites, blogs, and portfolios that have been built using the methodology described in this book.</p>
 <ul>
 <li><p><a href="https://abndistro.com">Abnormal Distributions</a> - My personal blog. Outrageously simple and straightforward. Designed for sharing tutorials and ideas. Adapted from the <a href="https://themes.gohugo.io/hugo-xmin/">Hugo Xmin</a> theme.</p></li>
-<li><p><a href="https://www.alexbilz.com/">Alex Bilz</a> - Personal website authored by Alex Bilz, creator of the [Hugo Anatole] website design which is featured throughout this book.</p></li>
+<li><p><a href="https://www.alexbilz.com/">Alex Bilz</a> - Personal website authored by Alex Bilz, creator of the <a href="https://themes.gohugo.io/theme/anatole/">Hugo Anatole</a> website design which is featured throughout this book.</p></li>
 <li><p><a href="http://www.rladiesnyc.org/">R-Ladies NYC</a> - Organization website dedicated to promoting gender diversity in the R community. Clean, modern layout. Great design for promoting groups, teams, projects, and events. Adapted form the <a href="https://themes.gohugo.io/academic/">Hugo Academic</a> theme.</p></li>
 <li><p><a href="https://evanodell.com/blog/">Evan Odell</a> - Personal website authored by Evan Odell featuring a blog, project portfolio, and biography. Crisp, clean, readable layout. Adapted from the <a href="https://themes.gohugo.io/beautifulhugo/">Beautiful Hugo</a> theme.</p></li>
 <li><p><a href="https://masalmon.eu/">Maëlle Salmon</a> - Personal website authored by Maëlle Salmon featuring a blog, list of talks, publications, and biography. Adapted from the <a href="https://themes.gohugo.io/blackburn/">Blackburn</a> theme.</p></li>
@@ -404,7 +323,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>What is the role of RStudio in the process of building the types of websites described in this book?</strong></p>
 <p>RStudio is a free desktop application where all of your website development takes place. RStudio provides a simple interface for managing your website projects and the supporting materials including content, images, and code. RStudio also contains a “Viewer” pane, which will display your website locally and update it in real-time as you make changes to your website.</p>
 <p><strong>Can I publish my website behind a custom domain name?</strong></p>
-<p>Yes. See the chapter on <a href="deploy.html#deploy">Deploying on Netlify</a>.</p>
+<p>Yes. This topic is discussed in the chapter <a href="deploy.html#deploy">Going live on the internet</a>.</p>
 </div>
 <div id="about-the-author" class="section level2" number="1.8">
 <h2><span class="header-section-number">1.8</span> About the author</h2>

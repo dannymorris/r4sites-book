@@ -102,8 +102,9 @@ serve-local
 push-updates-to-github-2
 check-your-website
 rebuild-a-clean-website
-using-free-images
+finding-free-images
 get-help
 join-the-slack-workspace
 connect-with-me
 additional-resources
+reasons-to-have-a-website

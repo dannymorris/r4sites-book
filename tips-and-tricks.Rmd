@@ -46,5 +46,6 @@ blogdown::serve_site()
 
 If you continue to experience buggy behavior, try restarting RStudio and running the code again.
 
-## Using free images
+## Finding free images
 
+If you need images for your website (e.g. post thumbnail), I recommend using free images from [Unsplash](https://unsplash.com/). 
