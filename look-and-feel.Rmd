@@ -86,7 +86,7 @@ The steps to import a Google Font include the following:
 
 3. Select the "\@import" option under "Use on the web". Copy the HTML code **in between** the `style` tags([📷 Image](https://i.imgur.com/GE1L643.png){target="blank"}) and paste it into the main CSS file located at `themes/anatole/assets/css/style.css`. ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L3){target="blank"})
 
-4. Under "use on the web", locate the CSS rule for specifying `font-family` ([📷 Image](https://i.imgur.com/0Nfmgdw.png){target="blank"}). In your main CSS file located at `themes/anatole/assets/css/style.css`, update all instances of `font-family` to change all font styles to your new font. Fortunately, the Anatole theme only specifies `font-family` in a single location. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L46){target="blank"}
+4. Under "use on the web", locate the CSS rule for specifying `font-family` ([📷 Image](https://i.imgur.com/0Nfmgdw.png){target="blank"}). In your main CSS file located at `themes/anatole/assets/css/style.css`, update all instances of `font-family` to change all font styles to your new font. Fortunately, the Anatole theme only specifies `font-family` in a single location. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L48){target="blank"}
 
 ## Font sizes
 
