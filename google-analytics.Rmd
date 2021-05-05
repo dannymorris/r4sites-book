@@ -18,7 +18,7 @@ This chapter shows you how to integrate Google Analytics into your website to ca
 
 ## Prerequisites
 
-Before you proceed, complete the following prerequisites:
+Before you proceed, complete the following prerequisites: 
 
 1. (optional) [Discover your style](#choose-theme){target="blank"}
 2. [Generate your website](#generate){target="blank"}
