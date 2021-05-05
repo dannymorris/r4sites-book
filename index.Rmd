@@ -55,34 +55,34 @@ There are many excellent applications for personal websites. Below is a list of 
 
 ## What you will learn {#learn}
 
-You will learn how to edit [this default website](https://themes.gohugo.io/theme/anatole/) to create a [customized version](https://r4sites-anatole-custom.netlify.app/) that reflects your personal style. From this process, you will learn how to do the following:
+Using this [default website](https://themes.gohugo.io/theme/anatole/) as the starting point, you will learn how to create, deploy, and analyze a [customized version](https://r4sites-anatole-custom.netlify.app/) that reflects your personal style.
+
+During this process, you will learn how to do the following:
 
 - Generate websites using R and RStudio in three simple steps.
-- Fine tune the look and feel of your website including logos, colors, and fonts to reflect your unique style.
+- Fine tune the look and feel of your website including logos, colors, and fonts.
 - Configure features such as contact forms, pages, and social media links.
 - Author content such as blog posts, tutorials, research articles, and project portfolios using R, Python, SQL, and Markdown.
 - Deploy your website to the internet using Netlify and GitHub.
 - Integrate Google Analytics into your website to capture user activity on your website, then use R to analyze this data.
 
-**Note:** Though this book focuses on a specific website transformation, the knowledge you will acquire will transfer to other website transformation efforts that follow the methodology described in this book.
-
 ## Tools you will use {#tools}
 
-The methodology described in this book for building websites uses the tools listed below. Note that all of the tools listed are **free to use**.
+The methodology described in this book uses the following **freely available** tools:
 
-- [R](https://cran.rstudio.com/) and the [blogdown](https://bookdown.org/yihui/blogdown/) package - Used for generating websites and authoring content.
-- [RStudio](https://www.rstudio.com/products/rstudio/#rstudio-desktop) - Used for managing your website project and creating a remarkable website development experience.
-- [Hugo](https://gohugo.io/) - Used by blogdown behind the scenes to generate beautiful, static websites.
-- [Git](https://git-scm.com/) and [GitHub](https://github.com/) - Used for pushing your website files from your local machine to a remote repository.
-- [Netlify](https://app.netlify.com/) - Used for publishing your website to the internet directly from your remote GitHub repository.
-- [Google Analytics](https://analytics.google.com/) and the [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) package - Used for analyzing user traffic on your website.
-- [Formspree](https://formspree.io) - Used for putting contact forms on your website and collecting responses.
+- [R](https://cran.rstudio.com/) and the [blogdown](https://bookdown.org/yihui/blogdown/) R package
+- [RStudio](https://www.rstudio.com/products/rstudio/#rstudio-desktop)
+- [Hugo](https://gohugo.io/)
+- [Git](https://git-scm.com/) and [GitHub](https://github.com/)
+- [Netlify](https://app.netlify.com/)
+- [Google Analytics](https://analytics.google.com/) and the [googleAnalyticsR](https://code.markedmondson.me/googleAnalyticsR/) R package
+- [Formspree](https://formspree.io)
 
 ## Inspiring examples
 
-Below are some examples of personal websites that have been built using the methodology described in this book. For even more inspiration, check out the [Awesome Blogdown](https://awesome-blogdown.com/) website.
+Below are some examples of personal websites, blogs, and portfolios that have been built using the methodology described in this book. 
 
-- [Abnormal Distributions](https://abndistro.com) - My personal website and blog. Outrageously simple and straightforward. Designed for sharing tutorials and ideas. Adapted from the [Hugo Xmin](https://themes.gohugo.io/hugo-xmin/) theme.
+- [Abnormal Distributions](https://abndistro.com) - My personal blog. Outrageously simple and straightforward. Designed for sharing tutorials and ideas. Adapted from the [Hugo Xmin](https://themes.gohugo.io/hugo-xmin/) theme.
 
 - [R-Ladies NYC](http://www.rladiesnyc.org/) - Organization website dedicated to promoting gender diversity in the R community. Clean, modern layout. Great design for promoting groups, teams, projects, and events. Adapted form the [Hugo Academic](https://themes.gohugo.io/academic/) theme.
 
@@ -121,4 +121,4 @@ Yes. See the chapter on [Deploying on Netlify](#deploy).
 ## About the author
 
 Hi! My name is Danny Morris, and thanks for checking out my book. I am an industry Data Scientist with a passion for writing, creating visual content, and building predictive models. I have published over a dozen websites for various purposes using the methodology described in this book. 
-More than anything, I love helping people launch or elevate their professional journey. Feel free to shoot me an <a href="mailto:dmorris10667@gmail.com">email</a> and connect with me on [LinkedIn](https://www.linkedin.com/in/drmorris87/).
+More than anything, I love helping people establish and grow their careers. I believe having a personal website is an excellent option for anyone looking to take a step in their career. Feel free to shoot me an <a href="mailto:dmorris10667@gmail.com">email</a> and connect with me on [LinkedIn](https://www.linkedin.com/in/drmorris87/).
