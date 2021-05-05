@@ -12,9 +12,15 @@ knitr::opts_chunk$set(echo = T, message = F, warning = F, eval=T)
 
 Despite the wealth of information in this book, it does not (and simply cannot) cover all possible topics and ideas relevant to the subject of the book. Firstly, this book recommends several Hugo themes yet a single theme is used as the basis for explaining and implementing concepts. Secondly, the number of edits that can be applied to any given website design is infinite yet this book implements a small, finite number of edits. I suspect many readers will want to venture beyond the scope of this book and pursue topics that are not discussed in this book.
 
+## Join the Slack workspace
+
+The Slack workspace is the best way to get help with your own website project. Slack is a place to chat, share files, and interact with others including myself.
+
+[Accept this invitation](https://join.slack.com/t/r4sitesbooksupport/shared_invite/zt-pyua4ua9-L~taaOqLzEeCbW5o9w9eLQ) to join the Slack workspace.
+
 ## Connect with me
 
-For help with your own website project, I encourage readers to reach out to me directly via [email](mailto:dmorris10667@gmail.com) or on [LinkedIn](https://www.linkedin.com/in/drmorris87/). I will attempt to provide assistance if the request is reasonable. If you decide you would like help, be proactive and [push your website codebase to GitHub](#initial-push) to enable optimal collaboration.
+Readers are welcome to reach out to me directly via [email](mailto:dmorris10667@gmail.com) or [LinkedIn](https://www.linkedin.com/in/drmorris87/).
 
 ## Additional resources
 

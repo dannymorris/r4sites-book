@@ -69,6 +69,7 @@ add-a-post-summary
 add-a-table-of-contents
 add-code-highlighting
 add-tags-and-categories
+add-a-post-thumbnail
 next-steps-5
 deploy
 prerequisites-4
@@ -101,6 +102,8 @@ serve-local
 push-updates-to-github-2
 check-your-website
 rebuild-a-clean-website
+using-free-images
 get-help
+join-the-slack-workspace
 connect-with-me
 additional-resources

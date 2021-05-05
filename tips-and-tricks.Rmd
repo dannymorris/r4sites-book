@@ -45,3 +45,6 @@ blogdown::serve_site()
 ```
 
 If you continue to experience buggy behavior, try restarting RStudio and running the code again.
+
+## Using free images
+

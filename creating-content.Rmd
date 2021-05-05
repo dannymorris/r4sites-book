@@ -27,13 +27,13 @@ Your original content can be authored using either [R Markdown](https://bookdown
 
 If you have never authored an R Markdown document, spend some time looking through these example posts including their source code and associated output on the website. In the source code, inspect the metadata parameters in between the `---` markers at the top of the document, then inspect the post body to gain a basic understanding of how text and code chunks are intertwined. 
 
-- **Using R in R Markdown** - Post includes a table of contents and code highlighting. Content covers interactive HTML tables via the [DT](https://rstudio.github.io/DT/) package, and interactive plots via the [plotly](https://plotly.com/r/) package. ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd)) ([📄 Page](https://r4sites-anatole-custom.netlify.app/post/2021-04-22-sample-post-using-r-in-r-markdown/))
+- **Using R in R Markdown** - Post includes a table of contents, code highlighting, and thumbnail image. Content covers interactive HTML tables via the [DT](https://rstudio.github.io/DT/) package, and interactive plots via the [plotly](https://plotly.com/r/) package. ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd)) ([📄 Page](https://r4sites-anatole-custom.netlify.app/post/2021-04-22-sample-post-using-r-in-r-markdown/))
 
-- **Using Python in R Markdown** - Post includes a table of contents and code highlighting. Content covers the use of Conda environments, inserting and executing Python code chunks, and displaying plots. ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd)) ([📄 Page](https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-using-python-in-r-markdown/))
+- **Using Python in R Markdown** - Post includes a table of contents, code highlighting, and thumbnail image. Content covers the use of Conda environments, inserting and executing Python code chunks, and displaying plots. ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd)) ([📄 Page](https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-using-python-in-r-markdown/))
 
 - **Using SQL in R Markdown** - Post includes a table of contents and code highlighting. Content covers inserting and executing pure SQL code chunks and using R to execute SQL queries. ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-sql-in-r-markdown/index.en.Rmd)) ([📄 Page](https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-using-sql-in-r-markdown/))
 
-- **Basic Markdown syntax** - Post includes a table of contents. Content covers basic Markdown syntax. ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-basic-markdown-syntax/index.en.Rmd)) ([📄 Page](https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-basic-markdown-syntax/))
+- **Basic Markdown syntax** - Post includes a thumbnail image but no table of contents or code highlighting. Content covers basic Markdown syntax. ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-basic-markdown-syntax/index.en.Rmd)) ([📄 Page](https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-basic-markdown-syntax/))
 
 ## Create a new post
 
@@ -62,6 +62,10 @@ Though I recommend the `tango` highlighting scheme, other [code highlighting opt
 ## Add tags and categories
 
 Add "tags" and "categories" to your posts to organize your content and to give Google crawlers an idea of what your post is about. According to [this website](https://databox.com/categories-vs-tags-for-seo), strive to attach no more than 5-10 categories and 5-10 tags to each post. To add tags and categories to your post, edit the `Tags` and `Categories` parameters in the document metadata. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd#L24-L25)
+
+## Add a post thumbnail
+
+A post thumbnail is an image that appears above the post title on the Home page ([📷 Image](https://i.imgur.com/ITLkYTP.png)) and at the beginning of the post itself. To include a thumbnail for a post, create a `thumbnail` parameter in the document metadata and insert the path to your image located in the `static/images` folder. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd#L15)
 
 ## Next steps
 

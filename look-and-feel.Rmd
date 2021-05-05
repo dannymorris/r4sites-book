@@ -104,7 +104,7 @@ You can change the color of essentially any webpage attribute including text, ba
 
 Consider the following edits:
 
-- **Social media icons:** These are visible beneath the website title on the Home page. Open the main CSS file located at `themes/anatole/assets/css/style.css` and edit the `.sidebar .social-links i` class by specifying a `color` attribute. Here I have chosen to use the HEX color #6a92c5. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L322-325) [📷 Image](https://i.imgur.com/Q7uhdaQ.png)
+- **Social media icons:** These are visible beneath the website title on the Home page. Open the main CSS file located at `themes/anatole/assets/css/style.css` and edit the `.sidebar .social-links i` class by specifying a `color` attribute. Here I have chosen to use the HEX color #a4a4a4. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L322-325) [📷 Image](https://i.imgur.com/Q7uhdaQ.png)
 
 - **Post tags:** These are visible on the Home page beneath post titles and summaries. Open the main CSS file located at `themes/anatole/assets/css/style.css` and edit the `.post .post-footer .meta a` class and editing the`color` attribute. Here I have chosen to use the HEX color #6a92c5. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L479-482) [📷 Image](https://i.imgur.com/JnueFsN.png)
 

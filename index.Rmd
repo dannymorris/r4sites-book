@@ -55,16 +55,29 @@ There are many excellent applications for personal websites. Below is a list of 
 
 ## What you will learn {#learn}
 
-Using this [default website](https://themes.gohugo.io/theme/anatole/) as the starting point, you will learn how to create, deploy, and analyze a [customized version](https://r4sites-anatole-custom.netlify.app/) that reflects your personal style.
+You will learn how to create, design, publish, and analyze your personal website using the [Hugo Anatole](https://themes.gohugo.io/theme/anatole/) design theme as the starting point. You will gradually edit the Hugo Anatole theme and author your own original content, resulting in something like [this](https://r4sites-anatole-custom.netlify.app/).
 
 During this process, you will learn how to do the following:
 
 - Generate websites using R and RStudio in three simple steps.
 - Fine tune the look and feel of your website including logos, colors, and fonts.
-- Configure features such as contact forms, pages, and social media links.
-- Author content such as blog posts, tutorials, research articles, and project portfolios using R, Python, SQL, and Markdown.
+- Configure features such as contact forms, page layouts, and social media links.
+- Author original content such as blog posts, tutorials, research articles, and project portfolios using R, Python, SQL, and Markdown.
 - Deploy your website to the internet using Netlify and GitHub.
 - Integrate Google Analytics into your website to capture user activity on your website, then use R to analyze this data.
+
+#### Why Hugo Anatole? {-}
+
+The default Hugo Anatole design theme is an excellent starting point for creating your own personal website. By default, the Hugo Anatole design theme contains a rich set of features, including:
+
+- Optimal layout for rendering code, tables, and graphs written in R, Python, and SQL
+- Easy to customize fonts, colors, text, and advanced features
+- Excellent ratings on SEO, performance, accessibility, and best practices
+- Clean layout and clear navigation
+- Supports Google Analytics integration
+- Supports Formspree integration
+- Light and dark modes
+- Responsive
 
 ## Tools you will use {#tools}
 
@@ -84,13 +97,13 @@ Below are some examples of personal websites, blogs, and portfolios that have be
 
 - [Abnormal Distributions](https://abndistro.com) - My personal blog. Outrageously simple and straightforward. Designed for sharing tutorials and ideas. Adapted from the [Hugo Xmin](https://themes.gohugo.io/hugo-xmin/) theme.
 
+- [Alex Bilz](https://www.alexbilz.com/) - Personal website authored by Alex Bilz, creator of the [Hugo Anatole] website design which is featured throughout this book.
+
 - [R-Ladies NYC](http://www.rladiesnyc.org/) - Organization website dedicated to promoting gender diversity in the R community. Clean, modern layout. Great design for promoting groups, teams, projects, and events. Adapted form the [Hugo Academic](https://themes.gohugo.io/academic/) theme.
 
 - [Evan Odell](https://evanodell.com/blog/) - Personal website authored by Evan Odell featuring a blog, project portfolio, and biography. Crisp, clean, readable layout. Adapted from the [Beautiful Hugo](https://themes.gohugo.io/beautifulhugo/) theme.
 
 - [Maëlle Salmon](https://masalmon.eu/) - Personal website authored by Maëlle Salmon featuring a blog, list of talks, publications, and biography. Adapted from the [Blackburn](https://themes.gohugo.io/blackburn/) theme.
-
-- [Julia Silge](https://juliasilge.com/) - Personal website authored by Julia Silge. Simple and professional. Adapted from the [Hugo Academic](https://themes.gohugo.io/theme/academic/) theme.
 
 ## FAQ {#faq}
 
