@@ -45,7 +45,7 @@ You will notice that the default website contains placeholder text such as "My B
 
 1. Edit "My Blog" on the home page by navigating to `config/_default/languages.toml` and changing the `title` parameter. [</> Code](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/languages.toml#L2){target="blank"}.
 
-2. Edit "Call me Jane" on the home page by navigating to `config/_default/params.toml` and editing the `title` parameter. Feel free to experiment with editing other parameters including `description`, `profilePicture`, and social media links. [</> Code](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml#L3-L6){target="blank"}.
+2. Edit "Call me Jane" on the home page by navigating to `config/_default/params.toml` and editing the `description` parameter. Feel free to experiment with editing other parameters including `title`, `profilePicture`, and social media links. [</> Code](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml#L2-L6){target="blank"}.
 
 ## Integrate Formspree
 
