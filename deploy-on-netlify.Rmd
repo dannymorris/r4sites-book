@@ -10,10 +10,10 @@ This chapter teaches you how to deploy your website to the internet using Netlif
 
 Before you proceed, complete the following prerequisites:
 
-1. (optional) [Discover your style](#choose-theme)
-2. [Generate your website](#generate)
-3. (optional) [Fine tune the look and feel](#fine-tune)
-4. (optional) [Configure pages and features](#pages-features)
+1. (optional) [Discover your style](#choose-theme){target="blank"}
+2. [Generate your website](#generate){target="blank"}
+3. (optional) [Fine tune the look and feel](#fine-tune){target="blank"}
+4. (optional) [Configure pages and features](#pages-features){target="blank"}
 5. Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){target="blank"}
 6. Sign up for [GitHub](https://github.com/){target="blank"}
 7. Sign up for [Netlify](https://app.netlify.com/){target="blank"}
