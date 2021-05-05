@@ -10,10 +10,10 @@ This chapter provides general guidance on authoring original content such as blo
 
 Before you proceed, complete the following prerequisites:
 
-1. (optional) [Discover your style](#choose-theme)
-2. [Generate your website](#generate)
-3. (optional) [Fine tune the look and feel](#fine-tune)
-4. (optional) [Configure pages and features](#pages-features)
+1. (optional) [Discover your style](#choose-theme){target="blank"}
+2. [Generate your website](#generate){target="blank"}
+3. (optional) [Fine tune the look and feel](#fine-tune){target="blank"}
+4. (optional) [Configure pages and features](#pages-features){target="blank"}
 
 ## How it works
 
@@ -43,7 +43,7 @@ The simplest way to add a new post is via the "New post" RStudio Addin. Follow t
 
 2. Configure the new post by specifying the post Title, Author, Date, Subdirectory, and Format. **Do not specify Tags and Categories** at this point. Be sure to place the new post in the `post` Subdirectory and set the Format to `R Markdown (.Rmd)`. [📷 Image](https://i.imgur.com/ciCv6yC.png){target="blank"}
 
-3. Update (or create) parameters in the post metadata including `title`, `author`, `summary`, `date`, `output`, `Tags`, and `Categories` ([📷 Image](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd#L1-L17){target="blank"}). Continue reading to learn more.
+3. Update (or create) parameters in the post metadata including `title`, `author`, `summary`, `date`, `output`, `Tags`, and `Categories` ([📷 Image](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd#L1-L18){target="blank"}). Continue reading to learn more.
 
 ## Add a post summary
 
@@ -57,11 +57,11 @@ Add a table of contents to your R Markdown post to improve navigation and enable
 
 Add code highlighting to improve the readability of your code snippets. To add code highlighting, edit the `output` parameter in the document metadata. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd#L6-L9){target="blank"}
 
-Though I recommend the `tango` highlighting scheme, other [code highlighting options](https://bookdown.org/yihui/rmarkdown/){target="blank"} options are available.
+Though I recommend the `tango` highlighting scheme, other [code highlighting options](https://bookdown.org/yihui/rmarkdown/html-document.html#appearance-and-style){target="blank"} options are available.
 
 ## Add tags and categories
 
-Add "tags" and "categories" to your posts to organize your content and to give Google crawlers an idea of what your post is about. According to [this website](https://databox.com/categories-vs-tags-for-seo){target="blank"}, strive to attach no more than 5-10 categories and 5-10 tags to each post. To add tags and categories to your post, edit the `Tags` and `Categories` parameters in the document metadata. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd#L24-L25){target="blank"}
+Add "tags" and "categories" to your posts to organize your content and to give Google crawlers an idea of what your post is about. According to [this website](https://databox.com/categories-vs-tags-for-seo){target="blank"}, strive to attach no more than 5-10 categories and 5-10 tags to each post. To add tags and categories to your post, edit the `Tags` and `Categories` parameters in the document metadata. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd#L12-L13){target="blank"}
 
 ## Add a post thumbnail
 
@@ -69,4 +69,4 @@ A post thumbnail is an image that appears above the post title on the Home page 
 
 ## Next steps
 
-Proceed with [going live on the internet](#deploy) by pushing your website to GitHub and configuring Netlify for continuous deployment.
+Proceed with [going live on the internet](#deploy){target="blank"} by pushing your website to GitHub and configuring Netlify for continuous deployment.
