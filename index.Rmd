@@ -1,6 +1,6 @@
 --- 
 title: "Create, Publish, and Analyze Personal Websites Using R and RStudio"
-subtitle: "A digital handbook with step-by-step instructions for launching your own personal website using R, RStudio, and other freely available technologies including GitHub, Hugo, Netlify, and Google Analytics"
+subtitle: "A free, digital handbook with step-by-step instructions for launching your own personal website using R, RStudio, and other freely available technologies including GitHub, Hugo, Netlify, and Google Analytics"
 author: "Danny Morris"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -16,9 +16,10 @@ favicon: images/favicon.ico
 # Introduction
 
 ![](https://i.imgur.com/2WgBlJfl.png)
-<div class="btn-div">
-  <a href="https://r4sites.com/products/r4sites-book/" class="btn-promo btn-promo-primary mr-3">Purchase this book</a>
-</div>
+
+This book is **free** and will always be free. I believe in making information open and accessible to everyone, regardless of status or background. If you would like, you can [show your support](https://r4sites.com/products/r4sites-book/) by "purchasing" a copy for only $5 USD.
+
+This book is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivs 3.0](http://creativecommons.org/licenses/by-nc-nd/3.0/us/) License.
 
 ## About this book
 
