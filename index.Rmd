@@ -11,11 +11,17 @@ link-citations: yes
 description: "A step-by-step guide for creating, publishing, and analyzing your personal website using R, RStudio, and other open source technologies including GitHub, Netlify, and Google Analytics."
 cover-image: images/logo/book-cover-300.png
 favicon: images/favicon.ico
+always_allow_html: true
 ---
 
 # Introduction
 
-![](https://i.imgur.com/2WgBlJfl.png)
+```{r results = 'asis', out.width="300px", echo = F}
+download.file(url = "https://i.imgur.com/2WgBlJfl.png",
+          destfile = "image.png",
+          mode = 'wb')
+knitr::include_graphics(path = "image.png")
+```
 
 This book is **free** and will always be free. I believe in making information open and accessible to everyone, regardless of status or background. If you would like, you can [show your support](https://r4sites.com/products/r4sites-book/) by "purchasing" a copy for only $5 USD.
 
@@ -46,7 +52,7 @@ There are many excellent reasons to have a personal website. Below is a list of 
 
 - **Enrich your social media presence.** Personal websites give your social media viewers a path to learning more about you and the work you are doing. Start by enriching your LinkedIn profile by inserting links to your website in your headline, summary, Featured section, and any posts you make.
 
-- **Personalize your job applications.** If there is a job you really want or a company you would love to work for, create a personalized website for this company with hyperfocused content and share it with the recruiter, hiring manager, current employees, and anyone else in the company's network who might be impressed. I built [this website](https://goofy-franklin-7b6d1d.netlify.app/){target="blank"} when I applied to RStudio. Spoiler: I did not get the job. 🤷‍♂️
+- **Personalize your job applications.** If there is a job you really want or a company you would love to work for, create a personalized website for this company with hyperfocused content and share it with the recruiter, hiring manager, current employees, and anyone else in the company's network who might be impressed. I built [this website](https://goofy-franklin-7b6d1d.netlify.app/){target="blank"} when I applied to RStudio. Spoiler: I did not get the job.
 
 - **Establish yourself as a thought leader.** Are you passionate about certain topics? Create a website and start writing! Direct people to your website as often as you can to reinforce your thought leadership on the topic. By the way, you do not have to be an expert to be a thought leader. If you are learning a new topic and have some ideas you want to share, then you are a thought leader.
 
@@ -63,7 +69,7 @@ During this process, you will learn how to do the following:
 - Generate websites using R and RStudio in three simple steps.
 - Fine tune the look and feel of your website including logos, colors, and fonts.
 - Configure features such as contact forms, page layouts, and social media links.
-- Author original content such as blog posts, tutorials, research articles, and project portfolios using R, Python, SQL, and Markdown.
+- Author original content such as blog posts, tutorials, research articles, and project portfolios using R, Python, SQL, Markdown, and Jupyter Notebook.
 - Deploy your website to the internet using Netlify and GitHub.
 - Integrate Google Analytics into your website to capture user activity on your website, then use R to analyze this data.
 
@@ -106,12 +112,6 @@ Below are some examples of personal websites, blogs, and portfolios that have be
 - [Evan Odell](https://evanodell.com/blog/){target="blank"} - Personal website authored by Evan Odell featuring a blog, project portfolio, and biography. Crisp, clean, readable layout. Adapted from the [Beautiful Hugo](https://themes.gohugo.io/beautifulhugo/){target="blank"} theme.
 
 - [Maëlle Salmon](https://masalmon.eu/){target="blank"} - Personal website authored by Maëlle Salmon featuring a blog, list of talks, publications, and biography. Adapted from the [Blackburn](https://themes.gohugo.io/blackburn/){target="blank"} theme.
-
-## Getting support
-
-The Slack workspace for this book is the best way to get help with your own website project. Slack is a place to chat, share files, and interact with others including myself.
-
-[Accept this invitation](https://join.slack.com/t/r4sitesbooksupport/shared_invite/zt-pyua4ua9-L~taaOqLzEeCbW5o9w9eLQ){target="blank"} to join the Slack workspace.
 
 ## FAQ {#faq}
 

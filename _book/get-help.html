@@ -24,7 +24,7 @@
 <meta name="author" content="Danny Morris" />
 
 
-<meta name="date" content="2021-05-17" />
+<meta name="date" content="2021-12-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -172,9 +172,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#learn"><i class="fa fa-check"></i><b>1.4</b> What you will learn</a></li>
 <li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#tools"><i class="fa fa-check"></i><b>1.5</b> Tools you will use</a></li>
 <li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#inspiring-examples"><i class="fa fa-check"></i><b>1.6</b> Inspiring examples</a></li>
-<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#getting-support"><i class="fa fa-check"></i><b>1.7</b> Getting support</a></li>
-<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#faq"><i class="fa fa-check"></i><b>1.8</b> FAQ</a></li>
-<li class="chapter" data-level="1.9" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i><b>1.9</b> About the author</a></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#faq"><i class="fa fa-check"></i><b>1.7</b> FAQ</a></li>
+<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i><b>1.8</b> About the author</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html"><i class="fa fa-check"></i><b>2</b> Complete end-to-end example</a>
 <ul>
@@ -250,7 +249,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.7" data-path="content.html"><a href="content.html#add-code-highlighting"><i class="fa fa-check"></i><b>7.7</b> Add code highlighting</a></li>
 <li class="chapter" data-level="7.8" data-path="content.html"><a href="content.html#add-tags-and-categories"><i class="fa fa-check"></i><b>7.8</b> Add tags and categories</a></li>
 <li class="chapter" data-level="7.9" data-path="content.html"><a href="content.html#add-a-post-thumbnail"><i class="fa fa-check"></i><b>7.9</b> Add a post thumbnail</a></li>
-<li class="chapter" data-level="7.10" data-path="content.html"><a href="content.html#next-steps-5"><i class="fa fa-check"></i><b>7.10</b> Next steps</a></li>
+<li class="chapter" data-level="7.10" data-path="content.html"><a href="content.html#embed-a-jupyter-notebook-in-a-r-markdown-post"><i class="fa fa-check"></i><b>7.10</b> Embed a Jupyter Notebook in a R Markdown post</a></li>
+<li class="chapter" data-level="7.11" data-path="content.html"><a href="content.html#next-steps-5"><i class="fa fa-check"></i><b>7.11</b> Next steps</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="deploy.html"><a href="deploy.html"><i class="fa fa-check"></i><b>8</b> Going live on the internet</a>
 <ul>
@@ -281,12 +281,12 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="11" data-path="get-help.html"><a href="get-help.html"><i class="fa fa-check"></i><b>11</b> Getting help</a>
 <ul>
-<li class="chapter" data-level="11.1" data-path="get-help.html"><a href="get-help.html#join-the-slack-workspace"><i class="fa fa-check"></i><b>11.1</b> Join the Slack workspace</a></li>
-<li class="chapter" data-level="11.2" data-path="get-help.html"><a href="get-help.html#connect-with-me"><i class="fa fa-check"></i><b>11.2</b> Connect with me</a></li>
-<li class="chapter" data-level="11.3" data-path="get-help.html"><a href="get-help.html#additional-resources"><i class="fa fa-check"></i><b>11.3</b> Additional resources</a></li>
+<li class="chapter" data-level="11.1" data-path="get-help.html"><a href="get-help.html#connect-with-me"><i class="fa fa-check"></i><b>11.1</b> Connect with me</a></li>
+<li class="chapter" data-level="11.2" data-path="get-help.html"><a href="get-help.html#additional-resources"><i class="fa fa-check"></i><b>11.2</b> Additional resources</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
 </ul>
 
       </nav>
@@ -311,17 +311,12 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="get-help" class="section level1" number="11">
 <h1><span class="header-section-number">Chapter 11</span> Getting help</h1>
 <p>Despite the wealth of information in this book, it does not (and simply cannot) cover all possible topics and ideas relevant to the subject of the book. Firstly, this book recommends several Hugo themes yet a single theme is used as the basis for explaining and implementing concepts. Secondly, the number of edits that can be applied to any given website design is infinite yet this book implements a small, finite number of edits. I suspect many readers will want to venture beyond the scope of this book and pursue topics that are not discussed in this book.</p>
-<div id="join-the-slack-workspace" class="section level2" number="11.1">
-<h2><span class="header-section-number">11.1</span> Join the Slack workspace</h2>
-<p>The Slack workspace is the best way to get help with your own website project. Slack is a place to chat, share files, and interact with others including myself.</p>
-<p><a href="https://join.slack.com/t/r4sitesbooksupport/shared_invite/zt-pyua4ua9-L~taaOqLzEeCbW5o9w9eLQ" target="blank">Accept this invitation</a> to join the Slack workspace.</p>
-</div>
-<div id="connect-with-me" class="section level2" number="11.2">
-<h2><span class="header-section-number">11.2</span> Connect with me</h2>
+<div id="connect-with-me" class="section level2" number="11.1">
+<h2><span class="header-section-number">11.1</span> Connect with me</h2>
 <p>Readers are welcome to reach out to me directly via <a href="mailto:dmorris10667@gmail.com" target="blank">email</a> or <a href="https://www.linkedin.com/in/drmorris87/" target="blank">LinkedIn</a>.</p>
 </div>
-<div id="additional-resources" class="section level2" number="11.3">
-<h2><span class="header-section-number">11.3</span> Additional resources</h2>
+<div id="additional-resources" class="section level2" number="11.2">
+<h2><span class="header-section-number">11.2</span> Additional resources</h2>
 <p>To learn more about the methodology and the tools described in this book, I recommend the following resources:</p>
 <ul>
 <li><p><a href="https://bookdown.org/yihui/blogdown/" target="blank">blogdown: Creating Websites with R Markdown</a></p></li>
@@ -383,7 +378,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": null,
+"download": ["r4sites.pdf"],
 "toc": {
 "collapse": "subsection"
 }

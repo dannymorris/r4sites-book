@@ -54,13 +54,13 @@ The Hugo Anatole theme comes with several [default posts](https://themes.gohugo.
 
 ## Edit post date format
 
-By default, the Hugo Anatole theme displays dates of posts in the format of `Day/Month/Year` ([📷 Image](https://i.imgur.com/k2suw8t.png){target="blank"}). To alter the date format, open `config/_default/params.toml` and edit the `singleDateFormat`, `indexDateFormat`, and `listDateFormat` parameters. 
+By default, the Hugo Anatole theme displays dates of posts in the format of `Day/Month/Year` ([Image](https://i.imgur.com/k2suw8t.png){target="blank"}). To alter the date format, open `config/_default/params.toml` and edit the `singleDateFormat`, `indexDateFormat`, and `listDateFormat` parameters. 
 
 For example, to switch the date format to `Year-Month-Day`, update the values for all three parameters to `"2006-01-02"` ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L21-L23){target="blank"}). In this example, `2006` requests the 4-digit year, `01` requests the 2-digit month, and `02` requests the 2-digit day.
 
 ## Remove dates from Posts page
 
-When viewed on a device with a small, narrow screen (e.g. mobile phone), the dates to the right of the post titles on the Posts page may appear broken ([📷 Image](https://i.imgur.com/RznGw5r.png){target="blank"}). On narrow screen, there is an insufficient amount of screen space to display both the post title and the post date in a side-by-side fashion.
+When viewed on a device with a small, narrow screen (e.g. mobile phone), the dates to the right of the post titles on the Posts page may appear broken ([Image](https://i.imgur.com/RznGw5r.png){target="blank"}). On narrow screen, there is an insufficient amount of screen space to display both the post title and the post date in a side-by-side fashion.
 
 My preference is to remove the post dates from the Posts page altogether. Note this does not affect the post dates on the Home page or on the post itself. To remove post dates from the Posts page, open `themes/anatole/layouts/_default/list.html` and comment out (or delete) lines 11-14. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/layouts/_default/list.html#L10-L15){target="blank"}
 
@@ -86,11 +86,11 @@ Follow the steps below to create a Formspree form "endpoint" and link it to the 
 
 1. Sign in to [Formspree](https://formspree.io/login){target="blank"}.
 
-2. Click "New Project" to create a new project for your website. [📷 Image](https://i.imgur.com/jZnrcVL.png){target="blank"}
+2. Click "New Project" to create a new project for your website. [Image](https://i.imgur.com/jZnrcVL.png){target="blank"}
 
-3. Click "New Form" to create a new contact form. [📷 Image](https://i.imgur.com/BE4tOJ4.png){target="blank"}
+3. Click "New Form" to create a new contact form. [Image](https://i.imgur.com/BE4tOJ4.png){target="blank"}
 
-4. Copy the form's "endpoint" beginning with `https://`. [📷 Image](https://i.imgur.com/2S2HVO6.png){target="blank"}
+4. Copy the form's "endpoint" beginning with `https://`. [Image](https://i.imgur.com/2S2HVO6.png){target="blank"}
 
 5. Open `config/_default/params.toml` in the main website folder, uncomment the `contactFormAction` parameter, and insert the form endpoint. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml#L16-L17){target="blank"}
 
@@ -104,7 +104,7 @@ To add a new field to the contact form, such as an optional "Job Title" field, u
 
 ## View contact form submissions
 
-Once your contact form endpoint is configured, submissions to your contact form can be viewed in your Formspree account. Sign in to Formspree, locate your form, and select "Submissions" to view and (optionally) export your submissions. [📷 Image](https://i.imgur.com/zua7Wuh.png){target="blank"}
+Once your contact form endpoint is configured, submissions to your contact form can be viewed in your Formspree account. Sign in to Formspree, locate your form, and select "Submissions" to view and (optionally) export your submissions. [Image](https://i.imgur.com/zua7Wuh.png){target="blank"}
 
 ## Next steps
 

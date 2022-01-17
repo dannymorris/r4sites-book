@@ -33,11 +33,11 @@ The [blogdown](https://bookdown.org/yihui/blogdown/){target="blank"} R package m
 
 1. Launch RStudio and install the blogdown package by running `install.packages("blogdown")` in the R console.
 
-2. Create a new RStudio Project by going to *File > New Project > New Directory > Website using blogdown*. [📷 Image](https://i.imgur.com/eDg7V2k.png){target="blank"}.
+2. Create a new RStudio Project by going to *File > New Project > New Directory > Website using blogdown*. [Image](https://i.imgur.com/eDg7V2k.png){target="blank"}.
 
-3. Using the RStudio New Project Wizard, generate a website using the [Hugo Anatole theme](https://themes.gohugo.io/anatole/){target="blank"} by inserting `xndrblz/anatole` in the `Hugo theme` parameter. Click Create Project to generate the website. [📷 Image](https://i.imgur.com/lkD1ZlU.png){target="blank"}.
+3. Using the RStudio New Project Wizard, generate a website using the [Hugo Anatole theme](https://themes.gohugo.io/anatole/){target="blank"} by inserting `xndrblz/anatole` in the `Hugo theme` parameter. Click Create Project to generate the website. [Image](https://i.imgur.com/lkD1ZlU.png){target="blank"}.
 
-4. Confirm that everything is working properly by running `blogdown::serve_site()` in the R console. A local, live, and fully functional preview of your website will appear in the Viewer pane in RStudio. [📷 Image](https://i.imgur.com/oxZgeqM.png){target="blank"}.
+4. Confirm that everything is working properly by running `blogdown::serve_site()` in the R console. A local, live, and fully functional preview of your website will appear in the Viewer pane in RStudio. [Image](https://i.imgur.com/oxZgeqM.png){target="blank"}.
 
 ## Make some edits
 
@@ -53,21 +53,21 @@ The [contact form](https://r4sites-anatole.netlify.app/contact/){target="blank"}
 
 1. Sign in to [Formspree](https://formspree.io/login){target="blank"}.
 
-2. Click "New Project" to create a new project for your website. [📷 Image](https://i.imgur.com/jZnrcVL.png){target="blank"}.
+2. Click "New Project" to create a new project for your website. [Image](https://i.imgur.com/jZnrcVL.png){target="blank"}.
 
-3. Click "New Form" to create a new contact form. [📷 Image](https://i.imgur.com/OYqo3Js.png){target="blank"}
+3. Click "New Form" to create a new contact form. [Image](https://i.imgur.com/OYqo3Js.png){target="blank"}
 
-4. Copy the form's "endpoint". [📷 Image](https://i.imgur.com/2S2HVO6.png){target="blank"}
+4. Copy the form's "endpoint". [Image](https://i.imgur.com/2S2HVO6.png){target="blank"}
 
 5. Open `config/_default/params.toml` and insert the form endpoint into the `contactFormAction` parameter. [</> Code](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml#L18-L19){target="blank"}.
 
-6. Fill out the contact form on the website and click "Send". Sign in to the Formspree, locate your newly created form, and select "Submissions" to view your submission. [📷 Image](https://i.imgur.com/zua7Wuh.png){target="blank"}
+6. Fill out the contact form on the website and click "Send". Sign in to the Formspree, locate your newly created form, and select "Submissions" to view your submission. [Image](https://i.imgur.com/zua7Wuh.png){target="blank"}
 
 ## Push the website to GitHub {#push-demo}
 
 Once your site is working locally, the next steps are to create a remote GitHub repository for your website, configure a local Git repository, and push your website files from your local environment to the remote repository.
 
-1. Create a remote GitHub repository by signing in to [GitHub](https://github.com/){target="blank"} and clicking "New" in the Repositories section. Configure the repository accordingly, then click Create repository. [📷 Image](https://i.imgur.com/dnmI973.png){target="blank"}
+1. Create a remote GitHub repository by signing in to [GitHub](https://github.com/){target="blank"} and clicking "New" in the Repositories section. Configure the repository accordingly, then click Create repository. [Image](https://i.imgur.com/dnmI973.png){target="blank"}
 
 2. Launch a Git terminal (e.g. Git Bash on Windows, Terminal on Mac/Linux) and run the following Git commands to push files from the local environment to the remote GitHub repository: 
 
@@ -96,29 +96,29 @@ git push -u origin master
 
 Now that your website files are stored in a GitHub repository, follow the steps below to configure Netlify to deploy your website to the internet:
 
-1. Log in to Netlify and click "New site from Git". [📷 Image](https://i.imgur.com/ztaGsN3.png){target="blank"}
+1. Log in to Netlify and click "New site from Git". [Image](https://i.imgur.com/ztaGsN3.png){target="blank"}
 
 2. Select GitHub as the Continuous Deployment provider, then select your website's GitHub repository.
 
-3. Accept the suggested site settings and click "Deploy site" to publish your website to the internet. [📷 Image](https://i.imgur.com/wjDFnvJ.png){target="blank"}
+3. Accept the suggested site settings and click "Deploy site" to publish your website to the internet. [Image](https://i.imgur.com/wjDFnvJ.png){target="blank"}
 
-4. Locate your website's URL by returning to the Site Overview section. By default, Netlify generates a random domain name with an extension of `.netlify.app`. Though the domain name extension cannot be changed (unless you purchase a custom domain), the domain name prefix can be changed by navigating to *Site settings > Change site name*. [📷 Image](https://i.imgur.com/kiyzULE.png){target="blank"}
+4. Locate your website's URL by returning to the Site Overview section. By default, Netlify generates a random domain name with an extension of `.netlify.app`. Though the domain name extension cannot be changed (unless you purchase a custom domain), the domain name prefix can be changed by navigating to *Site settings > Change site name*. [Image](https://i.imgur.com/kiyzULE.png){target="blank"}
 
 ## Integrate Google Analytics
 
 Google Analytics is a tool for collecting user traffic and activity on your website. [Create a free Google Analytics account](https://marketingplatform.google.com/about/analytics/){target="blank"} to begin using Google Analytics, then proceed with the following steps:
 
-1. Sign in to Google Analytics and navigate to *Admin > Create Account*. [📷 Image](https://i.imgur.com/QRTa07k.png){target="blank"}
+1. Sign in to Google Analytics and navigate to *Admin > Create Account*. [Image](https://i.imgur.com/QRTa07k.png){target="blank"}
 
 2. Under Account setup, provide an appropriate name (e.g. my-example-site) and configure the Account Data Sharing Settings to your liking. Click "Next".
 
 3. Under Property setup, provide an appropriate name (e.g. example-site-property). 
 
-4. Under Property setup, click on "Show advanced options" to create a Universal Analytics property. For the Website URL, insert the URL provided by Netlify when you [deployed your website](#demo-deploy). Click "Next". [📷 Image](https://i.imgur.com/aYeAANl.png){target="blank"}
+4. Under Property setup, click on "Show advanced options" to create a Universal Analytics property. For the Website URL, insert the URL provided by Netlify when you [deployed your website](#demo-deploy). Click "Next". [Image](https://i.imgur.com/aYeAANl.png){target="blank"}
 
 5. Under About your business, configure the settings to your liking. Click "Next" and accept the terms of service.
 
-6. Locate the Tracking Code by returning to the Google Analytics home page and navigating to the Admin console. Select the Account and Property that were created in the previous steps. Under Property, click on *Tracking Info > Tracking Code*. Copy the Tracking ID, which should appear in the form of UA-XXXXXXXXX-1. [📷 Image](https://i.imgur.com/qcyaVBD.png){target="blank"}
+6. Locate the Tracking Code by returning to the Google Analytics home page and navigating to the Admin console. Select the Account and Property that were created in the previous steps. Under Property, click on *Tracking Info > Tracking Code*. Copy the Tracking ID, which should appear in the form of UA-XXXXXXXXX-1. [Image](https://i.imgur.com/qcyaVBD.png){target="blank"}
 
 7. Return to your RStudio Project. Open `config/_default/params.toml` in the main directory and create a `googleAnalytics` parameter. Insert your tracking code as the parameter value. [</> Code](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml#L16-L17){target="blank"}.
 

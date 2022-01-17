@@ -1,0 +1,1694 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Create, Publish, and Analyze Personal Websites Using R and RStudio},
+  pdfauthor={Danny Morris},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{Create, Publish, and Analyze Personal Websites Using R and RStudio}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{A free, digital handbook with step-by-step instructions for launching your own personal website using R, RStudio, and other freely available technologies including GitHub, Hugo, Netlify, and Google Analytics}
+\author{Danny Morris}
+\date{2021-12-02}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{introduction}{%
+\chapter{Introduction}\label{introduction}}
+
+\includegraphics[width=300px]{image}
+
+This book is \textbf{free} and will always be free. I believe in making information open and accessible to everyone, regardless of status or background. If you would like, you can \href{https://r4sites.com/products/r4sites-book/}{show your support} by ``purchasing'' a copy for only \$5 USD.
+
+This book is licensed under the \href{http://creativecommons.org/licenses/by-nc-nd/3.0/us/}{Creative Commons Attribution-NonCommercial-NoDerivs 3.0} License.
+
+\hypertarget{about-this-book}{%
+\section{About this book}\label{about-this-book}}
+
+In 2018, I had virtually no online presence other than about 100 random LinkedIn connections. I knew this was a problem given my budding interest in Data Science, the increasing demand for project portfolios, and my perceived need to ``stand out'' in the digital crowd.
+
+So, I learned how to publish my first personal website, \href{https://abndistro.com/}{Abnormal Distributions}. Yes, I know, it looks outdated and definitely not as cool as \href{https://benc.dev/}{this website}. However, Abnormal Distributions took my online presence and my career to new heights. Since going live, Abnormal Distributions has served over 50,000 page views and 20,000 users from \href{https://i.imgur.com/Qvx08ry.png}{all over the world}. I began posting content on LinkedIn with links to my website, and in the span of a year I received 1,700 LinkedIn connection requests from Data Scientists and professionals in related fields. I began receiving job opportunities from recruiters who discovered me by landing on my website. Abnormal Distributions sparked my creativity, deepened my subject matter expertise through writing, and gave me the tools I needed to confidently engage with the digital crowd. It turned out to be a wonderful investment of time and energy.
+
+\textbf{My goal with this book is to help you launch your own personal website} and, hopefully, experience the same personal transformation that I experienced after I launched mine.
+
+You will learn the exact methodology that I use to create, design, publish, and analyze websites using R, RStudio, and other freely available tools including GitHub, Hugo, Netlify, and Google Analytics. No prior experience in web development, R, or any of the aforementioned tools is needed to be successful with this book.
+
+\hypertarget{target-audience}{%
+\section{Target audience}\label{target-audience}}
+
+The target audience for this book includes students, working professionals, and researchers who want to launch their very own personal website. Most likely, however, this book will appeal to individuals in these segments who associate with R, Data Analytics, Data Science, Machine Learning, Statistics, Mathematics, and related fields where technical writing is common.
+
+Note that you do not have to be an experienced web developer to successfully use the methodology described in this book. To learn more about whether or not this book is right for you, check out the \protect\hyperlink{faq}{FAQ} section.
+
+\hypertarget{reasons-to-have-a-website}{%
+\section{Reasons to have a website}\label{reasons-to-have-a-website}}
+
+There are many excellent reasons to have a personal website. Below is a list of ideas to motivate your thinking.
+
+\begin{itemize}
+\item
+  \textbf{Captivate an audience}. A personal website presents an amazing opportunity to captivate audiences including professional recruiters, hiring managers, current employers, colleagues, fellow students, and more. Having your own website featuring your original content is one of the best ways to gain recognition and increase your competitive advantage.
+\item
+  \textbf{Enrich your social media presence.} Personal websites give your social media viewers a path to learning more about you and the work you are doing. Start by enriching your LinkedIn profile by inserting links to your website in your headline, summary, Featured section, and any posts you make.
+\item
+  \textbf{Personalize your job applications.} If there is a job you really want or a company you would love to work for, create a personalized website for this company with hyperfocused content and share it with the recruiter, hiring manager, current employees, and anyone else in the company's network who might be impressed. I built \href{https://goofy-franklin-7b6d1d.netlify.app/}{this website} when I applied to RStudio. Spoiler: I did not get the job.
+\item
+  \textbf{Establish yourself as a thought leader.} Are you passionate about certain topics? Create a website and start writing! Direct people to your website as often as you can to reinforce your thought leadership on the topic. By the way, you do not have to be an expert to be a thought leader. If you are learning a new topic and have some ideas you want to share, then you are a thought leader.
+\item
+  \textbf{Organize content for a specific class or project.} This use case is a supreme opportunity for students to display leadership. If you are taking a class or working on a project, consider publishing a website (for free, of course) to communicate your progress and organize essential documentation, as shown in \href{https://dssquad-wiki.netlify.app/}{this example}.
+\item
+  \textbf{Promote a product or service.} If you are thinking about selling your own products or services, consider publishing a landing page or an ecommerce site. I built {[}this landing page{]} at a time when I was considering building websites for local clients.
+\end{itemize}
+
+\hypertarget{learn}{%
+\section{What you will learn}\label{learn}}
+
+You will learn how to create, design, publish, and analyze your personal website using the \href{https://themes.gohugo.io/theme/anatole/}{Hugo Anatole} design theme as the starting point. You will gradually edit this starter theme and author your own original content, resulting in \href{https://r4sites-anatole-custom.netlify.app/}{your own website}.
+
+During this process, you will learn how to do the following:
+
+\begin{itemize}
+\tightlist
+\item
+  Generate websites using R and RStudio in three simple steps.
+\item
+  Fine tune the look and feel of your website including logos, colors, and fonts.
+\item
+  Configure features such as contact forms, page layouts, and social media links.
+\item
+  Author original content such as blog posts, tutorials, research articles, and project portfolios using R, Python, SQL, Markdown, and Jupyter Notebook.
+\item
+  Deploy your website to the internet using Netlify and GitHub.
+\item
+  Integrate Google Analytics into your website to capture user activity on your website, then use R to analyze this data.
+\end{itemize}
+
+\hypertarget{anatole}{%
+\subsubsection*{Why start with the Hugo Anatole theme?}\label{anatole}}
+\addcontentsline{toc}{subsubsection}{Why start with the Hugo Anatole theme?}
+
+The default Hugo Anatole design theme is an excellent starting point for creating a personal website. By default, the Hugo Anatole design theme contains a rich set of features, including:
+
+\begin{itemize}
+\tightlist
+\item
+  Optimal layout for rendering code, tables, and graphs written in R, Python, and SQL.
+\item
+  Easy to customize fonts, colors, text, and advanced features.
+\item
+  Easy to author original content.
+\item
+  Excellent ratings on SEO, performance, accessibility, and best practices.
+\item
+  Clean layout and clear navigation
+\item
+  Supports Google Analytics integration
+\item
+  Supports Formspree integration
+\item
+  Light and dark modes
+\item
+  Responsive
+\end{itemize}
+
+\hypertarget{tools}{%
+\section{Tools you will use}\label{tools}}
+
+The methodology described in this book uses the following \textbf{freely available} tools:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://cran.rstudio.com/}{R} and the \href{https://bookdown.org/yihui/blogdown/}{blogdown} R package
+\item
+  \href{https://www.rstudio.com/products/rstudio/\#rstudio-desktop}{RStudio}
+\item
+  \href{https://gohugo.io/}{Hugo}
+\item
+  \href{https://git-scm.com/}{Git} and \href{https://github.com/}{GitHub}
+\item
+  \href{https://app.netlify.com/}{Netlify}
+\item
+  \href{https://analytics.google.com/}{Google Analytics} and the \href{https://code.markedmondson.me/googleAnalyticsR/}{googleAnalyticsR} R package
+\item
+  \href{https://formspree.io}{Formspree}
+\end{itemize}
+
+\hypertarget{inspiring-examples}{%
+\section{Inspiring examples}\label{inspiring-examples}}
+
+Below are some examples of personal websites, blogs, and portfolios that have been built using the methodology described in this book.
+
+\begin{itemize}
+\item
+  \href{https://abndistro.com}{Abnormal Distributions} - My personal blog. Outrageously simple and straightforward. Designed for sharing tutorials and ideas. Adapted from the \href{https://themes.gohugo.io/hugo-xmin/}{Hugo Xmin} theme.
+\item
+  \href{https://www.alexbilz.com/}{Alex Bilz} - Personal website authored by Alex Bilz, creator of the \href{https://themes.gohugo.io/theme/anatole/}{Hugo Anatole} website design which is featured throughout this book.
+\item
+  \href{http://www.rladiesnyc.org/}{R-Ladies NYC} - Organization website dedicated to promoting gender diversity in the R community. Clean, modern layout. Great design for promoting groups, teams, projects, and events. Adapted form the \href{https://themes.gohugo.io/academic/}{Hugo Academic} theme.
+\item
+  \href{https://evanodell.com/blog/}{Evan Odell} - Personal website authored by Evan Odell featuring a blog, project portfolio, and biography. Crisp, clean, readable layout. Adapted from the \href{https://themes.gohugo.io/beautifulhugo/}{Beautiful Hugo} theme.
+\item
+  \href{https://masalmon.eu/}{Maëlle Salmon} - Personal website authored by Maëlle Salmon featuring a blog, list of talks, publications, and biography. Adapted from the \href{https://themes.gohugo.io/blackburn/}{Blackburn} theme.
+\end{itemize}
+
+\hypertarget{faq}{%
+\section{FAQ}\label{faq}}
+
+\textbf{What is the financial cost to create, publish, and analyze the types of websites described in this book?}
+
+Absolutely nothing, unless you elect to purchase custom domains name which are typically \$1 USD per month.
+
+\textbf{Do I need a background in web development to create my own website?}
+
+Absolutely not. In fact, this book presents information with the assumption that readers do not have a background in web development. You will find that the \protect\hyperlink{tools}{tools described in this book} make it very simple for anyone to create attractive, feature-rich, and sustainable websites.
+
+\textbf{Do I need to know R to build the types of websites described in this book?}
+
+Not at all. You could create and publish your personal website without knowing or writing a single line of R code. The methodology described in this book simply explains how to integrate R and its output (e.g.~tables, graphs) into a website. If you don't know R, a website could be a great way to learn it and document your journey!
+
+\textbf{Can I author content using programming languages other than R?}
+
+Yes. Website content, such as blog posts, can be created using R Markdown documents which support plain Markdown, R, Python, and SQL.
+
+\textbf{What is the role of RStudio in the process of building the types of websites described in this book?}
+
+RStudio is a free desktop application where all of your website development takes place. RStudio provides a simple interface for managing your website projects and the supporting materials including content, images, and code. RStudio also contains a ``Viewer'' pane, which will display your website locally and update it in real-time as you make changes to your website.
+
+\textbf{Can I publish my website behind a custom domain name?}
+
+Yes. This topic is discussed in the chapter \protect\hyperlink{deploy}{Going live on the internet}.
+
+\hypertarget{about-the-author}{%
+\section{About the author}\label{about-the-author}}
+
+Hi! My name is Danny Morris, and thanks for checking out my book. I am an industry Data Scientist with a passion for writing, creating visual content, and building predictive models. I have published over a dozen websites for various purposes using the methodology described in this book.
+More than anything, I love helping people establish and grow their careers. I believe having a personal website is an excellent option for anyone looking to take a step in their career. Feel free to shoot me an \href{mailto:dmorris10667@gmail.com}{email} and connect with me on \href{https://www.linkedin.com/in/drmorris87/}{LinkedIn}.
+
+\hypertarget{complete-end-to-end-example}{%
+\chapter{Complete end-to-end example}\label{complete-end-to-end-example}}
+
+This chapter exposes you to the entire methodology to create, publish, and analyze websites through a quick example. If you complete the steps described in this chapter, you will end up with this \href{https://r4sites-anatole.netlify.app/}{basic website}. In later chapters, you will make edits to this basic website to create a \href{https://r4sites-anatole-custom.netlify.app/}{customized version} with your own original content.
+
+Let's get started!
+
+\hypertarget{install-software}{%
+\section{Install software}\label{install-software}}
+
+Begin by installing these free, open source tools. My recommendation is to download the latest versions, which at the time of this writing are R 4.0, RStudio 1.4, Git 2.31.1.
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://cran.rstudio.com/}{R}
+\item
+  \href{https://www.rstudio.com/products/rstudio/download/\#download}{RStudio}
+\item
+  \href{https://git-scm.com/book/en/v2/Getting-Started-Installing-Git}{Git}
+\end{itemize}
+
+\hypertarget{create-accounts}{%
+\section{Create accounts}\label{create-accounts}}
+
+Create free accounts with GitHub, Netlify, Google Analytics, and Formspree. Start with GitHub, then use your GitHub registration to sign up for a Netlify account. To sign up for Google Analytics, click the link below and locate ``Start for free'' on the landing page.
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://github.com/}{GitHub}
+\item
+  \href{https://app.netlify.com/}{Netlify}
+\item
+  \href{https://marketingplatform.google.com/about/analytics/}{Google Analytics}
+\item
+  \href{https://formspree.io/register}{Formspree}
+\end{itemize}
+
+\hypertarget{create-new-blogdown}{%
+\section{Generate a website}\label{create-new-blogdown}}
+
+The \href{https://bookdown.org/yihui/blogdown/}{blogdown} R package makes it remarkably easy to generate websites that use the \href{https://gohugo.io/}{Hugo} framework behind the scenes. The steps to create a website include the following:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Launch RStudio and install the blogdown package by running \texttt{install.packages("blogdown")} in the R console.
+\item
+  Create a new RStudio Project by going to \emph{File \textgreater{} New Project \textgreater{} New Directory \textgreater{} Website using blogdown}. \href{https://i.imgur.com/eDg7V2k.png}{Image}.
+\item
+  Using the RStudio New Project Wizard, generate a website using the \href{https://themes.gohugo.io/anatole/}{Hugo Anatole theme} by inserting \texttt{xndrblz/anatole} in the \texttt{Hugo\ theme} parameter. Click Create Project to generate the website. \href{https://i.imgur.com/lkD1ZlU.png}{Image}.
+\item
+  Confirm that everything is working properly by running \texttt{blogdown::serve\_site()} in the R console. A local, live, and fully functional preview of your website will appear in the Viewer pane in RStudio. \href{https://i.imgur.com/oxZgeqM.png}{Image}.
+\end{enumerate}
+
+\hypertarget{make-some-edits}{%
+\section{Make some edits}\label{make-some-edits}}
+
+You will notice that the default website contains placeholder text such as ``My Blog'' and ``Call me Jane'' on the home page. The steps to edit these placeholder text examples include the following:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Edit ``My Blog'' on the home page by navigating to \texttt{config/\_default/languages.toml} and changing the \texttt{title} parameter. \href{https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/languages.toml\#L2}{\textless/\textgreater{} Code}.
+\item
+  Edit ``Call me Jane'' on the home page by navigating to \texttt{config/\_default/params.toml} and editing the \texttt{description} parameter. Feel free to experiment with editing other parameters including \texttt{title}, \texttt{profilePicture}, and social media links. \href{https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml\#L2-L6}{\textless/\textgreater{} Code}.
+\end{enumerate}
+
+\hypertarget{integrate-formspree}{%
+\section{Integrate Formspree}\label{integrate-formspree}}
+
+The \href{https://r4sites-anatole.netlify.app/contact/}{contact form} on the Contact page is powered by Formspree. Contact forms are a handy feature for collecting user emails and feedback from your users. The steps to create a Formspree contact form ``endpoint'' and link it to the contact form on the website include the following:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Sign in to \href{https://formspree.io/login}{Formspree}.
+\item
+  Click ``New Project'' to create a new project for your website. \href{https://i.imgur.com/jZnrcVL.png}{Image}.
+\item
+  Click ``New Form'' to create a new contact form. \href{https://i.imgur.com/OYqo3Js.png}{Image}
+\item
+  Copy the form's ``endpoint''. \href{https://i.imgur.com/2S2HVO6.png}{Image}
+\item
+  Open \texttt{config/\_default/params.toml} and insert the form endpoint into the \texttt{contactFormAction} parameter. \href{https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml\#L18-L19}{\textless/\textgreater{} Code}.
+\item
+  Fill out the contact form on the website and click ``Send''. Sign in to the Formspree, locate your newly created form, and select ``Submissions'' to view your submission. \href{https://i.imgur.com/zua7Wuh.png}{Image}
+\end{enumerate}
+
+\hypertarget{push-demo}{%
+\section{Push the website to GitHub}\label{push-demo}}
+
+Once your site is working locally, the next steps are to create a remote GitHub repository for your website, configure a local Git repository, and push your website files from your local environment to the remote repository.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Create a remote GitHub repository by signing in to \href{https://github.com/}{GitHub} and clicking ``New'' in the Repositories section. Configure the repository accordingly, then click Create repository. \href{https://i.imgur.com/dnmI973.png}{Image}
+\item
+  Launch a Git terminal (e.g.~Git Bash on Windows, Terminal on Mac/Linux) and run the following Git commands to push files from the local environment to the remote GitHub repository:
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Change the directory to your website\textquotesingle{}s root folder}
+\BuiltInTok{cd}\NormalTok{ path/to/your/website/files}
+
+\CommentTok{\# initialize a local Git repository}
+\FunctionTok{git}\NormalTok{ init}
+
+\CommentTok{\# add your website files to the local Git repository}
+\FunctionTok{git}\NormalTok{ add }\AttributeTok{{-}{-}all}
+
+\CommentTok{\# commit your website files to the local Git repository}
+\FunctionTok{git}\NormalTok{ commit }\AttributeTok{{-}m} \StringTok{"first commit"}
+
+\CommentTok{\# point the local Git repository to the remote GitHub repository}
+\CommentTok{\# change your\_username and your\_repo to your GitHub username and repository name}
+\FunctionTok{git}\NormalTok{ remote add origin https://github.com/your{-}username/your{-}repo.git}
+
+\CommentTok{\# push your files to GitHub}
+\FunctionTok{git}\NormalTok{ push }\AttributeTok{{-}u}\NormalTok{ origin master}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{demo-deploy}{%
+\section{Deploy the website on Netlify}\label{demo-deploy}}
+
+Now that your website files are stored in a GitHub repository, follow the steps below to configure Netlify to deploy your website to the internet:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Log in to Netlify and click ``New site from Git''. \href{https://i.imgur.com/ztaGsN3.png}{Image}
+\item
+  Select GitHub as the Continuous Deployment provider, then select your website's GitHub repository.
+\item
+  Accept the suggested site settings and click ``Deploy site'' to publish your website to the internet. \href{https://i.imgur.com/wjDFnvJ.png}{Image}
+\item
+  Locate your website's URL by returning to the Site Overview section. By default, Netlify generates a random domain name with an extension of \texttt{.netlify.app}. Though the domain name extension cannot be changed (unless you purchase a custom domain), the domain name prefix can be changed by navigating to \emph{Site settings \textgreater{} Change site name}. \href{https://i.imgur.com/kiyzULE.png}{Image}
+\end{enumerate}
+
+\hypertarget{integrate-google-analytics}{%
+\section{Integrate Google Analytics}\label{integrate-google-analytics}}
+
+Google Analytics is a tool for collecting user traffic and activity on your website. \href{https://marketingplatform.google.com/about/analytics/}{Create a free Google Analytics account} to begin using Google Analytics, then proceed with the following steps:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Sign in to Google Analytics and navigate to \emph{Admin \textgreater{} Create Account}. \href{https://i.imgur.com/QRTa07k.png}{Image}
+\item
+  Under Account setup, provide an appropriate name (e.g.~my-example-site) and configure the Account Data Sharing Settings to your liking. Click ``Next''.
+\item
+  Under Property setup, provide an appropriate name (e.g.~example-site-property).
+\item
+  Under Property setup, click on ``Show advanced options'' to create a Universal Analytics property. For the Website URL, insert the URL provided by Netlify when you \protect\hyperlink{demo-deploy}{deployed your website}. Click ``Next''. \href{https://i.imgur.com/aYeAANl.png}{Image}
+\item
+  Under About your business, configure the settings to your liking. Click ``Next'' and accept the terms of service.
+\item
+  Locate the Tracking Code by returning to the Google Analytics home page and navigating to the Admin console. Select the Account and Property that were created in the previous steps. Under Property, click on \emph{Tracking Info \textgreater{} Tracking Code}. Copy the Tracking ID, which should appear in the form of UA-XXXXXXXXX-1. \href{https://i.imgur.com/qcyaVBD.png}{Image}
+\item
+  Return to your RStudio Project. Open \texttt{config/\_default/params.toml} in the main directory and create a \texttt{googleAnalytics} parameter. Insert your tracking code as the parameter value. \href{https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml\#L16-L17}{\textless/\textgreater{} Code}.
+\end{enumerate}
+
+\hypertarget{push-updates-to-github}{%
+\section{Push updates to GitHub}\label{push-updates-to-github}}
+
+After having \protect\hyperlink{push-demo}{pushed the website to GitHub}, we made changes to the code base by adding Google Analytics integration in the previous step. To complete the Google Analytics integration, push the updates to GitHub. Doing so will force Netlify to deploy a fresh copy to the internet with Google Analytics fully integrated.
+
+To push changes to GitHub, use the \textbf{add \textgreater{} commit \textgreater{} push} Git workflow.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# add all files to the local Git repository}
+\FunctionTok{git}\NormalTok{ add }\AttributeTok{{-}{-}all}
+
+\CommentTok{\# commit files and include a brief message}
+\FunctionTok{git}\NormalTok{ commit }\AttributeTok{{-}m} \StringTok{"brief message describing your changes"}
+
+\CommentTok{\# push files to GitHub}
+\FunctionTok{git}\NormalTok{ push origin master}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{analyze-google-analytics-data}{%
+\section{Analyze Google Analytics data}\label{analyze-google-analytics-data}}
+
+\href{https://code.markedmondson.me/googleAnalyticsR/}{googleAnalyticsR} is an R package for analyzing Google Analytics data in R. This topic is discussed in more detail in the chapter \protect\hyperlink{google-analytics}{Integrating Google Analytics}.
+
+The R code below exemplifies the workflow for authenticating, collecting, and analyzing Google Analytics data in R.
+
+\textbf{Note:} The website created in this chapter is not used in the following script because it has not received sufficient user traffic. My personal blog, Abnormal Distributions, is used instead.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# R packages}
+\FunctionTok{library}\NormalTok{(googleAnalyticsR)}
+\FunctionTok{library}\NormalTok{(googleAuthR)}
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(leaflet)}
+
+\CommentTok{\# Authenticate your Google Analytics account}
+\FunctionTok{ga\_auth}\NormalTok{()}
+
+\CommentTok{\# List your Google Analytics accounts}
+\NormalTok{ga\_accounts }\OtherTok{\textless{}{-}} \FunctionTok{ga\_account\_list}\NormalTok{()}
+
+\CommentTok{\# \# Obtain the "view Id" associated with your website account}
+\NormalTok{view\_id }\OtherTok{\textless{}{-}}\NormalTok{ ga\_accounts }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(accountName }\SpecialCharTok{==} \StringTok{"abndistro"}\NormalTok{, webPropertyName }\SpecialCharTok{==} \StringTok{"Abnormal Distributions"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{pull}\NormalTok{(viewId)}
+
+\CommentTok{\# Query geographic location of website users}
+\NormalTok{users\_location }\OtherTok{\textless{}{-}} \FunctionTok{google\_analytics}\NormalTok{(}
+  \AttributeTok{viewId =} \StringTok{"198103217"}\NormalTok{,}
+  \AttributeTok{date\_range =} \FunctionTok{c}\NormalTok{(}\StringTok{"2019{-}01{-}01"}\NormalTok{, }\StringTok{"2020{-}12{-}31"}\NormalTok{),}
+  \AttributeTok{metrics =} \StringTok{"users"}\NormalTok{,}
+  \AttributeTok{dimensions =} \FunctionTok{c}\NormalTok{(}\StringTok{"latitude"}\NormalTok{, }\StringTok{"longitude"}\NormalTok{),}
+  \AttributeTok{anti\_sample =}\NormalTok{ T}
+\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{as\_tibble}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate\_at}\NormalTok{(}\FunctionTok{vars}\NormalTok{(latitude, longitude), }\FunctionTok{list}\NormalTok{(as.numeric))}
+
+\CommentTok{\# Plot map of website users by location}
+\NormalTok{map\_plot }\OtherTok{\textless{}{-}}\NormalTok{ users\_location }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{leaflet}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{addTiles}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{addCircleMarkers}\NormalTok{(}
+    \AttributeTok{lng =} \SpecialCharTok{\textasciitilde{}}\NormalTok{longitude,}
+    \AttributeTok{lat =} \SpecialCharTok{\textasciitilde{}}\NormalTok{latitude,}
+    \AttributeTok{radius =} \SpecialCharTok{\textasciitilde{}}\FunctionTok{log}\NormalTok{(users),}
+    \AttributeTok{stroke =} \ConstantTok{FALSE}\NormalTok{,}
+    \AttributeTok{fillOpacity =} \FloatTok{0.5}
+\NormalTok{ )}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{map-of-abnormal-distributions-users-by-location}{%
+\subsubsection*{Map of Abnormal Distributions users by location}\label{map-of-abnormal-distributions-users-by-location}}
+\addcontentsline{toc}{subsubsection}{Map of Abnormal Distributions users by location}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{map\_plot}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{next-steps}{%
+\section{Next steps}\label{next-steps}}
+
+This chapter presents the steps to create, publish, and analyze personal websites with very little detail. To get into the details of each step, start with \protect\hyperlink{choose-theme}{discovering your style}.
+
+\hypertarget{choose-theme}{%
+\chapter{Discovering your style}\label{choose-theme}}
+
+This chapter will help you discover a website style that inspires you, unlocks your creativity, and achieves your website goals. Choosing a style is among the most important steps of developing and operating a successful website.
+
+\textbf{Note:} Though this chapter introduces a variety of styles for your consideration, all subsequent chapters will use the \href{https://themes.gohugo.io/theme/anatole/}{Hugo Anatole} style to explain and implement concepts. Over the course of this book, the default Hugo Anatole style will be edited sequentially to produce the final result which can be viewed here - \url{https://r4sites-anatole-custom.netlify.app/}. If you choose to work with a different style, be prepared to adapt the information presented in later chapters to your individual use case.
+
+\hypertarget{how-it-works}{%
+\section{How it works}\label{how-it-works}}
+
+The style of a website includes the general layout, look and feel, and other visual aspects that distinguish one style from another. For example, \href{https://themes.gohugo.io/vex-hugo/}{this style} and \href{https://themes.gohugo.io/hugo-split-theme/}{this style} give off noticeably different impressions.
+
+To find your style, browse the complete list of \href{https://themes.gohugo.io/}{beautiful, free, pre-built Hugo themes}. Hugo themes, which are created by expert Hugo developers, are \textbf{freely available} for you to use in your personal website project. Using a Hugo theme as the starting point for your final website style eliminates the need to design a style from scratch. Chapter 4, \protect\hyperlink{generate}{Generating your website}, teaches you how to create a website using a Hugo theme in three simple steps.
+
+\hypertarget{the-9010-rule-for-choosing-a-theme}{%
+\section{The 90/10 rule for choosing a theme}\label{the-9010-rule-for-choosing-a-theme}}
+
+The 90/10 rule states that 90\% or more of the look, feel, and functionality you desire for your final website should come from the default Hugo theme, while the remaining 10\% or less can come from simple design tweaks such as color choices, font styles, custom images, and the addition of basic features including Google Analytics. Unless you are (or want to be) a Hugo developer, attempting too many modifications to your preferred Hugo theme increases your risk of making poor decision choices and negatively affecting your final website's overall look and performance.
+
+\hypertarget{recommended-hugo-themes}{%
+\section{Recommended Hugo themes}\label{recommended-hugo-themes}}
+
+Depending on your goals, you may be more or less restricted to certain \href{https://themes.gohugo.io/}{Hugo themes}. For example, if you intend to create content using R Markdown documents that contain code written in R, Python, or SQL, then you may find that certain themes do a poor job of rendering output produced by these languages. On the other hand, if you intend to create basic content using plain Markdown documents, you may not experience any content rendering issues with any of the themes you consider.
+
+\textbf{Tip:} When browsing Hugo themes, pay attention to the date on which the theme was most recently updated (\href{https://i.imgur.com/fp7WH6s.png}{Image}). It's best to avoid themes that have not been updated in the last few months or so.
+
+Below is a list of themes that I recommend based on performance, content rendering, and personal style preference. Note that this is not an exhaustive list of all themes that I would recommend.
+
+\hypertarget{recommended-themes-for-content-created-with-r-markdown}{%
+\subsubsection*{Recommended themes for content created with R Markdown}\label{recommended-themes-for-content-created-with-r-markdown}}
+\addcontentsline{toc}{subsubsection}{Recommended themes for content created with R Markdown}
+
+If you intend to add content to your personal website featuring code written in R, Python, or SQL, consider one of the following themes:
+
+\begin{itemize}
+\item
+  \href{https://themes.gohugo.io/anatole/}{Anatole} - My favorite theme with a \protect\hyperlink{anatole}{rich set of features}.
+\item
+  \href{https://themes.gohugo.io/hugo-eureka/}{Eureka} - Clean, professional layout. Easy to customize. Great for portfolios and professional landing pages.
+\item
+  \href{https://themes.gohugo.io/blackburn/}{Blackburn} - Clean layout. Easy to read and navigate. Great for personal websites, blogs, and portfolios.
+\item
+  \href{https://themes.gohugo.io/beautifulhugo/}{Beautiful Hugo} - Crisp, clean design. Great for personal websites, blogs, and portfolios.
+\end{itemize}
+
+\hypertarget{recommended-themes-for-other-use-cases}{%
+\subsubsection*{Recommended themes for other use cases}\label{recommended-themes-for-other-use-cases}}
+\addcontentsline{toc}{subsubsection}{Recommended themes for other use cases}
+
+\begin{itemize}
+\item
+  \href{https://themes.gohugo.io/hargo-hugo-ecommerce-theme/}{Hargo} and \href{https://themes.gohugo.io/vex-hugo/}{Vex} - Modern e-commerce themes for advertising and selling products
+\item
+  \href{https://themes.gohugo.io/doks/}{Doks} - Modern documentation theme
+\item
+  \href{https://themes.gohugo.io/bigspring-hugo-startup-theme/}{Bigspring} - Modern design for small businesses offering a particular service
+\item
+  \href{https://themes.gohugo.io/hugo-theme-pico/}{Pico} - Modern design for promoting yourself and your work
+\item
+  \href{https://themes.gohugo.io/hugo-product-launch/}{Hugo Product Launch} - Simple layout for promoting an upcoming product
+\item
+  \href{https://themes.gohugo.io/hugo-scroll/}{Hugo Scroll} - Simple, highly visual layout for promoting your services or expertise
+\end{itemize}
+
+\hypertarget{next-steps-1}{%
+\section{Next steps}\label{next-steps-1}}
+
+Proceed with \protect\hyperlink{generate}{generating a website} in three simple steps using RStudio.
+
+\hypertarget{generate}{%
+\chapter{Generating your website}\label{generate}}
+
+This chapter teaches you how to generate a website in three simple steps using RStudio.
+
+\textbf{Note:} This chapter and all subsequent chapters will use the \href{https://themes.gohugo.io/theme/anatole/}{Hugo Anatole} theme as the basis for explaining and implementing concepts. Over the course of this book, the default Hugo Anatole website will be edited sequentially to produce the final result which can be viewed here -\url{https://r4sites-anatole-custom.netlify.app/}.
+
+\hypertarget{prerequisites}{%
+\section{Prerequisites}\label{prerequisites}}
+
+Before you proceed, complete the following prerequisites:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \href{https://cran.rstudio.com/}{Install R}
+\item
+  \href{https://www.rstudio.com/products/rstudio/download/\#download}{Install RStudio}
+\item
+  (optional) \protect\hyperlink{choose-theme}{Discover your style}
+\end{enumerate}
+
+My recommendation is to download the latest versions, which at the time of this writing are R 4.0 and RStudio 1.4.
+
+\hypertarget{how-it-works-1}{%
+\section{How it works}\label{how-it-works-1}}
+
+RStudio's New Project Wizard makes it remarkably easy to generate a \href{https://bookdown.org/yihui/blogdown/}{blogdown} website in three simple steps. Behind the scenes, RStudio and blogdown use \href{https://gohugo.io/}{Hugo} to generate your website.
+
+\hypertarget{generate-site}{%
+\section{Generate your site}\label{generate-site}}
+
+Follow these steps to generate a website using RStudio:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Launch RStudio and install the blogdown package by running \texttt{install.packages("blogdown")} in the R console.
+\item
+  Create a new RStudio Project by going to \textbf{File \textgreater{} New Project \textgreater{} New Directory \textgreater{} Website using blogdown.} \href{https://i.imgur.com/eDg7V2k.png}{Image}.
+\item
+  Configure the website to use the Hugo Anatole theme by setting the \texttt{Hugo\ theme} parameter to \texttt{lxndrblz/anatole}. Click Create Project to generate the website. \href{https://i.imgur.com/0DxkDHe.png}{Image}
+\end{enumerate}
+
+\hypertarget{use-a-different-hugo-theme}{%
+\section{Use a different Hugo theme}\label{use-a-different-hugo-theme}}
+
+To use a theme other than Anatole, locate and select the theme from the list of \href{https://themes.gohugo.io/}{Hugo themes}. Click ``Download'' on the theme homepage to view the source code on GitHub (\href{https://i.imgur.com/ld35gNP.png}{Image}). Copy the user/theme-name in the GitHub URL, then add this information to the \texttt{Hugo\ theme} parameter in the website configuration. For example, if the source code is located at \url{https://github.com/devcows/hugo-universal-theme}, insert \texttt{devcows/hugo-universal-theme} into the \texttt{Hugo\ theme} parameter.
+
+\hypertarget{serve-site}{%
+\section{Serve the website locally}\label{serve-site}}
+
+The \href{https://bookdown.org/yihui/blogdown/}{blogdown} package includes a handy function called \texttt{serve\_site()}. Running this function in the R console with your website's RStudio Project loaded will render a local copy of your entire website in the RStudio ``Viewer'' pane. \href{https://i.imgur.com/oxZgeqM.png}{Image}
+
+The best part of this feature is that as you make and save changes to your website files, the local rendering will update in real-time and reflect your changes. This feature of blogdown, known as LiveReload, empowers you to test ideas and receive instant feedback without having to leave the RStudio environment.
+
+\hypertarget{next-steps-2}{%
+\section{Next steps}\label{next-steps-2}}
+
+Proceed with \protect\hyperlink{fine-tune}{fine tuning the look and feel} including font styles, colors, and profile images.
+
+Optionally, skip ahead and \protect\hyperlink{deploy}{deploy your website to the internet}. Though the steps to deploy your website are covered in a later chapter, readers are welcome to complete these steps at any point following the initial generation of the website.
+
+\hypertarget{fine-tune}{%
+\chapter{Fine tuning the look and feel}\label{fine-tune}}
+
+This chapter teaches you how to customize the look and feel of your website and how to personalize artistic elements including the website title, profile image, favicon, font style, font properties, and color choices.
+
+\textbf{Note:} This chapter builds upon the website generated in chapter 4. All subsequent chapters will do the same. The final result can be viewed here - \url{https://r4sites-anatole-custom.netlify.app/}.
+
+\hypertarget{prerequisites-1}{%
+\section{Prerequisites}\label{prerequisites-1}}
+
+Before you proceed, complete the following prerequisites:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  (optional) \protect\hyperlink{choose-theme}{Discover your style}
+\item
+  \protect\hyperlink{generate}{Generate your website}
+\end{enumerate}
+
+\hypertarget{how-it-works-2}{%
+\section{How it works}\label{how-it-works-2}}
+
+This chapter will teach you how to use your own images in your website and how to edit aesthetic properties by modifying the website's CSS (Cascading Style Sheet).
+
+\hypertarget{about-css}{%
+\section{About CSS}\label{about-css}}
+
+If you are not familiar with CSS (Cascading Style Sheets), spend a moment looking over \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css}{the CSS file} that controls the appearance of the website generated in the previous chapter. While HTML defines the general layout of a webpage, CSS is used to control the appearance of an HTML webpage and its elements including font styles, colors, buttons, links, positioning of images, and so on. If you intend to alter the look and feel of your website, I recommend devoting attention to your website's CSS.
+
+To learn more about CSS, visit \href{https://www.w3schools.com/css/}{w3schools} for tutorials and continue reading to learn about the \protect\hyperlink{inspect-tool}{Inspect tool} in your browser.
+
+\hypertarget{inspect-tool}{%
+\section{About the Inspect tool}\label{inspect-tool}}
+
+The ``Inspect'' tool in your browser is a powerful tool for experimenting with changes to CSS properties directly in the browser. Using the Inspect tool results in temporary changes to the CSS, and when the browser is refreshed the original CSS properties are restored.
+
+Access this tool in the browser by right-clicking on any page element you want to edit (e.g.~images, text, links, buttons) and click on ``Inspect''. \href{https://i.imgur.com/0h0H4VW.png}{Image}
+
+To learn more about the Inspect tool, I recommend watching this \href{https://www.youtube.com/watch?v=1l4xz1QQhew}{short YouTube video}.
+
+\hypertarget{before-you-begin}{%
+\section{Before you begin}\label{before-you-begin}}
+
+After you \protect\hyperlink{generate}{generate a website} and before you begin making edits to your website's features, prepare your RStudio environment by serving the site locally and opening a few important files.
+
+\hypertarget{serve-the-site-locally}{%
+\subsubsection*{Serve the site locally}\label{serve-the-site-locally}}
+\addcontentsline{toc}{subsubsection}{Serve the site locally}
+
+In the R console, run \texttt{blogdown::serve\_site()} to render a live, local copy of the website in the ``Viewer'' pane. Any time you save an edit, your local copy will update in real-time and provide you with instant feedback on your edits.
+
+\hypertarget{open-important-files-in-rstudio}{%
+\subsubsection*{Open important files in RStudio}\label{open-important-files-in-rstudio}}
+\addcontentsline{toc}{subsubsection}{Open important files in RStudio}
+
+Open the files listed below in RStudio to better prepare yourself for making edits.
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{config.yaml}
+\item
+  \texttt{config/\_default/languages.toml}
+\item
+  \texttt{config/\_default/params.toml}
+\item
+  \texttt{themes/anatole/assets/css/style.css}
+\end{itemize}
+
+\hypertarget{update-the-base-url}{%
+\section{Update the base URL}\label{update-the-base-url}}
+
+Open \texttt{config.yaml} in the main directory and change the \texttt{baseURL} parameter from \texttt{https://example.com} to \texttt{"/"}. The default \texttt{example.com} domain name is just a placeholder, and switching to \texttt{"/"} will instruct instruct Netlify to deploy your website behind your Netlify domain name. \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config.yaml\#L1}{\textless/\textgreater{} Code}
+
+This is a critical step to ensure your website and its dependencies are built and deployed properly.
+
+\hypertarget{title-description-and-author}{%
+\section{Title, description, and author}\label{title-description-and-author}}
+
+\begin{itemize}
+\item
+  Change the \textbf{title} ``My Blog'' on the Home page by opening \texttt{config/\_default/languages.toml} and changing the \texttt{title} parameter. \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/languages.toml\#L2}{\textless/\textgreater{} Code}
+\item
+  Change the \textbf{description} ``Call me Jane'' on the Home page by opening \texttt{config/\_default/params.toml} and editing the \texttt{description} parameter. \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml\#L5}{\textless/\textgreater{} Code}
+\item
+  Change the \textbf{author} ``Jane Doe'' by opening \texttt{config/\_default/params.toml} and editing the \texttt{author} parameter. Doing this will change the title of your website as it appears in the web browser tab. \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml\#L3}{\textless/\textgreater{} Code}
+\end{itemize}
+
+\hypertarget{profile-image}{%
+\section{Profile image}\label{profile-image}}
+
+The profile image is the main image on the Home page. To use your own image, navigate to \texttt{static/images/} and replace \texttt{profile.jpg} with your own image. If your image file is also named \texttt{profile.jpg}, then no additional edits are needed. If not, open \texttt{config/\_default/params.toml} and update the \texttt{profilePicture} parameter with your image file name. \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml\#L6}{\textless/\textgreater{} Code}
+
+If you are unhappy with the image dimensions (e.g.~too narrow or too wide), open \texttt{themes/anatole/assets/css/style.css} and edit the CSS properties. For this theme, you will need to edit the CSS properties for narrow screen devices (\href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css\#L915-L917}{\textless/\textgreater{} Code}) and wide screen devices (\href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css\#L293-L296}{\textless/\textgreater{} Code}).
+
+\hypertarget{favicon}{%
+\section{Favicon}\label{favicon}}
+
+The favicon is the tiny image that appears in the web browser tab when you visit the website. Navigate to \texttt{static/favicons/} and replace \texttt{favicon.ico} with your own favicon. If your favicon file is named \texttt{favicon.ico}, then no additional changes are needed. If not, open \texttt{config/\_default/params.toml} and update the \texttt{favicon} parameter with your favicon file name.
+
+To create a favicon from an image, visit \url{https://favicon.io/favicon-converter/}.
+
+\hypertarget{font-style}{%
+\section{Font style}\label{font-style}}
+
+If you don't like the default font, you can easily change it. I recommend selecting from \href{https://fonts.google.com/}{Google Fonts}. For this example, I will use the \href{https://fonts.google.com/specimen/Noto+Sans?query=noto+sans}{Noto Sans} font.
+
+The steps to import a Google Font include the following:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Locate and select your chosen font from from \href{https://fonts.google.com/}{Google Fonts}.
+\item
+  Look at all of the available styles (e.g.~Regular, Bold, Italic, etc.) and decide which styles you would like to import into your website. I recommend importing all available styles. To import all available styles, select ``+ Select this style'' beside each style. \href{https://i.imgur.com/ZEopFOB.png}{Image}
+\item
+  Select the ``@import'' option under ``Use on the web''. Copy the HTML code \textbf{in between} the \texttt{style} tags(\href{https://i.imgur.com/GE1L643.png}{Image}) and paste it into the main CSS file located at \texttt{themes/anatole/assets/css/style.css}. (\href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css\#L3}{\textless/\textgreater{} Code})
+\item
+  Under ``use on the web'', locate the CSS rule for specifying \texttt{font-family} (\href{https://i.imgur.com/0Nfmgdw.png}{Image}). In your main CSS file located at \texttt{themes/anatole/assets/css/style.css}, update all instances of \texttt{font-family} to change all font styles to your new font. Fortunately, the Anatole theme only specifies \texttt{font-family} in a single location. \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css\#L48}{\textless/\textgreater{} Code}
+\end{enumerate}
+
+\hypertarget{font-sizes}{%
+\section{Font sizes}\label{font-sizes}}
+
+In general, the Hugo Anatole theme uses rather small font sizes throughout the website. To change font sizes, locate the webpage element you want to modify using the \protect\hyperlink{inspect-tool}{Inspect tool} in your browser. For the selected element, experiment with the \texttt{font-size} property (e.g.~\texttt{font-size:\ 20px}). Once you are satisfied, edit the main CSS file located at \texttt{themes/anatole/assets/css/style.css} by adding the \texttt{font-size} property to the appropriate CSS class.
+
+Consider the following edits:
+
+\begin{itemize}
+\item
+  Increase the font size of the \texttt{p} class, which will essentially increase the font size throughout the entire website. Change the \texttt{font-size} property from 14px to 16px or higher. \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css\#L55-L59}{\textless/\textgreater{} Code}
+\item
+  Increase the font size of the text in the \textbf{navigation bar} located at the top of the website when viewed on a wide screen. Change the \texttt{font-size} property of the \texttt{.page-top\ .nav} class from 12px to 16px or higher. \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css\#L200-L207}{\textless/\textgreater{} Code}
+\end{itemize}
+
+\hypertarget{colors}{%
+\section{Colors}\label{colors}}
+
+You can change the color of essentially any webpage attribute including text, backgrounds, borders, and so on. To change a color, locate the webpage element you want to modify using the \protect\hyperlink{inspect-tool}{Inspect tool} in your browser and experiment with the \texttt{color} or \texttt{background-color} properties.
+
+Consider the following edits:
+
+\begin{itemize}
+\item
+  \textbf{Social media icons:} These are visible beneath the website title on the Home page. Open the main CSS file located at \texttt{themes/anatole/assets/css/style.css} and edit the \texttt{.sidebar\ .social-links\ i} class by specifying a \texttt{color} attribute. Here I have chosen to use the HEX color \#a4a4a4. \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css\#L322-L325}{\textless/\textgreater{} Code} \href{https://i.imgur.com/Q7uhdaQ.png}{Image}
+\item
+  \textbf{Post tags:} These are visible on the Home page beneath post titles and summaries. Open the main CSS file located at \texttt{themes/anatole/assets/css/style.css} and edit the \texttt{.post\ .post-footer\ .meta\ a} class and editing the\texttt{color} attribute. Here I have chosen to use the HEX color \#6a92c5. \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css\#L479-L482}{\textless/\textgreater{} Code} \href{https://i.imgur.com/JnueFsN.png}{Image}
+\end{itemize}
+
+\hypertarget{next-steps-3}{%
+\section{Next steps}\label{next-steps-3}}
+
+Proceed with \protect\hyperlink{pages-features}{configuring pages and features} including contact forms and social media links.
+
+Optionally, skip ahead and \protect\hyperlink{deploy}{deploy your website to the internet}. Though the steps to deploy your website are covered in a later chapter, readers are welcome to complete these steps at any point following the initial generation of the website.
+
+\hypertarget{pages-features}{%
+\chapter{Configuring pages and features}\label{pages-features}}
+
+This chapter teaches you how to configure website features that are unlikely to change very frequently. These features include page names, the About page text, default posts, language translations, social media links, and contact forms.
+
+\textbf{Note:} This chapter builds upon the website generated in chapter 4 and edited in chapter 5. All subsequent chapters will do the same. The final version can be viewed here - \url{https://r4sites-anatole-custom.netlify.app/}.
+
+\hypertarget{prerequisites-2}{%
+\section{Prerequisites}\label{prerequisites-2}}
+
+Before you proceed, complete the following prerequisites:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  (optional) \protect\hyperlink{choose-theme}{Discover your style}
+\item
+  \protect\hyperlink{generate}{Generate your website}
+\item
+  (optional) \protect\hyperlink{fine-tune}{Fine tune the look and feel}
+\item
+  Sign up for \href{https://formspree.io}{Formspree}
+\end{enumerate}
+
+\hypertarget{before-you-begin-1}{%
+\section{Before you begin}\label{before-you-begin-1}}
+
+For an optimal development experience, consider the following suggestions before you start to configure pages and features:
+
+\hypertarget{serve-the-site-locally-1}{%
+\subsubsection*{Serve the site locally}\label{serve-the-site-locally-1}}
+\addcontentsline{toc}{subsubsection}{Serve the site locally}
+
+In the R console, run \texttt{blogdown::serve\_site()} to render a live, local copy of the website in the ``Viewer'' pane. Any time you save an edit, your local copy will update in real-time and provide you with instant feedback on your edits.
+
+\hypertarget{locate-important-files-in-rstudio}{%
+\subsubsection*{Locate important files in RStudio}\label{locate-important-files-in-rstudio}}
+\addcontentsline{toc}{subsubsection}{Locate important files in RStudio}
+
+The files listed below are referenced throughout this chapter. Consider either opening these files in RStudio or, at the very least, locate them ahead of time to gain some experience navigating the website file structure.
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{config.yaml}
+\item
+  \texttt{config/\_default/menus.en.toml}
+\item
+  \texttt{config/\_default/languages.toml}
+\item
+  \texttt{config/\_default/params.toml}
+\item
+  \texttt{content/english/about.md}
+\item
+  \texttt{themes/anatole/layouts/\_default/list.html}
+\item
+  \texttt{themes/anatole/layouts/partials/contact.html}
+\item
+  \texttt{themes/anatole/i18n/en.toml}
+\end{itemize}
+
+\hypertarget{rename-pages}{%
+\section{Rename pages}\label{rename-pages}}
+
+The Hugo Anatole theme comes with the following default pages: Home, Posts, About, and Contact. To rename these pages, open \texttt{config/\_default/menus.en.toml} and edit the \texttt{name} parameters accordingly. For example, rename the ``About'' page to ``About Me'' to clearly communicate that this page contains your personal biography. \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/menus.en.toml\#L14}{\textless/\textgreater{} Code}
+
+\hypertarget{delete-pages}{%
+\section{Delete pages}\label{delete-pages}}
+
+To delete a page, open \texttt{config/\_default/menus.en.toml} and delete all references to the page you want to delete. For example, to delete the Contact page, delete lines 19-23 in the \texttt{menus.en.toml} file. \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/menus.en.toml\#L19-L23}{\textless/\textgreater{} Code}
+
+\hypertarget{edit-the-about-page}{%
+\section{Edit the About page}\label{edit-the-about-page}}
+
+To edit the default \href{https://r4sites-anatole-custom.netlify.app/about/}{About page}, open \texttt{content/english/about.md}. Replace the metadata (i.e.~the parameters in between the \texttt{-\/-\/-} markers) then replace the body of the document using plain Markdown. \href{https://raw.githubusercontent.com/dannymorris/r4sites-anatole-custom/master/content/english/about.md}{\textless/\textgreater{} Code}
+
+\hypertarget{delete-default-posts}{%
+\section{Delete default posts}\label{delete-default-posts}}
+
+The Hugo Anatole theme comes with several \href{https://themes.gohugo.io//theme/anatole/post/}{default posts}. To delete all default posts, navigate to the \texttt{content/english/post} folder and delete all files and folders \textbf{except \texttt{\_index.md}}. \href{https://github.com/dannymorris/r4sites-anatole-custom/tree/master/content/english/post}{\textless/\textgreater{} Code}
+
+\hypertarget{edit-post-date-format}{%
+\section{Edit post date format}\label{edit-post-date-format}}
+
+By default, the Hugo Anatole theme displays dates of posts in the format of \texttt{Day/Month/Year} (\href{https://i.imgur.com/k2suw8t.png}{Image}). To alter the date format, open \texttt{config/\_default/params.toml} and edit the \texttt{singleDateFormat}, \texttt{indexDateFormat}, and \texttt{listDateFormat} parameters.
+
+For example, to switch the date format to \texttt{Year-Month-Day}, update the values for all three parameters to \texttt{"2006-01-02"} (\href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml\#L21-L23}{\textless/\textgreater{} Code}). In this example, \texttt{2006} requests the 4-digit year, \texttt{01} requests the 2-digit month, and \texttt{02} requests the 2-digit day.
+
+\hypertarget{remove-dates-from-posts-page}{%
+\section{Remove dates from Posts page}\label{remove-dates-from-posts-page}}
+
+When viewed on a device with a small, narrow screen (e.g.~mobile phone), the dates to the right of the post titles on the Posts page may appear broken (\href{https://i.imgur.com/RznGw5r.png}{Image}). On narrow screen, there is an insufficient amount of screen space to display both the post title and the post date in a side-by-side fashion.
+
+My preference is to remove the post dates from the Posts page altogether. Note this does not affect the post dates on the Home page or on the post itself. To remove post dates from the Posts page, open \texttt{themes/anatole/layouts/\_default/list.html} and comment out (or delete) lines 11-14. \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/layouts/_default/list.html\#L10-L15}{\textless/\textgreater{} Code}
+
+\hypertarget{delete-language-translations}{%
+\section{Delete language translations}\label{delete-language-translations}}
+
+By default, the Anatole theme supports English and Arabic language translations. To remove all content for a given translation, complete the following steps:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Delete the file \texttt{config/\_default/menus.TRANSLATION.toml}.
+\item
+  Edit the file \texttt{config/\_default/languages.toml} by removing all references to the appropriate language parameters. \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/languages.toml}{\textless/\textgreater{} Code}
+\item
+  Delete the folder \texttt{content/TRANSLATION/} and all of its contents.
+\end{enumerate}
+
+\hypertarget{edit-social-media-links}{%
+\section{Edit social media links}\label{edit-social-media-links}}
+
+The Hugo Anatole theme uses social media icons on the Home page that link to social media profiles including LinkedIn, GitHub, Instagram, and Email. To set links to your personal profiles, open \texttt{config/\_default/params.toml} and edit all \texttt{url} parameters (\href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml\#L40-L60}{\textless/\textgreater{} Code}). To remove a specific icon, delete all parameters associated with the icon.
+
+\hypertarget{configure-contact-forms}{%
+\section{Configure contact forms}\label{configure-contact-forms}}
+
+Contact forms are a feature of the default Hugo Anatole theme, though they are not a feature of all Hugo themes. Contact forms are handy for collecting user emails and soliciting feedback from your website visitors. The contact form on the \href{https://r4sites-anatole-custom.netlify.app/about/}{Contact} page of the default Hugo Anatole theme is powered by \href{https://formspree.io}{Formspree}. Formspree is not the only contact form provider, though it seems many Hugo themes integrate Formspree. Formspree's web app offers a user-friendly interface for creating and managing contact forms, viewing form submissions, and exporting user data in CSV format. If you ever want to do a ``subscriber only'' email campaign, contact forms are a great option for collecting emails.
+
+Follow the steps below to create a Formspree form ``endpoint'' and link it to the contact form on your website:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Sign in to \href{https://formspree.io/login}{Formspree}.
+\item
+  Click ``New Project'' to create a new project for your website. \href{https://i.imgur.com/jZnrcVL.png}{Image}
+\item
+  Click ``New Form'' to create a new contact form. \href{https://i.imgur.com/BE4tOJ4.png}{Image}
+\item
+  Copy the form's ``endpoint'' beginning with \texttt{https://}. \href{https://i.imgur.com/2S2HVO6.png}{Image}
+\item
+  Open \texttt{config/\_default/params.toml} in the main website folder, uncomment the \texttt{contactFormAction} parameter, and insert the form endpoint. \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/config/_default/params.toml\#L16-L17}{\textless/\textgreater{} Code}
+\end{enumerate}
+
+\hypertarget{customize-contact-forms}{%
+\section{Customize contact forms}\label{customize-contact-forms}}
+
+The contact form on the default Hugo Anatole theme includes fields for Name, Email, and Message. These defaults are likely to work for most use cases, however it is possible to create new fields.
+
+To edit the contact form on the Hugo Anatole theme, open \texttt{themes/anatole/layouts/partials/contact.html} and \texttt{themes/anatole/i18n/en.toml} in the RStudio editor.
+
+To add a new field to the contact form, such as an optional ``Job Title'' field, update the \texttt{contact.html} file with a new input (\href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/layouts/partials/contact.html\#L13-L16}{\textless/\textgreater{} Code}) and update the \texttt{i18n/en.toml} file with an associated placeholder text value (\href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/i18n/en.toml\#L35-L36}{\textless/\textgreater{} Code})
+
+\hypertarget{view-contact-form-submissions}{%
+\section{View contact form submissions}\label{view-contact-form-submissions}}
+
+Once your contact form endpoint is configured, submissions to your contact form can be viewed in your Formspree account. Sign in to Formspree, locate your form, and select ``Submissions'' to view and (optionally) export your submissions. \href{https://i.imgur.com/zua7Wuh.png}{Image}
+
+\hypertarget{next-steps-4}{%
+\section{Next steps}\label{next-steps-4}}
+
+Proceed with \protect\hyperlink{content}{authoring original content} such as blog posts, tutorials, research articles, and project write-ups using R Markdown.
+
+Optionally, skip ahead and \protect\hyperlink{deploy}{deploy your website to the internet}. Though the steps to deploy your website are covered in a later chapter, readers are welcome to complete these steps at any point following the initial generation of the website.
+
+\hypertarget{content}{%
+\chapter{Authoring original content}\label{content}}
+
+This chapter provides general guidance on authoring original content such as blog posts, tutorials, research articles, and project write-ups using R Markdown.
+
+\textbf{Note:} This chapter builds upon the website generated in chapter 4 and edited in chapters 5 and 6. All subsequent chapters will do the same. The final result can be viewed here - \url{https://r4sites-anatole-custom.netlify.app/}.
+
+\hypertarget{prerequisites-3}{%
+\section{Prerequisites}\label{prerequisites-3}}
+
+Before you proceed, complete the following prerequisites:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  (optional) \protect\hyperlink{choose-theme}{Discover your style}
+\item
+  \protect\hyperlink{generate}{Generate your website}
+\item
+  (optional) \protect\hyperlink{fine-tune}{Fine tune the look and feel}
+\item
+  (optional) \protect\hyperlink{pages-features}{Configure pages and features}
+\end{enumerate}
+
+\hypertarget{how-it-works-3}{%
+\section{How it works}\label{how-it-works-3}}
+
+More than anything else on your website, your original content is your opportunity to share your ideas and captivate your viewers. For personal websites, original content often takes the form of blog posts, tutorials, research articles, and project portfolios. In all likelihood, your website visitors will spend most of their time reading your original content.
+
+Your original content can be authored using either \href{https://bookdown.org/yihui/rmarkdown/html-document.html}{R Markdown} or \href{https://www.markdownguide.org/getting-started/}{plain Markdown} documents, and the output will reside on your website's \href{https://r4sites-anatole-custom.netlify.app/post/}{Posts page}.
+
+\textbf{My recommendation is to use R Markdown for authoring original content.} R Markdown is very similar to plain Markdown with one massive exception: R Markdown supports the integration and execution of R, Python, and SQL code within the document. This means your content can include dynamic output such as code printing, interactive tables, interactive graphs, and any other form of output that can be generated from these programming languages (\href{https://abndistro.com/post/2020/07/12/time-series-forecasting-as-a-supervised-machine-learning-problem/}{example}). You can also embed Jupyter Notebooks stored externally (e.g.~GitHub Gist). For these reasons, R Markdown is substantially more flexible than plain Markdown for writing technical content. To learn more about R Markdown, I recommend reading \href{https://bookdown.org/yihui/rmarkdown/}{R Markdown: The Definitive Guide}.
+
+\hypertarget{example-r-markdown-posts}{%
+\section{Example R Markdown posts}\label{example-r-markdown-posts}}
+
+If you have never authored an R Markdown document, spend some time looking through these example posts including their source code and associated output on the website. In the source code, inspect the metadata parameters in between the \texttt{-\/-\/-} markers at the top of the document, then inspect the post body to gain a basic understanding of how text and code chunks are intertwined.
+
+\begin{itemize}
+\item
+  \textbf{Using R in R Markdown} - Post includes a table of contents, code highlighting, and thumbnail image. Content covers interactive HTML tables via the \href{https://rstudio.github.io/DT/}{DT} package, and interactive plots via the \href{https://plotly.com/r/}{plotly} package. (\href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd}{\textless/\textgreater{} Code}) (\href{https://r4sites-anatole-custom.netlify.app/post/2021-04-22-sample-post-using-r-in-r-markdown/}{Page})
+\item
+  \textbf{Using Python in R Markdown} - Post includes a table of contents, code highlighting, and thumbnail image. Content covers the use of Conda environments, inserting and executing Python code chunks, and displaying plots. (\href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd}{\textless/\textgreater{} Code}) (\href{https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-using-python-in-r-markdown/}{Page})
+\item
+  \textbf{Using SQL in R Markdown} - Post includes a table of contents and code highlighting. Content covers inserting and executing pure SQL code chunks and using R to execute SQL queries. (\href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-sql-in-r-markdown/index.en.Rmd}{\textless/\textgreater{} Code}) (\href{https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-using-sql-in-r-markdown/}{Page})
+\item
+  \textbf{Basic Markdown syntax} - Post includes a thumbnail image but no table of contents or code highlighting. Content covers basic Markdown syntax. (\href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-basic-markdown-syntax/index.en.Rmd}{\textless/\textgreater{} Code}) (\href{https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-basic-markdown-syntax/}{Page})
+\item
+  \textbf{Embedded Jupyter Notebook} - Post includes a rendering of a Jupyter Notebook stored as a GitHub Gist. \href{https://gist.github.com/dannymorris/65bfd1e920b5c3673d7358cdf9d9753f}{\textless/\textgreater{} Code} (\href{https://abndistro.com/post/2021/05/20/using-pyspark-and-mllib-to-generate-association-rules-from-continuous-features/}{Page})
+\end{itemize}
+
+\hypertarget{create-a-new-post}{%
+\section{Create a new post}\label{create-a-new-post}}
+
+The simplest way to add a new post is via the ``New post'' RStudio Addin. Follow the steps below to create a new post using this approach:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Select the RStudio Addin labeled ``New post''. \href{https://i.imgur.com/S9dl4DZ.png}{Image}
+\item
+  Configure the new post by specifying the post Title, Author, Date, Subdirectory, and Format. \textbf{Do not specify Tags and Categories} at this point. Be sure to place the new post in the \texttt{post} Subdirectory and set the Format to \texttt{R\ Markdown\ (.Rmd)}. \href{https://i.imgur.com/ciCv6yC.png}{Image}
+\item
+  Update (or create) parameters in the post metadata including \texttt{title}, \texttt{author}, \texttt{summary}, \texttt{date}, \texttt{output}, \texttt{Tags}, and \texttt{Categories} (\href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd\#L1-L18}{Image}). Continue reading to learn more.
+\end{enumerate}
+
+\hypertarget{add-a-post-summary}{%
+\section{Add a post summary}\label{add-a-post-summary}}
+
+Add a summary to your R Markdown post to insert a summarization of the post beneath the post title on the \href{https://r4sites-anatole-custom.netlify.app/}{Home} page (\href{https://i.imgur.com/SjZ24e1.png}{Image}). To add a summary, create a \texttt{summary} parameter in the document metadata. \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd\#L3}{\textless/\textgreater{} Code}
+
+\hypertarget{add-a-table-of-contents}{%
+\section{Add a table of contents}\label{add-a-table-of-contents}}
+
+Add a table of contents to your R Markdown post to improve navigation and enable an overall better user experience. To add a table of contents, edit the \texttt{output} parameter in the document metadata. \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd\#L6-L9}{\textless/\textgreater{} Code}
+
+\hypertarget{add-code-highlighting}{%
+\section{Add code highlighting}\label{add-code-highlighting}}
+
+Add code highlighting to improve the readability of your code snippets. To add code highlighting, edit the \texttt{output} parameter in the document metadata. \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd\#L6-L9}{\textless/\textgreater{} Code}
+
+Though I recommend the \texttt{tango} highlighting scheme, other \href{https://bookdown.org/yihui/rmarkdown/html-document.html\#appearance-and-style}{code highlighting options} options are available.
+
+\hypertarget{add-tags-and-categories}{%
+\section{Add tags and categories}\label{add-tags-and-categories}}
+
+Add ``tags'' and ``categories'' to your posts to organize your content and to give Google crawlers an idea of what your post is about. According to \href{https://databox.com/categories-vs-tags-for-seo}{this website}, strive to attach no more than 5-10 categories and 5-10 tags to each post. To add tags and categories to your post, edit the \texttt{Tags} and \texttt{Categories} parameters in the document metadata. \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd\#L12-L13}{\textless/\textgreater{} Code}
+
+\hypertarget{add-a-post-thumbnail}{%
+\section{Add a post thumbnail}\label{add-a-post-thumbnail}}
+
+A post thumbnail is an image that appears above the post title on the Home page (\href{https://i.imgur.com/ITLkYTP.png}{Image}) and at the beginning of the post itself. To include a thumbnail for a post, create a \texttt{thumbnail} parameter in the document metadata and insert the path to your image located in the \texttt{static/images} folder. \href{https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd\#L15}{\textless/\textgreater{} Code}
+
+\hypertarget{embed-a-jupyter-notebook-in-a-r-markdown-post}{%
+\section{Embed a Jupyter Notebook in a R Markdown post}\label{embed-a-jupyter-notebook-in-a-r-markdown-post}}
+
+Instead of the conventional workflow of authoring posts from scratch within the RStudio IDE, users of Jupyter Notebooks may find it more attractive to develop notebooks externally (e.g.~Google Colab) and simply embed them in R Markdown posts.
+
+Follow these steps to embed an external Jupyter Notebook in a post on your website:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Author a Jupyter Notebook using your preferred environment, such as your local machine, Google Colab, etc.
+\item
+  Save a copy of the notebook to your local machine.
+\item
+  Visit \url{https://gist.github.com/} in your browser.
+\item
+  In the upper-right corner, click the ``+'' icon to add a new gist.
+\item
+  Locate your notebook on your local machine and drag it into the large text box.
+\item
+  Enter a filename including the \texttt{.ipynb} extension.
+\item
+  Change the default option ``Create secret gist'' to ``Create public gist'' and select.
+\item
+  Once the Gist is created, locate the ``Embed'' button and copy the HTML/Javascript code snippet taking the form \texttt{\textless{}script\ src="https://gist.github.com/\textless{}filename\textgreater{}.js"\textgreater{}\textless{}/script\textgreater{}}.
+\item
+  Create a new R Markdown post and paste the HTML/Javascript to embed your Jupyter Notebook. (\href{https://github.com/dannymorris/abndistro2/blob/master/content/post/2021-05-18-basic-usage-of-pyspark-and-spark-mllib-for-cluster-analysis/index.Rmd}{Example})
+\end{enumerate}
+
+\hypertarget{next-steps-5}{%
+\section{Next steps}\label{next-steps-5}}
+
+Proceed with \protect\hyperlink{deploy}{going live on the internet} by pushing your website to GitHub and configuring Netlify for continuous deployment.
+
+\hypertarget{deploy}{%
+\chapter{Going live on the internet}\label{deploy}}
+
+This chapter teaches you how to deploy your website to the internet using Netlify and GitHub.
+
+\textbf{Note:} This chapter builds upon the website generated in chapter 4 and edited in chapters 5, 6, and 7. All subsequent chapters will do the same. The final result can be viewed here - \url{https://r4sites-anatole-custom.netlify.app/}.
+
+\hypertarget{prerequisites-4}{%
+\section{Prerequisites}\label{prerequisites-4}}
+
+Before you proceed, complete the following prerequisites:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  (optional) \protect\hyperlink{choose-theme}{Discover your style}
+\item
+  \protect\hyperlink{generate}{Generate your website}
+\item
+  (optional) \protect\hyperlink{fine-tune}{Fine tune the look and feel}
+\item
+  (optional) \protect\hyperlink{pages-features}{Configure pages and features}
+\item
+  Install \href{https://git-scm.com/book/en/v2/Getting-Started-Installing-Git}{Git}
+\item
+  Sign up for \href{https://github.com/}{GitHub}
+\item
+  Sign up for \href{https://app.netlify.com/}{Netlify}
+\end{enumerate}
+
+\hypertarget{how-it-works-4}{%
+\section{How it works}\label{how-it-works-4}}
+
+GitHub and Netlify work together to make it remarkably simple to deploy your website to the internet. Simply upload your website codebase to GitHub, then configure Netlify to deploy your website with a few simple clicks. Once your website is live, Netlify will automatically rebuild and redeploy your website any time you push changes to your GitHub repository. This process is known as \textbf{continuous deployment.}
+
+\hypertarget{initial-push}{%
+\section{Upload files to GitHub}\label{initial-push}}
+
+To push your website files to GitHub, complete the following steps:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Sign in to \href{https://github.com/}{GitHub} and create a new repository by clicking ``New'' in the Repositories section. Configure the repository accordingly, then click ``Create repository''. \href{https://i.imgur.com/dnmI973.png}{Image}
+\item
+  On your local machine, launch a Git terminal (e.g.~Git Bash on Windows, Terminal on Mac/Linux) and run the following Git commands to initialize a local Git repository and sync it with your remote GitHub repository:
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Change the directory to your website\textquotesingle{}s root folder}
+\BuiltInTok{cd}\NormalTok{ path/to/your/website}
+
+\CommentTok{\# initialize a local Git repository}
+\FunctionTok{git}\NormalTok{ init}
+
+\CommentTok{\# add all of your website files to the local Git repository}
+\FunctionTok{git}\NormalTok{ add }\AttributeTok{{-}{-}all}
+
+\CommentTok{\# commit your website files to the local Git repository}
+\FunctionTok{git}\NormalTok{ commit }\AttributeTok{{-}m} \StringTok{"first commit"}
+
+\CommentTok{\# sync the local Git repository with the remote GitHub repository}
+\CommentTok{\# change your\_username and your\_repo to your GitHub username and }
+\CommentTok{\# website repository name}
+\FunctionTok{git}\NormalTok{ remote add origin https://github.com/your{-}username/your{-}repo.git}
+
+\CommentTok{\# push your files to GitHub}
+\FunctionTok{git}\NormalTok{ push }\AttributeTok{{-}u}\NormalTok{ origin master}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{configure-netlify-for-deployment}{%
+\section{Configure Netlify for deployment}\label{configure-netlify-for-deployment}}
+
+With your website codebase in GitHub, configure Netlify to build and deploy your website with a few simple clicks. Once your website is live, Netlify will automatically rebuild and redeploy your website any time you push changes to your GitHub repository. This process is known as \textbf{continuous deployment.}
+
+Follow these steps to deploy your website on Netlify:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Log in to \href{https://app.netlify.com/}{Netlify} and click ``New site from Git''.
+\item
+  Select GitHub as the Continuous Deployment provider, then choose your website's GitHub repository.
+\item
+  Leave the site settings as-is and click ``Deploy site'' to deploy your website to the internet. \href{https://i.imgur.com/wjDFnvJ.png}{Image}
+\item
+  After a few seconds, your website will be live on the internet. To view it, return to the Site Overview section and locate the default domain name generated by Netlify. \href{https://i.imgur.com/t6IW44i.png}{Image}
+\item
+  Change your website's domain name (part of it at least). Default Netlify domain names tend to look something like this - \emph{dazzling-khorana-a6a8fe.netlify.app.} To change this, go to \emph{Site settings \textgreater{} Change site name}. Note that the domain extension will remain \texttt{.netlify.app} until you (optionally) purchase a custom domain name.
+\end{enumerate}
+
+\hypertarget{purchase-a-custom-domain-name}{%
+\section{Purchase a custom domain name}\label{purchase-a-custom-domain-name}}
+
+Netlify's default domain names use the \texttt{.netlify.app} extension. If you prefer something different, such as \texttt{.com}, you can purchase a custom domain for your website. Though several domain registrars exist, the simplest route is to purchase a domain name through Netlify. If you use a domain registrar other than Netlify (e.g.~Google Domains), you will have to manually configure Domain Name Servers and Domain Name System settings. With Netlify, all of this is taken care of for you.
+
+Follow the simple steps below to purchase a custom domain through Netlify:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Log in to \href{https://app.netlify.com/}{Netlify}, open your site, and click on ``Domain settings''. \href{https://i.imgur.com/ACjNs4w.png}{Image}
+\item
+  Under Custom domains, click ``Add custom domain''.
+\item
+  Search for a domain name you like, then click ``Verify'' to determine if the domain is already owned or available for purchase. If available, confirm the purchase with a credit card and (optionally) set the domain name to auto-renew annually. \href{https://i.imgur.com/y2s7wQR.png}{Image}
+\item
+  Enable IPv6 to reach areas of the world where connectivity via IPv4 is not possible. Do this by signing in to Netlify and navigating to \emph{Team overview \textgreater{} Domains}, select your custom domain name, and click ``Enable IPv6 on your domain''. \href{https://docs.netlify.com/domains-https/netlify-dns/\#ipv6-traffic}{Image}
+\end{enumerate}
+
+\hypertarget{next-steps-6}{%
+\section{Next steps}\label{next-steps-6}}
+
+Proceed with \protect\hyperlink{content}{integrating Google Analytics} and learning how to use R and the \texttt{googleAnalyticsR} package to analyze user traffic on your website.
+
+\hypertarget{google-analytics}{%
+\chapter{Integrating Google Analytics}\label{google-analytics}}
+
+This chapter shows you how to integrate Google Analytics into your website to capture user data such as the number of users on your website, the pages they view, and their geographic locations. This chapter also covers the basics of the \href{https://code.markedmondson.me/googleAnalyticsR/}{googleAnalyticsR} R package for querying your Google Analytics data from R.
+
+\textbf{Note:} This chapter builds upon the website generated in chapter 4 and edited in chapters 5, 6, 7, and 8. The final result can be viewed here - \url{https://r4sites-anatole-custom.netlify.app/}.
+
+\hypertarget{prerequisites-5}{%
+\section{Prerequisites}\label{prerequisites-5}}
+
+Before you proceed, complete the following prerequisites:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  (optional) \protect\hyperlink{choose-theme}{Discover your style}
+\item
+  \protect\hyperlink{generate}{Generate your website}
+\item
+  (optional) \protect\hyperlink{fine-tune}{Fine tune the look and feel}
+\item
+  (optional) \protect\hyperlink{pages-features}{Configure pages and features}
+\item
+  \protect\hyperlink{deploy}{Go live on the internet}
+\item
+  \href{https://analytics.google.com}{Sign up for Google Analytics}
+\end{enumerate}
+
+\hypertarget{how-it-works-5}{%
+\section{How it works}\label{how-it-works-5}}
+
+Once you sign up for Google Analytics, you will need to create an Account, Property, and Tracking ID for your website. Placing the Tracking ID into the \texttt{config.yaml} file and triggering a fresh website deployment will complete the Google Analytics integration and enable you to being analyzing the data immediately.
+
+\hypertarget{ga-setup}{%
+\section{Set up Google Analytics}\label{ga-setup}}
+
+Follow these steps to integrate Google Analytics into your website:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Sign in to Google Analytics and navigate to Admin \textgreater{} Create Account. \href{https://i.imgur.com/QRTa07k.png}{Image}
+\item
+  Under Account setup, provide an appropriate name (e.g.~personal-website) and configure the Account Data Sharing Settings to your liking. The defaults should be fine. Click ``Next''.
+\item
+  Under Property setup, provide an appropriate name (e.g.~personal-website-property).
+\item
+  Under Property setup, click on ``Show advanced options'' to create a Universal Analytics property. For the Website URL, provide the URL to your website. Click ``Next''. \href{https://i.imgur.com/0jffYnF.png}{Image}
+\item
+  Under About you business, configure the settings to your liking. Click ``Next'' and accept the terms of service.
+\item
+  Locate the Tracking ID by returning back to the Admin console and selecting the Account and Property that were created in the previous steps. \textbf{Important:} Make sure you locate the Universal Analytics property that reads \texttt{property\ name\ (UA-XXXXXXX-X)} and not the GA4 property. Under Property, click on \emph{Tracking Info \textgreater{} Tracking Code} (\href{https://i.imgur.com/GtiKfhq.png}{Image}). Copy the Tracking ID, which takes the form of UA-XXXXXXXXX-1. \href{https://i.imgur.com/qcyaVBD.png}{Image}
+\item
+  Return to your RStudio Project. Open \texttt{config/\_default/params.toml} in the main directory and create a \texttt{googleAnalytics} parameter. Insert your tracking code as the parameter value. \href{https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml\#L16-L17}{\textless/\textgreater{} Code}.
+\end{enumerate}
+
+\hypertarget{push-updates-to-github-1}{%
+\section{Push updates to GitHub}\label{push-updates-to-github-1}}
+
+Any time you make changes to your website, such as integrating Google Analytics or authoring a new post, you will need to push these changes to your GitHub repository to force Netlify to rebuild and redeploy your website to the internet.
+
+To complete the Google Analytics integration, open Git terminal (e.g.~Git Bash on Windows, Terminal on Mac/Linux) and push your code to GitHub using the \textbf{add} \textgreater{} \textbf{commit} \textgreater{} \textbf{push} Git workflow.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# add all files to the local Git repository}
+\FunctionTok{git}\NormalTok{ add }\AttributeTok{{-}{-}all}
+
+\CommentTok{\# commit files and include a brief message}
+\FunctionTok{git}\NormalTok{ commit }\AttributeTok{{-}m} \StringTok{"brief message describing your changes"}
+
+\CommentTok{\# push files to GitHub}
+\FunctionTok{git}\NormalTok{ push origin master}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{confirm-the-integration}{%
+\section{Confirm the integration}\label{confirm-the-integration}}
+
+After completing the Google Analytics integration, run the following test to confirm the integration:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Open your website in your browser.
+\item
+  Sign in to \href{https://analytics.google.com/}{Google Analytics}.
+\item
+  Click on ``All Web Site Data''. \href{https://i.imgur.com/lyNPi8E.png}{Image}
+\item
+  In the dropdown menu, select the Account and Property you created during the initial \protect\hyperlink{ga-setup}{setup}, then select the ``All Web Site Data'' View. \href{https://i.imgur.com/xSjCS75.png}{Image}
+\item
+  Go to the Home page and locate the card titled ``Active Users right now''. If the integration was successful, this value should be a minimum of 1 since you are currently on your website. \href{https://i.imgur.com/KPbUB7G.png}{Image}
+\end{enumerate}
+
+\hypertarget{browse-the-google-analytics-ui}{%
+\section{Browse the Google Analytics UI}\label{browse-the-google-analytics-ui}}
+
+You can analyze your Google Analytics data using a third party client, such as R, or by browsing the Google Analytics UI. The following steps will take you on a quick tour of the Google Analytics UI:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Sign in to \href{https://analytics.google.com/}{Google Analytics}.
+\item
+  Click on ``All Web Site Data''. \href{https://i.imgur.com/lyNPi8E.png}{Image}
+\item
+  In the dropdown menu, select the Account and Property you created during the initial \protect\hyperlink{ga-setup}{setup}, then select the ``All Web Site Data'' View. \href{https://i.imgur.com/xSjCS75.png}{Image}
+\item
+  Browse the Home page to view data such as active users, user acquisition sources, and sessions by country. \href{https://i.imgur.com/2u2mCey.png}{Image}
+\item
+  Browse the Reports (\href{https://i.imgur.com/3vvGhD0.png}{Image}) to learn more about your users including how they arrive at your website and which pages they tend to view.
+\end{enumerate}
+
+\hypertarget{use-r-for-data-analysis}{%
+\section{Use R for data analysis}\label{use-r-for-data-analysis}}
+
+\href{https://code.markedmondson.me/googleAnalyticsR/}{googleAnalyticsR} is an R package that makes it easy and fun to query your Google Analytics data. Before diving into the code, spend some time learning about Google Analytics Dimensions and Metrics.
+
+\hypertarget{dimensions-and-metrics}{%
+\subsection{Dimensions and metrics}\label{dimensions-and-metrics}}
+
+In order to analyze your Google Analytics data, you need to gain a basic understand of \href{https://support.google.com/analytics/answer/1033861?hl=en}{Dimensions and Metrics}.
+
+Dimensions are attributes of your data and Metrics are quantitative measurements. For example, to analyze the count of users on your website in the last 60 days, the Dimension is \texttt{date} and the Metric is \texttt{users}.
+
+Google Analytics supports hundreds of Dimension-Metric combinations. My recommendation is to browse the \href{https://www.ovrdrv.com/blog/ultimate-google-analytics-dimensions-and-metrics-list/}{Ultimate Google Analytics Dimensions and Metrics List} to learn what is available.
+
+\hypertarget{install-googleanalyticsr}{%
+\subsection{Install googleAnalyticsR}\label{install-googleanalyticsr}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{install.packages}\NormalTok{(}\StringTok{"googleAnalyticsR"}\NormalTok{, }\AttributeTok{dependencies =} \ConstantTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{r-packages-for-data-analysis}{%
+\subsection{R packages for data analysis}\label{r-packages-for-data-analysis}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(googleAnalyticsR)  }\DocumentationTok{\#\# querying your Google Analytics data}
+\FunctionTok{library}\NormalTok{(dplyr)             }\DocumentationTok{\#\# data manipulation}
+\FunctionTok{library}\NormalTok{(plotly)            }\DocumentationTok{\#\# interactive charts}
+\FunctionTok{library}\NormalTok{(DT)                }\DocumentationTok{\#\# interactive tables}
+\FunctionTok{library}\NormalTok{(leaflet)           }\DocumentationTok{\#\# interactive maps}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{authenticate-your-google-analytics-account}{%
+\subsection{Authenticate your Google Analytics account}\label{authenticate-your-google-analytics-account}}
+
+Running \texttt{ga\_auth()} in the R console will take you to your web browser and prompt you to authenticate your Google account.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{googleAnalyticsR}\SpecialCharTok{::}\FunctionTok{ga\_auth}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{list-your-google-analytics-accounts-and-properties}{%
+\subsection{List your Google Analytics Accounts and Properties}\label{list-your-google-analytics-accounts-and-properties}}
+
+Running \texttt{ga\_account\_list()} will list the Google Analytics account that was created in step 1 of \protect\hyperlink{ga-setup}{Set up Google Analytics}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\# get your accounts}
+\NormalTok{ga\_accounts }\OtherTok{\textless{}{-}} \FunctionTok{ga\_account\_list}\NormalTok{()}
+
+\NormalTok{ga\_accounts}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 2 x 10
+##   accountId accountName internalWebPrope~ level websiteUrl   type  webPropertyId
+##   <chr>     <chr>       <chr>             <chr> <chr>        <chr> <chr>        
+## 1 143402170 abndistro   204792927         STAN~ http://abnd~ WEB   UA-143402170~
+## 2 143402170 abndistro   269232613         STAN~ https://www~ WEB   UA-143402170~
+## # ... with 3 more variables: webPropertyName <chr>, viewId <chr>,
+## #   viewName <chr>
+\end{verbatim}
+
+\hypertarget{obtain-the-viewid-associated-with-your-website}{%
+\subsection{Obtain the viewId associated with your website}\label{obtain-the-viewid-associated-with-your-website}}
+
+To send API calls to Google Analytics, you need to obtain the \texttt{viewId} associated with your website's Account and Property name.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{view\_id }\OtherTok{\textless{}{-}}\NormalTok{ ga\_accounts }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(accountName }\SpecialCharTok{==} \StringTok{"abndistro"}\NormalTok{, webPropertyName }\SpecialCharTok{==} \StringTok{"Abnormal Distributions"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{pull}\NormalTok{(viewId)}
+
+\FunctionTok{print}\NormalTok{(view\_id)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "198103217"
+\end{verbatim}
+
+\hypertarget{daily-count-of-website-users}{%
+\subsection{Daily count of website users}\label{daily-count-of-website-users}}
+
+To query the count of website users over a given date range, use the following Dimension and Metric:
+
+\begin{itemize}
+\tightlist
+\item
+  Dimension: \texttt{date}
+\item
+  Metric: \texttt{users}
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{daily\_users }\OtherTok{\textless{}{-}} \FunctionTok{google\_analytics}\NormalTok{(}
+  \AttributeTok{viewId =}\NormalTok{ view\_id,}
+  \AttributeTok{date\_range =} \FunctionTok{c}\NormalTok{(}\StringTok{"2019{-}07{-}01"}\NormalTok{, }\StringTok{"2019{-}12{-}31"}\NormalTok{),}
+  \AttributeTok{metrics =} \StringTok{"users"}\NormalTok{,}
+  \AttributeTok{dimensions =} \StringTok{"date"}
+\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{as\_tibble}\NormalTok{()}
+
+\FunctionTok{plot\_ly}\NormalTok{(}
+  \AttributeTok{data =}\NormalTok{ daily\_users,}
+  \AttributeTok{x =} \SpecialCharTok{\textasciitilde{}}\NormalTok{date,}
+  \AttributeTok{y =} \SpecialCharTok{\textasciitilde{}}\NormalTok{users,}
+  \AttributeTok{mode =} \StringTok{"lines"}
+\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{layout}\NormalTok{(}\AttributeTok{title =} \StringTok{"Daily count of website between June 2019 and December 2019"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{users-by-device-type}{%
+\subsection{Users by device type}\label{users-by-device-type}}
+
+To understand which device types your users are using to view your website, use the following Dimension and Metric:
+
+\begin{itemize}
+\tightlist
+\item
+  Dimension: \texttt{deviceCategory}
+\item
+  Metric: \texttt{users}
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{users\_by\_device\_type }\OtherTok{\textless{}{-}} \FunctionTok{google\_analytics}\NormalTok{(}
+  \AttributeTok{viewId =}\NormalTok{ view\_id,}
+  \AttributeTok{date\_range =} \FunctionTok{c}\NormalTok{(}\StringTok{"2019{-}01{-}01"}\NormalTok{, }\StringTok{"2019{-}12{-}31"}\NormalTok{),}
+  \AttributeTok{metrics =} \StringTok{"users"}\NormalTok{,}
+  \AttributeTok{dimensions =} \StringTok{"deviceCategory"}
+\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{as\_tibble}\NormalTok{()}
+
+\FunctionTok{plot\_ly}\NormalTok{(}
+  \AttributeTok{data =}\NormalTok{ users\_by\_device\_type,}
+  \AttributeTok{x =} \SpecialCharTok{\textasciitilde{}}\NormalTok{deviceCategory,}
+  \AttributeTok{y =} \SpecialCharTok{\textasciitilde{}}\NormalTok{users,}
+  \AttributeTok{type =} \StringTok{"bar"}
+\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{layout}\NormalTok{(}\AttributeTok{title =} \StringTok{"Most users are on desktop devices"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{page-views-by-page}{%
+\subsection{Page views by page}\label{page-views-by-page}}
+
+To measure the number of page views to each of your website pages, use the following Dimension and Metric:
+
+\begin{itemize}
+\tightlist
+\item
+  Dimension: \texttt{pageTitle}
+\item
+  Metric: \texttt{pageviews}
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{page\_views }\OtherTok{\textless{}{-}} \FunctionTok{google\_analytics}\NormalTok{(}
+  \AttributeTok{viewId =}\NormalTok{ view\_id,}
+  \AttributeTok{date\_range =} \FunctionTok{c}\NormalTok{(}\StringTok{"2019{-}01{-}01"}\NormalTok{, }\StringTok{"2020{-}12{-}31"}\NormalTok{),}
+  \AttributeTok{metrics =} \StringTok{"pageviews"}\NormalTok{,}
+  \AttributeTok{dimensions =} \StringTok{"pageTitle"}
+\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{as\_tibble}\NormalTok{()}
+
+\NormalTok{page\_views }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{arrange}\NormalTok{(}\FunctionTok{desc}\NormalTok{(pageviews)) }\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{  DT}\SpecialCharTok{::}\FunctionTok{datatable}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{users-by-location}{%
+\subsection{Users by geographic location}\label{users-by-location}}
+
+To understand the geographical areas from which your website users view your website, use the following Dimension sand Metric:
+
+\begin{itemize}
+\tightlist
+\item
+  Dimensions: \texttt{latitude}, \texttt{longitude}
+\item
+  Metric: \texttt{users}
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{users\_location }\OtherTok{\textless{}{-}} \FunctionTok{google\_analytics}\NormalTok{(}
+  \AttributeTok{viewId =}\NormalTok{ view\_id,}
+  \AttributeTok{date\_range =} \FunctionTok{c}\NormalTok{(}\StringTok{"2019{-}01{-}01"}\NormalTok{, }\StringTok{"2020{-}12{-}31"}\NormalTok{),}
+  \AttributeTok{metrics =} \StringTok{"users"}\NormalTok{,}
+  \AttributeTok{dimensions =} \FunctionTok{c}\NormalTok{(}\StringTok{"latitude"}\NormalTok{, }\StringTok{"longitude"}\NormalTok{),}
+  \AttributeTok{anti\_sample =}\NormalTok{ T}
+\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{as\_tibble}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate\_at}\NormalTok{(}\FunctionTok{vars}\NormalTok{(latitude, longitude), }\FunctionTok{list}\NormalTok{(as.numeric))}
+
+\NormalTok{users\_location }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{leaflet}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{addTiles}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{addCircleMarkers}\NormalTok{(}
+    \AttributeTok{lng =} \SpecialCharTok{\textasciitilde{}}\NormalTok{longitude,}
+    \AttributeTok{lat =} \SpecialCharTok{\textasciitilde{}}\NormalTok{latitude,}
+    \AttributeTok{radius =} \SpecialCharTok{\textasciitilde{}}\FunctionTok{log}\NormalTok{(users),}
+    \AttributeTok{stroke =} \ConstantTok{FALSE}\NormalTok{, }
+    \AttributeTok{fillOpacity =} \FloatTok{0.5}
+\NormalTok{  )}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{avoiding-data-sampling}{%
+\subsection{Avoiding data sampling}\label{avoiding-data-sampling}}
+
+The \texttt{google\_analytics()} function has an argument named \texttt{anti\_sampling}, which is set to \texttt{TRUE} by default. This means that queries which return more than 1,000 rows of data will be sampled to avoid putting strain on the Google Analytics API. To avoid this default sampling strategy, set \texttt{anti\_sampling\ =\ FALSE} when making API calls using the \texttt{google\_analytics()} function.
+
+\hypertarget{tips-tricks}{%
+\chapter{Tips and tricks}\label{tips-tricks}}
+
+This chapter reinforces some basic tips and tricks for you to consider while developing your website.
+
+\hypertarget{serve-local}{%
+\section{Serve your website locally}\label{serve-local}}
+
+The blogdown package includes a handy function called \texttt{serve\_site()}. Running this function in the R console with your website's RStudio Project loaded will render a local copy of your entire website in the RStudio ``Viewer'' pane. \href{https://i.imgur.com/oxZgeqM.png}{Image}
+
+While serving your website locally, the local version will update in real-time as you make and save changes to your website's codebase. This feature of blogdown, known as LiveReload, lets you experiment with changes to your website and receive instant feedback.
+
+\hypertarget{push-updates-to-github-2}{%
+\section{Push updates to GitHub}\label{push-updates-to-github-2}}
+
+Any time you make changes to your website, such as integrating Google Analytics or authoring a new post, you will need to push these changes to your GitHub repository to force Netlify to rebuild and redeploy your website to the internet.
+
+Assuming you have already \protect\hyperlink{initial-push}{pushed your website to GitHub}, use the \textbf{add} \textgreater{} \textbf{commit} \textgreater{} \textbf{push} Git workflow to push updates. I recommend pushing updates frequently to keep your GitHub repository up-to-date.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# add all files to the local Git repository}
+\FunctionTok{git}\NormalTok{ add }\AttributeTok{{-}{-}all}
+
+\CommentTok{\# commit files and include a brief message}
+\FunctionTok{git}\NormalTok{ commit }\AttributeTok{{-}m} \StringTok{"brief message describing your changes"}
+
+\CommentTok{\# push files to GitHub}
+\FunctionTok{git}\NormalTok{ push origin master}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{check-your-website}{%
+\section{Check your website}\label{check-your-website}}
+
+At any point during the development of your website, consider running \texttt{blogdown::check\_site()} in the R console. This function will run a number of checks against your website to discover any problems.
+
+\hypertarget{rebuild-a-clean-website}{%
+\section{Rebuild a clean website}\label{rebuild-a-clean-website}}
+
+While developing your website, you should be \protect\hyperlink{serve-local}{serving your website locally} to observe the effects of your edits in real-time. Sometimes, for a number of reasons, the local rendering of your website ceases to reflect your edits. If this or any other issue surfaces, I recommend running the following R code to rebuild a clean website:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# clean the website generated by blogdown}
+\NormalTok{rmarkdown}\SpecialCharTok{::}\FunctionTok{clean\_site}\NormalTok{()}
+
+\CommentTok{\# build the website}
+\NormalTok{blogdown}\SpecialCharTok{::}\FunctionTok{build\_site}\NormalTok{()}
+
+\CommentTok{\# serve the website locally}
+\NormalTok{blogdown}\SpecialCharTok{::}\FunctionTok{serve\_site}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+If you continue to experience buggy behavior, try restarting RStudio and running the code again.
+
+\hypertarget{find-free-images}{%
+\section{Find free images}\label{find-free-images}}
+
+If you need images for your website (e.g.~post thumbnail), I recommend using free images from \href{https://unsplash.com/}{Unsplash}.
+
+\hypertarget{get-help}{%
+\chapter{Getting help}\label{get-help}}
+
+Despite the wealth of information in this book, it does not (and simply cannot) cover all possible topics and ideas relevant to the subject of the book. Firstly, this book recommends several Hugo themes yet a single theme is used as the basis for explaining and implementing concepts. Secondly, the number of edits that can be applied to any given website design is infinite yet this book implements a small, finite number of edits. I suspect many readers will want to venture beyond the scope of this book and pursue topics that are not discussed in this book.
+
+\hypertarget{connect-with-me}{%
+\section{Connect with me}\label{connect-with-me}}
+
+Readers are welcome to reach out to me directly via \href{mailto:dmorris10667@gmail.com}{email} or \href{https://www.linkedin.com/in/drmorris87/}{LinkedIn}.
+
+\hypertarget{additional-resources}{%
+\section{Additional resources}\label{additional-resources}}
+
+To learn more about the methodology and the tools described in this book, I recommend the following resources:
+
+\begin{itemize}
+\item
+  \href{https://bookdown.org/yihui/blogdown/}{blogdown: Creating Websites with R Markdown}
+\item
+  \href{https://bookdown.org/yihui/rmarkdown/}{R Markdown: The Definitive Guide}
+\item
+  \href{https://code.markedmondson.me/googleAnalyticsR/}{googleAnalyticsR}
+\item
+  \href{https://gohugo.io/documentation/}{Hugo documentation}
+\item
+  \href{https://docs.netlify.com/}{Netlify documentation}
+\item
+  \href{https://formspree.io/formbutton/docs}{Formspree documentation}
+\end{itemize}
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}

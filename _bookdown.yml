@@ -16,3 +16,15 @@ rmd_files:
   - google-analytics.Rmd
   - tips-and-tricks.Rmd
   - getting-help.Rmd
+  latex:
+  - index.Rmd
+  - end-to-end.Rmd
+  - choosing-a-design.Rmd
+  - generating-your-website.Rmd
+  - look-and-feel.Rmd
+  - pages-and-features.Rmd
+  - creating-content.Rmd
+  - deploy-on-netlify.Rmd
+  - google-analytics.Rmd
+  - tips-and-tricks.Rmd
+  - getting-help.Rmd

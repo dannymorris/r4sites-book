@@ -27,7 +27,7 @@ To learn more about CSS, visit [w3schools](https://www.w3schools.com/css/){targe
 
 The "Inspect" tool in your browser is a powerful tool for experimenting with changes to CSS properties directly in the browser. Using the Inspect tool results in temporary changes to the CSS, and when the browser is refreshed the original CSS properties are restored. 
 
-Access this tool in the browser by right-clicking on any page element you want to edit (e.g. images, text, links, buttons) and click on "Inspect". [📷 Image](https://i.imgur.com/0h0H4VW.png){target="blank"}
+Access this tool in the browser by right-clicking on any page element you want to edit (e.g. images, text, links, buttons) and click on "Inspect". [Image](https://i.imgur.com/0h0H4VW.png){target="blank"}
 
 To learn more about the Inspect tool, I recommend watching this [short YouTube video](https://www.youtube.com/watch?v=1l4xz1QQhew){target="blank"}.
 
@@ -82,11 +82,11 @@ The steps to import a Google Font include the following:
 
 1. Locate and select your chosen font from from [Google Fonts](https://fonts.google.com/){target="blank"}.
 
-2. Look at all of the available styles (e.g. Regular, Bold, Italic, etc.) and decide which styles you would like to import into your website. I recommend importing all available styles. To import all available styles, select "+ Select this style" beside each style. [📷 Image](https://i.imgur.com/ZEopFOB.png){target="blank"}
+2. Look at all of the available styles (e.g. Regular, Bold, Italic, etc.) and decide which styles you would like to import into your website. I recommend importing all available styles. To import all available styles, select "+ Select this style" beside each style. [Image](https://i.imgur.com/ZEopFOB.png){target="blank"}
 
-3. Select the "\@import" option under "Use on the web". Copy the HTML code **in between** the `style` tags([📷 Image](https://i.imgur.com/GE1L643.png){target="blank"}) and paste it into the main CSS file located at `themes/anatole/assets/css/style.css`. ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L3){target="blank"})
+3. Select the "\@import" option under "Use on the web". Copy the HTML code **in between** the `style` tags([Image](https://i.imgur.com/GE1L643.png){target="blank"}) and paste it into the main CSS file located at `themes/anatole/assets/css/style.css`. ([</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L3){target="blank"})
 
-4. Under "use on the web", locate the CSS rule for specifying `font-family` ([📷 Image](https://i.imgur.com/0Nfmgdw.png){target="blank"}). In your main CSS file located at `themes/anatole/assets/css/style.css`, update all instances of `font-family` to change all font styles to your new font. Fortunately, the Anatole theme only specifies `font-family` in a single location. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L48){target="blank"}
+4. Under "use on the web", locate the CSS rule for specifying `font-family` ([Image](https://i.imgur.com/0Nfmgdw.png){target="blank"}). In your main CSS file located at `themes/anatole/assets/css/style.css`, update all instances of `font-family` to change all font styles to your new font. Fortunately, the Anatole theme only specifies `font-family` in a single location. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L48){target="blank"}
 
 ## Font sizes
 
@@ -104,9 +104,9 @@ You can change the color of essentially any webpage attribute including text, ba
 
 Consider the following edits:
 
-- **Social media icons:** These are visible beneath the website title on the Home page. Open the main CSS file located at `themes/anatole/assets/css/style.css` and edit the `.sidebar .social-links i` class by specifying a `color` attribute. Here I have chosen to use the HEX color #a4a4a4. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L322-L325){target="blank"} [📷 Image](https://i.imgur.com/Q7uhdaQ.png){target="blank"}
+- **Social media icons:** These are visible beneath the website title on the Home page. Open the main CSS file located at `themes/anatole/assets/css/style.css` and edit the `.sidebar .social-links i` class by specifying a `color` attribute. Here I have chosen to use the HEX color #a4a4a4. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L322-L325){target="blank"} [Image](https://i.imgur.com/Q7uhdaQ.png){target="blank"}
 
-- **Post tags:** These are visible on the Home page beneath post titles and summaries. Open the main CSS file located at `themes/anatole/assets/css/style.css` and edit the `.post .post-footer .meta a` class and editing the`color` attribute. Here I have chosen to use the HEX color #6a92c5. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L479-L482){target="blank"} [📷 Image](https://i.imgur.com/JnueFsN.png){target="blank"}
+- **Post tags:** These are visible on the Home page beneath post titles and summaries. Open the main CSS file located at `themes/anatole/assets/css/style.css` and edit the `.post .post-footer .meta a` class and editing the`color` attribute. Here I have chosen to use the HEX color #6a92c5. [</> Code](https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L479-L482){target="blank"} [Image](https://i.imgur.com/JnueFsN.png){target="blank"}
 
 ## Next steps
 

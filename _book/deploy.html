@@ -24,7 +24,7 @@
 <meta name="author" content="Danny Morris" />
 
 
-<meta name="date" content="2021-05-17" />
+<meta name="date" content="2021-12-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -172,9 +172,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#learn"><i class="fa fa-check"></i><b>1.4</b> What you will learn</a></li>
 <li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#tools"><i class="fa fa-check"></i><b>1.5</b> Tools you will use</a></li>
 <li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#inspiring-examples"><i class="fa fa-check"></i><b>1.6</b> Inspiring examples</a></li>
-<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#getting-support"><i class="fa fa-check"></i><b>1.7</b> Getting support</a></li>
-<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#faq"><i class="fa fa-check"></i><b>1.8</b> FAQ</a></li>
-<li class="chapter" data-level="1.9" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i><b>1.9</b> About the author</a></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#faq"><i class="fa fa-check"></i><b>1.7</b> FAQ</a></li>
+<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i><b>1.8</b> About the author</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html"><i class="fa fa-check"></i><b>2</b> Complete end-to-end example</a>
 <ul>
@@ -250,7 +249,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.7" data-path="content.html"><a href="content.html#add-code-highlighting"><i class="fa fa-check"></i><b>7.7</b> Add code highlighting</a></li>
 <li class="chapter" data-level="7.8" data-path="content.html"><a href="content.html#add-tags-and-categories"><i class="fa fa-check"></i><b>7.8</b> Add tags and categories</a></li>
 <li class="chapter" data-level="7.9" data-path="content.html"><a href="content.html#add-a-post-thumbnail"><i class="fa fa-check"></i><b>7.9</b> Add a post thumbnail</a></li>
-<li class="chapter" data-level="7.10" data-path="content.html"><a href="content.html#next-steps-5"><i class="fa fa-check"></i><b>7.10</b> Next steps</a></li>
+<li class="chapter" data-level="7.10" data-path="content.html"><a href="content.html#embed-a-jupyter-notebook-in-a-r-markdown-post"><i class="fa fa-check"></i><b>7.10</b> Embed a Jupyter Notebook in a R Markdown post</a></li>
+<li class="chapter" data-level="7.11" data-path="content.html"><a href="content.html#next-steps-5"><i class="fa fa-check"></i><b>7.11</b> Next steps</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="deploy.html"><a href="deploy.html"><i class="fa fa-check"></i><b>8</b> Going live on the internet</a>
 <ul>
@@ -281,12 +281,12 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="11" data-path="get-help.html"><a href="get-help.html"><i class="fa fa-check"></i><b>11</b> Getting help</a>
 <ul>
-<li class="chapter" data-level="11.1" data-path="get-help.html"><a href="get-help.html#join-the-slack-workspace"><i class="fa fa-check"></i><b>11.1</b> Join the Slack workspace</a></li>
-<li class="chapter" data-level="11.2" data-path="get-help.html"><a href="get-help.html#connect-with-me"><i class="fa fa-check"></i><b>11.2</b> Connect with me</a></li>
-<li class="chapter" data-level="11.3" data-path="get-help.html"><a href="get-help.html#additional-resources"><i class="fa fa-check"></i><b>11.3</b> Additional resources</a></li>
+<li class="chapter" data-level="11.1" data-path="get-help.html"><a href="get-help.html#connect-with-me"><i class="fa fa-check"></i><b>11.1</b> Connect with me</a></li>
+<li class="chapter" data-level="11.2" data-path="get-help.html"><a href="get-help.html#additional-resources"><i class="fa fa-check"></i><b>11.2</b> Additional resources</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
 </ul>
 
       </nav>
@@ -335,28 +335,28 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">8.3</span> Upload files to GitHub</h2>
 <p>To push your website files to GitHub, complete the following steps:</p>
 <ol style="list-style-type: decimal">
-<li><p>Sign in to <a href="https://github.com/" target="blank">GitHub</a> and create a new repository by clicking “New” in the Repositories section. Configure the repository accordingly, then click “Create repository.” <a href="https://i.imgur.com/dnmI973.png" target="blank">📷 Image</a></p></li>
+<li><p>Sign in to <a href="https://github.com/" target="blank">GitHub</a> and create a new repository by clicking “New” in the Repositories section. Configure the repository accordingly, then click “Create repository.” <a href="https://i.imgur.com/dnmI973.png" target="blank">Image</a></p></li>
 <li><p>On your local machine, launch a Git terminal (e.g. Git Bash on Windows, Terminal on Mac/Linux) and run the following Git commands to initialize a local Git repository and sync it with your remote GitHub repository:</p></li>
 </ol>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="deploy.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Change the directory to your website&#39;s root folder</span></span>
-<span id="cb5-2"><a href="deploy.html#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> path/to/your/website</span>
-<span id="cb5-3"><a href="deploy.html#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="deploy.html#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># initialize a local Git repository</span></span>
-<span id="cb5-5"><a href="deploy.html#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span>
-<span id="cb5-6"><a href="deploy.html#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-7"><a href="deploy.html#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># add all of your website files to the local Git repository</span></span>
-<span id="cb5-8"><a href="deploy.html#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="at">--all</span></span>
-<span id="cb5-9"><a href="deploy.html#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-10"><a href="deploy.html#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># commit your website files to the local Git repository</span></span>
-<span id="cb5-11"><a href="deploy.html#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;first commit&quot;</span></span>
-<span id="cb5-12"><a href="deploy.html#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-13"><a href="deploy.html#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co"># sync the local Git repository with the remote GitHub repository</span></span>
-<span id="cb5-14"><a href="deploy.html#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co"># change your_username and your_repo to your GitHub username and </span></span>
-<span id="cb5-15"><a href="deploy.html#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="co"># website repository name</span></span>
-<span id="cb5-16"><a href="deploy.html#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/your-username/your-repo.git</span>
-<span id="cb5-17"><a href="deploy.html#cb5-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-18"><a href="deploy.html#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="co"># push your files to GitHub</span></span>
-<span id="cb5-19"><a href="deploy.html#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin master</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="deploy.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Change the directory to your website&#39;s root folder</span></span>
+<span id="cb6-2"><a href="deploy.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> path/to/your/website</span>
+<span id="cb6-3"><a href="deploy.html#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="deploy.html#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># initialize a local Git repository</span></span>
+<span id="cb6-5"><a href="deploy.html#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span>
+<span id="cb6-6"><a href="deploy.html#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="deploy.html#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># add all of your website files to the local Git repository</span></span>
+<span id="cb6-8"><a href="deploy.html#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="at">--all</span></span>
+<span id="cb6-9"><a href="deploy.html#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="deploy.html#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># commit your website files to the local Git repository</span></span>
+<span id="cb6-11"><a href="deploy.html#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;first commit&quot;</span></span>
+<span id="cb6-12"><a href="deploy.html#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-13"><a href="deploy.html#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co"># sync the local Git repository with the remote GitHub repository</span></span>
+<span id="cb6-14"><a href="deploy.html#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co"># change your_username and your_repo to your GitHub username and </span></span>
+<span id="cb6-15"><a href="deploy.html#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="co"># website repository name</span></span>
+<span id="cb6-16"><a href="deploy.html#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/your-username/your-repo.git</span>
+<span id="cb6-17"><a href="deploy.html#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-18"><a href="deploy.html#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="co"># push your files to GitHub</span></span>
+<span id="cb6-19"><a href="deploy.html#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin master</span></code></pre></div>
 </div>
 <div id="configure-netlify-for-deployment" class="section level2" number="8.4">
 <h2><span class="header-section-number">8.4</span> Configure Netlify for deployment</h2>
@@ -365,8 +365,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <ol style="list-style-type: decimal">
 <li><p>Log in to <a href="https://app.netlify.com/" target="blank">Netlify</a> and click “New site from Git.”</p></li>
 <li><p>Select GitHub as the Continuous Deployment provider, then choose your website’s GitHub repository.</p></li>
-<li><p>Leave the site settings as-is and click “Deploy site” to deploy your website to the internet. <a href="https://i.imgur.com/wjDFnvJ.png" target="blank">📷 Image</a></p></li>
-<li><p>After a few seconds, your website will be live on the internet. To view it, return to the Site Overview section and locate the default domain name generated by Netlify. <a href="https://i.imgur.com/t6IW44i.png" target="blank">📷 Image</a></p></li>
+<li><p>Leave the site settings as-is and click “Deploy site” to deploy your website to the internet. <a href="https://i.imgur.com/wjDFnvJ.png" target="blank">Image</a></p></li>
+<li><p>After a few seconds, your website will be live on the internet. To view it, return to the Site Overview section and locate the default domain name generated by Netlify. <a href="https://i.imgur.com/t6IW44i.png" target="blank">Image</a></p></li>
 <li><p>Change your website’s domain name (part of it at least). Default Netlify domain names tend to look something like this - <em>dazzling-khorana-a6a8fe.netlify.app.</em> To change this, go to <em>Site settings &gt; Change site name</em>. Note that the domain extension will remain <code>.netlify.app</code> until you (optionally) purchase a custom domain name.</p></li>
 </ol>
 </div>
@@ -375,10 +375,10 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>Netlify’s default domain names use the <code>.netlify.app</code> extension. If you prefer something different, such as <code>.com</code>, you can purchase a custom domain for your website. Though several domain registrars exist, the simplest route is to purchase a domain name through Netlify. If you use a domain registrar other than Netlify (e.g. Google Domains), you will have to manually configure Domain Name Servers and Domain Name System settings. With Netlify, all of this is taken care of for you.</p>
 <p>Follow the simple steps below to purchase a custom domain through Netlify:</p>
 <ol style="list-style-type: decimal">
-<li><p>Log in to <a href="https://app.netlify.com/" target="blank">Netlify</a>, open your site, and click on “Domain settings.” <a href="https://i.imgur.com/ACjNs4w.png" target="blank">📷 Image</a></p></li>
+<li><p>Log in to <a href="https://app.netlify.com/" target="blank">Netlify</a>, open your site, and click on “Domain settings.” <a href="https://i.imgur.com/ACjNs4w.png" target="blank">Image</a></p></li>
 <li><p>Under Custom domains, click “Add custom domain.”</p></li>
-<li><p>Search for a domain name you like, then click “Verify” to determine if the domain is already owned or available for purchase. If available, confirm the purchase with a credit card and (optionally) set the domain name to auto-renew annually. <a href="https://i.imgur.com/y2s7wQR.png" target="blank">📷 Image</a></p></li>
-<li><p>Enable IPv6 to reach areas of the world where connectivity via IPv4 is not possible. Do this by signing in to Netlify and navigating to <em>Team overview &gt; Domains</em>, select your custom domain name, and click “Enable IPv6 on your domain.” <a href="https://docs.netlify.com/domains-https/netlify-dns/#ipv6-traffic" target="blank">📷 Image</a></p></li>
+<li><p>Search for a domain name you like, then click “Verify” to determine if the domain is already owned or available for purchase. If available, confirm the purchase with a credit card and (optionally) set the domain name to auto-renew annually. <a href="https://i.imgur.com/y2s7wQR.png" target="blank">Image</a></p></li>
+<li><p>Enable IPv6 to reach areas of the world where connectivity via IPv4 is not possible. Do this by signing in to Netlify and navigating to <em>Team overview &gt; Domains</em>, select your custom domain name, and click “Enable IPv6 on your domain.” <a href="https://docs.netlify.com/domains-https/netlify-dns/#ipv6-traffic" target="blank">Image</a></p></li>
 </ol>
 </div>
 <div id="next-steps-6" class="section level2" number="8.6">
@@ -436,7 +436,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": null,
+"download": ["r4sites.pdf"],
 "toc": {
 "collapse": "subsection"
 }

@@ -35,17 +35,17 @@ Once you sign up for Google Analytics, you will need to create an Account, Prope
 
 Follow these steps to integrate Google Analytics into your website:
 
-1. Sign in to Google Analytics and navigate to Admin > Create Account. [📷 Image](https://i.imgur.com/QRTa07k.png){target="blank"}
+1. Sign in to Google Analytics and navigate to Admin > Create Account. [Image](https://i.imgur.com/QRTa07k.png){target="blank"}
 
 2. Under Account setup, provide an appropriate name (e.g. personal-website) and configure the Account Data Sharing Settings to your liking. The defaults should be fine. Click "Next".
 
 3. Under Property setup, provide an appropriate name (e.g. personal-website-property). 
 
-4. Under Property setup, click on "Show advanced options" to create a Universal Analytics property. For the Website URL, provide the URL to your website. Click "Next". [📷 Image](https://i.imgur.com/0jffYnF.png){target="blank"}
+4. Under Property setup, click on "Show advanced options" to create a Universal Analytics property. For the Website URL, provide the URL to your website. Click "Next". [Image](https://i.imgur.com/0jffYnF.png){target="blank"}
 
 5. Under About you business, configure the settings to your liking. Click "Next" and accept the terms of service.
 
-6. Locate the Tracking ID by returning back to the Admin console and selecting the Account and Property that were created in the previous steps. **Important:** Make sure you locate the Universal Analytics property that reads `property name (UA-XXXXXXX-X)` and not the GA4 property. Under Property, click on *Tracking Info > Tracking Code* ([📷 Image](https://i.imgur.com/GtiKfhq.png){target="blank"}). Copy the Tracking ID, which takes the form of UA-XXXXXXXXX-1. [📷 Image](https://i.imgur.com/qcyaVBD.png){target="blank"}
+6. Locate the Tracking ID by returning back to the Admin console and selecting the Account and Property that were created in the previous steps. **Important:** Make sure you locate the Universal Analytics property that reads `property name (UA-XXXXXXX-X)` and not the GA4 property. Under Property, click on *Tracking Info > Tracking Code* ([Image](https://i.imgur.com/GtiKfhq.png){target="blank"}). Copy the Tracking ID, which takes the form of UA-XXXXXXXXX-1. [Image](https://i.imgur.com/qcyaVBD.png){target="blank"}
 
 7. Return to your RStudio Project. Open `config/_default/params.toml` in the main directory and create a `googleAnalytics` parameter. Insert your tracking code as the parameter value. [</> Code](https://github.com/dannymorris/r4sites-demo/blob/master/config/_default/params.toml#L16-L17){target="blank"}.
 
@@ -74,11 +74,11 @@ After completing the Google Analytics integration, run the following test to con
 
 2. Sign in to [Google Analytics](https://analytics.google.com/){target="blank"}.
 
-3. Click on "All Web Site Data". [📷 Image](https://i.imgur.com/lyNPi8E.png){target="blank"}
+3. Click on "All Web Site Data". [Image](https://i.imgur.com/lyNPi8E.png){target="blank"}
 
-4. In the dropdown menu, select the Account and Property you created during the initial [setup](#ga-setup), then select the "All Web Site Data" View. [📷 Image](https://i.imgur.com/xSjCS75.png){target="blank"}
+4. In the dropdown menu, select the Account and Property you created during the initial [setup](#ga-setup), then select the "All Web Site Data" View. [Image](https://i.imgur.com/xSjCS75.png){target="blank"}
 
-5. Go to the Home page and locate the card titled "Active Users right now". If the integration was successful, this value should be a minimum of 1 since you are currently on your website. [📷 Image](https://i.imgur.com/KPbUB7G.png){target="blank"}
+5. Go to the Home page and locate the card titled "Active Users right now". If the integration was successful, this value should be a minimum of 1 since you are currently on your website. [Image](https://i.imgur.com/KPbUB7G.png){target="blank"}
 
 ## Browse the Google Analytics UI
 
@@ -86,13 +86,13 @@ You can analyze your Google Analytics data using a third party client, such as R
 
 1. Sign in to [Google Analytics](https://analytics.google.com/){target="blank"}.
 
-2. Click on "All Web Site Data". [📷 Image](https://i.imgur.com/lyNPi8E.png){target="blank"}
+2. Click on "All Web Site Data". [Image](https://i.imgur.com/lyNPi8E.png){target="blank"}
 
-3. In the dropdown menu, select the Account and Property you created during the initial [setup](#ga-setup), then select the "All Web Site Data" View. [📷 Image](https://i.imgur.com/xSjCS75.png){target="blank"}
+3. In the dropdown menu, select the Account and Property you created during the initial [setup](#ga-setup), then select the "All Web Site Data" View. [Image](https://i.imgur.com/xSjCS75.png){target="blank"}
 
-4. Browse the Home page to view data such as active users, user acquisition sources, and sessions by country. [📷 Image](https://i.imgur.com/2u2mCey.png){target="blank"}
+4. Browse the Home page to view data such as active users, user acquisition sources, and sessions by country. [Image](https://i.imgur.com/2u2mCey.png){target="blank"}
 
-5. Browse the Reports ([📷 Image](https://i.imgur.com/3vvGhD0.png){target="blank"}) to learn more about your users including how they arrive at your website and which pages they tend to view.
+5. Browse the Reports ([Image](https://i.imgur.com/3vvGhD0.png){target="blank"}) to learn more about your users including how they arrive at your website and which pages they tend to view.
 
 ## Use R for data analysis
 

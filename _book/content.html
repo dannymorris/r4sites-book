@@ -24,7 +24,7 @@
 <meta name="author" content="Danny Morris" />
 
 
-<meta name="date" content="2021-05-17" />
+<meta name="date" content="2021-12-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -172,9 +172,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#learn"><i class="fa fa-check"></i><b>1.4</b> What you will learn</a></li>
 <li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#tools"><i class="fa fa-check"></i><b>1.5</b> Tools you will use</a></li>
 <li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#inspiring-examples"><i class="fa fa-check"></i><b>1.6</b> Inspiring examples</a></li>
-<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#getting-support"><i class="fa fa-check"></i><b>1.7</b> Getting support</a></li>
-<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#faq"><i class="fa fa-check"></i><b>1.8</b> FAQ</a></li>
-<li class="chapter" data-level="1.9" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i><b>1.9</b> About the author</a></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#faq"><i class="fa fa-check"></i><b>1.7</b> FAQ</a></li>
+<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i><b>1.8</b> About the author</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html"><i class="fa fa-check"></i><b>2</b> Complete end-to-end example</a>
 <ul>
@@ -250,7 +249,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.7" data-path="content.html"><a href="content.html#add-code-highlighting"><i class="fa fa-check"></i><b>7.7</b> Add code highlighting</a></li>
 <li class="chapter" data-level="7.8" data-path="content.html"><a href="content.html#add-tags-and-categories"><i class="fa fa-check"></i><b>7.8</b> Add tags and categories</a></li>
 <li class="chapter" data-level="7.9" data-path="content.html"><a href="content.html#add-a-post-thumbnail"><i class="fa fa-check"></i><b>7.9</b> Add a post thumbnail</a></li>
-<li class="chapter" data-level="7.10" data-path="content.html"><a href="content.html#next-steps-5"><i class="fa fa-check"></i><b>7.10</b> Next steps</a></li>
+<li class="chapter" data-level="7.10" data-path="content.html"><a href="content.html#embed-a-jupyter-notebook-in-a-r-markdown-post"><i class="fa fa-check"></i><b>7.10</b> Embed a Jupyter Notebook in a R Markdown post</a></li>
+<li class="chapter" data-level="7.11" data-path="content.html"><a href="content.html#next-steps-5"><i class="fa fa-check"></i><b>7.11</b> Next steps</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="deploy.html"><a href="deploy.html"><i class="fa fa-check"></i><b>8</b> Going live on the internet</a>
 <ul>
@@ -281,12 +281,12 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="11" data-path="get-help.html"><a href="get-help.html"><i class="fa fa-check"></i><b>11</b> Getting help</a>
 <ul>
-<li class="chapter" data-level="11.1" data-path="get-help.html"><a href="get-help.html#join-the-slack-workspace"><i class="fa fa-check"></i><b>11.1</b> Join the Slack workspace</a></li>
-<li class="chapter" data-level="11.2" data-path="get-help.html"><a href="get-help.html#connect-with-me"><i class="fa fa-check"></i><b>11.2</b> Connect with me</a></li>
-<li class="chapter" data-level="11.3" data-path="get-help.html"><a href="get-help.html#additional-resources"><i class="fa fa-check"></i><b>11.3</b> Additional resources</a></li>
+<li class="chapter" data-level="11.1" data-path="get-help.html"><a href="get-help.html#connect-with-me"><i class="fa fa-check"></i><b>11.1</b> Connect with me</a></li>
+<li class="chapter" data-level="11.2" data-path="get-help.html"><a href="get-help.html#additional-resources"><i class="fa fa-check"></i><b>11.2</b> Additional resources</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
 </ul>
 
       </nav>
@@ -328,30 +328,31 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">7.2</span> How it works</h2>
 <p>More than anything else on your website, your original content is your opportunity to share your ideas and captivate your viewers. For personal websites, original content often takes the form of blog posts, tutorials, research articles, and project portfolios. In all likelihood, your website visitors will spend most of their time reading your original content.</p>
 <p>Your original content can be authored using either <a href="https://bookdown.org/yihui/rmarkdown/html-document.html" target="blank">R Markdown</a> or <a href="https://www.markdownguide.org/getting-started/" target="blank">plain Markdown</a> documents, and the output will reside on your website’s <a href="https://r4sites-anatole-custom.netlify.app/post/" target="blank">Posts page</a>.</p>
-<p><strong>My recommendation is to use R Markdown for authoring original content.</strong> R Markdown is very similar to plain Markdown with one massive exception: R Markdown supports the integration and execution of R, Python, and SQL code within the document. This means your content can include dynamic output such as code printing, interactive tables, interactive graphs, and any other form of output that can be generated from these programming languages (<a href="https://abndistro.com/post/2020/07/12/time-series-forecasting-as-a-supervised-machine-learning-problem/" target="blank">example</a>). For this reason, R Markdown is substantially more flexible than plain Markdown for writing technical content. To learn more about R Markdown, I recommend reading <a href="https://bookdown.org/yihui/rmarkdown/" target="blank">R Markdown: The Definitive Guide</a>.</p>
+<p><strong>My recommendation is to use R Markdown for authoring original content.</strong> R Markdown is very similar to plain Markdown with one massive exception: R Markdown supports the integration and execution of R, Python, and SQL code within the document. This means your content can include dynamic output such as code printing, interactive tables, interactive graphs, and any other form of output that can be generated from these programming languages (<a href="https://abndistro.com/post/2020/07/12/time-series-forecasting-as-a-supervised-machine-learning-problem/" target="blank">example</a>). You can also embed Jupyter Notebooks stored externally (e.g. GitHub Gist). For these reasons, R Markdown is substantially more flexible than plain Markdown for writing technical content. To learn more about R Markdown, I recommend reading <a href="https://bookdown.org/yihui/rmarkdown/" target="blank">R Markdown: The Definitive Guide</a>.</p>
 </div>
 <div id="example-r-markdown-posts" class="section level2" number="7.3">
 <h2><span class="header-section-number">7.3</span> Example R Markdown posts</h2>
 <p>If you have never authored an R Markdown document, spend some time looking through these example posts including their source code and associated output on the website. In the source code, inspect the metadata parameters in between the <code>---</code> markers at the top of the document, then inspect the post body to gain a basic understanding of how text and code chunks are intertwined.</p>
 <ul>
-<li><p><strong>Using R in R Markdown</strong> - Post includes a table of contents, code highlighting, and thumbnail image. Content covers interactive HTML tables via the <a href="https://rstudio.github.io/DT/" target="blank">DT</a> package, and interactive plots via the <a href="https://plotly.com/r/" target="blank">plotly</a> package. (<a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd" target="blank">&lt;/&gt; Code</a>) (<a href="https://r4sites-anatole-custom.netlify.app/post/2021-04-22-sample-post-using-r-in-r-markdown/" target="blank">📄 Page</a>)</p></li>
-<li><p><strong>Using Python in R Markdown</strong> - Post includes a table of contents, code highlighting, and thumbnail image. Content covers the use of Conda environments, inserting and executing Python code chunks, and displaying plots. (<a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd" target="blank">&lt;/&gt; Code</a>) (<a href="https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-using-python-in-r-markdown/" target="blank">📄 Page</a>)</p></li>
-<li><p><strong>Using SQL in R Markdown</strong> - Post includes a table of contents and code highlighting. Content covers inserting and executing pure SQL code chunks and using R to execute SQL queries. (<a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-sql-in-r-markdown/index.en.Rmd" target="blank">&lt;/&gt; Code</a>) (<a href="https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-using-sql-in-r-markdown/" target="blank">📄 Page</a>)</p></li>
-<li><p><strong>Basic Markdown syntax</strong> - Post includes a thumbnail image but no table of contents or code highlighting. Content covers basic Markdown syntax. (<a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-basic-markdown-syntax/index.en.Rmd" target="blank">&lt;/&gt; Code</a>) (<a href="https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-basic-markdown-syntax/" target="blank">📄 Page</a>)</p></li>
+<li><p><strong>Using R in R Markdown</strong> - Post includes a table of contents, code highlighting, and thumbnail image. Content covers interactive HTML tables via the <a href="https://rstudio.github.io/DT/" target="blank">DT</a> package, and interactive plots via the <a href="https://plotly.com/r/" target="blank">plotly</a> package. (<a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-22-sample-post-using-r-in-r-markdown/index.en.Rmd" target="blank">&lt;/&gt; Code</a>) (<a href="https://r4sites-anatole-custom.netlify.app/post/2021-04-22-sample-post-using-r-in-r-markdown/" target="blank">Page</a>)</p></li>
+<li><p><strong>Using Python in R Markdown</strong> - Post includes a table of contents, code highlighting, and thumbnail image. Content covers the use of Conda environments, inserting and executing Python code chunks, and displaying plots. (<a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd" target="blank">&lt;/&gt; Code</a>) (<a href="https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-using-python-in-r-markdown/" target="blank">Page</a>)</p></li>
+<li><p><strong>Using SQL in R Markdown</strong> - Post includes a table of contents and code highlighting. Content covers inserting and executing pure SQL code chunks and using R to execute SQL queries. (<a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-sql-in-r-markdown/index.en.Rmd" target="blank">&lt;/&gt; Code</a>) (<a href="https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-using-sql-in-r-markdown/" target="blank">Page</a>)</p></li>
+<li><p><strong>Basic Markdown syntax</strong> - Post includes a thumbnail image but no table of contents or code highlighting. Content covers basic Markdown syntax. (<a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-basic-markdown-syntax/index.en.Rmd" target="blank">&lt;/&gt; Code</a>) (<a href="https://r4sites-anatole-custom.netlify.app/post/2021-04-30-sample-post-basic-markdown-syntax/" target="blank">Page</a>)</p></li>
+<li><p><strong>Embedded Jupyter Notebook</strong> - Post includes a rendering of a Jupyter Notebook stored as a GitHub Gist. <a href="https://gist.github.com/dannymorris/65bfd1e920b5c3673d7358cdf9d9753f">&lt;/&gt; Code</a> (<a href="https://abndistro.com/post/2021/05/20/using-pyspark-and-mllib-to-generate-association-rules-from-continuous-features/" target="blank">Page</a>)</p></li>
 </ul>
 </div>
 <div id="create-a-new-post" class="section level2" number="7.4">
 <h2><span class="header-section-number">7.4</span> Create a new post</h2>
 <p>The simplest way to add a new post is via the “New post” RStudio Addin. Follow the steps below to create a new post using this approach:</p>
 <ol style="list-style-type: decimal">
-<li><p>Select the RStudio Addin labeled “New post.” <a href="https://i.imgur.com/S9dl4DZ.png" target="blank">📷 Image</a></p></li>
-<li><p>Configure the new post by specifying the post Title, Author, Date, Subdirectory, and Format. <strong>Do not specify Tags and Categories</strong> at this point. Be sure to place the new post in the <code>post</code> Subdirectory and set the Format to <code>R Markdown (.Rmd)</code>. <a href="https://i.imgur.com/ciCv6yC.png" target="blank">📷 Image</a></p></li>
-<li><p>Update (or create) parameters in the post metadata including <code>title</code>, <code>author</code>, <code>summary</code>, <code>date</code>, <code>output</code>, <code>Tags</code>, and <code>Categories</code> (<a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd#L1-L18" target="blank">📷 Image</a>). Continue reading to learn more.</p></li>
+<li><p>Select the RStudio Addin labeled “New post.” <a href="https://i.imgur.com/S9dl4DZ.png" target="blank">Image</a></p></li>
+<li><p>Configure the new post by specifying the post Title, Author, Date, Subdirectory, and Format. <strong>Do not specify Tags and Categories</strong> at this point. Be sure to place the new post in the <code>post</code> Subdirectory and set the Format to <code>R Markdown (.Rmd)</code>. <a href="https://i.imgur.com/ciCv6yC.png" target="blank">Image</a></p></li>
+<li><p>Update (or create) parameters in the post metadata including <code>title</code>, <code>author</code>, <code>summary</code>, <code>date</code>, <code>output</code>, <code>Tags</code>, and <code>Categories</code> (<a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd#L1-L18" target="blank">Image</a>). Continue reading to learn more.</p></li>
 </ol>
 </div>
 <div id="add-a-post-summary" class="section level2" number="7.5">
 <h2><span class="header-section-number">7.5</span> Add a post summary</h2>
-<p>Add a summary to your R Markdown post to insert a summarization of the post beneath the post title on the <a href="https://r4sites-anatole-custom.netlify.app/" target="blank">Home</a> page (<a href="https://i.imgur.com/SjZ24e1.png" target="blank">📷 Image</a>). To add a summary, create a <code>summary</code> parameter in the document metadata. <a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd#L3" target="blank">&lt;/&gt; Code</a></p>
+<p>Add a summary to your R Markdown post to insert a summarization of the post beneath the post title on the <a href="https://r4sites-anatole-custom.netlify.app/" target="blank">Home</a> page (<a href="https://i.imgur.com/SjZ24e1.png" target="blank">Image</a>). To add a summary, create a <code>summary</code> parameter in the document metadata. <a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd#L3" target="blank">&lt;/&gt; Code</a></p>
 </div>
 <div id="add-a-table-of-contents" class="section level2" number="7.6">
 <h2><span class="header-section-number">7.6</span> Add a table of contents</h2>
@@ -368,10 +369,26 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="add-a-post-thumbnail" class="section level2" number="7.9">
 <h2><span class="header-section-number">7.9</span> Add a post thumbnail</h2>
-<p>A post thumbnail is an image that appears above the post title on the Home page (<a href="https://i.imgur.com/ITLkYTP.png" target="blank">📷 Image</a>) and at the beginning of the post itself. To include a thumbnail for a post, create a <code>thumbnail</code> parameter in the document metadata and insert the path to your image located in the <code>static/images</code> folder. <a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd#L15" target="blank">&lt;/&gt; Code</a></p>
+<p>A post thumbnail is an image that appears above the post title on the Home page (<a href="https://i.imgur.com/ITLkYTP.png" target="blank">Image</a>) and at the beginning of the post itself. To include a thumbnail for a post, create a <code>thumbnail</code> parameter in the document metadata and insert the path to your image located in the <code>static/images</code> folder. <a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/content/english/post/2021-04-30-sample-post-using-python-in-r-markdown/index.en.Rmd#L15" target="blank">&lt;/&gt; Code</a></p>
 </div>
-<div id="next-steps-5" class="section level2" number="7.10">
-<h2><span class="header-section-number">7.10</span> Next steps</h2>
+<div id="embed-a-jupyter-notebook-in-a-r-markdown-post" class="section level2" number="7.10">
+<h2><span class="header-section-number">7.10</span> Embed a Jupyter Notebook in a R Markdown post</h2>
+<p>Instead of the conventional workflow of authoring posts from scratch within the RStudio IDE, users of Jupyter Notebooks may find it more attractive to develop notebooks externally (e.g. Google Colab) and simply embed them in R Markdown posts.</p>
+<p>Follow these steps to embed an external Jupyter Notebook in a post on your website:</p>
+<ol style="list-style-type: decimal">
+<li>Author a Jupyter Notebook using your preferred environment, such as your local machine, Google Colab, etc.</li>
+<li>Save a copy of the notebook to your local machine.</li>
+<li>Visit <a href="https://gist.github.com/" class="uri">https://gist.github.com/</a> in your browser.</li>
+<li>In the upper-right corner, click the “+” icon to add a new gist.</li>
+<li>Locate your notebook on your local machine and drag it into the large text box.</li>
+<li>Enter a filename including the <code>.ipynb</code> extension.</li>
+<li>Change the default option “Create secret gist” to “Create public gist” and select.</li>
+<li>Once the Gist is created, locate the “Embed” button and copy the HTML/Javascript code snippet taking the form <code>&lt;script src="https://gist.github.com/&lt;filename&gt;.js"&gt;&lt;/script&gt;</code>.</li>
+<li>Create a new R Markdown post and paste the HTML/Javascript to embed your Jupyter Notebook. (<a href="https://github.com/dannymorris/abndistro2/blob/master/content/post/2021-05-18-basic-usage-of-pyspark-and-spark-mllib-for-cluster-analysis/index.Rmd">Example</a>)</li>
+</ol>
+</div>
+<div id="next-steps-5" class="section level2" number="7.11">
+<h2><span class="header-section-number">7.11</span> Next steps</h2>
 <p>Proceed with <a href="deploy.html#deploy" target="blank">going live on the internet</a> by pushing your website to GitHub and configuring Netlify for continuous deployment.</p>
 
 </div>
@@ -425,7 +442,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": null,
+"download": ["r4sites.pdf"],
 "toc": {
 "collapse": "subsection"
 }

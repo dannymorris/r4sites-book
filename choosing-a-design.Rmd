@@ -20,7 +20,7 @@ The 90/10 rule states that 90% or more of the look, feel, and functionality you 
 
 Depending on your goals, you may be more or less restricted to certain [Hugo themes](https://themes.gohugo.io/){target="blank"}. For example, if you intend to create content using R Markdown documents that contain code written in R, Python, or SQL, then you may find that certain themes do a poor job of rendering output produced by these languages. On the other hand, if you intend to create basic content using plain Markdown documents, you may not experience any content rendering issues with any of the themes you consider. 
 
-**Tip:** When browsing Hugo themes, pay attention to the date on which the theme was most recently updated ([📷 Image](https://i.imgur.com/fp7WH6s.png){target="blank"}). It's best to avoid themes that have not been updated in the last few months or so.
+**Tip:** When browsing Hugo themes, pay attention to the date on which the theme was most recently updated ([Image](https://i.imgur.com/fp7WH6s.png){target="blank"}). It's best to avoid themes that have not been updated in the last few months or so.
 
 Below is a list of themes that I recommend based on performance, content rendering, and personal style preference. Note that this is not an exhaustive list of all themes that I would recommend.
 

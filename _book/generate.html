@@ -24,7 +24,7 @@
 <meta name="author" content="Danny Morris" />
 
 
-<meta name="date" content="2021-05-17" />
+<meta name="date" content="2021-12-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -172,9 +172,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#learn"><i class="fa fa-check"></i><b>1.4</b> What you will learn</a></li>
 <li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#tools"><i class="fa fa-check"></i><b>1.5</b> Tools you will use</a></li>
 <li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#inspiring-examples"><i class="fa fa-check"></i><b>1.6</b> Inspiring examples</a></li>
-<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#getting-support"><i class="fa fa-check"></i><b>1.7</b> Getting support</a></li>
-<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#faq"><i class="fa fa-check"></i><b>1.8</b> FAQ</a></li>
-<li class="chapter" data-level="1.9" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i><b>1.9</b> About the author</a></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#faq"><i class="fa fa-check"></i><b>1.7</b> FAQ</a></li>
+<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i><b>1.8</b> About the author</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html"><i class="fa fa-check"></i><b>2</b> Complete end-to-end example</a>
 <ul>
@@ -250,7 +249,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.7" data-path="content.html"><a href="content.html#add-code-highlighting"><i class="fa fa-check"></i><b>7.7</b> Add code highlighting</a></li>
 <li class="chapter" data-level="7.8" data-path="content.html"><a href="content.html#add-tags-and-categories"><i class="fa fa-check"></i><b>7.8</b> Add tags and categories</a></li>
 <li class="chapter" data-level="7.9" data-path="content.html"><a href="content.html#add-a-post-thumbnail"><i class="fa fa-check"></i><b>7.9</b> Add a post thumbnail</a></li>
-<li class="chapter" data-level="7.10" data-path="content.html"><a href="content.html#next-steps-5"><i class="fa fa-check"></i><b>7.10</b> Next steps</a></li>
+<li class="chapter" data-level="7.10" data-path="content.html"><a href="content.html#embed-a-jupyter-notebook-in-a-r-markdown-post"><i class="fa fa-check"></i><b>7.10</b> Embed a Jupyter Notebook in a R Markdown post</a></li>
+<li class="chapter" data-level="7.11" data-path="content.html"><a href="content.html#next-steps-5"><i class="fa fa-check"></i><b>7.11</b> Next steps</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="deploy.html"><a href="deploy.html"><i class="fa fa-check"></i><b>8</b> Going live on the internet</a>
 <ul>
@@ -281,12 +281,12 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="11" data-path="get-help.html"><a href="get-help.html"><i class="fa fa-check"></i><b>11</b> Getting help</a>
 <ul>
-<li class="chapter" data-level="11.1" data-path="get-help.html"><a href="get-help.html#join-the-slack-workspace"><i class="fa fa-check"></i><b>11.1</b> Join the Slack workspace</a></li>
-<li class="chapter" data-level="11.2" data-path="get-help.html"><a href="get-help.html#connect-with-me"><i class="fa fa-check"></i><b>11.2</b> Connect with me</a></li>
-<li class="chapter" data-level="11.3" data-path="get-help.html"><a href="get-help.html#additional-resources"><i class="fa fa-check"></i><b>11.3</b> Additional resources</a></li>
+<li class="chapter" data-level="11.1" data-path="get-help.html"><a href="get-help.html#connect-with-me"><i class="fa fa-check"></i><b>11.1</b> Connect with me</a></li>
+<li class="chapter" data-level="11.2" data-path="get-help.html"><a href="get-help.html#additional-resources"><i class="fa fa-check"></i><b>11.2</b> Additional resources</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
 </ul>
 
       </nav>
@@ -333,17 +333,17 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>Follow these steps to generate a website using RStudio:</p>
 <ol style="list-style-type: decimal">
 <li><p>Launch RStudio and install the blogdown package by running <code>install.packages("blogdown")</code> in the R console.</p></li>
-<li><p>Create a new RStudio Project by going to <strong>File &gt; New Project &gt; New Directory &gt; Website using blogdown.</strong> <a href="https://i.imgur.com/eDg7V2k.png" target="_blank">📷 Image</a>.</p></li>
-<li><p>Configure the website to use the Hugo Anatole theme by setting the <code>Hugo theme</code> parameter to <code>lxndrblz/anatole</code>. Click Create Project to generate the website. <a href="https://i.imgur.com/0DxkDHe.png" target="blank">📷 Image</a></p></li>
+<li><p>Create a new RStudio Project by going to <strong>File &gt; New Project &gt; New Directory &gt; Website using blogdown.</strong> <a href="https://i.imgur.com/eDg7V2k.png" target="_blank">Image</a>.</p></li>
+<li><p>Configure the website to use the Hugo Anatole theme by setting the <code>Hugo theme</code> parameter to <code>lxndrblz/anatole</code>. Click Create Project to generate the website. <a href="https://i.imgur.com/0DxkDHe.png" target="blank">Image</a></p></li>
 </ol>
 </div>
 <div id="use-a-different-hugo-theme" class="section level2" number="4.4">
 <h2><span class="header-section-number">4.4</span> Use a different Hugo theme</h2>
-<p>To use a theme other than Anatole, locate and select the theme from the list of <a href="https://themes.gohugo.io/" target="blank">Hugo themes</a>. Click “Download” on the theme homepage to view the source code on GitHub (<a href="https://i.imgur.com/ld35gNP.png" target="blank">📷 Image</a>). Copy the user/theme-name in the GitHub URL, then add this information to the <code>Hugo theme</code> parameter in the website configuration. For example, if the source code is located at <a href="https://github.com/devcows/hugo-universal-theme" target="blank">https://github.com/devcows/hugo-universal-theme</a>, insert <code>devcows/hugo-universal-theme</code> into the <code>Hugo theme</code> parameter.</p>
+<p>To use a theme other than Anatole, locate and select the theme from the list of <a href="https://themes.gohugo.io/" target="blank">Hugo themes</a>. Click “Download” on the theme homepage to view the source code on GitHub (<a href="https://i.imgur.com/ld35gNP.png" target="blank">Image</a>). Copy the user/theme-name in the GitHub URL, then add this information to the <code>Hugo theme</code> parameter in the website configuration. For example, if the source code is located at <a href="https://github.com/devcows/hugo-universal-theme" target="blank">https://github.com/devcows/hugo-universal-theme</a>, insert <code>devcows/hugo-universal-theme</code> into the <code>Hugo theme</code> parameter.</p>
 </div>
 <div id="serve-site" class="section level2" number="4.5">
 <h2><span class="header-section-number">4.5</span> Serve the website locally</h2>
-<p>The <a href="https://bookdown.org/yihui/blogdown/" target="blank">blogdown</a> package includes a handy function called <code>serve_site()</code>. Running this function in the R console with your website’s RStudio Project loaded will render a local copy of your entire website in the RStudio “Viewer” pane. <a href="https://i.imgur.com/oxZgeqM.png" target="blank">📷 Image</a></p>
+<p>The <a href="https://bookdown.org/yihui/blogdown/" target="blank">blogdown</a> package includes a handy function called <code>serve_site()</code>. Running this function in the R console with your website’s RStudio Project loaded will render a local copy of your entire website in the RStudio “Viewer” pane. <a href="https://i.imgur.com/oxZgeqM.png" target="blank">Image</a></p>
 <p>The best part of this feature is that as you make and save changes to your website files, the local rendering will update in real-time and reflect your changes. This feature of blogdown, known as LiveReload, empowers you to test ideas and receive instant feedback without having to leave the RStudio environment.</p>
 </div>
 <div id="next-steps-2" class="section level2" number="4.6">
@@ -402,7 +402,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": null,
+"download": ["r4sites.pdf"],
 "toc": {
 "collapse": "subsection"
 }

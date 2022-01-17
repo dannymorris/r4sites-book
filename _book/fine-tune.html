@@ -24,7 +24,7 @@
 <meta name="author" content="Danny Morris" />
 
 
-<meta name="date" content="2021-05-17" />
+<meta name="date" content="2021-12-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -172,9 +172,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#learn"><i class="fa fa-check"></i><b>1.4</b> What you will learn</a></li>
 <li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#tools"><i class="fa fa-check"></i><b>1.5</b> Tools you will use</a></li>
 <li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#inspiring-examples"><i class="fa fa-check"></i><b>1.6</b> Inspiring examples</a></li>
-<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#getting-support"><i class="fa fa-check"></i><b>1.7</b> Getting support</a></li>
-<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#faq"><i class="fa fa-check"></i><b>1.8</b> FAQ</a></li>
-<li class="chapter" data-level="1.9" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i><b>1.9</b> About the author</a></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#faq"><i class="fa fa-check"></i><b>1.7</b> FAQ</a></li>
+<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i><b>1.8</b> About the author</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="complete-end-to-end-example.html"><a href="complete-end-to-end-example.html"><i class="fa fa-check"></i><b>2</b> Complete end-to-end example</a>
 <ul>
@@ -250,7 +249,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.7" data-path="content.html"><a href="content.html#add-code-highlighting"><i class="fa fa-check"></i><b>7.7</b> Add code highlighting</a></li>
 <li class="chapter" data-level="7.8" data-path="content.html"><a href="content.html#add-tags-and-categories"><i class="fa fa-check"></i><b>7.8</b> Add tags and categories</a></li>
 <li class="chapter" data-level="7.9" data-path="content.html"><a href="content.html#add-a-post-thumbnail"><i class="fa fa-check"></i><b>7.9</b> Add a post thumbnail</a></li>
-<li class="chapter" data-level="7.10" data-path="content.html"><a href="content.html#next-steps-5"><i class="fa fa-check"></i><b>7.10</b> Next steps</a></li>
+<li class="chapter" data-level="7.10" data-path="content.html"><a href="content.html#embed-a-jupyter-notebook-in-a-r-markdown-post"><i class="fa fa-check"></i><b>7.10</b> Embed a Jupyter Notebook in a R Markdown post</a></li>
+<li class="chapter" data-level="7.11" data-path="content.html"><a href="content.html#next-steps-5"><i class="fa fa-check"></i><b>7.11</b> Next steps</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="deploy.html"><a href="deploy.html"><i class="fa fa-check"></i><b>8</b> Going live on the internet</a>
 <ul>
@@ -281,12 +281,12 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="11" data-path="get-help.html"><a href="get-help.html"><i class="fa fa-check"></i><b>11</b> Getting help</a>
 <ul>
-<li class="chapter" data-level="11.1" data-path="get-help.html"><a href="get-help.html#join-the-slack-workspace"><i class="fa fa-check"></i><b>11.1</b> Join the Slack workspace</a></li>
-<li class="chapter" data-level="11.2" data-path="get-help.html"><a href="get-help.html#connect-with-me"><i class="fa fa-check"></i><b>11.2</b> Connect with me</a></li>
-<li class="chapter" data-level="11.3" data-path="get-help.html"><a href="get-help.html#additional-resources"><i class="fa fa-check"></i><b>11.3</b> Additional resources</a></li>
+<li class="chapter" data-level="11.1" data-path="get-help.html"><a href="get-help.html#connect-with-me"><i class="fa fa-check"></i><b>11.1</b> Connect with me</a></li>
+<li class="chapter" data-level="11.2" data-path="get-help.html"><a href="get-help.html#additional-resources"><i class="fa fa-check"></i><b>11.2</b> Additional resources</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
 </ul>
 
       </nav>
@@ -334,7 +334,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="inspect-tool" class="section level2" number="5.4">
 <h2><span class="header-section-number">5.4</span> About the Inspect tool</h2>
 <p>The “Inspect” tool in your browser is a powerful tool for experimenting with changes to CSS properties directly in the browser. Using the Inspect tool results in temporary changes to the CSS, and when the browser is refreshed the original CSS properties are restored.</p>
-<p>Access this tool in the browser by right-clicking on any page element you want to edit (e.g. images, text, links, buttons) and click on “Inspect.” <a href="https://i.imgur.com/0h0H4VW.png" target="blank">📷 Image</a></p>
+<p>Access this tool in the browser by right-clicking on any page element you want to edit (e.g. images, text, links, buttons) and click on “Inspect.” <a href="https://i.imgur.com/0h0H4VW.png" target="blank">Image</a></p>
 <p>To learn more about the Inspect tool, I recommend watching this <a href="https://www.youtube.com/watch?v=1l4xz1QQhew" target="blank">short YouTube video</a>.</p>
 </div>
 <div id="before-you-begin" class="section level2" number="5.5">
@@ -384,9 +384,9 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>The steps to import a Google Font include the following:</p>
 <ol style="list-style-type: decimal">
 <li><p>Locate and select your chosen font from from <a href="https://fonts.google.com/" target="blank">Google Fonts</a>.</p></li>
-<li><p>Look at all of the available styles (e.g. Regular, Bold, Italic, etc.) and decide which styles you would like to import into your website. I recommend importing all available styles. To import all available styles, select “+ Select this style” beside each style. <a href="https://i.imgur.com/ZEopFOB.png" target="blank">📷 Image</a></p></li>
-<li><p>Select the “@import” option under “Use on the web.” Copy the HTML code <strong>in between</strong> the <code>style</code> tags(<a href="https://i.imgur.com/GE1L643.png" target="blank">📷 Image</a>) and paste it into the main CSS file located at <code>themes/anatole/assets/css/style.css</code>. (<a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L3" target="blank">&lt;/&gt; Code</a>)</p></li>
-<li><p>Under “use on the web,” locate the CSS rule for specifying <code>font-family</code> (<a href="https://i.imgur.com/0Nfmgdw.png" target="blank">📷 Image</a>). In your main CSS file located at <code>themes/anatole/assets/css/style.css</code>, update all instances of <code>font-family</code> to change all font styles to your new font. Fortunately, the Anatole theme only specifies <code>font-family</code> in a single location. <a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L48" target="blank">&lt;/&gt; Code</a></p></li>
+<li><p>Look at all of the available styles (e.g. Regular, Bold, Italic, etc.) and decide which styles you would like to import into your website. I recommend importing all available styles. To import all available styles, select “+ Select this style” beside each style. <a href="https://i.imgur.com/ZEopFOB.png" target="blank">Image</a></p></li>
+<li><p>Select the “@import” option under “Use on the web.” Copy the HTML code <strong>in between</strong> the <code>style</code> tags(<a href="https://i.imgur.com/GE1L643.png" target="blank">Image</a>) and paste it into the main CSS file located at <code>themes/anatole/assets/css/style.css</code>. (<a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L3" target="blank">&lt;/&gt; Code</a>)</p></li>
+<li><p>Under “use on the web,” locate the CSS rule for specifying <code>font-family</code> (<a href="https://i.imgur.com/0Nfmgdw.png" target="blank">Image</a>). In your main CSS file located at <code>themes/anatole/assets/css/style.css</code>, update all instances of <code>font-family</code> to change all font styles to your new font. Fortunately, the Anatole theme only specifies <code>font-family</code> in a single location. <a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L48" target="blank">&lt;/&gt; Code</a></p></li>
 </ol>
 </div>
 <div id="font-sizes" class="section level2" number="5.11">
@@ -403,8 +403,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>You can change the color of essentially any webpage attribute including text, backgrounds, borders, and so on. To change a color, locate the webpage element you want to modify using the <a href="fine-tune.html#inspect-tool" target="blank">Inspect tool</a> in your browser and experiment with the <code>color</code> or <code>background-color</code> properties.</p>
 <p>Consider the following edits:</p>
 <ul>
-<li><p><strong>Social media icons:</strong> These are visible beneath the website title on the Home page. Open the main CSS file located at <code>themes/anatole/assets/css/style.css</code> and edit the <code>.sidebar .social-links i</code> class by specifying a <code>color</code> attribute. Here I have chosen to use the HEX color #a4a4a4. <a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L322-L325" target="blank">&lt;/&gt; Code</a> <a href="https://i.imgur.com/Q7uhdaQ.png" target="blank">📷 Image</a></p></li>
-<li><p><strong>Post tags:</strong> These are visible on the Home page beneath post titles and summaries. Open the main CSS file located at <code>themes/anatole/assets/css/style.css</code> and edit the <code>.post .post-footer .meta a</code> class and editing the<code>color</code> attribute. Here I have chosen to use the HEX color #6a92c5. <a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L479-L482" target="blank">&lt;/&gt; Code</a> <a href="https://i.imgur.com/JnueFsN.png" target="blank">📷 Image</a></p></li>
+<li><p><strong>Social media icons:</strong> These are visible beneath the website title on the Home page. Open the main CSS file located at <code>themes/anatole/assets/css/style.css</code> and edit the <code>.sidebar .social-links i</code> class by specifying a <code>color</code> attribute. Here I have chosen to use the HEX color #a4a4a4. <a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L322-L325" target="blank">&lt;/&gt; Code</a> <a href="https://i.imgur.com/Q7uhdaQ.png" target="blank">Image</a></p></li>
+<li><p><strong>Post tags:</strong> These are visible on the Home page beneath post titles and summaries. Open the main CSS file located at <code>themes/anatole/assets/css/style.css</code> and edit the <code>.post .post-footer .meta a</code> class and editing the<code>color</code> attribute. Here I have chosen to use the HEX color #6a92c5. <a href="https://github.com/dannymorris/r4sites-anatole-custom/blob/master/themes/anatole/assets/css/style.css#L479-L482" target="blank">&lt;/&gt; Code</a> <a href="https://i.imgur.com/JnueFsN.png" target="blank">Image</a></p></li>
 </ul>
 </div>
 <div id="next-steps-3" class="section level2" number="5.13">
@@ -463,7 +463,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": null,
+"download": ["r4sites.pdf"],
 "toc": {
 "collapse": "subsection"
 }
